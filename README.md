@@ -23,3 +23,5 @@ Things you may want to cover:
 
 * ...
 # scimo-rails
+
+https://young-shore-64363.herokuapp.com/users/sign_in
