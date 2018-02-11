@@ -1,27 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+git clone git@github.com:JessicaML/ScienceMotions-rails.git
 
-Things you may want to cover:
+cd ScienceMotions-rails
+
+bundle install
+
+rails server
+
 
 * Ruby version
 
-* System dependencies
+ruby 2.2.6p396
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# scimo-rails
+* Live site
 
 https://young-shore-64363.herokuapp.com/users/sign_in
