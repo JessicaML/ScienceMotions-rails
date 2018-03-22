@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lesson:</strong>
+  <%= @completed_lesson.lesson_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @completed_lesson.user_id %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @completed_lesson.completed %>
+</p>
+
+<%= link_to 'Edit', edit_completed_lesson_path(@completed_lesson) %> |
+<%= link_to 'Back', completed_lessons_path %>

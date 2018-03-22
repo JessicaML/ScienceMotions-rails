@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :completed_lessons
   resources :lessons
   devise_for :users
   get 'pages/info'
