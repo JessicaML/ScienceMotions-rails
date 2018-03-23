@@ -20,8 +20,8 @@
   <%= @lesson.slug %>
 </p>
 
+<%= render partial: 'completed_lessons/form', locals: { comment: @comment } %>
 
-<%= render 'form', completed_lesson: @completed_lesson %>
 
 <%= link_to 'Edit', edit_lesson_path(@lesson) %> |
 <%= link_to 'Back', lessons_path %>

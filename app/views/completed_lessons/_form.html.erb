@@ -1,5 +1,6 @@
-<%= form_with(model: completed_lesson, local: true) do |form| %>
-  <% if completed_lesson.errors.any? %>
+<%= form_with(model: @completed_lesson, local: true) do |form| %>
+
+  <% if @completed_lesson.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(completed_lesson.errors.count, "error") %> prohibited this completed_lesson from being saved:</h2>
 
@@ -10,16 +11,22 @@
       </ul>
     </div>
   <% end %>
-
+<!-- 
   <div class="field">
     <%= form.label :lesson_id %>
     <%= form.number_field :lesson_id, id: :completed_lesson_lesson_id %>
-  </div>
+  </div> -->
 
-  <div class="field">
+    <%= form.hidden_field :lesson_id  %>
+
+
+<!--   <div class="field">
     <%= form.label :user_id %>
     <%= form.number_field :user_id, id: :completed_lesson_user_id %>
-  </div>
+  </div> -->
+
+  <%= form.hidden_field :user_id  %>
+
 
   <div class="field">
     <%= form.label :completed %>
