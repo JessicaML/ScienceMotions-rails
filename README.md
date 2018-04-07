@@ -1,5 +1,15 @@
 # README
 
+You should have installed
+
+- sqlite3
+https://www.sqlite.org/index.html
+
+- postgres
+https://www.postgresql.org/
+
+
+
 To run the project:
 
 1. git clone git@github.com:JessicaML/ScienceMotions-rails.git
@@ -16,7 +26,7 @@ if you are having problems creating the db, try
 
 * Ruby version
 
-ruby 2.2.6
+ruby 2.4.2
 
 * Live site
 
