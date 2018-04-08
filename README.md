@@ -20,4 +20,4 @@ ruby 2.2.6
 
 * Live site
 
-https://young-shore-64363.herokuapp.com/users/sign_in
+https://young-shore-64363.herokuapp.com/
