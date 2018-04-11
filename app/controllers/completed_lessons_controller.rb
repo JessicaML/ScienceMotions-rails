@@ -1,4 +1,5 @@
 class CompletedLessonsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_completed_lesson, only: [:show, :edit, :update, :destroy]
 
   # GET /completed_lessons
