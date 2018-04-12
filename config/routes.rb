@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :models
   resources :completed_lessons
   resources :lessons
   devise_for :users
