@@ -13,9 +13,10 @@
   </thead>
 
   <tbody>
+
     <% @lessons.each do |lesson| %>
       <tr>
-        <td><%= lesson.name %></td>
+        <td><%= lesson.name if lesson%></td>
         <td><%= lesson.description %></td>
         <td><%= lesson.slug %></td>
         <td><%= link_to 'Show', lesson %></td>
