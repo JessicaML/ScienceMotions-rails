@@ -17,8 +17,8 @@
      <tr>
         <td><%= lesson.name if lesson %></td>
 
-        <td><%= lesson.description %></td>
-        <td><%= lesson.slug %></td>
+        <td><%= lesson.description if lesson %></td>
+        <td><%= lesson.slug if lesson %></td>
         <td><%= link_to 'Show', lesson %></td>
           <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
         <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
