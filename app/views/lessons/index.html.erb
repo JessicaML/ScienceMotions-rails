@@ -15,9 +15,9 @@
   <tbody>
    <% @lessons.each do |lesson| %>
      <tr>
-        <td><%= lesson&.name %></td>
-        <td><%= lesson&.description %></td>
-        <td><%= lesson&.slug %></td>
+        <td><%= @lesson.name %></td>
+        <td><%= @lesson.description %></td>
+        <td><%= @lesson.slug %></td>
         <td><%= link_to 'Show', lesson %></td>
           <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
         <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
