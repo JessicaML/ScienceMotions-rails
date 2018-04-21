@@ -7,7 +7,8 @@ class LessonsController < ApplicationController
     Rails.logger.info "#{Lesson.count} lessons found"
     puts "#{Lesson.count} lessons found"
 
-    @lessons = Lesson.find(:all)
+    @lessons = Lesson.all
+    # @lessons = Lesson.find(:all)
 
   end
 
