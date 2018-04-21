@@ -5,6 +5,7 @@ class LessonsController < ApplicationController
   # GET /lessons.json
   def index
     Rails.logger.info "#{Lesson.count} lessons found"
+    puts "#{Lesson.count} lessons found"
 
     @lessons = Lesson.all
   end
