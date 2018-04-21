@@ -4,7 +4,13 @@ class LessonsController < ApplicationController
   # GET /lessons
   # GET /lessons.json
   def index
+    Rails.logger.info 'Index!'
+
     @lessons = Lesson.all
+    Rails.logger.info @lessons.size
+    
+    @lessons = @lessons.compact
+    Rails.logger.info @lessons.size
   end
 
   # GET /lessons/1
