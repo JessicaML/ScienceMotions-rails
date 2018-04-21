@@ -2,6 +2,9 @@
 
 <h1>Lessons</h1>
 
+<p><%= @lessons&.count %> lessons found</p>
+
+<!--   
 <table>
   <thead>
     <tr>
@@ -12,7 +15,9 @@
     </tr>
   </thead>
 
-  <tbody>
+
+
+<tbody>
    <% @lessons.each do |lesson| %>
      <tr>
         <td><%= lesson&.name %></td>
@@ -23,9 +28,9 @@
         <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
      </tr>
    <% end %>
-  </tbody> 
+  </tbody>  
 </table>
-
+-->
 <br>
 
   <%= link_to 'New Lesson', new_lesson_path %>
