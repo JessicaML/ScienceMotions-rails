@@ -21,7 +21,6 @@
 	}
 
 	body {
-		background-color: red;
 		height: 100%;
 		/*padding-top: 70px;*/
 		background: hsl(318, 68%, 68%); /* fallback for old browsers */
