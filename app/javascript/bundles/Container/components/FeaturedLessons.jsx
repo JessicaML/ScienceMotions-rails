@@ -23,7 +23,7 @@ export default class FeaturedLessons extends React.Component {
 
   render() {
     return (
-        <div id="container" data-0="background-image:linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);" data-450="background-image:linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);">
+        <div>
 
         <h1>ScienceMotions</h1>
         <p>Biology, chemistry and physics lessons from the future.</p>
