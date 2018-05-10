@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Navbar from './Navbar';
-import About from './About';
-import FeaturedLessons  from './FeaturedLessons';
-import Testimonials from './Testimonials';
-import MailingList from './MailingList';
-
-export default class Container extends React.Component {
+export default class Testimonials extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired, // this is passed from the Rails view
   };
@@ -29,12 +23,10 @@ export default class Container extends React.Component {
 
   render() {
     return (
-      <div>
-          <Navbar />
-          <About />
-          <FeaturedLessons />
-          <Testimonials />
-          <MailingList />
+        <div id="container" data-0="background-image:linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);" data-450="background-image:linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);">
+
+        <h1>ScienceMotions</h1>
+        <p>Biology, chemistry and physics lessons from the future.</p>
       </div>
     );
   }
