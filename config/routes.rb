@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'hello_world', to: 'hello_world#index'
+  get 'container', to: 'container#index'
   resources :completed_lessons
   resources :lessons
   devise_for :users
