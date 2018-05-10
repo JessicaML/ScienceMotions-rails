@@ -14,5 +14,5 @@
 //= require turbolinks
 //= require_tree .
 
-
+skrollr.init();
 

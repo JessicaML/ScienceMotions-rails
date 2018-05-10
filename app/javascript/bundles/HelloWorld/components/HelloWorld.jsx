@@ -23,23 +23,14 @@ export default class HelloWorld extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>
-          Hello, {this.state.name}!
-        </h3>
-        <hr />
-        <form >
-          <label htmlFor="name">
-            Say hello to:
-          </label>
-          <input
-            id="name"
-            type="text"
-            value={this.state.name}
-            onChange={(e) => this.updateName(e.target.value)}
-          />
-        </form>
+        <div id="container" data-0="background-image:linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);" data-450="background-image:linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);">
+
+        <h1>ScienceMotions</h1>
+        <p>Biology, chemistry and physics lessons from the future.</p>
       </div>
+
+
+
     );
   }
 }

@@ -6,3 +6,4 @@ import HelloWorld from '../bundles/HelloWorld/components/HelloWorld';
 ReactOnRails.register({
   HelloWorld,
 });
+
