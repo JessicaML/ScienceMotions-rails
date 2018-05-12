@@ -12,8 +12,8 @@ export default class Testimonials extends React.Component {
   constructor(props) {
     super(props);
 
-    // How to set initial state in ES6 class syntax
-    // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class
+    // How to set initial state in ES6 className syntax
+    // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-className
     this.state = { name: this.props.name };
   }
 
@@ -23,6 +23,7 @@ export default class Testimonials extends React.Component {
 
   render() {
     return (
+    <section id="test">
         <div className="container">
             <div className="col-lg-12">
                 <div className="header">
@@ -32,7 +33,7 @@ export default class Testimonials extends React.Component {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-6 portfolio-item class">
+                <div className="col-md-6 portfolio-item className">
                     <p>
                         <i>“It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”</i></p>
                     <p> Blessing, GCSE Student, Brixton </p>
@@ -45,6 +46,8 @@ export default class Testimonials extends React.Component {
                 </div>
             </div>
         </div>
+    </section>
+
     );
   }
 }
