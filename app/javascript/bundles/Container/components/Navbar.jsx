@@ -12,8 +12,8 @@ export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
 
-    // How to set initial state in ES6 class syntax
-    // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class
+    // How to set initial state in ES6 className syntax
+    // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-className
     this.state = { name: this.props.name };
   }
 
@@ -23,19 +23,19 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+        <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div className="container">
+                <div className="navbar-header">
+                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"></a>
+                    <a className="navbar-brand" href="#"></a>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul className="nav navbar-nav">
                         <li>
                             <a href="#">Home</a>
                         </li>
