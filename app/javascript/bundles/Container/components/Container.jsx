@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Navbar from './Navbar';
 import About from './About';
 import FeaturedLessons  from './FeaturedLessons';
 import Testimonials from './Testimonials';
@@ -30,7 +29,6 @@ export default class Container extends React.Component {
   render() {
     return (
       <div>
-          <Navbar />
           <About />
           <FeaturedLessons />
           <Testimonials />
