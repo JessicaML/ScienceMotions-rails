@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'container', to: 'container#index'
   resources :completed_lessons
   resources :lessons
   devise_for :users

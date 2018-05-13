@@ -1,0 +1,13 @@
+<head>
+	<%= stylesheet_link_tag "css/style.css" %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'skrollr.min.js' %>
+
+
+</head>
+<body>
+<%= react_component("Container", props: @container_props, prerender: false) %>
+    <%= javascript_pack_tag 'application' %>
+
+</body>
+
