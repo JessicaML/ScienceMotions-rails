@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'container', to: 'container#index'
+  get 'team', to: 'team#index'  
   resources :completed_lessons
   resources :lessons
   devise_for :users
