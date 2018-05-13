@@ -24,14 +24,10 @@ export default class About extends React.Component {
 
   render() {
     return (
-    <div className="container">
+    <section className="container">
           <div className="row">
-                <div className="col-md-3 portfolio-item">
-                    <a href="#">
-                    <img className="img-responsive" src="images/gifs/tube-2.png" alt=""/>
-                    </a>
-                </div>
-                <div className="col-md-3 portfolio-item">
+                <div className="col-md-3 portfolio-item" className="img-responsive" className="tube"/>
+                           <div className="col-md-3 portfolio-item">
                     <a href="#">
                       <img className="img-responsive" src="images/gifs/faces-fast.gif" alt=""/>
                     </a>
@@ -56,7 +52,7 @@ export default class About extends React.Component {
                 </div>
             </div>
           </div>
-        </div>
+        </section>
     );
   }
 }
