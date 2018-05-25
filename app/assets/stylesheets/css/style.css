@@ -24,12 +24,9 @@
 		background-color: red;
 		color: blue;
 		height: 100%;
-		/*padding-top: 70px;*/
 		background: hsl(318, 68%, 68%); /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to bottom, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+		background: -webkit-linear-gradient(to left, hsl(318, 68%, 68%), hsl(172, 100%, 50%)); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, hsl(318, 68%, 68%), hsl(172, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
 /*
 		body.is-loading *,
@@ -71,6 +68,10 @@
 		text-align: center;
 		color: #3b3b3b;
 		font-size: 75px;
+	}
+
+	.tube {
+		background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png');
 	}
 
 	 #second h1 {
@@ -123,6 +124,8 @@
 
 
 	}
+
+
 
 	#mc_embed_signup_scroll {
 		margin-top:25px;
