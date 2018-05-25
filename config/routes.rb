@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'physics/solarsystem'
+
+  get 'chemistry/indicators'
+
   get 'container', to: 'container#index'
   get 'team', to: 'team#index'  
   resources :completed_lessons
