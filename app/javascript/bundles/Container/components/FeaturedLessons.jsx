@@ -35,61 +35,67 @@ export default class FeaturedLessons extends React.Component {
             </div>
             <div class="row">
                 <div class="col-md-4 portfolio-item class">
-                    <a href="atoms/index.html">
+                    <a href="physics/atoms">
                         <h1>Atoms</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item dna">
-                    <a href="dna/index.html">
+                    <a href="biology/dna">
                         <h1>DNA</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item eye">
-                    <a href="eye/index.html">
+                    <a href="biology/eye">
                         <h1>Eye</h1>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 portfolio-item sound">
-                    <a href="sound_waves/index.html">
+                    <a href="physics/sound">
                         <h1>Sound waves</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item diffusion">
-                    <a href="diffusion/index.html">
+                    <a href="chemistry/diffusion">
                         <h1>Diffusion</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item class">
-                    <a href="classification/index.html">
+                    <a href="biology/classification">
                         <h1>Classification</h1>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 portfolio-item sound">
-                    <a href="indicator/index.html">
+                    <a href="chemistry/indicators">
                         <h1>Indicators</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item diffusion">
-                    <a href="solarsystem/index.html">
+                    <a href="chemistry/statesofmatter">
                         <h1>Solar System</h1>
                     </a>
                 </div>
                 <div class="col-md-4 portfolio-item class">
-                    <a href="states/lesson1.html">
-                        <h1>State of matter</h1>
+                    <a href="chemistry/statesofmatter">
+                        <h1>States of matter</h1>
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 portfolio-item sound">
-                    <a href="groups_periods/index.html">
+                <div class="col-md-6 portfolio-item sound">
+                    <a href="chemistry/periodictable">
                         <h1>Groups And Periods</h1>
                     </a>
                 </div>
+                <div class="col-md-6 portfolio-item sound">
+                    <a href="chemistry/periodictable">
+                        <h1>Galaxy</h1>
+                    </a>
+                </div>
+
             </div>
             <div class="row">
                 <br/>
