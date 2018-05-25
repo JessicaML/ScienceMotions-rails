@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :users do
     resources :completed_lessons
   end
-  get 'pages/info'
+  get 'pages/chemistry'
 
   root to: redirect('/lessons')  
   resources :lessons
