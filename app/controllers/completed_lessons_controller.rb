@@ -31,7 +31,6 @@ class CompletedLessonsController < ApplicationController
 
     respond_to do |format|
 
-
       if @completed_lesson.save
         format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully created.' }
         format.json { render :show, status: :created, location: @completed_lesson }
