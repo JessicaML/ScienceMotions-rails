@@ -15,3 +15,4 @@ class ChemistryController < ApplicationController
   end
 
 end
+
