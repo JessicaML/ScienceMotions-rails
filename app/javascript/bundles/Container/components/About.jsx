@@ -28,6 +28,7 @@ export default class About extends React.Component {
           <div className="row">
                 <div className="col-md-3 portfolio-item" className="img-responsive" className="tube"/>
                            <div className="col-md-3 portfolio-item">
+                           <img src='https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png' />
                     <a href="#">
                       <img className="img-responsive" src="images/gifs/faces-fast.gif" alt=""/>
                     </a>
