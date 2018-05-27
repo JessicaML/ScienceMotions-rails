@@ -23,8 +23,41 @@ export default class Indicators extends React.Component {
 
   render() {
     return (
-        <div class="table">indicators react renders
-        </div>     
+    <section id="visual">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <p>Acidic Solution</p>
+                    <p class="animated infinite pulse">[H+] &#62 [OH-]</p>
+                    <div class="redlitmus animated bounceIn">Red litmus - stays red</div>
+                    <br />
+                    <div class="bluelitmus red animated bounceIn">Blue litmus - turns red</div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <p>Neutral Solution</p>
+                    <p class="animated infinite pulse">[H+]=[OH-]</p>
+                    <div class="redlitmus animated bounceIn">Red litmus - stays red</div>
+                    <br />
+                    <div class="bluelitmus animated bounceIn">Blue litmus - stays blue</div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <p>Basic Solution</p>
+                    <p class="animated infinite pulse">[H+]
+                        &#60; [OH-] </p>
+                            <div class="redlitmus blu animated bounceIn">
+                                Red litmus - turns blue
+                            </div>
+                            <br />
+                            <div class="bluelitmus animated bounceIn">
+                                Blue litmus - stays blue
+                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
     );
   }
 }

@@ -5,8 +5,6 @@ import About from './About';
 import FeaturedLessons  from './FeaturedLessons';
 import Testimonials from './Testimonials';
 import MailingList from './MailingList';
-import Lesson from './Lesson';
-
 
 export default class Container extends React.Component {
   static propTypes = {
@@ -35,7 +33,6 @@ export default class Container extends React.Component {
           <FeaturedLessons />
           <Testimonials />
           <MailingList />
-          <Lesson />
       </div>
     );
   }
