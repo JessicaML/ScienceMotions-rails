@@ -8,7 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-ruby '2.4.2'
+ruby '2.3.3'
 
 gem 'rails', '~> 5.1.4'
 gem "react_on_rails", "11.0.0"
@@ -54,6 +54,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+    gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -69,3 +70,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mini_racer', platforms: :ruby
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
