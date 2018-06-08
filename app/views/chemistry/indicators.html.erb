@@ -4,7 +4,13 @@
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'skrollr.min.js' %>
 
-<%= react_component("Lesson", prerender: false) %>
+# var lessonTitle
+# id find(lessonId) {
+#     lessonToShow = lessonId
+# }
+
+
+<%= react_component("Lessons", prerender: false) %>
 <%= javascript_pack_tag 'application' %>
 
 <%= render :partial => 'completed_lessons/form' %>
