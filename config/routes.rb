@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get 'physics/solarsystem'
   get 'physics/sound'
   get 'physics/atoms'
@@ -19,7 +21,9 @@ Rails.application.routes.draw do
   get 'container', to: 'container#index'
   get 'team', to: 'team#index'  
   resources :completed_lessons
-  resources :lessons
+  # resources :lessons
+  resources :lessons, only: [:show, :index]
+  
   devise_for :users
   resources :users do
     resources :completed_lessons

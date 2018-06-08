@@ -17,3 +17,4 @@ vanessa = User.create(email: "van@gmail.com", password: "van")
 lesson1 = Lesson.create(name: "van", description: "van", slug: "van")
 
 lesson2 = Completed_lesson.create(user_id: "1", lesson_id: "1", completed: "true")
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
