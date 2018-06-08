@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import MyImage from 'images/tube-2.png'
 
 export default class About extends React.Component {
 
@@ -28,14 +29,17 @@ export default class About extends React.Component {
           <div className="row">
                 <div className="col-md-3 portfolio-item" className="img-responsive" className="tube"/>
                            <div className="col-md-3 portfolio-item">
-                           <img src='https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png' />
+                           <img src='images/tube-2.png' />
+                           <img src='../../../../assets/images/tube-2.png' />
                     <a href="#">
                       <img className="img-responsive" src="images/gifs/faces-fast.gif" alt=""/>
+
                     </a>
+                    <img src={MyImage} />
                 </div>
                 <div className="col-md-3 portfolio-item">
                     <a href="#">
-                    <img className="img-responsive" src="images/gifs/tube-2.png" alt=""/>
+                    <img className="img-responsive" src="images/tube-2.png" alt=""/>
                     </a>
                 </div>
                 <div className="col-md-3 portfolio-item">
