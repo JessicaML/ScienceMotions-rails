@@ -14,15 +14,13 @@ development:
   database: my_database_development
   pool: 5
   timeout: 5000
-  username: jess
-  password: jess
-
+  
 test:
   adapter: postgresql
   database: my_database_development
   pool: 5
   timeout: 5000
-
+  
 production:
   adapter: postgresql
   database: my_database_development
