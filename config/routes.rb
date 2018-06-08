@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get 'biology/classification'
   get 'biology/eye'
   
+  get 'lessons/indicators'
+  
+  post '/lessons/indicators' => 'completed_lessons'
 
   get 'container', to: 'container#index'
   get 'team', to: 'team#index'  
@@ -24,7 +27,7 @@ Rails.application.routes.draw do
     resources :completed_lessons
   end
   get 'pages/chemistry'
-
+  
   root to: redirect('/lessons')  
   resources :lessons
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

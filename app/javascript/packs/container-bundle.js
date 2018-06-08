@@ -8,4 +8,3 @@ ReactOnRails.register({
   Container,
   Lesson,
 });
-
