@@ -5,13 +5,6 @@ class LessonsController < ApplicationController
   # GET /lessons.json
   def index
     @lessons = Lesson.all
-
-    puts @lesson
-  end
-
-  def indicators
-    # @completed_lessons = @indicators.completed_lessons.all
-    # @completed_lesson = @indicators.completed_lessons.build
   end
 
   # GET /lessons/1
@@ -22,8 +15,7 @@ class LessonsController < ApplicationController
 
     puts "Lesson111111"    
     puts @lesson.name
-    puts @lesson.id    
-    puts @lesson.id
+
   end
   
   # GET /lessons/new

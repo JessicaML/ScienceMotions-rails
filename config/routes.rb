@@ -13,9 +13,7 @@ Rails.application.routes.draw do
   get 'biology/dna'
   get 'biology/classification'
   get 'biology/eye'
-  
-  get 'lessons/indicators'
-  
+    
   post '/lessons/indicators' => 'completed_lessons'
 
   get 'container', to: 'container#index'
