@@ -15,7 +15,7 @@ development:
   pool: 5
   timeout: 5000
  
- test:
+test:
   adapter: postgresql
   database: my_database_development
   pool: 5
