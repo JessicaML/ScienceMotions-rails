@@ -7,4 +7,5 @@ RSpec.describe CompletedLesson, type: :model do
     second_completed_lesson = CompletedLesson.create!(user_id: 2) 
 
     expect(second_completed_lesson.user_id).to eq(2)
+  end  
 end
