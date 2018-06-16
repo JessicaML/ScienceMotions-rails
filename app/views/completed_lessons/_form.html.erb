@@ -1,7 +1,21 @@
 <%= form_with(model: @completed_lesson, local: true) do |form| %>
-  
-  <%= form.hidden_field :lesson_id, value: 1  %>
-  
+
+  <% if @completed_lesson.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(completed_lesson.errors.count, "error") %> prohibited this completed_lesson from being saved:</h2>
+
+      <ul>
+      <% completed_lesson.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.hidden_field :user_id  %>
+
+  <%= form.hidden_field :lesson_id  %>
+
   <div class="field">
     <%= form.label :completed %>
     <%= form.check_box :completed, id: :completed_lesson_completed %>
