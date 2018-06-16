@@ -15,3 +15,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( skrollr.min.js )
 
 Rails.application.config.assets.precompile += %w( css/style.css )
+
+Rails.application.config.assets.precompile += %w( Lesson.css )

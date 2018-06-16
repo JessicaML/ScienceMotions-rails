@@ -25,6 +25,8 @@ Rails.application.routes.draw do
     resources :completed_lessons
   end
   get 'pages/chemistry'
+
+  resources :lesson
   
   root to: redirect('/lessons')  
   resources :lessons
