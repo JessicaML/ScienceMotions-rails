@@ -28,7 +28,7 @@ class CompletedLessonsController < ApplicationController
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @completed_lesson.user = current_user
     @completed_lesson.save
-
+    
     respond_to do |format|
 
       if @completed_lesson.save

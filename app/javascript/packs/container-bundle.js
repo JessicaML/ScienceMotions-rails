@@ -10,4 +10,3 @@ ReactOnRails.register({
   Lesson,
   Team,
 });
-

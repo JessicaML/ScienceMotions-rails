@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import TubeOne from 'images/tube-1.png'
+import TubeTwo from 'images/tube-2.png'
+import TubeBright from 'images/tube-bright.gif'
+import FacesFast from 'images/faces-fast.gif'
 
 export default class About extends React.Component {
 
@@ -26,23 +30,19 @@ export default class About extends React.Component {
     return (
     <section className="container">
           <div className="row">
-                <div className="col-md-3 portfolio-item" className="img-responsive" className="tube"/>
-                           <div className="col-md-3 portfolio-item">
-                    <a href="#">
-                      <img className="img-responsive" src="images/gifs/faces-fast.gif" alt=""/>
-                    </a>
+               <div className="col-md-3 portfolio-item">
+                    <img className="img-responsive" src={TubeOne} alt=""/>
                 </div>
                 <div className="col-md-3 portfolio-item">
-                    <a href="#">
-                    <img className="img-responsive" src="images/gifs/tube-2.png" alt=""/>
-                    </a>
+                <img className="img-responsive" src={TubeTwo} alt=""/>
+            </div>
+            <div className="col-md-3 portfolio-item">
+                <img className="img-responsive" src={FacesFast} alt=""/>
+            </div>
+            <div className="col-md-3 portfolio-item">
+                <img className="img-responsive" src={TubeBright} alt=""/>
                 </div>
-                <div className="col-md-3 portfolio-item">
-                    <a href="#">
-                    <img className="img-responsive" src="images/gifs/tube.gif" alt=""/>
-                    </a>
-                </div>
-                </div>
+            </div>
             <div className="row">
             <div className="col-lg-12">
                 <div className="header">
@@ -52,6 +52,20 @@ export default class About extends React.Component {
                 </div>
             </div>
           </div>
+          <div className="row">
+               <div className="col-md-3 portfolio-item">
+                    <img className="img-responsive" src={FacesFast} alt=""/>
+                </div>
+                <div className="col-md-3 portfolio-item">
+                    <img className="img-responsive" src={TubeTwo} alt=""/>
+                </div>
+                <div className="col-md-3 portfolio-item">
+                    <img className="img-responsive" src={TubeOne} alt=""/>
+                </div>
+                <div className="col-md-3 portfolio-item">
+                    <img className="img-responsive" src={TubeBright} alt=""/>
+                </div>
+            </div>
         </section>
     );
   }
