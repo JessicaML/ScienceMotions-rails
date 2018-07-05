@@ -12,12 +12,8 @@ class LessonsController < ApplicationController
   def show
     @completed_lessons = @lesson.completed_lessons.all
     @completed_lesson = @lesson.completed_lessons.build
-
-    puts "Lesson111111"    
-    puts @lesson.name
-
   end
-  
+
   # GET /lessons/new
   def new
     @lesson = Lesson.new
