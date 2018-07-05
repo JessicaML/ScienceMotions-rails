@@ -1,0 +1,12 @@
+{
+  "_/assets/images/faces-fast.gif": "/packs/_/assets/images/faces-fast-4e9058ae8b929fe6d6b3bc0c78c4c688.gif",
+  "_/assets/images/tube-1.png": "/packs/_/assets/images/tube-1-c88961342943f5fe783513adbd3748ff.png",
+  "_/assets/images/tube-2.png": "/packs/_/assets/images/tube-2-cd1b5628fc636c28f0050a7533c4310c.png",
+  "_/assets/images/tube-bright.gif": "/packs/_/assets/images/tube-bright-a47187f865b13259d81dae10b88c114e.gif",
+  "application.js": "/packs/application-2113c7ea9619749d847a.js",
+  "application.js.map": "/packs/application-2113c7ea9619749d847a.js.map",
+  "container-bundle.js": "/packs/container-bundle-7cda4f876416061abdaf.js",
+  "container-bundle.js.map": "/packs/container-bundle-7cda4f876416061abdaf.js.map",
+  "hello_react.js": "/packs/hello_react-315cabb3f0f2a0591100.js",
+  "hello_react.js.map": "/packs/hello_react-315cabb3f0f2a0591100.js.map"
+}
