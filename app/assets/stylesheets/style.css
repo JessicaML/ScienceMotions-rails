@@ -495,9 +495,6 @@ table.default tfoot {
   background: #eee;
 }
 
-table.default tbody {
-}
-
 /* Button */
 
 input[type="button"],
@@ -1386,11 +1383,9 @@ body {
 #work .row.images.inactive .image.from-top {
   top: -7em;
 }
-
 #work .row.images.inactive .image.from-bottom {
   top: 7em;
 }
-
 /* ******************************************************************************* */
 /* Contact */
 /* *******************************************************************************
@@ -1587,7 +1582,6 @@ div #notification_container {
 .poptrox-popup .nav-previous:before {
   left: 0;
 }
-
 .poptrox-popup .closer {
   position: absolute;
   top: 0;
@@ -1622,20 +1616,4 @@ div #notification_container {
 }
 .poptrox-popup:hover .closer:hover {
   opacity: 1;
-}
-/* ******************************************************************************* */
-/* Touch Mode */
-}
-/* *******************************************************************************
-body.is-touch {
-}
-body.is-touch .main {
-  background-attachment: scroll !important;
-}
-body.is-touch .poptrox-popup {
-}
-body.is-touch .poptrox-popup .nav-next,
-body.is-touch .poptrox-popup .nav-previous,
-body.is-touch .poptrox-popup .closer {
-  opacity: 1 !important;
 }
