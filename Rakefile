@@ -3,4 +3,6 @@
 
 require_relative 'config/application'
 
+Rake::Task['assets:precompile']
+
 Rails.application.load_tasks
