@@ -3,6 +3,8 @@
 
 require_relative 'config/application'
 
-Rake::Task['assets:precompile']
+Rake::Task.define_task('assets:precompile' => ["yarn install", "webpacker:compile"])
+
+
 
 Rails.application.load_tasks
