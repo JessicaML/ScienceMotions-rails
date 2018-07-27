@@ -27,7 +27,3 @@ if you are having problems creating the db, try
 * Ruby version
 
 ruby 2.4.2
-
-* Live site
-
-https://young-shore-64363.herokuapp.com/
