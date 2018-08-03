@@ -14,10 +14,12 @@ gem 'rails', '~> 5.1.4'
 gem "react_on_rails", "11.0.0"
 gem "webpacker", "~> 3.0"
 
+gem 'pg', '~> 0.20'
+
 # Use sqlite3 as the database for Active Record
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 
 gem 'devise'
 # Use Puma as the app server
