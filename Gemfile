@@ -8,8 +8,6 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-ruby '2.4.2'
-
 gem 'rails', '~> 5.1.4'
 gem "react_on_rails", "11.0.0"
 gem "webpacker", "~> 3.0"
