@@ -9,3 +9,6 @@
 
 console.log("Hello World from Webpacker");
 import "scimo";
+$(function() {
+  console.log("Hello World from Webpacker");
+});

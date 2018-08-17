@@ -15,10 +15,10 @@ const DNA = ({}) => (
         <div className="col-sm-3">
           <p>DNA</p>
           <p>Here is the DNA lesson</p>
-          <img src={Cytosine} class="c" />
-          <img src={Thymine} class="t" />
-          <img src={Adenine} class="a" />
-          <img src={Guanine} class="g" />
+          <img src={Cytosine} className="c" />
+          <img src={Thymine} className="t" />
+          <img src={Adenine} className="a" />
+          <img src={Guanine} className="g" />
         </div>
       </div>
     </div>
