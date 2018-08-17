@@ -8,6 +8,6 @@ $(document).on("mousemove", function(event) {
   $("img.a").css("width", event.pageX);
   $("img.a").css("height", $("#top").height() - event.pageY);
 
-  $("img.g").css("width", $("#top").width() - event.pageX);
+  $("img.g").css("width", event.pageX);
   $("img.g").css("height", $("#top").height() - event.pageY);
 });
