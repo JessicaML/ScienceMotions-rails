@@ -1,31 +1,25 @@
-body {
-  font-family: Arial;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-img {
+.dna-img {
   position: fixed;
   width: 50%;
   height: 50%;
 }
 
-img.t {
+.dna-img.t {
   top: 0;
   left: 0;
 }
 
-img.c {
+.dna-img.c {
   top: 0;
   right: 0;
 }
 
-img.a {
+.dna-img.a {
   bottom: 0;
   left: 0;
 }
 
-img.g {
+.dna-img.g {
   bottom: 0;
   right: 0;
 }
