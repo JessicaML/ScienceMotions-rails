@@ -24,6 +24,5 @@ if you are having problems creating the db, try
 - rake db:create
 - rake db:migrate
 
-* Ruby version
+Live site: https://scimo.herokuapp.com
 
-ruby 2.4.2
