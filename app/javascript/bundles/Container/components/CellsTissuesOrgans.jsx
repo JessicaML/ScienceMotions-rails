@@ -5,7 +5,7 @@ import Organsystemfinalslow_animated from "images/organsystemfinalslow_animated.
 
 const CellsTissuesOrgans = ({ }) => (
   <section id="animation">
-    <div className="cell testclass">
+    <div className="cell">
       <div className="organelle-container">
 
         <div className="nucleus">
@@ -77,10 +77,10 @@ const CellsTissuesOrgans = ({ }) => (
 
     <div className="organ-system-container">
       <div className="organ">
-        <img src={Heartfinal_animated} />
+        <img src={Heartfinal_animated} class="img-fluid" alt="Responsive image" />
       </div>
       <div className="organ-system">
-        <img src={Organsystemfinalslow_animated} />
+        <img src={Organsystemfinalslow_animated} class="img-fluid" alt="Responsive image"  />
       </div>
     </div>
 
