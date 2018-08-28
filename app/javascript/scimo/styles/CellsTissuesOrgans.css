@@ -1,15 +1,16 @@
 #animation {
-  padding-top: 50px;
+  padding-top: 5%;
   height: 700px;
-  max-width: 800px;
+  max-width: 100%;
   position: relative;
   left: 30%;
 }
 
 .cell-clone {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 8%;
+  height: 0;
+  padding-bottom: 8%;
   border-radius: 50%;
   border: 2px solid #A49480;
   background: blue;
@@ -292,10 +293,10 @@
 
   .tissue-container {
   position: absolute;
-  top: 100px;
-  left: 50px;
-  width: 500px;
-  height: 300px;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 35%;
   background: transparent;
   animation: tissue-color 7s forwards;
   animation-delay: 14s;
@@ -310,14 +311,14 @@
   
   90% {
     background-color:lightblue; 
-    left: 50px;
-    top: 100px;
+    left: 5%;
+    top: 10%;
   }
     
   100% {  
     opacity: 1;
-    left: 20px; 
-    top: 130px; 
+    left: 6%; 
+    top: 15%; 
     transform: scale(0.03,0.03);
     -moz-transform: scale(0.03,0.03);
     transform-origin: 50% 50%;
@@ -343,14 +344,14 @@
   left: -317px;
 }
 
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
   .organ-system img {
     width: 50%;
   }
   .organ img {
     width: 50%;
   }
-}
+}*/
 
 /* Lesson Template css starts here */
 

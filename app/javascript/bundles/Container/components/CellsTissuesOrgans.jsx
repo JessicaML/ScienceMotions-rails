@@ -77,15 +77,14 @@ const CellsTissuesOrgans = ({ }) => (
 
     <div className="organ-system-container">
       <div className="organ">
-        <img src={Heartfinal_animated} class="img-fluid" alt="Responsive image" />
+        <img src={Heartfinal_animated} className="img-responsive" />
       </div>
       <div className="organ-system">
-        <img src={Organsystemfinalslow_animated} class="img-fluid" alt="Responsive image"  />
+        <img src={Organsystemfinalslow_animated} className="img-responsive" />
       </div>
     </div>
-
   </section>
-
+    
 );
 
 export default CellsTissuesOrgans;

@@ -14,5 +14,5 @@ ReactOnRails.register({
   Indicators,
   Team,
   DNA,
-  CellsTissuesOrgans
+  CellsTissuesOrgans,
 });
