@@ -343,6 +343,15 @@
   left: -317px;
 }
 
+@media only screen and (max-width: 500px) {
+  .organ-system img {
+    width: 50%;
+  }
+  .organ img {
+    width: 50%;
+  }
+}
+
 /* Lesson Template css starts here */
 
 /* ==========================================================================
