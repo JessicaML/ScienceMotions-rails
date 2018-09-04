@@ -1,15 +1,16 @@
 #animation {
-  padding-top: 50px;
+  padding-top: 5%;
   height: 700px;
-  max-width: 800px;
+  max-width: 100%;
   position: relative;
   left: 30%;
 }
 
 .cell-clone {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 7%;
+  height: 0;
+  padding-bottom: 7%;
   border-radius: 50%;
   border: 2px solid #A49480;
   background: blue;
@@ -19,10 +20,10 @@
 
 .cell {
   position: absolute;
-  margin: 50px auto;
   background: transparent;
-  width: 400px;
-  height: 400px;
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
 }
 
 .cell::after {
@@ -35,8 +36,9 @@
   background: blue;
   background: -webkit-radial-gradient(#73a4ee75, #0742996c);
   background: radial-gradient(#73a4ee75, #0742996c), radial-gradient(transparent, rgba(0, 0, 0, 0.4));
-  height: 400px;
-  width: 400px;
+  height: 0;
+  width: 60%;
+  padding-bottom: 60%;
   opacity: 0;
   z-index: -1;
 }
@@ -59,8 +61,9 @@
 }
 .organelle-container {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
   animation: scale 7s forwards;
   animation-delay: 5s;
 }
@@ -88,7 +91,8 @@
   border: 3px solid rgba(219, 199, 199);
   background: rgb(187, 100, 114);
   width: 30%;
-  height: 30%;
+  height: 0;
+  padding-bottom: 30%;
   left: 29%;
   top: 20%;
 }
@@ -100,7 +104,8 @@
   border: 1px solid rgba(255, 0, 0, .2);
   background: rgb(116, 61, 61);
   width: 25%;
-  height: 25%;
+  height: 0;
+  padding-bottom: 25%;
   left: 61%;
   top: 26%;
 }
@@ -111,9 +116,9 @@
   border-radius: 100px;
   border: double white;
   background-color: orange;
-  width: 35px;
-  height: 70px;
-}
+  width: 11%;
+  height: 22%;
+} 
 
 .mitochondria svg {
   position: absolute;
@@ -190,7 +195,6 @@
   left: 55px;
 }
 
-
 .cytogreen1 {
   transform: rotate(15deg);
 }
@@ -211,7 +215,7 @@
   animation: float2 35s linear infinite normal;
   position: absolute;
   margin: 0 auto;
-  top: 150;
+  top: 170px;
   left: -70px;
   transform: scale(.6);
 }
@@ -292,10 +296,10 @@
 
   .tissue-container {
   position: absolute;
-  top: 100px;
-  left: 50px;
-  width: 500px;
-  height: 300px;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 35%;
   background: transparent;
   animation: tissue-color 7s forwards;
   animation-delay: 14s;
@@ -310,14 +314,14 @@
   
   90% {
     background-color:lightblue; 
-    left: 50px;
-    top: 100px;
+    left: 5%;
+    top: 10%;
   }
     
   100% {  
     opacity: 1;
-    left: 20px; 
-    top: 130px; 
+    left: 1%; 
+    top: 15%; 
     transform: scale(0.03,0.03);
     -moz-transform: scale(0.03,0.03);
     transform-origin: 50% 50%;
@@ -343,14 +347,14 @@
   left: -317px;
 }
 
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
   .organ-system img {
     width: 50%;
   }
   .organ img {
     width: 50%;
   }
-}
+}*/
 
 /* Lesson Template css starts here */
 
