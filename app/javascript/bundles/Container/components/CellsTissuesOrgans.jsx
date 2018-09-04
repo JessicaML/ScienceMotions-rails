@@ -4,10 +4,10 @@ import Heartfinal_animated from "images/heartfinal_animated.svg";
 import Organsystemfinalslow_animated from "images/organsystemfinalslow_animated.svg";
 
 const CellsTissuesOrgans = ({ }) => (
+  <div className="container-fluid">
+    <div className="row">
+      <div className=" col-xs-6 col-sm-8 col-md-10 col-lg-12 col-centered">
   <section id="animation">
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-sm">
           <div className="cell">
             <div className="organelle-container">
 
@@ -20,18 +20,21 @@ const CellsTissuesOrgans = ({ }) => (
                   <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke="#EE7600" strokeWidth="4" />
                 </svg>
               </div>
-
+           
               <div className="mitochondria" id="mito2">
                 <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke="#EE7600" strokeWidth="4" />
                 </svg>
               </div>
-
+             
+             
               <div className="mitochondria" id="mito3">
                 <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke="#EE7600" strokeWidth="4" />
                 </svg>
               </div>
+
+              
 
               <div className="lysosome-box">
                 <div className="lysosome"></div>
@@ -71,25 +74,30 @@ const CellsTissuesOrgans = ({ }) => (
               </div>
 
               <div className="golgi"></div>
-            </div>
-          </div>
 
+            </div>
+
+          </div>
+          
+        
           <div className="tissue-container">
             <div className="tissue"></div>
           </div>
 
           <div className="organ-system-container">
             <div className="organ">
-              <img src={Heartfinal_animated} className="img-responsive" />
+              <img src={Heartfinal_animated} />
             </div>
             <div className="organ-system">
-              <img src={Organsystemfinalslow_animated} className="img-responsive" />
+              <img src={Organsystemfinalslow_animated} />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+
+
   </section>
+  </div>
+  </div>
+  </div>
 
 );
 
