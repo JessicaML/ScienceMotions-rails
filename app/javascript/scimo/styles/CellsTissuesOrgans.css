@@ -3,7 +3,7 @@
   padding-bottom: 35%;
   height: 0;
   width: 35%;
-  margin: 10% auto;
+  margin: 5% auto 10% auto; 
   top: 0;
   left: 0;
   bottom: 0;
@@ -393,41 +393,40 @@
      background-color: #39454A;
      color: #fff;
      width: 100%;
-     padding-top: 1.6em;
-     padding-bottom: 1.6em;
+     padding:0;
      /*height: 1100px;*/
    }
    
    section#text h1 {
-     font-size: 3.2em;
+     font-size: 5vw;
      font-family: 'Fugaz One', monospace, sans-serif;
      font-style: oblique;
      font-weight: 900;
-     width: 80%;
      text-align: justify;
-     margin-left: 20px;
-     padding-left: 20px;
+     margin: 0;
+     padding: 5%;
+     color: #ffffff;
    }
    
    section#text h2 {
-     font-size: 2.5em;
+     font-size: 4vw;
      font-family: 'Fugaz One', monospace, sans-serif;
      font-style: oblique;
      font-weight: 900;
-     width: 80%;
      text-align: justify;
-     line-height: 1.8em;
-     margin-left: 20px;
-     padding-left: 20px;
+     line-height: 0;
+     margin: 0;
+     letter-spacing: 0.5vw;     
+     padding: 3%;
    }
    
    section#text p {
-     font-size: 1.3em;
+     font-size: 2.5vw;
      font-family: 'Space mono', sans-serif;
-     width: 80%;
      text-align: justify;
-     margin-left: 20px;
-     padding-left: 20px;
+     margin: 0;
+     padding: 3%;
+     line-height: normal;
    }
    
    section#text a {
@@ -468,8 +467,8 @@
    }
    
    .fond {
-     padding-top: 45px;
-     margin-top: 50px;
+     /*padding-top: 45px;
+     margin-top: 50px;*/
      top: 0;
      left: 0;
      right: 0;
