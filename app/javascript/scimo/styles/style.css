@@ -18,16 +18,16 @@ html {
 }
 
 body {
-  background-color: red;
+  /*background-color: red;
   color: blue;
   height: 100%;
   background: hsl(318, 68%, 68%); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /*background: -webkit-linear-gradient(
     to left,
     hsl(318, 68%, 68%),
     hsl(172, 100%, 50%)
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  /*background: linear-gradient(
     to bottom,
     hsl(318, 68%, 68%),
     hsl(172, 100%, 50%)
