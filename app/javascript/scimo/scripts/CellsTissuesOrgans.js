@@ -1,7 +1,6 @@
 function makeCell() {
-    var divsize = 50;
-    var posx = (Math.random() * ($(".tissue-container").width() - divsize)).toFixed();
-    var posy = (Math.random() * ($(".tissue-container").height() - divsize)).toFixed();
+    var posx = (Math.random() * ($(".tissue-container").width())).toFixed();
+    var posy = (Math.random() * ($(".tissue-container").height())).toFixed();
     $newCell = $("<div class='cell-clone'></div>").clone().css({
         'left': posx + 'px',
         'top': posy + 'px',
@@ -13,7 +12,7 @@ function makeCell() {
 
 
 function multiplyCell(){
-    for(var i = 0; i < 100; i++){
+    for(var i = 0; i < 120; i++){
         setTimeout(function timer(){
             makeCell();
         }, i * 65); 
