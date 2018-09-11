@@ -322,7 +322,6 @@
     top: 0;
   }
   100% {
-    opacity: 1;
     left: 15%;
     top: 0;
     transform: scale(0.03, 0.03);
@@ -333,6 +332,9 @@
 }
 
 .organ-system {
+  background: url("./organsystemfinalslow_animated.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   height: auto;
@@ -344,6 +346,9 @@
 }
 
 .organ {
+  background: url("./heartfinal_animated.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   height: auto;
