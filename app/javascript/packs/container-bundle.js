@@ -16,4 +16,5 @@ ReactOnRails.register({
   Team,
   DNA,
   CellsTissuesOrgans,
+  TextCellsTissuesOrgans
 });
