@@ -8,4 +8,33 @@ environment.plugins.append(
   })
 );
 
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      },
+
+      {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          publicPath: 'assets/'
+        }
+      }
+      
+    ]
+    
+  }
+}
+
+
+
 module.exports = environment;
+
