@@ -25,21 +25,21 @@
       </div>
 
       <div class="dropdown pull-right">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-    </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-  <p class="navbar-text pull-right">
-  <% if user_signed_in? %>
-    Logged in as <strong><%= current_user.email %></strong>.
-    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link dropdown-item' %> |
-    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link dropdown-item'  %>
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link dropdown-item'  %> |
-    <%= link_to "Login", new_user_session_path, :class => 'navbar-link dropdown-item'  %>
-  <% end %>
-  </p>
-  </div>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <p class="navbar-text pull-right">
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>.
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link dropdown-item' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link dropdown-item'  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link dropdown-item'  %> |
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link dropdown-item'  %>
+      <% end %>
+      </p>
+     </div>
   </div>
       
       <div class="collapse navbar-collapse">
@@ -58,6 +58,9 @@
   </nav>
 
   <div class="container">
+              <div className="row">
+        <div className="col-xs-12">
+   
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
@@ -66,6 +69,8 @@
     <% end %>
 
     <%= yield %>
+       </div>
+        </div>
   </div>
 
       <footer>
