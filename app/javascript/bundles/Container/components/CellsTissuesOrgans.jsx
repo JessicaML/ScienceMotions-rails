@@ -4,6 +4,18 @@ import TextCellsTissuesOrgans from "./text/TextCellsTissuesOrgans";
 
 const CellsTissuesOrgans = ({ }) => (
   <div>
+
+    <div class="fond">
+
+      <div class="button-flip">
+        <a class="active" href="#text">
+          <button type="button" class="btn" href="#text">More info</button>
+        </a>
+
+      </div>
+
+    </div>
+
     <section id="animation">
       <div className="cell">
         <div className="organelle-container">
