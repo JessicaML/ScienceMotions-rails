@@ -20,6 +20,8 @@
 /node_modules
 /yarn-error.log
 
+public/packs
+
 .byebug_history
 .env
 

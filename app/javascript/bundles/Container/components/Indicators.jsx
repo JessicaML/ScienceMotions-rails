@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import IndicatorsText from "./text/IndicatorsText";
 
 const Indicators = ({}) => (
   <section id="visual">
@@ -43,6 +44,7 @@ const Indicators = ({}) => (
         </div>
       </div>
     </div>
+    <IndicatorsText />
   </section>
 );
 
