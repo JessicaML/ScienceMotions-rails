@@ -20,6 +20,14 @@
   <%= @lesson.slug %>
 </p>-->
 
+<div class="fond" id="smoothscroll">
+  <div class="button-flip">
+      <a class="active" href="#text">
+         <button type="button" class="btn" href="#text">More info</button>
+      </a>
+  </div>
+</div>
+
 <%= react_component(@lesson.name, prerender: false) %>
 
 <%= render :partial => 'completed_lessons/form' %>
