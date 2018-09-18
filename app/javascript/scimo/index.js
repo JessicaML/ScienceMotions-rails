@@ -6,3 +6,4 @@ import "./styles/CellsTissuesOrgans.css";
 
 import "./scripts/DNA.js";
 import "./scripts/CellsTissuesOrgans.js";
+import "./scripts/smoothscroll.js";
