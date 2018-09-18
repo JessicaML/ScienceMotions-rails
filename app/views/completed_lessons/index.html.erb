@@ -2,21 +2,18 @@
 
 <h1>Completed Lessons</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Lesson</th>
-      <th>User</th>
-      <th>Completed</th>
-      <th colspan="3"></th>
+      <th scope="col">Lesson</th>
+      <th scope="col">Completed</th>
     </tr>
   </thead>
 
   <tbody>
     <% @completed_lessons.each do |completed_lesson| %>
       <tr>
-        <td><%= completed_lesson.lesson_id %></td>
-        <td><%= completed_lesson.user_id %></td>
+        <td><%= completed_lesson.lesson&.name %></td>
         <td><%= completed_lesson.completed %></td>
         <td><%= link_to 'Show', completed_lesson %></td>
         <td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>
