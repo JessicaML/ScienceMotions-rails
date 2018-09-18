@@ -373,7 +373,6 @@
    body {
      margin: 0;
      padding: 0;
-     font-family: arial;
    }
    
    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -469,6 +468,7 @@
      left: 0;
      right: 0;
      bottom: 0;
+     width: 15%;
    }
    
    .button-flip button {
