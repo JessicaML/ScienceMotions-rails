@@ -5,8 +5,8 @@ const TextCellsTissuesOrgans = ({ }) => (
     <div className="container">
     <div className="row">
         <div className="col-xs-12">
-            <section id="text">
-                <h1 id="content">Levels of Organization</h1>
+            <section className="text">
+                <h1 className="content">Levels of Organization</h1>
                 <p>Cells, Tissues and Organs</p>
                 <h2 style={{ color: "#0ff004" }}>Organelles</h2>
                 <p>Cell structure that is specialised to carry out a particular function or job</p>

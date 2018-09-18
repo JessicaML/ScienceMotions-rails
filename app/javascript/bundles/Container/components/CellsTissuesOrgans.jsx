@@ -3,8 +3,8 @@ import React from "react";
 import TextCellsTissuesOrgans from "./text/TextCellsTissuesOrgans";
 
 const CellsTissuesOrgans = ({ }) => (
-  <div>
-    <section id="animation">
+  <div className="lesson_template">
+    <section className="animation">
       <div className="cell">
         <div className="organelle-container">
 
