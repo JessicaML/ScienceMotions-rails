@@ -82,18 +82,18 @@ section.text {
 }
 
 section.text h1 {
-  font-size: 5vw;
+  font-size: 2.5em;
   font-family: 'Fugaz One', monospace, sans-serif;
   font-style: oblique;
   font-weight: 900;
-  text-align: justify;
+  text-align: left;
   margin: 0;
   padding: 5%;
   color: #ffffff;
 }
 
 section.text h2 {
-  font-size: 4vw;
+  font-size: 2em;
   font-family: 'Fugaz One', monospace, sans-serif;
   font-style: oblique;
   font-weight: 900;
@@ -105,12 +105,23 @@ section.text h2 {
 }
 
 section.text p {
-  font-size: 2.5vw;
+  font-size: 1.5em;
   font-family: 'Space mono', sans-serif;
   text-align: justify;
   margin: 0;
   padding: 3%;
   line-height: normal;
+}
+
+@media screen and (min-width: 900px) {
+  section.text h1 { font-size: 3em;}
+  section.text h2 { font-size: 2.5em;}
+  section.text p { font-size: 1em;}
+}
+
+@media screen and (min-width: 1200px) {
+  section.text h1 { font-size: 3.5em;}
+  section.text h2 { font-size: 3em;}
 }
 
 section.text a {
@@ -156,12 +167,17 @@ a:hover {
   text-decoration: none;
 }
 
+.center-text p {
+  text-align: center;
+}
+
 .fond {
   /*padding-top: 45px;*/
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: 12%; /* so that it doesn't animate outside the button on hover*/ 
 }
 
 .style_prevu_kit {
@@ -242,4 +258,8 @@ a:hover {
   font-style: oblique;
   font-weight: 900;
   background-color: #00ff00;
+}
+
+.subscription {
+  display: block;
 }
