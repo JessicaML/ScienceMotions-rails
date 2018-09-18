@@ -32,11 +32,9 @@ export default class FeaturedLessons extends React.Component {
                             <div>
                                 <span> <i><p>Science is about how shapes move in space, so we think animation is the best way to explain it... and we want to explain it in a way that's as fun to look at as MTV.</p></i></span>
                             </div>
-                            <label for="mce-EMAIL">Subscribe to our mailing list!</label>
+                            <label className="subscription" for="mce-EMAIL">Subscribe to our mailing list!</label>
                             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
-                            <div aria-hidden="true">
-                                <input type="text" name="b_70d8e0ea2d8800a5f4e06792c_b5095bc718" tabindex="-1" value="" />
-                            </div>
+
                             <div class="clear">
                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
                             </div>

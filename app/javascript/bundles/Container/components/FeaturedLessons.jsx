@@ -24,7 +24,7 @@ export default class FeaturedLessons extends React.Component {
   render() {
     return (
         <section id="second">
-        <div class="container">
+        <div class="container center-text">
             <div class="col-lg-12">
                 <div class="header">
                     <br/>

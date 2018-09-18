@@ -28,7 +28,7 @@ export default class About extends React.Component {
 
   render() {
     return (
-    <section className="container">
+    <section className="container center-text">
           <div className="row">
                <div className="col-md-3 portfolio-item">
                     <img className="img-responsive" src={TubeOne} alt=""/>
