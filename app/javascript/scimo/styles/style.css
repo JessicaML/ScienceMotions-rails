@@ -128,3 +128,7 @@ b {
 .navbar-default .navbar-brand {
   color: white;
 }
+
+.dropdown {
+  margin: 1vh auto;
+}
