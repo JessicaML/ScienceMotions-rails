@@ -39,8 +39,6 @@
   border: 0.4vw solid #A49480;
   animation: fadeIn 7s forwards;
   animation-delay: 5s;
-  background: blue;
-  background: -webkit-radial-gradient(#73a4ee75, #0742996c);
   background: radial-gradient(#73a4ee75, #0742996c), radial-gradient(transparent, rgba(0, 0, 0, 0.4));
   height: 60%;
   width: 60%;
