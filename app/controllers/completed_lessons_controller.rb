@@ -11,7 +11,7 @@ class CompletedLessonsController < ApplicationController
   # GET /completed_lessons/1
   # GET /completed_lessons/1.json
   def show
-  end
+end
 
   # GET /completed_lessons/new
   def new
@@ -73,6 +73,6 @@ class CompletedLessonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def completed_lesson_params
-      params.require(:completed_lesson).permit(:lesson_id, :user_id, :completed)
+      params.require(:completed_lesson).permit(:lesson_id)
     end
 end
