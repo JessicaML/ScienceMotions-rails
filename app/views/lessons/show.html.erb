@@ -29,8 +29,10 @@
 </div>
 
 <%= react_component(@lesson.name, prerender: false) %>
-
+<% if @completed %>
+<p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
+<% else %>
 <%= render :partial => 'completed_lessons/form' %>
-
+<% end %>
 <%= link_to 'Edit', edit_lesson_path(@lesson) %> |
 <%= link_to 'Back', lessons_path %>
