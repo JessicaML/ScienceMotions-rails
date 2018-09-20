@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th scope="col">Lesson</th>
-      <th scope="col">Completed</th>
     </tr>
   </thead>
 
@@ -14,7 +13,6 @@
     <% @completed_lessons.each do |completed_lesson| %>
       <tr>
         <td><%= completed_lesson.lesson&.name %></td>
-        <td><%= completed_lesson.completed %></td>
         <td><%= link_to 'Show', completed_lesson %></td>
         <td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>
         <td><%= link_to 'Destroy', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
