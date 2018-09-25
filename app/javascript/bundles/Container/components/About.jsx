@@ -30,16 +30,16 @@ export default class About extends React.Component {
     return (
     <section className="container center-text">
           <div className="row">
-               <div className="col-md-3 portfolio-item">
+               <div className="col-xs-6 col-md-3 portfolio-item">
                     <img className="img-responsive" src={TubeOne} alt=""/>
                 </div>
-                <div className="col-md-3 portfolio-item">
+                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
                 <img className="img-responsive" src={TubeTwo} alt=""/>
             </div>
-            <div className="col-md-3 portfolio-item">
+            <div className="col-xs-6 col-md-3 portfolio-item">
                 <img className="img-responsive" src={FacesFast} alt=""/>
             </div>
-            <div className="col-md-3 portfolio-item">
+            <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
                 <img className="img-responsive" src={TubeBright} alt=""/>
                 </div>
             </div>
@@ -53,16 +53,16 @@ export default class About extends React.Component {
             </div>
           </div>
           <div className="row">
-               <div className="col-md-3 portfolio-item">
+               <div className="col-xs-6 col-md-3 portfolio-item">
                     <img className="img-responsive" src={FacesFast} alt=""/>
                 </div>
-                <div className="col-md-3 portfolio-item">
+                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
                     <img className="img-responsive" src={TubeTwo} alt=""/>
                 </div>
-                <div className="col-md-3 portfolio-item">
+                <div className="hidden-xs hidden-sm col-md-3 portfolio-item">
                     <img className="img-responsive" src={TubeOne} alt=""/>
                 </div>
-                <div className="col-md-3 portfolio-item">
+                <div className="col-xs-6 col-md-3 portfolio-item">
                     <img className="img-responsive" src={TubeBright} alt=""/>
                 </div>
             </div>
