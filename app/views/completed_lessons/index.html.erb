@@ -14,8 +14,8 @@
       <tr>
         <td><%= completed_lesson.lesson&.name %></td>
         <td><%= link_to 'Show', completed_lesson %></td>
-        <td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>
-        <td><%= link_to 'Destroy', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!--<td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>-->
+        <td><%= link_to 'Reset', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -23,4 +23,4 @@
 
 <br>
 
-<%= link_to 'New Completed Lesson', new_completed_lesson_path %>
+<!--<%= link_to 'New Completed Lesson', new_completed_lesson_path %>-->
