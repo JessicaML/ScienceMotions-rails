@@ -55,7 +55,7 @@ textarea,
 select {
   font-family: "Space Mono", sans-serif;
   font-weight: 300;
-  font-size: 2vw;
+  font-size: 12pt;
   line-height: 1.75em;
   color: #39454b;
   letter-spacing: 0.5px;
@@ -84,7 +84,7 @@ h6 a {
 h1 {
   text-align: center;
   color: #3b3b3b;
-  font-size: 75px;
+  font-size: 5em;
 }
 
 #second h1 {
