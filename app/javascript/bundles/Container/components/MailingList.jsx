@@ -23,7 +23,7 @@ export default class FeaturedLessons extends React.Component {
 
   render() {
     return (
-        <footer id="footer">
+        <footer id="footer" className="container">
         <div class="row">
             <div class="col-md-12 portfolio-item">
                 <div id="mc_embed_signup">
@@ -33,7 +33,7 @@ export default class FeaturedLessons extends React.Component {
                                 <span> <i><p>Science is about how shapes move in space, so we think animation is the best way to explain it... and we want to explain it in a way that's as fun to look at as MTV.</p></i></span>
                             </div>
                             <label className="subscription" for="mce-EMAIL">Subscribe to our mailing list!</label>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required />
 
                             <div class="clear">
                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
