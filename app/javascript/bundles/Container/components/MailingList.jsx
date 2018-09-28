@@ -23,7 +23,7 @@ export default class FeaturedLessons extends React.Component {
 
   render() {
     return (
-        <footer id="footer" className="container">
+        <div id="footer" className="container">
         <div class="row">
             <div class="col-md-12 portfolio-item">
                 <div id="mc_embed_signup">
@@ -45,7 +45,7 @@ export default class FeaturedLessons extends React.Component {
             </div>
         </div>
         <script src="js/jquery.js"></script>
-    </footer>
+    </div>
 
 
 

@@ -4,7 +4,7 @@ import React from "react";
 const TextCellsTissuesOrgans = ({ }) => (
     <div className="container">
     <div className="row">
-        <div className="col-xs-12">
+        <div className="col-xs-12" id="link-text">
             <section className="text">
                 <h1 className="content">Levels of Organization</h1>
                 <p>Cells, Tissues and Organs</p>
