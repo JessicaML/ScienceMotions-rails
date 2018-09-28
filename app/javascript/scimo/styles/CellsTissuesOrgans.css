@@ -302,11 +302,11 @@
   width: 75%;
   height: 40%;
   background: transparent;
-  animation: tissue-color 7s forwards;
+  animation: tissue-scale 7s forwards;
   animation-delay: 14s;
 }
 
-@keyframes tissue-color {
+@keyframes tissue-scale {
   70% {
     transform: scale(1);
     -moz-transform: scale(1);
