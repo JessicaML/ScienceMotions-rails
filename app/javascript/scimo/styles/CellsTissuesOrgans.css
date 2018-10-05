@@ -3,7 +3,7 @@
   padding-bottom: 35%;
   height: 0;
   width: 35%;
-  margin: 5% auto 10% auto; 
+  margin: 5% auto 10% auto;
   top: 0;
   left: 0;
   bottom: 0;
@@ -265,21 +265,12 @@
 }
 
 .golgi {
-  position: absolute; 
+  position: absolute;
   border-radius: 50%;
   background: rgb(100, 100, 100);
   width: 1%;
   height: 1%;
-  box-shadow: 
-  4vh 8vw 0 0 rgb(100, 100, 100), 
-  8vh 4vw 0 0 rgb(100, 100, 100), 
-  6vh 5vw 0 0 rgb(100, 100, 100), 
-  5vh 7vw 0 0 rgb(100, 100, 100), 
-  1vh 9vw 0 0 rgb(100, 100, 100),
-  2vh 7vw 0 0 rgb(100, 100, 100),
-  7vh 5vw 0 0 rgb(100, 100, 100),
-  6vh 3vw 0 0 rgb(100, 100, 100), 
-  3vh 1vw 0 0 rgb(100, 100, 100);
+  box-shadow: 4vh 8vw 0 0 rgb(100, 100, 100), 8vh 4vw 0 0 rgb(100, 100, 100), 6vh 5vw 0 0 rgb(100, 100, 100), 5vh 7vw 0 0 rgb(100, 100, 100), 1vh 9vw 0 0 rgb(100, 100, 100), 2vh 7vw 0 0 rgb(100, 100, 100), 7vh 5vw 0 0 rgb(100, 100, 100), 6vh 3vw 0 0 rgb(100, 100, 100), 3vh 1vw 0 0 rgb(100, 100, 100);
   animation: golgiFloat 22s linear infinite alternate;
 }
 
