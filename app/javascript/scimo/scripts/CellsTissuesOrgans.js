@@ -19,17 +19,15 @@ function multiplyCell() {
     }
 }
 
-
-setTimeout(multiplyCell, 11000);
-
 $(document).ready(function () {
+    setTimeout(multiplyCell, 11000);
     $('.organ').hide();
     $('.organ-system').hide();
     var tissue = document.querySelector(".tissue-container");
     if (tissue == null) {
         return
     }
-    
+
     tissue.addEventListener("animationend", function () {
         $('.organ').show();
         $('.organ-system').hide().delay(4000).queue(function (n) {
