@@ -10,8 +10,8 @@ class LessonsController < ApplicationController
   # GET /lessons/1
   # GET /lessons/1.json
   def show
-    @completed_lessons = @lesson.completed_lessons.all
     @completed_lesson = @lesson.completed_lessons.build
+    @completed = current_user.completed_lessons.find_by(lesson: @lesson)
   end
 
   # GET /lessons/new

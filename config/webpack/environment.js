@@ -19,22 +19,10 @@ module.exports = {
             options: {}
           }
         ]
-      },
-
-      {
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
-          publicPath: 'assets/'
-        }
-      }
-      
-    ]
-    
+      }     
+    ]   
   }
 }
-
-
 
 module.exports = environment;
 
