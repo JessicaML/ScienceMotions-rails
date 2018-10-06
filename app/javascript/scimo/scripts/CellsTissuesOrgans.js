@@ -4,32 +4,34 @@ function makeCell() {
     $newCell = $("<div class='cell-clone'></div>").clone().css({
         'left': posx + 'px',
         'top': posy + 'px',
-        
+
     });
 
     $newCell.appendTo('.tissue-container');
 }
 
 
-function multiplyCell(){
-    for(var i = 0; i < 120; i++){
-        setTimeout(function timer(){
+function multiplyCell() {
+    for (var i = 0; i < 120; i++) {
+        setTimeout(function timer() {
             makeCell();
-        }, i * 65); 
-    }           
+        }, i * 65);
+    }
 }
 
+$(document).ready(function () {
+    setTimeout(multiplyCell, 11000);
+    $('.organ').hide();
+    $('.organ-system').hide();
+    var tissue = document.querySelector(".tissue-container");
+    if (tissue == null) {
+        return
+    }
 
-setTimeout( multiplyCell, 11000 );
-
-$(function(){
-    $('.organ').hide().delay(22000).queue(function(n) {
-        $(this).show(); n();
-    })
-});
-
-$(function(){
-$('.organ-system').hide().delay(26000).queue(function(n) {
-    $(this).show(); n();
-})
+    tissue.addEventListener("animationend", function () {
+        $('.organ').show();
+        $('.organ-system').hide().delay(4000).queue(function (n) {
+            $(this).show();
+        })
+    });
 });

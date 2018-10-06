@@ -1,9 +1,9 @@
-#animation {
+.animation {
   position: relative;
   padding-bottom: 35%;
   height: 0;
   width: 35%;
-  margin: 5% auto 10% auto; 
+  margin: 5% auto 10% auto;
   top: 0;
   left: 0;
   bottom: 0;
@@ -39,8 +39,6 @@
   border: 0.4vw solid #A49480;
   animation: fadeIn 7s forwards;
   animation-delay: 5s;
-  background: blue;
-  background: -webkit-radial-gradient(#73a4ee75, #0742996c);
   background: radial-gradient(#73a4ee75, #0742996c), radial-gradient(transparent, rgba(0, 0, 0, 0.4));
   height: 60%;
   width: 60%;
@@ -267,21 +265,12 @@
 }
 
 .golgi {
-  position: absolute; 
+  position: absolute;
   border-radius: 50%;
   background: rgb(100, 100, 100);
   width: 1%;
   height: 1%;
-  box-shadow: 
-  4vh 8vw 0 0 rgb(100, 100, 100), 
-  8vh 4vw 0 0 rgb(100, 100, 100), 
-  6vh 5vw 0 0 rgb(100, 100, 100), 
-  5vh 7vw 0 0 rgb(100, 100, 100), 
-  1vh 9vw 0 0 rgb(100, 100, 100),
-  2vh 7vw 0 0 rgb(100, 100, 100),
-  7vh 5vw 0 0 rgb(100, 100, 100),
-  6vh 3vw 0 0 rgb(100, 100, 100), 
-  3vh 1vw 0 0 rgb(100, 100, 100);
+  box-shadow: 4vh 8vw 0 0 rgb(100, 100, 100), 8vh 4vw 0 0 rgb(100, 100, 100), 6vh 5vw 0 0 rgb(100, 100, 100), 5vh 7vw 0 0 rgb(100, 100, 100), 1vh 9vw 0 0 rgb(100, 100, 100), 2vh 7vw 0 0 rgb(100, 100, 100), 7vh 5vw 0 0 rgb(100, 100, 100), 6vh 3vw 0 0 rgb(100, 100, 100), 3vh 1vw 0 0 rgb(100, 100, 100);
   animation: golgiFloat 22s linear infinite alternate;
 }
 
@@ -304,11 +293,11 @@
   width: 75%;
   height: 40%;
   background: transparent;
-  animation: tissue-color 7s forwards;
+  animation: tissue-scale 7s forwards;
   animation-delay: 14s;
 }
 
-@keyframes tissue-color {
+@keyframes tissue-scale {
   70% {
     transform: scale(1);
     -moz-transform: scale(1);
@@ -504,3 +493,4 @@
    }
    
    /* Lesson Template ends here */
+
