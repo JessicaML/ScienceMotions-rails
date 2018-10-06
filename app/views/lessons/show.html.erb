@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -18,11 +18,25 @@
 <p>
   <strong>Mark as complete here:</strong>
   <%= @lesson.slug %>
-</p>
+</p>-->
 
-<%= react_component(@lesson.name, prerender: false) %>
+<div class="fond" id="smoothscroll">
+  <div class="button-flip">
+      <a class="active" href="#link-text">
+         <button type="button" class="btn" href="#link-text">More info</button>
+      </a>
+  </div>
+</div>
 
-<%= render :partial => 'completed_lessons/form' %>
 
-<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
-<%= link_to 'Back', lessons_path %>
+  <%= react_component(@lesson.name, prerender: false) %>
+  
+<div class="footer-info">
+  <% if @completed %>
+  <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
+  <% else %>
+  <%= render :partial => 'completed_lessons/form' %>
+  <% end %>
+  <!--<%= link_to 'Edit', edit_lesson_path(@lesson) %> |-->
+  <%= button_to 'Back', lessons_path, :method => "get", :class => "btn back-btn" %>
+</div>
