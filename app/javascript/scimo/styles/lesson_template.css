@@ -15,7 +15,6 @@ body {
   padding: 0;
 }
 
-<<<<<<< HEAD:app/javascript/scimo/styles/lesson_template.css
 article,
 aside,
 details,
@@ -28,9 +27,6 @@ main,
 nav,
 section,
 summary {
-=======
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
->>>>>>> fd8d06596c8edeb1d22c005be3b88b32833ddfdd:app/javascript/scimo/styles/lesson_template.css
   display: block;
 }
 
@@ -53,7 +49,7 @@ audio:not([controls]) {
   display: none;
 }
 
-lesson_template {
+
 
 
 section#visual {
@@ -278,11 +274,7 @@ a:hover {
   display: block;
 }
 
-<<<<<<< HEAD:app/javascript/scimo/styles/lesson_template.css
 
-
-}
-=======
 .footer-info  {
   color: black;
   padding: 2%;
@@ -299,4 +291,3 @@ a:hover {
   color:white;
   font-family: 'Courier New', serif;
 }
->>>>>>> fd8d06596c8edeb1d22c005be3b88b32833ddfdd:app/javascript/scimo/styles/lesson_template.css

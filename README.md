@@ -2,6 +2,9 @@
 
 You should have installed
 
+- Ruby & Rails
+http://guides.railsgirls.com/install
+
 - sqlite3
 https://www.sqlite.org/index.html
 

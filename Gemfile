@@ -42,6 +42,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'libv8', '~> 6.3.0'
 
 gem "figaro"
 
