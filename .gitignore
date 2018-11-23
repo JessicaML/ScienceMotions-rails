@@ -20,16 +20,16 @@
 /node_modules
 /yarn-error.log
 
+
 .byebug_history
 .env
 
 # Ignore application configuration
 /config/application.yml
-/public/packs
-/public/packs-test
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
 
 
 config/database.yml

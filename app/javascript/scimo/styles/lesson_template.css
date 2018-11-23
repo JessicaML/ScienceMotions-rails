@@ -1,0 +1,293 @@
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+@charset 'UTF-8';
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+  */
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+
+
+
+section#visual {
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+  padding-top: 75px;
+}
+
+section#visual button {
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+section#visual p {
+  padding-top: 1.5em;
+  font-size: 1.5em;
+  font-family: "Space mono", sans-serif;
+  width: 80%;
+  text-align: justify;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+section#visual h1 {
+  font-family: "Fugaz One", monospace, sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 3em;
+  color: #444444;
+  width: 80%;
+  text-align: justify;
+}
+
+section.text {
+  position: relative;
+  background-color: #39454A;
+  color: #fff;
+  width: 100%;
+  padding:0;
+  margin-bottom: 3%;
+  /*    height: 1100px;
+  */
+}
+
+section.text h1 {
+  font-size: 1em;
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-style: oblique;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  padding: 5%;
+  color: #ffffff;
+}
+
+section.text h2 {
+  font-size: 1.5em;
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+  text-align: justify;
+  line-height: 0;
+  margin: 0;
+  letter-spacing: 0.5vw;     
+  padding: 3%;
+}
+
+section.text p {
+  font-size: 1em;
+  font-family: 'Space mono', sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 3%;
+  line-height: normal;
+}
+
+
+@media screen and (min-width: 700px) {
+  section.text h1 { font-size: 4em; }
+  section.text h2 { font-size: 3em; line-height: 1.75em; }
+  section.text p { font-size: 1.5em; }
+}
+
+section.text a {
+  text-decoration: none;
+}
+
+section.text a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  font-family: "Courier New";
+  font-size: 14pt;
+  font-style: oblique;
+  font-weight: 900;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5fc3e4;
+  text-decoration: none;
+}
+
+.center-text p {
+  text-align: center;
+}
+
+.fond {
+  /*padding-top: 45px;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12%; /* so that it doesn't animate outside the button on hover*/ 
+}
+
+.style_prevu_kit {
+  color: #00ff00;
+  display: inline-block;
+  border: 0;
+  font-size: 85pt;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  /*width:196px;
+      height:210px;*/
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.style_prevu_kit:hover {
+  /*box-shadow: 0px 0px 150px #000000;*/
+  color: #5fc3e4;
+  text-decoration: none;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+}
+
+.button-flip {
+  color: #fff;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+  30% {
+    transform: scale(1, 0.8) translate(0px, 3px);
+  }
+  75% {
+    transform: scale(1, 1.1) translate(0px, -7px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.button-flip:hover button {
+  z-index: 55;
+  color: #fff;
+  font-family: "Courier New", serif;
+  font-style: oblique;
+  font-weight: 900;
+  background-color: #e55d87;
+  -webkit-animation: bounce 0.75s infinite;
+  animation: bounce 0.75s infinite;
+}
+
+.button-flip button {
+  color: #fff;
+  font-family: "Courier New", serif;
+  font-style: oblique;
+  font-weight: 900;
+  background-color: #00ff00;
+  margin-top: 4%;
+}
+
+.subscription {
+  display: block;
+}
+
+
+.footer-info  {
+  color: black;
+  padding: 2%;
+  margin-bottom: 3%;
+  font-size: 1em;
+}
+
+.footer-info .back-btn {
+  background-color: #00ff00;
+  margin-top: 2%;
+}
+
+.back-btn {
+  color:white;
+  font-family: 'Courier New', serif;
+}

@@ -23,8 +23,7 @@ export default class Testimonials extends React.Component {
 
   render() {
     return (
-    <section id="test">
-        <div className="container">
+    <section id="test" className="container">
             <div className="col-lg-12">
                 <div className="header">
                     <br/>
@@ -45,7 +44,6 @@ export default class Testimonials extends React.Component {
                     </p>
                 </div>
             </div>
-        </div>
     </section>
 
     );

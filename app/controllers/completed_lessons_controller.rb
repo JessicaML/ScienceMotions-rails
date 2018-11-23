@@ -11,7 +11,7 @@ class CompletedLessonsController < ApplicationController
   # GET /completed_lessons/1
   # GET /completed_lessons/1.json
   def show
-  end
+end
 
   # GET /completed_lessons/new
   def new
@@ -25,12 +25,12 @@ class CompletedLessonsController < ApplicationController
   # POST /completed_lessons
   # POST /completed_lessons.json
   def create
+
+
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @completed_lesson.user = current_user
-    @completed_lesson.save
     
     respond_to do |format|
-
       if @completed_lesson.save
         format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully created.' }
         format.json { render :show, status: :created, location: @completed_lesson }
@@ -68,11 +68,11 @@ class CompletedLessonsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_completed_lesson
-      @completed_lesson = CompletedLesson.find(params[:id])
+      @completed_lesson = current_user.completed_lessons.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def completed_lesson_params
-      params.require(:completed_lesson).permit(:lesson_id, :user_id, :completed)
+      params.require(:completed_lesson).permit(:lesson_id)
     end
 end

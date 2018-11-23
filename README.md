@@ -2,6 +2,9 @@
 
 You should have installed
 
+- Ruby & Rails
+http://guides.railsgirls.com/install
+
 - sqlite3
 https://www.sqlite.org/index.html
 
@@ -24,10 +27,5 @@ if you are having problems creating the db, try
 - rake db:create
 - rake db:migrate
 
-* Ruby version
+Live site: https://scimo.herokuapp.com
 
-ruby 2.4.2
-
-* Live site
-
-https://young-shore-64363.herokuapp.com/

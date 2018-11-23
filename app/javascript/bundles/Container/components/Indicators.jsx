@@ -1,63 +1,51 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
+import IndicatorsText from "./text/IndicatorsText";
 
-export default class Indicators extends React.Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired, // this is passed from the Rails view
-  };
-
-  /**
-   * @param props - Comes from your rails view.
-   */
-  constructor(props) {
-    super(props);
-
-    // How to set initial state in ES6 className syntax
-    // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-className
-    this.state = { name: this.props.name };
-  }
-
-  updateName = (name) => {
-    this.setState({ name });
-  };
-
-  render() {
-    return (
-    <section id="visual">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
-                    <p>Acidic Solution</p>
-                    <p class="animated infinite pulse">[H+] &#62 [OH-]</p>
-                    <div class="redlitmus animated bounceIn">Red litmus - stays red</div>
-                    <br />
-                    <div class="bluelitmus red animated bounceIn">Blue litmus - turns red</div>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
-                    <p>Neutral Solution</p>
-                    <p class="animated infinite pulse">[H+]=[OH-]</p>
-                    <div class="redlitmus animated bounceIn">Red litmus - stays red</div>
-                    <br />
-                    <div class="bluelitmus animated bounceIn">Blue litmus - stays blue</div>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
-                    <p>Basic Solution</p>
-                    <p class="animated infinite pulse">[H+]
-                        &#60; [OH-] </p>
-                            <div class="redlitmus blu animated bounceIn">
-                                Red litmus - turns blue
-                            </div>
-                            <br />
-                            <div class="bluelitmus animated bounceIn">
-                                Blue litmus - stays blue
-                            </div>
-                </div>
-            </div>
+const Indicators = ({}) => (
+  <section id="visual">
+    <div className="table">
+      <div className="row">
+        <div className="col-sm-1" />
+        <div className="col-sm-3">
+          <p>Acidic Solution</p>
+          <p className="animated infinite pulse">[H+] &#62 [OH-]</p>
+          <div className="redlitmus animated bounceIn">
+            Red litmus - stays red
+          </div>
+          <br />
+          <div className="bluelitmus red animated bounceIn">
+            Blue litmus - turns red
+          </div>
         </div>
-    </section>
-    );
-  }
-}
+        <div className="col-sm-1" />
+        <div className="col-sm-3">
+          <p>Neutral Solution</p>
+          <p className="animated infinite pulse">[H+]=[OH-]</p>
+          <div className="redlitmus animated bounceIn">
+            Red litmus - stays red
+          </div>
+          <br />
+          <div className="bluelitmus animated bounceIn">
+            Blue litmus - stays blue
+          </div>
+        </div>
+        <div className="col-sm-1" />
+        <div className="col-sm-3">
+          <p>Basic Solution</p>
+          <p className="animated infinite pulse">[H+] &#60; [OH-] </p>
+          <div className="redlitmus blu animated bounceIn">
+            Red litmus - turns blue
+          </div>
+          <br />
+          <div className="bluelitmus animated bounceIn">
+            Blue litmus - stays blue
+          </div>
+        </div>
+      </div>
+    </div>
+    <IndicatorsText />
+  </section>
+);
+
+export default Indicators;
