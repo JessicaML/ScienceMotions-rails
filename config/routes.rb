@@ -1,32 +1,23 @@
 Rails.application.routes.draw do
 
-  get 'physics/solarsystem'
-  get 'physics/sound'
-  get 'physics/atoms'
-  get 'physics/galaxy'
-  
-  get 'chemistry/indicators'
-  get 'chemistry/periodictable'
-  get 'chemistry/statesofmatter'
-  get 'chemistry/diffusion'
-  
-  get 'biology/dna'
-  get 'biology/classification'
-  get 'biology/eye'
-    
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   post '/lessons/indicators' => 'completed_lessons'
 
   get 'container', to: 'container#index'
-  get 'team', to: 'team#index'  
+  get 'team', to: 'team#index'
   resources :completed_lessons
-  resources :lessons
+  # resources :lessons
+  resources :lessons, only: [:show, :index]
+
   devise_for :users
   resources :users do
     resources :completed_lessons
   end
   get 'pages/chemistry'
-  
-  root to: redirect('/lessons')  
+
+  root to: redirect('/lessons')
   resources :lessons
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "/static/:index" => "static#show"
