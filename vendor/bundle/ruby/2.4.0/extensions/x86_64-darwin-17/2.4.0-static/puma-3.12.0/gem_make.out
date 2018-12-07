@@ -1,0 +1,21 @@
+current directory: /Users/jessica.leach/scimo/ScienceMotions-rails/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+/Users/jessica.leach/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20181207-15342-3vqbpi.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+current directory: /Users/jessica.leach/scimo/ScienceMotions-rails/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/jessica.leach/scimo/ScienceMotions-rails/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/jessica.leach/scimo/ScienceMotions-rails/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20181207-15342-1ob8f89/puma

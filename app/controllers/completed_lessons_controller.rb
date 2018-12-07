@@ -1,5 +1,6 @@
 class CompletedLessonsController < ApplicationController
   before_action :authenticate_user!
+
   before_action :set_completed_lesson, only: [:show, :edit, :update, :destroy]
 
   # GET /completed_lessons
@@ -29,7 +30,7 @@ end
 
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @completed_lesson.user = current_user
-    
+
     respond_to do |format|
       if @completed_lesson.save
         format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully created.' }

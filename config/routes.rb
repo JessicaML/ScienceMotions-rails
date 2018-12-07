@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  post '/lessons/indicators' => 'completed_lessons'
-
   get 'container', to: 'container#index'
   get 'team', to: 'team#index'
   resources :completed_lessons
@@ -14,8 +12,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users do
     resources :completed_lessons
+    get "sign_out", :to => "devise/sessions#destroy"
   end
-  get 'pages/chemistry'
 
   root to: redirect('/lessons')
   resources :lessons
