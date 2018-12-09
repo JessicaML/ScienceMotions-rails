@@ -12,7 +12,7 @@ class CompletedLessonsController < ApplicationController
   # GET /completed_lessons/1
   # GET /completed_lessons/1.json
   def show
-end
+  end
 
   # GET /completed_lessons/new
   def new
