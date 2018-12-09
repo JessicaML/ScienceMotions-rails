@@ -12,9 +12,6 @@ class CompletedLessonsController < ApplicationController
   # GET /completed_lessons/1
   # GET /completed_lessons/1.json
   def show
-      def conditional_div
-        puts completed_lesson.completed
-      end
   end
 
   # GET /completed_lessons/new
