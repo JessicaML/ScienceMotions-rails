@@ -11,16 +11,18 @@
 
   <tbody>
     <% @completed_lessons.each do |completed_lesson| %>
-      <tr>
-        <td><%= completed_lesson.user_id %></td>
-        <td><%= completed_lesson.lesson_id %></td>
-        <td><%= completed_lesson.completed %></td>
-        <td><%= completed_lesson.lesson&.name %></td>
-        <td><%= completed_lesson.user&.email %></td>
-        <td><%= link_to 'Show', completed_lesson %></td>
-        <!--<td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>-->
-        <td><%= link_to 'Reset', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <% if completed_lesson.completed == true %>
+        <tr>
+          <td><%= completed_lesson.user_id %></td>
+          <td><%= completed_lesson.lesson_id %></td>
+          <td><%= completed_lesson.completed %></td>
+          <td><%= completed_lesson.lesson&.name %></td>
+          <td><%= completed_lesson.user&.email %></td>
+          <td><%= link_to 'Show', completed_lesson %></td>
+          <!--<td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>-->
+          <td><%= link_to 'Reset', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
