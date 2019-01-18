@@ -54,6 +54,8 @@ class CompletedLessonsController < ApplicationController
         format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
       end
     end
+
+
   end
   # def update
   #   @completed_lesson.update(status_params)
@@ -68,8 +70,9 @@ class CompletedLessonsController < ApplicationController
   # end
 
   def toggle
-    @completed_lesson.completed = 'false'
-    @completed_lesson.save
+    @completed_lesson.update(completed_lesson_params)
+    # @completed_lesson.completed = 'false'
+    # @completed_lesson.save
   end
 
 
@@ -92,5 +95,12 @@ class CompletedLessonsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def completed_lesson_params
       params.require(:completed_lesson).permit(:lesson_id)
+
+      logger.info "Haiiiiii"
+      logger.info params
+      logger.info completed_lesson
+      puts "Haiiiiii"
+      puts params
+      puts completed_lesson
     end
 end

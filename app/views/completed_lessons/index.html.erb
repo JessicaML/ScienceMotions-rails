@@ -20,7 +20,7 @@
           <td><%= completed_lesson.lesson&.name %></td>
           <td><%= completed_lesson.user&.email %></td>
           <td><%= link_to 'Show', completed_lesson %></td>
-          <%= link_to 'Toggle', toggle_path(completed_lesson), :method => :put %>
+          <%= link_to 'Abe', toggle_path(completed_lesson), :method => :put %>
           # <td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>
           <td><%= link_to 'Reset', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
