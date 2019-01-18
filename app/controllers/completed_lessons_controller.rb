@@ -59,13 +59,18 @@ class CompletedLessonsController < ApplicationController
   def toggle
 
     @completed_lesson = current_user.completed_lessons.find(params[:id])
-    @completed_lesson.completed = 'false'
+    # @completed_lesson.completed = 'false'
+    if @completed_lesson.completed?
+      @completed_lesson.completed  = 'false'
+    else
+      @completed_lesson.completed  = 'true'
+    end
     @completed_lesson.save
     if @completed_lesson.save
       puts "success"
       # redirect_to @completed_lesson
       # completed_lessons_url
-      # redirect_back
+      # redirect_to action: "index", flash: 'Completed lesson was successfully destroyed.'
        redirect_to completed_lessons_url, notice: 'Completed lesson was successfully destroyed.'
     else
       puts "fail"
