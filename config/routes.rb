@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   # put "completed_lessons/:id/toggle" => "completed_lessons#toggle", :as => "toggle", :via => [:put]
   get "completed_lessons/:id/toggle" => "completed_lessons#toggle", :as => "toggle", :via => [:get]
+  redirect('/completed_lessons')
 
   # match "completed_lessons/:id/toggle" => "completed_lessons#toggle", :via => [:post]
 

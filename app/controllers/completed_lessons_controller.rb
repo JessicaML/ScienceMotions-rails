@@ -54,31 +54,26 @@ class CompletedLessonsController < ApplicationController
         format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
       end
     end
-
-
   end
-  # def update
-  #   @completed_lesson.update(status_params)
-  # end
-
-  # def update
-  #   @completed_lesson.toggle(:completed)
-  # end
-
-  # def toggle
-  #   @completed_lesson.toggle!(:completed)
-  # end
 
   def toggle
 
-    # find completed lesson with if 50
-    puts "jhgjhgfkygkjy"
-    # puts @completed_lesson.find(params[:id])
     @completed_lesson = current_user.completed_lessons.find(params[:id])
-
-    # @completed_lesson.update(completed_lesson_params)
     @completed_lesson.completed = 'false'
     @completed_lesson.save
+    if @completed_lesson.save
+      puts "success"
+      redirect_to @completed_lesson
+      # format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully updated.' }
+      # format.json { render :show, status: :ok, location: @completed_lesson }
+    else
+      puts "fail"
+
+      # format.html { render :edit }
+      # format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
+    end
+    # redirect route
+    # http://localhost:3000/completed_lessons/52/toggle -> completed lessons
   end
 
 
@@ -100,13 +95,6 @@ class CompletedLessonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def completed_lesson_params
-      # logger.info "Haiiiiii"
-      # logger.info params
-      puts :completed_lesson
-      # puts "Haiiiiii"
-      # puts params
-      # params.require(:completed_lesson).permit(:id)
-
       params.require(:completed_lesson).permit(:lesson_id)
     end
 end
