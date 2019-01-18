@@ -27,7 +27,6 @@ class CompletedLessonsController < ApplicationController
   # POST /completed_lessons.json
   def create
 
-
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @completed_lesson.user = current_user
     @completed_lesson.completed = true
@@ -56,6 +55,27 @@ class CompletedLessonsController < ApplicationController
       end
     end
   end
+
+  def toggle
+
+    @completed_lesson = current_user.completed_lessons.find(params[:id])
+    @completed_lesson.completed = 'false'
+    @completed_lesson.save
+    if @completed_lesson.save
+      puts "success"
+      redirect_to @completed_lesson
+      # format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully updated.' }
+      # format.json { render :show, status: :ok, location: @completed_lesson }
+    else
+      puts "fail"
+
+      # format.html { render :edit }
+      # format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
+    end
+    # redirect route
+    # http://localhost:3000/completed_lessons/52/toggle -> completed lessons
+  end
+
 
   # DELETE /completed_lessons/1
   # DELETE /completed_lessons/1.json
