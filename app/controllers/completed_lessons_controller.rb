@@ -63,9 +63,10 @@ class CompletedLessonsController < ApplicationController
     @completed_lesson.save
     if @completed_lesson.save
       puts "success"
-      redirect_to @completed_lesson
-      # format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully updated.' }
-      # format.json { render :show, status: :ok, location: @completed_lesson }
+      # redirect_to @completed_lesson
+      # completed_lessons_url
+      # redirect_back
+       redirect_to completed_lessons_url, notice: 'Completed lesson was successfully destroyed.'
     else
       puts "fail"
 
