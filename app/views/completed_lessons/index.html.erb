@@ -11,8 +11,9 @@
 
   <tbody>
     <% @completed_lessons.each do |completed_lesson| %>
-      <% if completed_lesson.completed == true %>
+      <% if completed_lesson.completed == true &&  current_user.id == completed_lesson.user_id%>
         <tr>
+        <td><%= current_user.id %></td>
           <td><%= completed_lesson.user_id %></td>
           <td><%= completed_lesson.lesson_id %></td>
           <td><%= completed_lesson.completed %></td>
