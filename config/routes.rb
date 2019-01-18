@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   get 'container', to: 'container#index'
   get 'team', to: 'team#index'
-  resources :completed_lessons
+  resources :completed_lessons do
+    put :toggle
+  end
   resources :lessons, only: [:show, :index]
 
   devise_for :users do
@@ -14,6 +16,8 @@ Rails.application.routes.draw do
   resources :users do
     resources :completed_lessons
   end
+  match "completed_lessons/:id/toggle" => "completed_lessons#toggle", :as => "toggle", :via => [:put]
+  # match "completed_lessons/:id/toggle" => "completed_lessons#toggle", :via => [:post]
 
   root to: redirect('/container')
   resources :lessons
