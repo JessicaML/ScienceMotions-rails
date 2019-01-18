@@ -105,8 +105,8 @@ class CompletedLessonsController < ApplicationController
       puts :completed_lesson
       # puts "Haiiiiii"
       # puts params
-      params.require(:completed_lesson).permit(:id)
+      # params.require(:completed_lesson).permit(:id)
 
-      # params.require(:completed_lesson).permit(:lesson_id)
+      params.require(:completed_lesson).permit(:lesson_id)
     end
 end
