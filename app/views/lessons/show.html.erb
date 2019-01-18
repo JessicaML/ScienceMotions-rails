@@ -33,6 +33,8 @@
 
 <div class="footer-info">
   <% if @completed && @completed.completed == true %>
+  <td><%= link_to 'toggle', toggle_path(@completed), :method => :put %></td>
+
   <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
   <% else %>
   <%= render :partial => 'completed_lessons/form' %>

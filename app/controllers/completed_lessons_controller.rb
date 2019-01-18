@@ -59,7 +59,6 @@ class CompletedLessonsController < ApplicationController
   def toggle
 
     @completed_lesson = current_user.completed_lessons.find(params[:id])
-    # @completed_lesson.completed = 'false'
     if @completed_lesson.completed?
       @completed_lesson.completed  = 'false'
     else
@@ -68,18 +67,11 @@ class CompletedLessonsController < ApplicationController
     @completed_lesson.save
     if @completed_lesson.save
       puts "success"
-      # redirect_to @completed_lesson
-      # completed_lessons_url
-      # redirect_to action: "index", flash: 'Completed lesson was successfully destroyed.'
        redirect_to completed_lessons_url, notice: 'Completed lesson was successfully destroyed.'
     else
       puts "fail"
-
-      # format.html { render :edit }
-      # format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
+      redirect_to completed_lessons_url, notice: 'Error: completed lesson not destroyed.'
     end
-    # redirect route
-    # http://localhost:3000/completed_lessons/52/toggle -> completed lessons
   end
 
 
