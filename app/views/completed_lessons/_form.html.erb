@@ -3,11 +3,7 @@
   <% if @completed_lesson.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(completed_lesson.errors.count, "error") %> prohibited this completed_lesson from being saved:</h2>
-
       <ul>
-      <% completed_lesson.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
       </ul>
     </div>
   <% end %>
@@ -17,7 +13,5 @@
   <%= form.hidden_field :lesson_id  %>
 
 
-  <div class="actions">
     <%= form.submit %>
-  </div>
 <% end %>

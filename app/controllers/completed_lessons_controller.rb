@@ -31,15 +31,16 @@ class CompletedLessonsController < ApplicationController
     @completed_lesson.user = current_user
     @completed_lesson.completed = true
 
-    respond_to do |format|
+    # respond_to do |format|
       if @completed_lesson.save
-        format.html { redirect_to @completed_lesson, notice: 'Completed lesson was successfully created.' }
-        format.json { render :show, status: :created, location: @completed_lesson }
+        redirect_to completed_lessons_url
+        # format.html { redirect_to lesson_url, notice: 'Completed lesson was successfully created.' }
+        # format.json { render :show, status: :created, location: @lesson }
       else
-        format.html { render :new }
-        format.json { render json: @completed_lesson.errors, status: :unprocessable_entity }
+        # format.html { render :new }
+        # format.json { render json: @lesson.errors, status: :unprocessable_entity }
       end
-    end
+    # end
   end
 
   # PATCH/PUT /completed_lessons/1
@@ -66,10 +67,8 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-      puts "success"
        redirect_to completed_lessons_url, notice: 'Completed lesson was successfully destroyed.'
     else
-      puts "fail"
       redirect_to completed_lessons_url, notice: 'Error: completed lesson not destroyed.'
     end
   end
