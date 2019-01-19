@@ -34,13 +34,12 @@
 
 
 <div class="footer-info">
-<%= current_user %>
-<%= @completed && @completed.user_id %>
-<%= @lesson.id %>
-<%= @completed && @completed.lesson_id %>
-
-<%= current_user.id %>
-<%= @completed && @completed.completed %>
+<%#  <%= current_user %>
+<%#  <%= @completed && @completed.user_id %>
+<%#  <%= @lesson.id %>
+<%#  <%= @completed && @completed.lesson_id %>
+<%#  <%= current_user.id %>
+<%#  <%= @completed && @completed.completed %>
   <% if @completed && (@completed.user_id == current_user.id) && @completed.completed == true%>
     <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
   <%= link_to 'mark as incomplete', toggle_path(@completed), :method => :put %>
