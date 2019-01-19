@@ -31,14 +31,24 @@
 
   <%= react_component(@lesson.name, prerender: false) %>
 
-<div class="footer-info">
-  <% if @completed && @completed.completed == true %>
-  <td><%= link_to 'toggle', toggle_path(@completed), :method => :put %></td>
 
-  <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
+
+<div class="footer-info">
+<%= current_user %>
+<%= @completed && @completed.user_id %>
+<%= @lesson.id %>
+<%= @completed && @completed.lesson_id %>
+
+<%= current_user.id %>
+<%= @completed && @completed.completed %>
+  <% if @completed && (@completed.user_id == current_user.id) && @completed.completed == true%>
+    <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
+  <% elsif @completed && (@completed.user_id == current_user.id) && @completed.completed == false%>
+    <%= link_to 'toggle', toggle_path(@completed), :method => :put %>
   <% else %>
-  <%= render :partial => 'completed_lessons/form' %>
+    <%= render :partial => 'completed_lessons/form' %>
   <% end %>
   <!--<%= link_to 'Edit', edit_lesson_path(@lesson) %> |-->
   <%= button_to 'Back', lessons_path, :method => "get", :class => "btn back-btn" %>
 </div>
+
