@@ -8,8 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'rails', '~> 5.1.4'
-gem "react_on_rails", "11.0.0"
+gem 'rails', '~> 5.2', '>= 5.2.2.1'
+gem 'react_on_rails', '~> 11.2', '>= 11.2.2'
 gem "webpacker", "~> 3.0"
 
 gem 'pg', '0.21.0'
@@ -49,7 +49,9 @@ gem 'libv8', '~> 6.3.0'
 
 gem "figaro"
 
-gem "taps"
+gem 'rest-client', '~> 1.8'
+
+gem 'activerecord', '~> 5.0', '>= 5.0.0.1'
 
 group :development, :test do
   gem 'sqlite3'
