@@ -3,6 +3,7 @@
   "_/assets/images/cytosine.png": "/packs/_/assets/images/cytosine-17e261677328d4848721380e2f9e35af.png",
   "_/assets/images/faces-fast.gif": "/packs/_/assets/images/faces-fast-4e9058ae8b929fe6d6b3bc0c78c4c688.gif",
   "_/assets/images/guanine.png": "/packs/_/assets/images/guanine-9bbc1d46d9fd991a08f13297f3019a15.png",
+  "_/assets/images/monika.png": "/packs/_/assets/images/monika-fab5b7cc22aa007c8f4443ddfafabbd9.png",
   "_/assets/images/thymine.png": "/packs/_/assets/images/thymine-09c8f57fdd36dc287f09b26ca702e9c1.png",
   "_/assets/images/tube-1.png": "/packs/_/assets/images/tube-1-c88961342943f5fe783513adbd3748ff.png",
   "_/assets/images/tube-2.png": "/packs/_/assets/images/tube-2-cd1b5628fc636c28f0050a7533c4310c.png",
@@ -11,10 +12,10 @@
   "application.css.map": "/packs/application-3d3613d52a7b0409c5ee2c14ba28ff39.css.map",
   "application.js": "/packs/application-d0d176290c73316c140e.js",
   "application.js.map": "/packs/application-d0d176290c73316c140e.js.map",
-  "container-bundle.js": "/packs/container-bundle-c28fcc09dd483cce4b87.js",
-  "container-bundle.js.map": "/packs/container-bundle-c28fcc09dd483cce4b87.js.map",
-  "hello_react.js": "/packs/hello_react-b65ea953825a1d240a0c.js",
-  "hello_react.js.map": "/packs/hello_react-b65ea953825a1d240a0c.js.map",
+  "container-bundle.js": "/packs/container-bundle-e3992a04ac9d7d0a0a03.js",
+  "container-bundle.js.map": "/packs/container-bundle-e3992a04ac9d7d0a0a03.js.map",
+  "hello_react.js": "/packs/hello_react-f409cc5e6bd226c0b474.js",
+  "hello_react.js.map": "/packs/hello_react-f409cc5e6bd226c0b474.js.map",
   "scimo/styles/heartfinal_animated.svg": "/packs/scimo/styles/heartfinal_animated-f9634aac13859c4a10462860bf5efc55.svg",
   "scimo/styles/organsystemfinalslow_animated.svg": "/packs/scimo/styles/organsystemfinalslow_animated-1c160c3b417459c2eccbd5aa05b60a89.svg"
 }
