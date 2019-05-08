@@ -9,7 +9,7 @@ const Team = ({}) => (
         if (img.includes(item.image)) return img;
       });
       return (
-        <div className="col-md-3 portfolio-item" key={key}>
+        <div className="col-md-4 portfolio-item" key={key}>
           <img
             className="img-responsive"
             style={{
