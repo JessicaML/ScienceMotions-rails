@@ -8,7 +8,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-on-rails": "11.0.4"
+    "react-on-rails": "11.0.4",
+    "react-skrollr": "^1.0.4"
   },
   "devDependencies": {
     "file-loader": "^2.0.0",

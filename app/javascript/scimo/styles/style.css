@@ -21,17 +21,7 @@ body {
   background-color: red;
   color: blue;
   height: 100%;
-  background: hsl(318, 68%, 68%); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    hsl(318, 68%, 68%),
-    hsl(172, 100%, 50%)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    hsl(318, 68%, 68%),
-    hsl(172, 100%, 50%)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(255, 255, 0); /* fallback for old browsers */
 }
 /*
 		body.is-loading *,
@@ -94,9 +84,16 @@ h1 {
 }
 
 @media screen and (min-width: 700px) {
-  h1 { font-size: 4em; }
-  #second h1 { font-size: 3em; line-height: 1.75em; }
-  p { font-size: 1.5em; }
+  h1 {
+    font-size: 4em;
+  }
+  #second h1 {
+    font-size: 3em;
+    line-height: 1.75em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
 
 #second {
@@ -117,16 +114,16 @@ b {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #39454A;
+  background-color: #39454a;
   background-image: none;
 }
 
 .navbar-default {
-  border-color:#39454A;
+  border-color: #39454a;
 }
 
 .navbar-default .navbar-nav > .active > a {
-  background-color: #39454A;
+  background-color: #39454a;
   background-image: none;
   color: white;
   box-shadow: none;
@@ -140,22 +137,27 @@ b {
   margin: 1vh auto;
 }
 
-#test, #test h1 {
+#test,
+#test h1 {
   background-color: hsl(318, 68%, 68%);
   color: white;
   padding: 2%;
   margin-top: 4%;
-
 }
 
 #footer {
-  background-color: #39454A;
+  background-color: #39454a;
   padding: 2%;
   margin-bottom: 5%;
 }
 
-
-#footer p, .subscription {
+#footer p,
+.subscription {
   color: white;
   margin: 2%;
+}
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
 }
