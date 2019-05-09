@@ -1,8 +1,7 @@
-import PropTypes from "prop-types";
 import React from "react";
 import IndicatorsText from "./text/IndicatorsText";
 
-const Indicators = ({}) => (
+const Indicators = () => (
   <section id="visual">
     <div className="table">
       <div className="row">
