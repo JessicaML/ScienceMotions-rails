@@ -8,6 +8,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-mailchimp-form": "^1.0.1",
     "react-on-rails": "11.0.4",
     "react-skrollr": "^1.0.4"
   },
