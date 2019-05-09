@@ -17,17 +17,17 @@ const FeaturedLessons = () => (
         </div>
         <div className="row">
           <div className="col-md-4 portfolio-item sound">
-            <a href="lessons/36">
+            <a href="lessons/1">
               <h1>Indicators</h1>
             </a>
           </div>
           <div className="col-md-4 portfolio-item diffusion">
-            <a href="lessons/34">
+            <a href="lessons/3">
               <h1>Cells, Tissues, Organs</h1>
             </a>
           </div>
           <div className="col-md-4 portfolio-item dna">
-            <a href="lessons/37">
+            <a href="lessons/2">
               <h1>DNA</h1>
             </a>
           </div>
