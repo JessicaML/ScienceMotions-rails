@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
 export default class FeaturedLessons extends React.Component {
   static propTypes = {
-    name: PropTypes.string.isRequired, // this is passed from the Rails view
+    name: PropTypes.string.isRequired // this is passed from the Rails view
   };
 
   /**
@@ -17,97 +17,45 @@ export default class FeaturedLessons extends React.Component {
     this.state = { name: this.props.name };
   }
 
-  updateName = (name) => {
+  updateName = name => {
     this.setState({ name });
   };
 
   render() {
     return (
-        <section id="second" className="container">
+      <section id="second" className="container">
         <div className="center-text">
-            <div className="row">
+          <div className="row">
             <div className="col-lg-12">
-                <div className="header">
-                    <br/>
-                    <p><a href="navigation.html">See all lessons here</a></p>
-                    <h1>Featured Lessons</h1>
-                    <br/>
-                </div>
-            </div>
-            </div>
-            <div className="row">
-                <div className="col-md-4 portfolio-item">
-                    <a href="physics/atoms">
-                        <h1>Atoms</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item dna">
-                    <a href="biology/dna">
-                        <h1>DNA</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item eye">
-                    <a href="biology/eye">
-                        <h1>Eye</h1>
-                    </a>
-                </div>
+              <div className="header">
+                <br />
+                <p>
+                  <a href="navigation.html">See all lessons here</a>
+                </p>
+                <h1>Featured Lessons</h1>
+                <br />
+              </div>
             </div>
             <div className="row">
-                <div className="col-md-4 portfolio-item sound">
-                    <a href="physics/sound">
-                        <h1>Sound waves</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item diffusion">
-                    <a href="chemistry/diffusion">
-                        <h1>Diffusion</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item className">
-                    <a href="biology/classification">
-                        <h1>Galaxy</h1>
-                    </a>
-                </div>
+              <div className="col-md-4 portfolio-item sound">
+                <a href="lessons/36">
+                  <h1>Indicators</h1>
+                </a>
+              </div>
+              <div className="col-md-4 portfolio-item diffusion">
+                <a href="lessons/34">
+                  <h1>Cells, Tissues, Organs</h1>
+                </a>
+              </div>
+              <div className="col-md-4 portfolio-item dna">
+                <a href="lessons/37">
+                  <h1>DNA</h1>
+                </a>
+              </div>
             </div>
-            <div className="row">
-                <div className="col-md-4 portfolio-item sound">
-                    <a href="chemistry/indicators">
-                        <h1>Indicators</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item diffusion">
-                    <a href="chemistry/statesofmatter">
-                        <h1>Solar System</h1>
-                    </a>
-                </div>
-                <div className="col-md-4 portfolio-item className">
-                    <a href="chemistry/statesofmatter">
-                        <h1>States of matter</h1>
-                    </a>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-6 portfolio-item sound">
-                    <a href="chemistry/periodictable">
-                        <h1>Groups And Periods</h1>
-                    </a>
-                </div>
-                <div className="col-md-6 portfolio-item sound">
-                    <a href="chemistry/periodictable">
-                        <h1>Classification</h1>
-                    </a>
-                </div>
-
-            </div>
-            <div className="row">
-                <br/>
-            </div>
+          </div>
         </div>
-    </section>
-
-
-
-
+      </section>
     );
   }
 }
