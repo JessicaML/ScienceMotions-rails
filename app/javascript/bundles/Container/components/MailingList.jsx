@@ -36,7 +36,7 @@ export default class FeaturedLessons extends React.Component {
                             <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required />
 
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" />
                             </div>
                         </div>
                         <div id="notification_container"></div>
