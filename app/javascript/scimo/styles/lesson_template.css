@@ -34,7 +34,9 @@ summary {
   * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
   */
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -48,9 +50,6 @@ audio:not([controls]) {
 [hidden] {
   display: none;
 }
-
-
-
 
 section#visual {
   width: 100%;
@@ -87,10 +86,10 @@ section#visual h1 {
 
 section.text {
   position: relative;
-  background-color: #39454A;
+  background-color: #39454a;
   color: #fff;
   width: 100%;
-  padding:0;
+  padding: 0;
   margin-bottom: 3%;
   /*    height: 1100px;
   */
@@ -98,7 +97,7 @@ section.text {
 
 section.text h1 {
   font-size: 1em;
-  font-family: 'Fugaz One', monospace, sans-serif;
+  font-family: "Fugaz One", monospace, sans-serif;
   font-style: oblique;
   font-weight: 500;
   text-align: left;
@@ -109,30 +108,36 @@ section.text h1 {
 
 section.text h2 {
   font-size: 1.5em;
-  font-family: 'Fugaz One', monospace, sans-serif;
+  font-family: "Fugaz One", monospace, sans-serif;
   font-style: oblique;
   font-weight: 900;
   text-align: justify;
   line-height: 0;
   margin: 0;
-  letter-spacing: 0.5vw;     
+  letter-spacing: 0.5vw;
   padding: 3%;
 }
 
 section.text p {
   font-size: 1em;
-  font-family: 'Space mono', sans-serif;
+  font-family: "Space mono", sans-serif;
   text-align: left;
   margin: 0;
   padding: 3%;
   line-height: normal;
 }
 
-
 @media screen and (min-width: 700px) {
-  section.text h1 { font-size: 4em; }
-  section.text h2 { font-size: 3em; line-height: 1.75em; }
-  section.text p { font-size: 1.5em; }
+  section.text h1 {
+    font-size: 4em;
+  }
+  section.text h2 {
+    font-size: 3em;
+    line-height: 1.75em;
+  }
+  section.text p {
+    font-size: 1.5em;
+  }
 }
 
 section.text a {
@@ -186,7 +191,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 12%; /* so that it doesn't animate outside the button on hover*/ 
+  width: 12%; /* so that it doesn't animate outside the button on hover*/
 }
 
 .style_prevu_kit {
@@ -274,8 +279,7 @@ a:hover {
   display: block;
 }
 
-
-.footer-info  {
+.footer-info {
   color: black;
   padding: 2%;
   margin-bottom: 3%;
@@ -288,6 +292,36 @@ a:hover {
 }
 
 .back-btn {
+  color: white;
+  font-family: "Courier New", serif;
+}
+
+/* {
   color:white;
   font-family: 'Courier New', serif;
+} */
+
+.mark-complete {
+  color: #428bca;
+  background: transparent;
+}
+
+.mark-complete:hover {
+  color: #5fc3e4;
+  text-decoration: none;
+}
+
+.mark-complete:active {
+  outline: 0;
+  box-shadow: none;
+}
+
+.lesson-complete {
+  color: #428bca;
+  font-size: 0.6em;
+  background-color: rgb(255, 103, 150);
+  border-color: grey;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
 }

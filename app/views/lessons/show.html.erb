@@ -41,11 +41,11 @@
 <%#  <%= current_user.id %>
 <%#  <%= @completed && @completed.completed %>
   <% if @completed && (@completed.user_id == current_user.id) && @completed.completed == true%>
-    <p>Lesson Complete <%= l(@completed.created_at, format: :short) %> </p>
-  <%= link_to 'mark as incomplete', toggle_path(@completed), :method => :put %>
+  <p><span class='lesson-complete'>Lesson Complete <%= l(@completed.created_at, format: :short) %> </span></p>
+    <%= link_to 'mark incomplete', toggle_path(@completed), :method => :put %>
 
   <% elsif @completed && (@completed.user_id == current_user.id) && @completed.completed == false%>
-    <%= link_to 'mark as complete', toggle_path(@completed), :method => :put %>
+   <%= link_to 'mark complete', toggle_path(@completed), :method => :put %>
   <% else %>
     <%= render :partial => 'completed_lessons/form' %>
   <% end %>

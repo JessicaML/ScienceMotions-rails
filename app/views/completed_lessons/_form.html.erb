@@ -12,6 +12,7 @@
   <%= form.hidden_field :completed  %>
   <%= form.hidden_field :lesson_id  %>
 
-
-    <%= form.submit %>
+  <div>
+    <%= form.submit 'mark complete', class: 'btn mark-complete' %>
+  </div>
 <% end %>

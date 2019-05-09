@@ -67,9 +67,9 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to completed_lessons_url, notice: 'Completed lesson was successfully destroyed.'
+       redirect_to lessons_url
     else
-      redirect_to completed_lessons_url, notice: 'Error: completed lesson not destroyed.'
+      redirect_to lessons_url, notice: 'Error: please try again later.'
     end
   end
 

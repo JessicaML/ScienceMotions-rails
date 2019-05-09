@@ -1,0 +1,1182 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900);@import url(https://fonts.googleapis.com/css?family=Fugaz+One);@import url(https://fonts.googleapis.com/css?family=Bitter);@import url(https://fonts.googleapis.com/css?family=Space+Mono);@import url(https://fonts.googleapis.com/css?family=Fugaz+One);@import url(https://fonts.googleapis.com/css?family=Space+Mono);@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900);@import url(https://fonts.googleapis.com/css?family=Fugaz+One);@import url(https://fonts.googleapis.com/css?family=Space+Mono);/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  padding-top: 100px;
+}
+
+table,
+td,
+th {
+  vertical-align: middle;
+  border: none;
+}
+
+th {
+  border-bottom: 1px solid #ddd;
+}
+
+@charset 'UTF-8';
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+html {
+  height: 100%;
+}
+body {
+  background-color: red;
+  color: blue;
+  height: 100%;
+  background: rgb(255, 255, 0); /* fallback for old browsers */
+}
+/*
+		body.is-loading *,
+		body.is-resizing *
+		{
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-o-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+		}*/
+body,
+input,
+textarea,
+select {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.75em;
+  color: #39454b;
+  letter-spacing: 0.5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: inherit;
+  font-family: "Fugaz One";
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 2em;
+}
+#second h1 {
+  font-size: 1.5em;
+  color: #3b3b3b;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4em;
+  }
+  #second h1 {
+    font-size: 3em;
+    line-height: 1.75em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+#second {
+  background: yellow;
+}
+h2 {
+  font-size: 2.25em;
+  letter-spacing: -2px;
+  line-height: 1.25em;
+}
+strong,
+b {
+  font-weight: 900;
+  color: inherit;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #39454a;
+  background-image: none;
+}
+.navbar-default {
+  border-color: #39454a;
+}
+.navbar-default .navbar-nav > .active > a {
+  background-color: #39454a;
+  background-image: none;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.dropdown {
+  margin: 1vh auto;
+}
+#test,
+#test h1 {
+  background-color: hsl(318, 68%, 68%);
+  color: white;
+  padding: 2%;
+  margin-top: 4%;
+}
+#footer {
+  background-color: #39454a;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+#footer p,
+.subscription {
+  color: white;
+  margin: 2%;
+}
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#visual {
+  /*    font-size: 1em;
+*/
+  font-family: "Space mono", sans-serif;
+  width: 80%;
+  text-align: justify;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+#visual div {
+  padding: 0 0 0 5px;
+}
+.redlitmus {
+  width: 250px;
+  height: 75px;
+  background-color: #db6066;
+  -webkit-box-shadow: 10px 10px 5px grey;
+          box-shadow: 10px 10px 5px grey;
+}
+.bluelitmus {
+  width: 250px;
+  height: 75px;
+  background-color: #608fdb;
+  -webkit-box-shadow: 10px 10px 5px grey;
+          box-shadow: 10px 10px 5px grey;
+}
+.red:hover {
+  -webkit-animation-name: turnred;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+}
+@-webkit-keyframes turnred {
+  from {
+    background-color: #608fdb;
+  }
+  to {
+    background-color: #db6066;
+  }
+}
+.blu:hover {
+  -webkit-animation-name: turnblue;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+}
+@-webkit-keyframes turnblue {
+  from {
+    background-color: #db6066;
+  }
+  to {
+    background-color: #608fdb;
+  }
+}
+.dna-img {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+}
+
+.dna-img.t {
+  top: 0;
+  left: 0;
+}
+
+.dna-img.c {
+  top: 0;
+  right: 0;
+}
+
+.dna-img.a {
+  bottom: 0;
+  left: 0;
+}
+
+.dna-img.g {
+  bottom: 0;
+  right: 0;
+}
+
+section#top {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  text-align: center;
+}
+.animation {
+  position: relative;
+  padding-bottom: 35%;
+  height: 0;
+  width: 35%;
+  margin: 5% auto 10% auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.cell-clone {
+  position: absolute;
+  width: 8%;
+  padding-bottom: 7%;
+  height: 0;
+  border-radius: 50%;
+  border: 0.1vw solid #A49480;
+  background: blue;
+  background: radial-gradient(rgba(115, 164, 238, 0.45882), rgba(7, 66, 153, 0.42353)), radial-gradient(transparent, rgba(0, 0, 0, .4));
+}
+
+.cell {
+  position: absolute;
+  background: transparent;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.cell::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 0.4vw solid #A49480;
+  -webkit-animation: fadeIn 7s forwards;
+          animation: fadeIn 7s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  background: radial-gradient(rgba(115, 164, 238, 0.45882), rgba(7, 66, 153, 0.42353)), radial-gradient(transparent, rgba(0, 0, 0, .4));
+  height: 60%;
+  width: 60%;
+  opacity: 0;
+  z-index: -1;
+  margin: 0 auto;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 0;
+  }
+}
+
+.organelle-container {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  -webkit-animation: scale 7s forwards;
+          animation: scale 7s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  margin: 0 auto;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes scale {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(.1);
+            transform: scale(.1);
+    opacity: 0;
+  }
+}
+
+.nucleus {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.2vw solid rgb(219, 199, 199);
+  background: rgb(187, 100, 114);
+  width: 30%;
+  height: 30%;
+  left: 29%;
+  top: 20%;
+}
+
+.nucleulus {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.1vw solid rgba(255, 0, 0, .2);
+  background: rgb(116, 61, 61);
+  width: 25%;
+  height: 25%;
+  left: 61%;
+  top: 26%;
+}
+
+.mitochondria {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 100px;
+  border: 0.2vw double white;
+  background-color: orange;
+  width: 10%;
+  height: 20%;
+}
+
+.mitochondria svg {
+  position: absolute;
+  margin: 0 auto;
+  left: -5%;
+}
+
+#mito1 {
+  top: 30%;
+  left: 50%;
+  -webkit-animation: float1 15s linear infinite alternate;
+          animation: float1 15s linear infinite alternate;
+}
+
+@-webkit-keyframes float1 {
+  from {
+    -webkit-transform: rotate(60deg) translateX(5%) rotate(60deg);
+            transform: rotate(60deg) translateX(5%) rotate(60deg);
+  }
+  to {
+    -webkit-transform: rotate(300deg) translateX(5%) rotate(360deg);
+            transform: rotate(300deg) translateX(5%) rotate(360deg);
+  }
+}
+
+@keyframes float1 {
+  from {
+    -webkit-transform: rotate(60deg) translateX(5%) rotate(60deg);
+            transform: rotate(60deg) translateX(5%) rotate(60deg);
+  }
+  to {
+    -webkit-transform: rotate(300deg) translateX(5%) rotate(360deg);
+            transform: rotate(300deg) translateX(5%) rotate(360deg);
+  }
+}
+
+#mito2 {
+  top: 50%;
+  left: 70%;
+  -webkit-animation: float2 10s linear infinite alternate;
+          animation: float2 10s linear infinite alternate;
+}
+
+@-webkit-keyframes float2 {
+  from {
+    -webkit-transform: rotate(60deg) translateX(1%) rotate(40deg);
+            transform: rotate(60deg) translateX(1%) rotate(40deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(90%) rotate(-360deg);
+            transform: rotate(360deg) translateX(90%) rotate(-360deg);
+  }
+}
+
+@keyframes float2 {
+  from {
+    -webkit-transform: rotate(60deg) translateX(1%) rotate(40deg);
+            transform: rotate(60deg) translateX(1%) rotate(40deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(90%) rotate(-360deg);
+            transform: rotate(360deg) translateX(90%) rotate(-360deg);
+  }
+}
+
+#mito3 {
+  top: 20%;
+  left: 20%;
+  animation: float3 28s linear infinite alternate-reverse;
+}
+
+@-webkit-keyframes float3 {
+  from {
+    -webkit-transform: rotate(30deg) rotate(20deg);
+            transform: rotate(30deg) rotate(20deg);
+  }
+  to {
+    -webkit-transform: rotate(50deg) rotate(100deg);
+            transform: rotate(50deg) rotate(100deg);
+  }
+}
+
+@keyframes float3 {
+  from {
+    -webkit-transform: rotate(30deg) rotate(20deg);
+            transform: rotate(30deg) rotate(20deg);
+  }
+  to {
+    -webkit-transform: rotate(50deg) rotate(100deg);
+            transform: rotate(50deg) rotate(100deg);
+  }
+}
+
+.mitochondria, .lysosome-box, .cytoskeleton-green svg, .cytoskeleton-blue svg, .cytoskeleton-blue2 svg, .nucleus, .golgi {
+  z-index: 2;
+}
+
+.lysosome-box {
+  position: absolute;
+  margin: 0 auto;
+  background: none;
+  width: 20%;
+  padding-bottom: 20%;
+  height: 0;
+  top: 70%;
+  left: 35%;
+  animation: float3 15s linear infinite alternate-reverse;
+}
+
+#box1 {
+  top: 50%;
+  left: 15%;
+  animation: float2 18s linear infinite alternate-reverse;
+}
+
+#box2 {
+  top: 40%;
+  left: 50%;
+  -webkit-animation: float1 17s linear infinite alternate;
+          animation: float1 17s linear infinite alternate;
+}
+
+.lysosome {
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.2vw solid rgba(255, 0, 0, .2);
+  background: pink;
+  width: 50%;
+  height: 50%;
+}
+
+.lysosome::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 35%;
+  width: 5%;
+  height: 5%;
+  background: red;
+  -webkit-box-shadow: 1vh 0.5vw 0 0 red, 0.5vh 0.2vw 0 0 red, 1vh 0.3vw 0 0 red, 0.5vh 0.5vw 0 0 red, 1vh -0.5vw 0 0 red;
+          box-shadow: 1vh 0.5vw 0 0 red, 0.5vh 0.2vw 0 0 red, 1vh 0.3vw 0 0 red, 0.5vh 0.5vw 0 0 red, 1vh -0.5vw 0 0 red;
+  left: 35%;
+}
+
+.cytoskeleton-green svg {
+  position: absolute;
+  margin: 0 auto;
+  -webkit-animation: float1 27s linear infinite normal;
+          animation: float1 27s linear infinite normal;
+  top: -20%;
+  left: 5%;
+}
+
+.cytogreen1 {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.cytogreen3 {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.cytoskeleton-blue svg {
+  -webkit-animation: float3 35s linear infinite normal;
+          animation: float3 35s linear infinite normal;
+  position: absolute;
+  margin: 0 auto;
+  top: 25%;
+  left: -20%;
+  right: 0;
+  bottom: 0;
+}
+
+.cytoskeleton-blue2 svg {
+  -webkit-animation: float2 35s linear infinite normal;
+          animation: float2 35s linear infinite normal;
+  position: absolute;
+  margin: 0 auto;
+  top: 30%;
+  left: -10%;
+  -webkit-transform: scale(.6);
+          transform: scale(.6);
+}
+
+.golgi {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(100, 100, 100);
+  width: 1%;
+  height: 1%;
+  -webkit-box-shadow: 4vh 8vw 0 0 rgb(100, 100, 100), 8vh 4vw 0 0 rgb(100, 100, 100), 6vh 5vw 0 0 rgb(100, 100, 100), 5vh 7vw 0 0 rgb(100, 100, 100), 1vh 9vw 0 0 rgb(100, 100, 100), 2vh 7vw 0 0 rgb(100, 100, 100), 7vh 5vw 0 0 rgb(100, 100, 100), 6vh 3vw 0 0 rgb(100, 100, 100), 3vh 1vw 0 0 rgb(100, 100, 100);
+          box-shadow: 4vh 8vw 0 0 rgb(100, 100, 100), 8vh 4vw 0 0 rgb(100, 100, 100), 6vh 5vw 0 0 rgb(100, 100, 100), 5vh 7vw 0 0 rgb(100, 100, 100), 1vh 9vw 0 0 rgb(100, 100, 100), 2vh 7vw 0 0 rgb(100, 100, 100), 7vh 5vw 0 0 rgb(100, 100, 100), 6vh 3vw 0 0 rgb(100, 100, 100), 3vh 1vw 0 0 rgb(100, 100, 100);
+  -webkit-animation: golgiFloat 22s linear infinite alternate;
+          animation: golgiFloat 22s linear infinite alternate;
+}
+
+@-webkit-keyframes golgiFloat {
+  from {
+    -webkit-transform: rotate(5deg) translateX(5vw) rotate(5deg);
+            transform: rotate(5deg) translateX(5vw) rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg) translateX(20vw) rotate(15deg);
+            transform: rotate(20deg) translateX(20vw) rotate(15deg);
+  }
+}
+
+@keyframes golgiFloat {
+  from {
+    -webkit-transform: rotate(5deg) translateX(5vw) rotate(5deg);
+            transform: rotate(5deg) translateX(5vw) rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(20deg) translateX(20vw) rotate(15deg);
+            transform: rotate(20deg) translateX(20vw) rotate(15deg);
+  }
+}
+
+.tissue-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 30% auto;
+  width: 75%;
+  height: 40%;
+  background: transparent;
+  -webkit-animation: tissue-scale 7s forwards;
+          animation: tissue-scale 7s forwards;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+@-webkit-keyframes tissue-scale {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  90% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 15%;
+    top: 0;
+    -webkit-transform: scale(0.03, 0.03);
+            transform: scale(0.03, 0.03);
+    -moz-transform: scale(0.03, 0.03);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+  }
+}
+
+@keyframes tissue-scale {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  90% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 15%;
+    top: 0;
+    -webkit-transform: scale(0.03, 0.03);
+            transform: scale(0.03, 0.03);
+    -moz-transform: scale(0.03, 0.03);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+  }
+}
+
+.organ-system {
+  background: url(/packs/scimo/styles/organsystemfinalslow_animated-1c160c3b417459c2eccbd5aa05b60a89.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.organ {
+  background: url(/packs/scimo/styles/heartfinal_animated-f9634aac13859c4a10462860bf5efc55.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Lesson Template css starts here */
+
+/* ==========================================================================
+     HTML5 display definitions
+     ========================================================================== */
+
+/**
+   * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+   */
+
+@charset 'UTF-8';
+
+body {
+     margin: 0;
+     padding: 0;
+   }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+     display: block;
+   }
+
+/**
+       * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+       */
+
+section#text {
+     position: relative;
+     background-color: #39454A;
+     color: #fff;
+     width: 100%;
+     padding:0;
+     /*height: 1100px;*/
+   }
+
+section#text h1 {
+     font-size: 5vw;
+     font-family: 'Fugaz One', monospace, sans-serif;
+     font-style: oblique;
+     font-weight: 900;
+     text-align: justify;
+     margin: 0;
+     padding: 5%;
+     color: #ffffff;
+   }
+
+section#text h2 {
+     font-size: 4vw;
+     font-family: 'Fugaz One', monospace, sans-serif;
+     font-style: oblique;
+     font-weight: 900;
+     text-align: justify;
+     line-height: 0;
+     margin: 0;
+     letter-spacing: 0.5vw;     
+     padding: 3%;
+   }
+
+section#text p {
+     font-size: 2.5vw;
+     font-family: 'Space mono', sans-serif;
+     text-align: justify;
+     margin: 0;
+     padding: 3%;
+     line-height: normal;
+   }
+
+section#text a {
+     text-decoration: none;
+   }
+
+section#text a:hover {
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+   }
+
+nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+   }
+
+nav li {
+     float: left;
+     font-family: "Courier New";
+     font-size: 14pt;
+     font-style: oblique;
+     font-weight: 900;
+   }
+
+nav li a {
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+
+a {
+     margin-left: 15px;
+     margin-right: 30px;
+   }
+
+.fond {
+     /*padding-top: 45px;
+     margin-top: 50px;*/
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+   }
+
+.button-flip button {
+     color: #fff;
+     font-family: 'Courier New', serif;
+     font-style: oblique;
+     font-weight: 900;
+     background-color: #00ff00;
+   }
+
+.button-flip:hover button {
+     color: #fff;
+     font-family: 'Courier New', serif;
+     font-style: oblique;
+     font-weight: 900;
+     background-color: #E55D87;
+     animation: bounce 0.75s infinite;
+     -webkit-animation: bounce 0.75s infinite;
+   }
+
+@-webkit-keyframes bounce {
+     0% {
+       -webkit-transform: scale(1, 1) translate(0px, 0px);
+               transform: scale(1, 1) translate(0px, 0px);
+     }
+     30% {
+       -webkit-transform: scale(1, 0.8) translate(0px, 3px);
+               transform: scale(1, 0.8) translate(0px, 3px);
+     }
+     75% {
+       -webkit-transform: scale(1, 1.1) translate(0px, -7px);
+               transform: scale(1, 1.1) translate(0px, -7px);
+     }
+     100% {
+       -webkit-transform: scale(1, 1) translate(0px, 0px);
+               transform: scale(1, 1) translate(0px, 0px);
+     }
+   }
+
+@keyframes bounce {
+     0% {
+       -webkit-transform: scale(1, 1) translate(0px, 0px);
+               transform: scale(1, 1) translate(0px, 0px);
+     }
+     30% {
+       -webkit-transform: scale(1, 0.8) translate(0px, 3px);
+               transform: scale(1, 0.8) translate(0px, 3px);
+     }
+     75% {
+       -webkit-transform: scale(1, 1.1) translate(0px, -7px);
+               transform: scale(1, 1.1) translate(0px, -7px);
+     }
+     100% {
+       -webkit-transform: scale(1, 1) translate(0px, 0px);
+               transform: scale(1, 1) translate(0px, 0px);
+     }
+   }
+
+/* Lesson Template ends here */
+
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+@charset 'UTF-8';
+body {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+  */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+section#visual {
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+  padding-top: 75px;
+}
+section#visual button {
+  overflow: hidden;
+  margin-left: 15px;
+}
+section#visual p {
+  padding-top: 1.5em;
+  font-size: 1.5em;
+  font-family: "Space mono", sans-serif;
+  width: 80%;
+  text-align: justify;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+section#visual h1 {
+  font-family: "Fugaz One", monospace, sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 3em;
+  color: #444444;
+  width: 80%;
+  text-align: justify;
+}
+section.text {
+  position: relative;
+  background-color: #39454a;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 3%;
+  /*    height: 1100px;
+  */
+}
+section.text h1 {
+  font-size: 1em;
+  font-family: "Fugaz One", monospace, sans-serif;
+  font-style: oblique;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  padding: 5%;
+  color: #ffffff;
+}
+section.text h2 {
+  font-size: 1.5em;
+  font-family: "Fugaz One", monospace, sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+  text-align: justify;
+  line-height: 0;
+  margin: 0;
+  letter-spacing: 0.5vw;
+  padding: 3%;
+}
+section.text p {
+  font-size: 1em;
+  font-family: "Space mono", sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 3%;
+  line-height: normal;
+}
+@media screen and (min-width: 700px) {
+  section.text h1 {
+    font-size: 4em;
+  }
+  section.text h2 {
+    font-size: 3em;
+    line-height: 1.75em;
+  }
+  section.text p {
+    font-size: 1.5em;
+  }
+}
+section.text a {
+  text-decoration: none;
+}
+section.text a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+  font-family: "Courier New";
+  font-size: 14pt;
+  font-style: oblique;
+  font-weight: 900;
+}
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #5fc3e4;
+  text-decoration: none;
+}
+.center-text p {
+  text-align: center;
+}
+.fond {
+  /*padding-top: 45px;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12%; /* so that it doesn't animate outside the button on hover*/
+}
+.style_prevu_kit {
+  color: #00ff00;
+  display: inline-block;
+  border: 0;
+  font-size: 85pt;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  /*width:196px;
+      height:210px;*/
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.style_prevu_kit:hover {
+  /*box-shadow: 0px 0px 150px #000000;*/
+  color: #5fc3e4;
+  text-decoration: none;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+}
+.button-flip {
+  color: #fff;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
+  }
+  30% {
+    -webkit-transform: scale(1, 0.8) translate(0px, 3px);
+            transform: scale(1, 0.8) translate(0px, 3px);
+  }
+  75% {
+    -webkit-transform: scale(1, 1.1) translate(0px, -7px);
+            transform: scale(1, 1.1) translate(0px, -7px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0px, 0px);
+            transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+.button-flip:hover button {
+  z-index: 55;
+  color: #fff;
+  font-family: "Courier New", serif;
+  font-style: oblique;
+  font-weight: 900;
+  background-color: #e55d87;
+  -webkit-animation: bounce 0.75s infinite;
+  animation: bounce 0.75s infinite;
+}
+.button-flip button {
+  color: #fff;
+  font-family: "Courier New", serif;
+  font-style: oblique;
+  font-weight: 900;
+  background-color: #00ff00;
+  margin-top: 4%;
+}
+.subscription {
+  display: block;
+}
+.footer-info {
+  color: black;
+  padding: 2%;
+  margin-bottom: 3%;
+  font-size: 1em;
+}
+.footer-info .back-btn {
+  background-color: #00ff00;
+  margin-top: 2%;
+}
+.back-btn {
+  color: white;
+  font-family: "Courier New", serif;
+}
+/* {
+  color:white;
+  font-family: 'Courier New', serif;
+} */
+.mark-complete {
+  background: transparent;
+}
+
+/*# sourceMappingURL=application-1e3be55d99c82f3407c04722f09e787f.css.map*/
