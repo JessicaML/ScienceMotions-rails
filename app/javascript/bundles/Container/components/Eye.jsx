@@ -3,7 +3,7 @@ import EyeText from "./text/EyeText";
 import Pupil from "images/pupil.png";
 import Cornea from "images/cornea.png";
 import Fovea from "images/fovea.png";
-import Cillary_muscle from "images/cillary_muscle.png";
+import Cillary_muscle from "images/cillarymuscle.png";
 import Lens from "images/lens.png";
 import Conjunctiva from "images/conjunctiva.png";
 

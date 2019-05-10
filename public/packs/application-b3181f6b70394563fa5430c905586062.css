@@ -270,6 +270,203 @@ section#top {
   overflow: hidden;
   text-align: center;
 }
+section#top #pupil {
+  position: absolute;
+  bottom: -10px;
+  left: -32px;
+  width: 100%;
+  /* background: transparent url(images/cornea.png) no-repeat center center; */
+
+  height: 100%;
+}
+
+section#top #cornea {
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 100%;
+  /* background: transparent url(images/cornea.png) no-repeat center center; */
+  height: 100%;
+}
+
+section#top #fovea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(images/fovea.png) no-repeat center center; */
+  height: 100%;
+}
+
+section#top #cillary_muscle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(images/cillarymuscle.png) no-repeat center center; */
+  height: 100%;
+}
+
+section#top #lens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(images/lens.png) no-repeat center center; */
+  height: 100%;
+}
+
+section#top #conjunctiva {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(images/conjunctiva.png) no-repeat center center; */
+  height: 100%;
+}
+
+section#top #cornea_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#top #pupil_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#top #fovea_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#top #cillary_muscle_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#top #lens_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#top #conjunctiva_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(../eye2.png) no-repeat center center; */
+  height: 100%;
+}
+
+.box2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: transparent url(../eye2S.png) no-repeat center center; */
+  height: 100%;
+}
+
+.facepiece {
+  position: absolute;
+}
+
+.gurprit {
+  width: 20%;
+  pointer-events: none;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 120px;
+}
+
+.gurprit svg {
+  width: 100%;
+}
+
+.facepiece {
+  webkit-animation: squiggly-anim 0.3s infinite;
+  -webkit-animation: squiggly-anim 0.3s infinite;
+          animation: squiggly-anim 0.3s infinite;
+}
+
+@-webkit-keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+    filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+    filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+    filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+    filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+    filter: url("#squiggly-4");
+  }
+}
+
+@keyframes squiggly-anim {
+  0% {
+    -webkit-filter: url("#squiggly-0");
+    filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+    filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+    filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+    filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+    filter: url("#squiggly-4");
+  }
+}
 .animation {
   position: relative;
   padding-bottom: 35%;
@@ -1017,7 +1214,6 @@ section#visual h1 {
   font-style: oblique;
   font-weight: 900;
   font-size: 3em;
-  color: #444444;
   width: 80%;
   text-align: justify;
 }
@@ -1240,4 +1436,4 @@ a:hover {
   padding: 5px 10px 5px 10px;
 }
 
-/*# sourceMappingURL=application-54ab84a421755bfa39ad3a1c8c8da292.css.map*/
+/*# sourceMappingURL=application-b3181f6b70394563fa5430c905586062.css.map*/

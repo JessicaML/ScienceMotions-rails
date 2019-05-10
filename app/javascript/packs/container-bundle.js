@@ -5,17 +5,16 @@ import Team from "../bundles/Container/components/Team";
 import Indicators from "../bundles/Container/components/Indicators";
 import DNA from "../bundles/Container/components/DNA";
 import Eye from "../bundles/Container/components/Eye";
-
+import Atoms from "../bundles/Container/components/Atoms";
 import CellsTissuesOrgans from "../bundles/Container/components/CellsTissuesOrgans";
-import CellsTissuesOrgansText from "../bundles/Container/components/text/CellsTissuesOrgansText";
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
   Container,
-  Indicators,
   Team,
+  Indicators,
   DNA,
-  CellsTissuesOrgans,
-  CellsTissuesOrgansText,
-  Eye
+  Eye,
+  Atoms,
+  CellsTissuesOrgans
 });

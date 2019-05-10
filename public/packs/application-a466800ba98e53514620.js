@@ -60,12 +60,154 @@
 /******/ 	__webpack_require__.p = "/packs/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 74);
+/******/ 	return __webpack_require__(__webpack_require__.s = 72);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 13:
+/***/ 72:
+/*!*********************************************!*\
+  !*** ./app/javascript/packs/application.js ***!
+  \*********************************************/
+/*! no exports provided */
+/*! all exports used */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_scimo__ = __webpack_require__(/*! scimo */ 73);
+/* eslint no-console:0 */
+// This file is automatically compiled by Webpack, along with any other files
+// present in this directory. You're encouraged to place your actual application logic in
+// a relevant structure within app/javascript and only use these pack files to reference
+// that code so it'll be compiled.
+//
+// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
+// layout file, like app/views/layouts/application.html.erb
+
+
+
+/***/ }),
+
+/***/ 73:
+/*!***************************************!*\
+  !*** ./app/javascript/scimo/index.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_application_css__ = __webpack_require__(/*! ./styles/application.css */ 74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_application_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_application_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_style_css__ = __webpack_require__(/*! ./styles/style.css */ 75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css__ = __webpack_require__(/*! ./styles/Indicators.css */ 76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__ = __webpack_require__(/*! ./styles/DNA.css */ 77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_css__ = __webpack_require__(/*! ./styles/Eye.css */ 78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_Eye_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_Atoms_css__ = __webpack_require__(/*! ./styles/Atoms.css */ 79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_Atoms_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_Atoms_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__styles_CellsTissuesOrgans_css__ = __webpack_require__(/*! ./styles/CellsTissuesOrgans.css */ 80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__styles_CellsTissuesOrgans_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__styles_CellsTissuesOrgans_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_lesson_template_css__ = __webpack_require__(/*! ./styles/lesson_template.css */ 81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_lesson_template_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__styles_lesson_template_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_DNA_js__ = __webpack_require__(/*! ./scripts/DNA.js */ 82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_DNA_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__scripts_DNA_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_CellsTissuesOrgans_js__ = __webpack_require__(/*! ./scripts/CellsTissuesOrgans.js */ 83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__scripts_CellsTissuesOrgans_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__scripts_CellsTissuesOrgans_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__scripts_Eye_js__ = __webpack_require__(/*! ./scripts/Eye.js */ 84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__scripts_Eye_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__scripts_Eye_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__scripts_Atoms_js__ = __webpack_require__(/*! ./scripts/Atoms.js */ 85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__scripts_Atoms_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__scripts_Atoms_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__scripts_smoothscroll_js__ = __webpack_require__(/*! ./scripts/smoothscroll.js */ 86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__scripts_smoothscroll_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__scripts_smoothscroll_js__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ 74:
+/*!*****************************************************!*\
+  !*** ./app/javascript/scimo/styles/application.css ***!
+  \*****************************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 75:
+/*!***********************************************!*\
+  !*** ./app/javascript/scimo/styles/style.css ***!
+  \***********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 76:
+/*!****************************************************!*\
+  !*** ./app/javascript/scimo/styles/Indicators.css ***!
+  \****************************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 77:
+/*!*********************************************!*\
+  !*** ./app/javascript/scimo/styles/DNA.css ***!
+  \*********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 78:
+/*!*********************************************!*\
+  !*** ./app/javascript/scimo/styles/Eye.css ***!
+  \*********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 79:
+/*!***********************************************!*\
+  !*** ./app/javascript/scimo/styles/Atoms.css ***!
+  \***********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 8:
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
@@ -10676,112 +10818,6 @@ return jQuery;
 
 /***/ }),
 
-/***/ 74:
-/*!*********************************************!*\
-  !*** ./app/javascript/packs/application.js ***!
-  \*********************************************/
-/*! no exports provided */
-/*! all exports used */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_scimo__ = __webpack_require__(/*! scimo */ 75);
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
-
-
-
-/***/ }),
-
-/***/ 75:
-/*!***************************************!*\
-  !*** ./app/javascript/scimo/index.js ***!
-  \***************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_application_css__ = __webpack_require__(/*! ./styles/application.css */ 76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_application_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_application_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_style_css__ = __webpack_require__(/*! ./styles/style.css */ 77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css__ = __webpack_require__(/*! ./styles/Indicators.css */ 78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__ = __webpack_require__(/*! ./styles/DNA.css */ 79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_CellsTissuesOrgans_css__ = __webpack_require__(/*! ./styles/CellsTissuesOrgans.css */ 80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_CellsTissuesOrgans_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_CellsTissuesOrgans_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_lesson_template_css__ = __webpack_require__(/*! ./styles/lesson_template.css */ 81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_lesson_template_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_lesson_template_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_DNA_js__ = __webpack_require__(/*! ./scripts/DNA.js */ 82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_DNA_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__scripts_DNA_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_CellsTissuesOrgans_js__ = __webpack_require__(/*! ./scripts/CellsTissuesOrgans.js */ 83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_CellsTissuesOrgans_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__scripts_CellsTissuesOrgans_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_smoothscroll_js__ = __webpack_require__(/*! ./scripts/smoothscroll.js */ 84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scripts_smoothscroll_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__scripts_smoothscroll_js__);
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ 76:
-/*!*****************************************************!*\
-  !*** ./app/javascript/scimo/styles/application.css ***!
-  \*****************************************************/
-/*! dynamic exports provided */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 77:
-/*!***********************************************!*\
-  !*** ./app/javascript/scimo/styles/style.css ***!
-  \***********************************************/
-/*! dynamic exports provided */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 78:
-/*!****************************************************!*\
-  !*** ./app/javascript/scimo/styles/Indicators.css ***!
-  \****************************************************/
-/*! dynamic exports provided */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 79:
-/*!*********************************************!*\
-  !*** ./app/javascript/scimo/styles/DNA.css ***!
-  \*********************************************/
-/*! dynamic exports provided */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 80:
 /*!************************************************************!*\
   !*** ./app/javascript/scimo/styles/CellsTissuesOrgans.css ***!
@@ -10824,7 +10860,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   $("img.g").css("width", event.pageX);
   $("img.g").css("height", $("#top").height() - event.pageY);
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 13)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 8)))
 
 /***/ }),
 
@@ -10871,11 +10907,108 @@ $(document).ready(function () {
         });
     });
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 13)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 8)))
 
 /***/ }),
 
 /***/ 84:
+/*!*********************************************!*\
+  !*** ./app/javascript/scimo/scripts/Eye.js ***!
+  \*********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).scroll(function () {
+  currentoffset = $(this).scrollTop();
+  if (currentoffset < 601) {
+    thisoffset = currentoffset - 50 * (currentoffset / 600);
+    scaleclouds = currentoffset / 700 + 1;
+    $("#cillary_muscle").css({
+      top: thisoffset,
+      transform: "scale(" + scaleclouds + ")"
+    });
+
+    thisoffset = currentoffset - 100 * (currentoffset / 300);
+    thisrotation = -200 * (currentoffset / 1000);
+    $("#lens").css({
+      top: thisoffset,
+      transform: "rotate(" + thisrotation + "deg)"
+    });
+
+    thisoffset = currentoffset - 1000 * (currentoffset / 500);
+    $("#cornea").css({ top: thisoffset });
+
+    thisoffset = currentoffset - 100 * (currentoffset / 300);
+    thisrotation = 250 * (currentoffset / 1000);
+    $("#fovea").css({
+      top: thisoffset,
+      transform: "rotate(" + thisrotation + "deg)"
+    });
+
+    thisoffset = currentoffset - 100 * (currentoffset / 700);
+    scalebit3 = currentoffset / 300 + 1;
+
+    $("#conjunctiva").css({
+      top: thisoffset,
+      transform: "scale(" + scalebit3 + ")"
+    });
+  }
+  $("#top").hover(function () {
+    $("#conjunctiva_label").fadeTo("fast", 0.99);
+    $("#cornea_label").fadeTo("slow", 0.99);
+    $("#lens_label").fadeTo("slow", 0.99);
+    $("#fovea_label").fadeTo("fast", 0.99);
+    $("#cillary_muscle_label").fadeTo("slow", 0.99);
+    $("#pupil_label").fadeTo("fast", 0.99);
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 8)))
+
+/***/ }),
+
+/***/ 85:
+/*!***********************************************!*\
+  !*** ./app/javascript/scimo/scripts/Atoms.js ***!
+  \***********************************************/
+/*! dynamic exports provided */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function ($) {
+  var box = $(".box");
+  var boxCenter = [box.offset().left + box.width() / 2, box.offset().top + box.height() / 2];
+
+  $(document).mousemove(function (e) {
+    var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
+
+    box.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+    box.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+    box.css({ transform: "rotate(" + angle + "deg)" });
+  });
+
+  var box2 = $(".box2");
+  var boxCenter2 = [box2.offset().left + box2.width() / 2, box.offset().top + box2.height() / 2];
+
+  $(document).mousemove(function (e) {
+    var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
+
+    box2.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+    box2.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+    box2.css({ transform: "rotate(" + angle + "deg)" });
+  });
+
+  var card = $(".gurprit");
+
+  $(document).on("mousemove", function (e) {
+    var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;
+    var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
+    card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 8)))
+
+/***/ }),
+
+/***/ 86:
 /*!******************************************************!*\
   !*** ./app/javascript/scimo/scripts/smoothscroll.js ***!
   \******************************************************/
@@ -10895,9 +11028,9 @@ $(document).ready(function () {
 
   smoothscroll();
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 13)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 8)))
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-411f7ac3f69ddaebe38c.js.map
+//# sourceMappingURL=application-a466800ba98e53514620.js.map
