@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/packs/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 84);
+/******/ 	return __webpack_require__(__webpack_require__.s = 87);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -129,8 +129,8 @@ $exports.store = store;
 var global = __webpack_require__(/*! ./_global */ 4);
 var core = __webpack_require__(/*! ./_core */ 1);
 var ctx = __webpack_require__(/*! ./_ctx */ 12);
-var hide = __webpack_require__(/*! ./_hide */ 8);
-var has = __webpack_require__(/*! ./_has */ 16);
+var hide = __webpack_require__(/*! ./_hide */ 9);
+var has = __webpack_require__(/*! ./_has */ 15);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -216,12 +216,12 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(/*! ./_an-object */ 15);
-var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ 88);
-var toPrimitive = __webpack_require__(/*! ./_to-primitive */ 89);
+var anObject = __webpack_require__(/*! ./_an-object */ 14);
+var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ 91);
+var toPrimitive = __webpack_require__(/*! ./_to-primitive */ 92);
 var dP = Object.defineProperty;
 
-exports.f = __webpack_require__(/*! ./_descriptors */ 10) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+exports.f = __webpack_require__(/*! ./_descriptors */ 11) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -358,7 +358,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 18);
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 17);
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -452,133 +452,6 @@ module.exports = checkPropTypes;
 
 /***/ }),
 /* 8 */
-/*!*******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_hide.js ***!
-  \*******************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(/*! ./_object-dp */ 5);
-var createDesc = __webpack_require__(/*! ./_property-desc */ 26);
-module.exports = __webpack_require__(/*! ./_descriptors */ 10) ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-/* 9 */
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_is-object.js ***!
-  \************************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
-};
-
-
-/***/ }),
-/* 10 */
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_descriptors.js ***!
-  \**************************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(/*! ./_fails */ 13)(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 11 */
-/*!******************************************!*\
-  !*** ./node_modules/prop-types/index.js ***!
-  \******************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ 21);
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 46)(ReactIs.isElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = require('./factoryWithThrowingShims')();
-}
-
-
-/***/ }),
-/* 12 */
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_ctx.js ***!
-  \******************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-// optional / simple context binding
-var aFunction = __webpack_require__(/*! ./_a-function */ 48);
-module.exports = function (fn, that, length) {
-  aFunction(fn);
-  if (that === undefined) return fn;
-  switch (length) {
-    case 1: return function (a) {
-      return fn.call(that, a);
-    };
-    case 2: return function (a, b) {
-      return fn.call(that, a, b);
-    };
-    case 3: return function (a, b, c) {
-      return fn.call(that, a, b, c);
-    };
-  }
-  return function (/* ...args */) {
-    return fn.apply(that, arguments);
-  };
-};
-
-
-/***/ }),
-/* 13 */
-/*!********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_fails.js ***!
-  \********************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-
-/***/ }),
-/* 14 */
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
@@ -11188,7 +11061,104 @@ return jQuery;
 
 
 /***/ }),
-/* 15 */
+/* 9 */
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_hide.js ***!
+  \*******************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__(/*! ./_object-dp */ 5);
+var createDesc = __webpack_require__(/*! ./_property-desc */ 26);
+module.exports = __webpack_require__(/*! ./_descriptors */ 11) ? function (object, key, value) {
+  return dP.f(object, key, createDesc(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+/* 10 */
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_is-object.js ***!
+  \************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+/* 11 */
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_descriptors.js ***!
+  \**************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !__webpack_require__(/*! ./_fails */ 13)(function () {
+  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+/* 12 */
+/*!******************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_ctx.js ***!
+  \******************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// optional / simple context binding
+var aFunction = __webpack_require__(/*! ./_a-function */ 48);
+module.exports = function (fn, that, length) {
+  aFunction(fn);
+  if (that === undefined) return fn;
+  switch (length) {
+    case 1: return function (a) {
+      return fn.call(that, a);
+    };
+    case 2: return function (a, b) {
+      return fn.call(that, a, b);
+    };
+    case 3: return function (a, b, c) {
+      return fn.call(that, a, b, c);
+    };
+  }
+  return function (/* ...args */) {
+    return fn.apply(that, arguments);
+  };
+};
+
+
+/***/ }),
+/* 13 */
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_fails.js ***!
+  \********************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (e) {
+    return true;
+  }
+};
+
+
+/***/ }),
+/* 14 */
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_an-object.js ***!
   \************************************************************/
@@ -11196,7 +11166,7 @@ return jQuery;
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
 module.exports = function (it) {
   if (!isObject(it)) throw TypeError(it + ' is not an object!');
   return it;
@@ -11204,7 +11174,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_has.js ***!
   \******************************************************/
@@ -11219,7 +11189,7 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-object.js ***!
   \************************************************************/
@@ -11235,7 +11205,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
@@ -11259,7 +11229,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
@@ -11291,7 +11261,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iterators.js ***!
   \************************************************************/
@@ -11300,6 +11270,36 @@ module.exports = g;
 /***/ (function(module, exports) {
 
 module.exports = {};
+
+
+/***/ }),
+/* 20 */
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ 21);
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 46)(ReactIs.isElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
+}
 
 
 /***/ }),
@@ -11347,7 +11347,7 @@ module.exports = function (it) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(/*! core-js/library/fn/json/stringify */ 96), __esModule: true };
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/json/stringify */ 99), __esModule: true };
 
 /***/ }),
 /* 24 */
@@ -11411,7 +11411,7 @@ if (false) {
 var ctx = __webpack_require__(/*! ./_ctx */ 12);
 var call = __webpack_require__(/*! ./_iter-call */ 60);
 var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ 61);
-var anObject = __webpack_require__(/*! ./_an-object */ 15);
+var anObject = __webpack_require__(/*! ./_an-object */ 14);
 var toLength = __webpack_require__(/*! ./_to-length */ 22);
 var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ 62);
 var BREAK = {};
@@ -11464,7 +11464,7 @@ module.exports = function (bitmap, value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(/*! ./_object-keys-internal */ 91);
+var $keys = __webpack_require__(/*! ./_object-keys-internal */ 94);
 var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ 52);
 
 module.exports = Object.keys || function keys(O) {
@@ -11596,7 +11596,7 @@ module.exports = function (key) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/keys */ 97), __esModule: true };
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/keys */ 100), __esModule: true };
 
 /***/ }),
 /* 36 */
@@ -35530,7 +35530,7 @@ exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 19)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 18)))
 
 /***/ }),
 /* 40 */
@@ -36062,12 +36062,12 @@ function createReactElement(_ref) {
 
 var LIBRARY = __webpack_require__(/*! ./_library */ 51);
 var $export = __webpack_require__(/*! ./_export */ 3);
-var redefine = __webpack_require__(/*! ./_redefine */ 104);
-var hide = __webpack_require__(/*! ./_hide */ 8);
-var Iterators = __webpack_require__(/*! ./_iterators */ 20);
-var $iterCreate = __webpack_require__(/*! ./_iter-create */ 105);
+var redefine = __webpack_require__(/*! ./_redefine */ 107);
+var hide = __webpack_require__(/*! ./_hide */ 9);
+var Iterators = __webpack_require__(/*! ./_iterators */ 19);
+var $iterCreate = __webpack_require__(/*! ./_iter-create */ 108);
 var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ 44);
-var getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ 108);
+var getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ 111);
 var ITERATOR = __webpack_require__(/*! ./_wks */ 2)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
@@ -36140,7 +36140,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(/*! ./_object-dp */ 5).f;
-var has = __webpack_require__(/*! ./_has */ 16);
+var has = __webpack_require__(/*! ./_has */ 15);
 var TAG = __webpack_require__(/*! ./_wks */ 2)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -36409,7 +36409,7 @@ exports.isSuspense = isSuspense;
 var ReactIs = __webpack_require__(/*! react-is */ 21);
 var assign = __webpack_require__(/*! object-assign */ 6);
 
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 18);
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ 17);
 var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ 7);
 
 var has = Function.call.bind(Object.prototype.hasOwnProperty);
@@ -36999,7 +36999,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/assign */ 86), __esModule: true };
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/assign */ 89), __esModule: true };
 
 /***/ }),
 /* 48 */
@@ -37025,7 +37025,7 @@ module.exports = function (it) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
 var document = __webpack_require__(/*! ./_global */ 4).document;
 // typeof document.createElement is 'object' in old IE
 var is = isObject(document) && isObject(document.createElement);
@@ -37208,7 +37208,7 @@ exports.default = handleError;
 if (false) {
   module.exports = require('./cjs/react-dom-server.browser.production.min.js');
 } else {
-  module.exports = __webpack_require__(/*! ./cjs/react-dom-server.browser.development.js */ 101);
+  module.exports = __webpack_require__(/*! ./cjs/react-dom-server.browser.development.js */ 104);
 }
 
 
@@ -37240,7 +37240,7 @@ var _map = __webpack_require__(/*! babel-runtime/core-js/map */ 64);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _generatorFunction = __webpack_require__(/*! ./generatorFunction */ 132);
+var _generatorFunction = __webpack_require__(/*! ./generatorFunction */ 135);
 
 var _generatorFunction2 = _interopRequireDefault(_generatorFunction);
 
@@ -37309,7 +37309,7 @@ exports.default = {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(/*! core-js/library/fn/array/from */ 102), __esModule: true };
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/array/from */ 105), __esModule: true };
 
 /***/ }),
 /* 58 */
@@ -37322,7 +37322,7 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/array/f
 
 "use strict";
 
-var $at = __webpack_require__(/*! ./_string-at */ 103)(true);
+var $at = __webpack_require__(/*! ./_string-at */ 106)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
 __webpack_require__(/*! ./_iter-define */ 43)(String, 'String', function (iterated) {
@@ -37350,8 +37350,8 @@ __webpack_require__(/*! ./_iter-define */ 43)(String, 'String', function (iterat
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(/*! ./_an-object */ 15);
-var dPs = __webpack_require__(/*! ./_object-dps */ 106);
+var anObject = __webpack_require__(/*! ./_an-object */ 14);
+var dPs = __webpack_require__(/*! ./_object-dps */ 109);
 var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ 52);
 var IE_PROTO = __webpack_require__(/*! ./_shared-key */ 33)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -37366,7 +37366,7 @@ var createDict = function () {
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(/*! ./_html */ 107).appendChild(iframe);
+  __webpack_require__(/*! ./_html */ 110).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -37402,7 +37402,7 @@ module.exports = Object.create || function create(O, Properties) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
-var anObject = __webpack_require__(/*! ./_an-object */ 15);
+var anObject = __webpack_require__(/*! ./_an-object */ 14);
 module.exports = function (iterator, fn, value, entries) {
   try {
     return entries ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -37425,7 +37425,7 @@ module.exports = function (iterator, fn, value, entries) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(/*! ./_iterators */ 20);
+var Iterators = __webpack_require__(/*! ./_iterators */ 19);
 var ITERATOR = __webpack_require__(/*! ./_wks */ 2)('iterator');
 var ArrayProto = Array.prototype;
 
@@ -37445,7 +37445,7 @@ module.exports = function (it) {
 
 var classof = __webpack_require__(/*! ./_classof */ 63);
 var ITERATOR = __webpack_require__(/*! ./_wks */ 2)('iterator');
-var Iterators = __webpack_require__(/*! ./_iterators */ 20);
+var Iterators = __webpack_require__(/*! ./_iterators */ 19);
 module.exports = __webpack_require__(/*! ./_core */ 1).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
@@ -37496,7 +37496,7 @@ module.exports = function (it) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(/*! core-js/library/fn/map */ 112), __esModule: true };
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/map */ 115), __esModule: true };
 
 /***/ }),
 /* 65 */
@@ -37521,7 +37521,7 @@ module.exports = function (done, value) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hide = __webpack_require__(/*! ./_hide */ 8);
+var hide = __webpack_require__(/*! ./_hide */ 9);
 module.exports = function (target, src, safe) {
   for (var key in src) {
     if (safe && target[key]) target[key] = src[key];
@@ -37556,8 +37556,8 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var META = __webpack_require__(/*! ./_uid */ 34)('meta');
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
-var has = __webpack_require__(/*! ./_has */ 16);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
+var has = __webpack_require__(/*! ./_has */ 15);
 var setDesc = __webpack_require__(/*! ./_object-dp */ 5).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
@@ -37619,7 +37619,7 @@ var meta = module.exports = {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
 module.exports = function (it, TYPE) {
   if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');
   return it;
@@ -37649,11 +37649,11 @@ var _stringify2 = _interopRequireDefault(_stringify);
 exports.consoleReplay = consoleReplay;
 exports.default = buildConsoleReplay;
 
-var _RenderUtils = __webpack_require__(/*! ./RenderUtils */ 135);
+var _RenderUtils = __webpack_require__(/*! ./RenderUtils */ 138);
 
 var _RenderUtils2 = _interopRequireDefault(_RenderUtils);
 
-var _scriptSanitizedVal = __webpack_require__(/*! ./scriptSanitizedVal */ 136);
+var _scriptSanitizedVal = __webpack_require__(/*! ./scriptSanitizedVal */ 139);
 
 var _scriptSanitizedVal2 = _interopRequireDefault(_scriptSanitizedVal);
 
@@ -37703,7 +37703,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ParallaxProvider = __webpack_require__(/*! ./ParallaxProvider */ 145);
+var _ParallaxProvider = __webpack_require__(/*! ./ParallaxProvider */ 148);
 
 Object.defineProperty(exports, 'ParallaxProvider', {
   enumerable: true,
@@ -37712,7 +37712,7 @@ Object.defineProperty(exports, 'ParallaxProvider', {
   }
 });
 
-var _Parallax = __webpack_require__(/*! ./Parallax */ 147);
+var _Parallax = __webpack_require__(/*! ./Parallax */ 150);
 
 Object.defineProperty(exports, 'Parallax', {
   enumerable: true,
@@ -37724,108 +37724,7 @@ Object.defineProperty(exports, 'Parallax', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 72 */
-/*!*************************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/TextCellsTissuesOrgans.jsx ***!
-  \*************************************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(/*! prop-types */ 11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(/*! react */ 0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
-
-
-
-var TextCellsTissuesOrgans = function TextCellsTissuesOrgans(_ref) {
-    _objectDestructuringEmpty(_ref);
-
-    return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        "div",
-        { className: "container" },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            "div",
-            { className: "row" },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                "div",
-                { className: "col-xs-12", id: "link-text" },
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "section",
-                    { className: "text" },
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h1",
-                        { className: "content" },
-                        "Levels of Organization"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Cells, Tissues and Organs"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h2",
-                        { style: { color: "#0ff004" } },
-                        "Organelles"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Cell structure that is specialised to carry out a particular function or job"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h2",
-                        { style: { color: "#6ad2ff" } },
-                        "Cells"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Basic structural and functional unit of a living organism"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h2",
-                        { style: { color: "#ff6796" } },
-                        "Tissues"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Group of cells with similar structures, working together to perform a shared function"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h2",
-                        { style: { color: "#ffff00" } },
-                        "Organ"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Structure made up of a group of tissues, working together to perform specific functions"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "h2",
-                        { style: { color: "#ED462F" } },
-                        "Organ System"
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "p",
-                        null,
-                        "Group of organs with related functions, working together to perform body functions"
-                    )
-                )
-            )
-        )
-    );
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (TextCellsTissuesOrgans);
-
-/***/ }),
+/* 72 */,
 /* 73 */,
 /* 74 */,
 /* 75 */,
@@ -37837,7 +37736,10 @@ var TextCellsTissuesOrgans = function TextCellsTissuesOrgans(_ref) {
 /* 81 */,
 /* 82 */,
 /* 83 */,
-/* 84 */
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */
 /*!**************************************************!*\
   !*** ./app/javascript/packs/container-bundle.js ***!
   \**************************************************/
@@ -37847,14 +37749,16 @@ var TextCellsTissuesOrgans = function TextCellsTissuesOrgans(_ref) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_on_rails__ = __webpack_require__(/*! react-on-rails */ 85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_on_rails__ = __webpack_require__(/*! react-on-rails */ 88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_on_rails__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__ = __webpack_require__(/*! ../bundles/Container/components/Container */ 139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__ = __webpack_require__(/*! ../bundles/Container/components/Team */ 151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/Indicators */ 171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__ = __webpack_require__(/*! ../bundles/Container/components/DNA */ 173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_text_TextCellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/text/TextCellsTissuesOrgans */ 72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__ = __webpack_require__(/*! ../bundles/Container/components/Container */ 142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__ = __webpack_require__(/*! ../bundles/Container/components/Team */ 154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/Indicators */ 174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__ = __webpack_require__(/*! ../bundles/Container/components/DNA */ 176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__ = __webpack_require__(/*! ../bundles/Container/components/Eye */ 182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/Atoms */ 190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 192);
+
 
 
 
@@ -37867,15 +37771,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // This is how react_on_rails can see the HelloWorld in the browser.
 __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default.a.register({
   Container: __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__["a" /* default */],
-  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__["a" /* default */],
   Team: __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__["a" /* default */],
+  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__["a" /* default */],
   DNA: __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__["a" /* default */],
-  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_CellsTissuesOrgans__["a" /* default */],
-  TextCellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_text_TextCellsTissuesOrgans__["a" /* default */]
+  Eye: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__["a" /* default */],
+  Atoms: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__["a" /* default */],
+  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__["a" /* default */]
 });
 
 /***/ }),
-/* 85 */
+/* 88 */
 /*!**********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/ReactOnRails.js ***!
   \**********************************************************************/
@@ -37906,7 +37811,7 @@ var _reactDom = __webpack_require__(/*! react-dom */ 24);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _clientStartup = __webpack_require__(/*! ./clientStartup */ 100);
+var _clientStartup = __webpack_require__(/*! ./clientStartup */ 103);
 
 var ClientStartup = _interopRequireWildcard(_clientStartup);
 
@@ -37918,11 +37823,11 @@ var _ComponentRegistry = __webpack_require__(/*! ./ComponentRegistry */ 56);
 
 var _ComponentRegistry2 = _interopRequireDefault(_ComponentRegistry);
 
-var _StoreRegistry = __webpack_require__(/*! ./StoreRegistry */ 133);
+var _StoreRegistry = __webpack_require__(/*! ./StoreRegistry */ 136);
 
 var _StoreRegistry2 = _interopRequireDefault(_StoreRegistry);
 
-var _serverRenderReactComponent2 = __webpack_require__(/*! ./serverRenderReactComponent */ 134);
+var _serverRenderReactComponent2 = __webpack_require__(/*! ./serverRenderReactComponent */ 137);
 
 var _serverRenderReactComponent3 = _interopRequireDefault(_serverRenderReactComponent2);
 
@@ -37934,11 +37839,11 @@ var _createReactElement = __webpack_require__(/*! ./createReactElement */ 42);
 
 var _createReactElement2 = _interopRequireDefault(_createReactElement);
 
-var _Authenticity = __webpack_require__(/*! ./Authenticity */ 137);
+var _Authenticity = __webpack_require__(/*! ./Authenticity */ 140);
 
 var _Authenticity2 = _interopRequireDefault(_Authenticity);
 
-var _context = __webpack_require__(/*! ./context */ 138);
+var _context = __webpack_require__(/*! ./context */ 141);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -38185,7 +38090,7 @@ ClientStartup.clientStartup(ctx);
 exports.default = ctx.ReactOnRails;
 
 /***/ }),
-/* 86 */
+/* 89 */
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
   \**********************************************************/
@@ -38193,12 +38098,12 @@ exports.default = ctx.ReactOnRails;
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ../../modules/es6.object.assign */ 87);
+__webpack_require__(/*! ../../modules/es6.object.assign */ 90);
 module.exports = __webpack_require__(/*! ../../modules/_core */ 1).Object.assign;
 
 
 /***/ }),
-/* 87 */
+/* 90 */
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
   \*******************************************************************/
@@ -38209,11 +38114,11 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ 1).Object.assign
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(/*! ./_export */ 3);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ 90) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ 93) });
 
 
 /***/ }),
-/* 88 */
+/* 91 */
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_ie8-dom-define.js ***!
   \*****************************************************************/
@@ -38221,13 +38126,13 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_ob
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(/*! ./_descriptors */ 10) && !__webpack_require__(/*! ./_fails */ 13)(function () {
+module.exports = !__webpack_require__(/*! ./_descriptors */ 11) && !__webpack_require__(/*! ./_fails */ 13)(function () {
   return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ 49)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 89 */
+/* 92 */
 /*!***************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-primitive.js ***!
   \***************************************************************/
@@ -38236,7 +38141,7 @@ module.exports = !__webpack_require__(/*! ./_descriptors */ 10) && !__webpack_re
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
 // instead of the ES6 spec version, we didn't implement @@toPrimitive case
 // and the second argument - flag - preferred type is a string
 module.exports = function (it, S) {
@@ -38250,7 +38155,7 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 90 */
+/* 93 */
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-assign.js ***!
   \****************************************************************/
@@ -38262,9 +38167,9 @@ module.exports = function (it, S) {
 
 // 19.1.2.1 Object.assign(target, source, ...)
 var getKeys = __webpack_require__(/*! ./_object-keys */ 27);
-var gOPS = __webpack_require__(/*! ./_object-gops */ 94);
-var pIE = __webpack_require__(/*! ./_object-pie */ 95);
-var toObject = __webpack_require__(/*! ./_to-object */ 17);
+var gOPS = __webpack_require__(/*! ./_object-gops */ 97);
+var pIE = __webpack_require__(/*! ./_object-pie */ 98);
+var toObject = __webpack_require__(/*! ./_to-object */ 16);
 var IObject = __webpack_require__(/*! ./_iobject */ 29);
 var $assign = Object.assign;
 
@@ -38296,7 +38201,7 @@ module.exports = !$assign || __webpack_require__(/*! ./_fails */ 13)(function ()
 
 
 /***/ }),
-/* 91 */
+/* 94 */
 /*!***********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-keys-internal.js ***!
   \***********************************************************************/
@@ -38304,9 +38209,9 @@ module.exports = !$assign || __webpack_require__(/*! ./_fails */ 13)(function ()
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(/*! ./_has */ 16);
+var has = __webpack_require__(/*! ./_has */ 15);
 var toIObject = __webpack_require__(/*! ./_to-iobject */ 28);
-var arrayIndexOf = __webpack_require__(/*! ./_array-includes */ 92)(false);
+var arrayIndexOf = __webpack_require__(/*! ./_array-includes */ 95)(false);
 var IE_PROTO = __webpack_require__(/*! ./_shared-key */ 33)('IE_PROTO');
 
 module.exports = function (object, names) {
@@ -38324,7 +38229,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 92 */
+/* 95 */
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-includes.js ***!
   \*****************************************************************/
@@ -38336,7 +38241,7 @@ module.exports = function (object, names) {
 // true  -> Array#includes
 var toIObject = __webpack_require__(/*! ./_to-iobject */ 28);
 var toLength = __webpack_require__(/*! ./_to-length */ 22);
-var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ 93);
+var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ 96);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -38358,7 +38263,7 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 93 */
+/* 96 */
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-absolute-index.js ***!
   \********************************************************************/
@@ -38376,7 +38281,7 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 94 */
+/* 97 */
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gops.js ***!
   \**************************************************************/
@@ -38388,7 +38293,7 @@ exports.f = Object.getOwnPropertySymbols;
 
 
 /***/ }),
-/* 95 */
+/* 98 */
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-pie.js ***!
   \*************************************************************/
@@ -38400,7 +38305,7 @@ exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
-/* 96 */
+/* 99 */
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/json/stringify.js ***!
   \***********************************************************/
@@ -38416,7 +38321,7 @@ module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 
 
 /***/ }),
-/* 97 */
+/* 100 */
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/keys.js ***!
   \********************************************************/
@@ -38424,12 +38329,12 @@ module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ../../modules/es6.object.keys */ 98);
+__webpack_require__(/*! ../../modules/es6.object.keys */ 101);
 module.exports = __webpack_require__(/*! ../../modules/_core */ 1).Object.keys;
 
 
 /***/ }),
-/* 98 */
+/* 101 */
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
   \*****************************************************************/
@@ -38438,10 +38343,10 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ 1).Object.keys;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(/*! ./_to-object */ 17);
+var toObject = __webpack_require__(/*! ./_to-object */ 16);
 var $keys = __webpack_require__(/*! ./_object-keys */ 27);
 
-__webpack_require__(/*! ./_object-sap */ 99)('keys', function () {
+__webpack_require__(/*! ./_object-sap */ 102)('keys', function () {
   return function keys(it) {
     return $keys(toObject(it));
   };
@@ -38449,7 +38354,7 @@ __webpack_require__(/*! ./_object-sap */ 99)('keys', function () {
 
 
 /***/ }),
-/* 99 */
+/* 102 */
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-sap.js ***!
   \*************************************************************/
@@ -38470,7 +38375,7 @@ module.exports = function (KEY, exec) {
 
 
 /***/ }),
-/* 100 */
+/* 103 */
 /*!***********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/clientStartup.js ***!
   \***********************************************************************/
@@ -38720,10 +38625,10 @@ function clientStartup(context) {
     }
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 19)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 18)))
 
 /***/ }),
-/* 101 */
+/* 104 */
 /*!****************************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom-server.browser.development.js ***!
   \****************************************************************************/
@@ -42431,7 +42336,7 @@ module.exports = server_browser;
 
 
 /***/ }),
-/* 102 */
+/* 105 */
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/from.js ***!
   \*******************************************************/
@@ -42440,12 +42345,12 @@ module.exports = server_browser;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ../../modules/es6.string.iterator */ 58);
-__webpack_require__(/*! ../../modules/es6.array.from */ 109);
+__webpack_require__(/*! ../../modules/es6.array.from */ 112);
 module.exports = __webpack_require__(/*! ../../modules/_core */ 1).Array.from;
 
 
 /***/ }),
-/* 103 */
+/* 106 */
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_string-at.js ***!
   \************************************************************/
@@ -42473,7 +42378,7 @@ module.exports = function (TO_STRING) {
 
 
 /***/ }),
-/* 104 */
+/* 107 */
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_redefine.js ***!
   \***********************************************************/
@@ -42481,11 +42386,11 @@ module.exports = function (TO_STRING) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./_hide */ 8);
+module.exports = __webpack_require__(/*! ./_hide */ 9);
 
 
 /***/ }),
-/* 105 */
+/* 108 */
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-create.js ***!
   \**************************************************************/
@@ -42501,7 +42406,7 @@ var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ 44);
 var IteratorPrototype = {};
 
 // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(/*! ./_hide */ 8)(IteratorPrototype, __webpack_require__(/*! ./_wks */ 2)('iterator'), function () { return this; });
+__webpack_require__(/*! ./_hide */ 9)(IteratorPrototype, __webpack_require__(/*! ./_wks */ 2)('iterator'), function () { return this; });
 
 module.exports = function (Constructor, NAME, next) {
   Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
@@ -42510,7 +42415,7 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 106 */
+/* 109 */
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-dps.js ***!
   \*************************************************************/
@@ -42519,10 +42424,10 @@ module.exports = function (Constructor, NAME, next) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(/*! ./_object-dp */ 5);
-var anObject = __webpack_require__(/*! ./_an-object */ 15);
+var anObject = __webpack_require__(/*! ./_an-object */ 14);
 var getKeys = __webpack_require__(/*! ./_object-keys */ 27);
 
-module.exports = __webpack_require__(/*! ./_descriptors */ 10) ? Object.defineProperties : function defineProperties(O, Properties) {
+module.exports = __webpack_require__(/*! ./_descriptors */ 11) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var keys = getKeys(Properties);
   var length = keys.length;
@@ -42534,7 +42439,7 @@ module.exports = __webpack_require__(/*! ./_descriptors */ 10) ? Object.definePr
 
 
 /***/ }),
-/* 107 */
+/* 110 */
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_html.js ***!
   \*******************************************************/
@@ -42547,7 +42452,7 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 108 */
+/* 111 */
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gpo.js ***!
   \*************************************************************/
@@ -42556,8 +42461,8 @@ module.exports = document && document.documentElement;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(/*! ./_has */ 16);
-var toObject = __webpack_require__(/*! ./_to-object */ 17);
+var has = __webpack_require__(/*! ./_has */ 15);
+var toObject = __webpack_require__(/*! ./_to-object */ 16);
 var IE_PROTO = __webpack_require__(/*! ./_shared-key */ 33)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
@@ -42571,7 +42476,7 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 109 */
+/* 112 */
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
   \****************************************************************/
@@ -42583,14 +42488,14 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 var ctx = __webpack_require__(/*! ./_ctx */ 12);
 var $export = __webpack_require__(/*! ./_export */ 3);
-var toObject = __webpack_require__(/*! ./_to-object */ 17);
+var toObject = __webpack_require__(/*! ./_to-object */ 16);
 var call = __webpack_require__(/*! ./_iter-call */ 60);
 var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ 61);
 var toLength = __webpack_require__(/*! ./_to-length */ 22);
-var createProperty = __webpack_require__(/*! ./_create-property */ 110);
+var createProperty = __webpack_require__(/*! ./_create-property */ 113);
 var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ 62);
 
-$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ 111)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ 114)(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -42620,7 +42525,7 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ 111)(
 
 
 /***/ }),
-/* 110 */
+/* 113 */
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_create-property.js ***!
   \******************************************************************/
@@ -42640,7 +42545,7 @@ module.exports = function (object, index, value) {
 
 
 /***/ }),
-/* 111 */
+/* 114 */
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-detect.js ***!
   \**************************************************************/
@@ -42673,7 +42578,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 112 */
+/* 115 */
 /*!************************************************!*\
   !*** ./node_modules/core-js/library/fn/map.js ***!
   \************************************************/
@@ -42681,18 +42586,18 @@ module.exports = function (exec, skipClosing) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ../modules/es6.object.to-string */ 113);
+__webpack_require__(/*! ../modules/es6.object.to-string */ 116);
 __webpack_require__(/*! ../modules/es6.string.iterator */ 58);
-__webpack_require__(/*! ../modules/web.dom.iterable */ 114);
-__webpack_require__(/*! ../modules/es6.map */ 117);
-__webpack_require__(/*! ../modules/es7.map.to-json */ 125);
-__webpack_require__(/*! ../modules/es7.map.of */ 128);
-__webpack_require__(/*! ../modules/es7.map.from */ 130);
+__webpack_require__(/*! ../modules/web.dom.iterable */ 117);
+__webpack_require__(/*! ../modules/es6.map */ 120);
+__webpack_require__(/*! ../modules/es7.map.to-json */ 128);
+__webpack_require__(/*! ../modules/es7.map.of */ 131);
+__webpack_require__(/*! ../modules/es7.map.from */ 133);
 module.exports = __webpack_require__(/*! ../modules/_core */ 1).Map;
 
 
 /***/ }),
-/* 113 */
+/* 116 */
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.to-string.js ***!
   \**********************************************************************/
@@ -42703,7 +42608,7 @@ module.exports = __webpack_require__(/*! ../modules/_core */ 1).Map;
 
 
 /***/ }),
-/* 114 */
+/* 117 */
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/web.dom.iterable.js ***!
   \******************************************************************/
@@ -42711,10 +42616,10 @@ module.exports = __webpack_require__(/*! ../modules/_core */ 1).Map;
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./es6.array.iterator */ 115);
+__webpack_require__(/*! ./es6.array.iterator */ 118);
 var global = __webpack_require__(/*! ./_global */ 4);
-var hide = __webpack_require__(/*! ./_hide */ 8);
-var Iterators = __webpack_require__(/*! ./_iterators */ 20);
+var hide = __webpack_require__(/*! ./_hide */ 9);
+var Iterators = __webpack_require__(/*! ./_iterators */ 19);
 var TO_STRING_TAG = __webpack_require__(/*! ./_wks */ 2)('toStringTag');
 
 var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
@@ -42733,7 +42638,7 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 
 /***/ }),
-/* 115 */
+/* 118 */
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.iterator.js ***!
   \********************************************************************/
@@ -42743,9 +42648,9 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ 116);
+var addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ 119);
 var step = __webpack_require__(/*! ./_iter-step */ 65);
-var Iterators = __webpack_require__(/*! ./_iterators */ 20);
+var Iterators = __webpack_require__(/*! ./_iterators */ 19);
 var toIObject = __webpack_require__(/*! ./_to-iobject */ 28);
 
 // 22.1.3.4 Array.prototype.entries()
@@ -42779,7 +42684,7 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 116 */
+/* 119 */
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_add-to-unscopables.js ***!
   \*********************************************************************/
@@ -42791,7 +42696,7 @@ module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 117 */
+/* 120 */
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.map.js ***!
   \*********************************************************/
@@ -42801,12 +42706,12 @@ module.exports = function () { /* empty */ };
 
 "use strict";
 
-var strong = __webpack_require__(/*! ./_collection-strong */ 118);
+var strong = __webpack_require__(/*! ./_collection-strong */ 121);
 var validate = __webpack_require__(/*! ./_validate-collection */ 69);
 var MAP = 'Map';
 
 // 23.1 Map Objects
-module.exports = __webpack_require__(/*! ./_collection */ 120)(MAP, function (get) {
+module.exports = __webpack_require__(/*! ./_collection */ 123)(MAP, function (get) {
   return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 }, {
   // 23.1.3.6 Map.prototype.get(key)
@@ -42822,7 +42727,7 @@ module.exports = __webpack_require__(/*! ./_collection */ 120)(MAP, function (ge
 
 
 /***/ }),
-/* 118 */
+/* 121 */
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_collection-strong.js ***!
   \********************************************************************/
@@ -42840,8 +42745,8 @@ var anInstance = __webpack_require__(/*! ./_an-instance */ 67);
 var forOf = __webpack_require__(/*! ./_for-of */ 25);
 var $iterDefine = __webpack_require__(/*! ./_iter-define */ 43);
 var step = __webpack_require__(/*! ./_iter-step */ 65);
-var setSpecies = __webpack_require__(/*! ./_set-species */ 119);
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 10);
+var setSpecies = __webpack_require__(/*! ./_set-species */ 122);
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 11);
 var fastKey = __webpack_require__(/*! ./_meta */ 68).fastKey;
 var validate = __webpack_require__(/*! ./_validate-collection */ 69);
 var SIZE = DESCRIPTORS ? '_s' : 'size';
@@ -42978,7 +42883,7 @@ module.exports = {
 
 
 /***/ }),
-/* 119 */
+/* 122 */
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-species.js ***!
   \**************************************************************/
@@ -42991,7 +42896,7 @@ module.exports = {
 var global = __webpack_require__(/*! ./_global */ 4);
 var core = __webpack_require__(/*! ./_core */ 1);
 var dP = __webpack_require__(/*! ./_object-dp */ 5);
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 10);
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 11);
 var SPECIES = __webpack_require__(/*! ./_wks */ 2)('species');
 
 module.exports = function (KEY) {
@@ -43004,7 +42909,7 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 120 */
+/* 123 */
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_collection.js ***!
   \*************************************************************/
@@ -43018,15 +42923,15 @@ var global = __webpack_require__(/*! ./_global */ 4);
 var $export = __webpack_require__(/*! ./_export */ 3);
 var meta = __webpack_require__(/*! ./_meta */ 68);
 var fails = __webpack_require__(/*! ./_fails */ 13);
-var hide = __webpack_require__(/*! ./_hide */ 8);
+var hide = __webpack_require__(/*! ./_hide */ 9);
 var redefineAll = __webpack_require__(/*! ./_redefine-all */ 66);
 var forOf = __webpack_require__(/*! ./_for-of */ 25);
 var anInstance = __webpack_require__(/*! ./_an-instance */ 67);
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
 var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ 44);
 var dP = __webpack_require__(/*! ./_object-dp */ 5).f;
-var each = __webpack_require__(/*! ./_array-methods */ 121)(0);
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 10);
+var each = __webpack_require__(/*! ./_array-methods */ 124)(0);
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ 11);
 
 module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
   var Base = global[NAME];
@@ -43075,7 +42980,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 
 
 /***/ }),
-/* 121 */
+/* 124 */
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-methods.js ***!
   \****************************************************************/
@@ -43092,9 +42997,9 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 // 6 -> Array#findIndex
 var ctx = __webpack_require__(/*! ./_ctx */ 12);
 var IObject = __webpack_require__(/*! ./_iobject */ 29);
-var toObject = __webpack_require__(/*! ./_to-object */ 17);
+var toObject = __webpack_require__(/*! ./_to-object */ 16);
 var toLength = __webpack_require__(/*! ./_to-length */ 22);
-var asc = __webpack_require__(/*! ./_array-species-create */ 122);
+var asc = __webpack_require__(/*! ./_array-species-create */ 125);
 module.exports = function (TYPE, $create) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
@@ -43130,7 +43035,7 @@ module.exports = function (TYPE, $create) {
 
 
 /***/ }),
-/* 122 */
+/* 125 */
 /*!***********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-species-create.js ***!
   \***********************************************************************/
@@ -43139,7 +43044,7 @@ module.exports = function (TYPE, $create) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ 123);
+var speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ 126);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -43147,7 +43052,7 @@ module.exports = function (original, length) {
 
 
 /***/ }),
-/* 123 */
+/* 126 */
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-species-constructor.js ***!
   \****************************************************************************/
@@ -43155,8 +43060,8 @@ module.exports = function (original, length) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(/*! ./_is-object */ 9);
-var isArray = __webpack_require__(/*! ./_is-array */ 124);
+var isObject = __webpack_require__(/*! ./_is-object */ 10);
+var isArray = __webpack_require__(/*! ./_is-array */ 127);
 var SPECIES = __webpack_require__(/*! ./_wks */ 2)('species');
 
 module.exports = function (original) {
@@ -43174,7 +43079,7 @@ module.exports = function (original) {
 
 
 /***/ }),
-/* 124 */
+/* 127 */
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_is-array.js ***!
   \***********************************************************/
@@ -43190,7 +43095,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 
 /***/ }),
-/* 125 */
+/* 128 */
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.map.to-json.js ***!
   \*****************************************************************/
@@ -43201,11 +43106,11 @@ module.exports = Array.isArray || function isArray(arg) {
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var $export = __webpack_require__(/*! ./_export */ 3);
 
-$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ 126)('Map') });
+$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ 129)('Map') });
 
 
 /***/ }),
-/* 126 */
+/* 129 */
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_collection-to-json.js ***!
   \*********************************************************************/
@@ -43215,7 +43120,7 @@ $export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_colle
 
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var classof = __webpack_require__(/*! ./_classof */ 63);
-var from = __webpack_require__(/*! ./_array-from-iterable */ 127);
+var from = __webpack_require__(/*! ./_array-from-iterable */ 130);
 module.exports = function (NAME) {
   return function toJSON() {
     if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
@@ -43225,7 +43130,7 @@ module.exports = function (NAME) {
 
 
 /***/ }),
-/* 127 */
+/* 130 */
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-from-iterable.js ***!
   \**********************************************************************/
@@ -43243,7 +43148,7 @@ module.exports = function (iter, ITERATOR) {
 
 
 /***/ }),
-/* 128 */
+/* 131 */
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.map.of.js ***!
   \************************************************************/
@@ -43252,11 +43157,11 @@ module.exports = function (iter, ITERATOR) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
-__webpack_require__(/*! ./_set-collection-of */ 129)('Map');
+__webpack_require__(/*! ./_set-collection-of */ 132)('Map');
 
 
 /***/ }),
-/* 129 */
+/* 132 */
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-collection-of.js ***!
   \********************************************************************/
@@ -43280,7 +43185,7 @@ module.exports = function (COLLECTION) {
 
 
 /***/ }),
-/* 130 */
+/* 133 */
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.map.from.js ***!
   \**************************************************************/
@@ -43289,11 +43194,11 @@ module.exports = function (COLLECTION) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
-__webpack_require__(/*! ./_set-collection-from */ 131)('Map');
+__webpack_require__(/*! ./_set-collection-from */ 134)('Map');
 
 
 /***/ }),
-/* 131 */
+/* 134 */
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-collection-from.js ***!
   \**********************************************************************/
@@ -43333,7 +43238,7 @@ module.exports = function (COLLECTION) {
 
 
 /***/ }),
-/* 132 */
+/* 135 */
 /*!***************************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/generatorFunction.js ***!
   \***************************************************************************/
@@ -43369,7 +43274,7 @@ function generatorFunction(component) {
 }
 
 /***/ }),
-/* 133 */
+/* 136 */
 /*!***********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/StoreRegistry.js ***!
   \***********************************************************************/
@@ -43506,7 +43411,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 134 */
+/* 137 */
 /*!************************************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/serverRenderReactComponent.js ***!
   \************************************************************************************/
@@ -43620,7 +43525,7 @@ function serverRenderReactComponent(options) {
 }
 
 /***/ }),
-/* 135 */
+/* 138 */
 /*!*********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/RenderUtils.js ***!
   \*********************************************************************/
@@ -43645,7 +43550,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 136 */
+/* 139 */
 /*!****************************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/scriptSanitizedVal.js ***!
   \****************************************************************************/
@@ -43667,7 +43572,7 @@ exports.default = function (val) {
 };
 
 /***/ }),
-/* 137 */
+/* 140 */
 /*!**********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/Authenticity.js ***!
   \**********************************************************************/
@@ -43707,7 +43612,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 138 */
+/* 141 */
 /*!*****************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/context.js ***!
   \*****************************************************************/
@@ -43731,10 +43636,10 @@ exports.default = context;
 function context() {
   return typeof window !== 'undefined' && window || typeof global !== 'undefined' && global || this;
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 19)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 18)))
 
 /***/ }),
-/* 139 */
+/* 142 */
 /*!*******************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/Container.jsx ***!
   \*******************************************************************/
@@ -43745,10 +43650,10 @@ function context() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(/*! ./About */ 140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FeaturedLessons__ = __webpack_require__(/*! ./FeaturedLessons */ 148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Testimonials__ = __webpack_require__(/*! ./Testimonials */ 149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MailingList__ = __webpack_require__(/*! ./MailingList */ 150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(/*! ./About */ 143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FeaturedLessons__ = __webpack_require__(/*! ./FeaturedLessons */ 151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Testimonials__ = __webpack_require__(/*! ./Testimonials */ 152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MailingList__ = __webpack_require__(/*! ./MailingList */ 153);
 
 
 
@@ -43769,7 +43674,7 @@ var Container = function Container() {
 /* harmony default export */ __webpack_exports__["a"] = (Container);
 
 /***/ }),
-/* 140 */
+/* 143 */
 /*!***************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/About.jsx ***!
   \***************************************************************/
@@ -43780,13 +43685,13 @@ var Container = function Container() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_tube_1_png__ = __webpack_require__(/*! images/tube-1.png */ 141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_tube_1_png__ = __webpack_require__(/*! images/tube-1.png */ 144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_tube_1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_images_tube_1_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_tube_2_png__ = __webpack_require__(/*! images/tube-2.png */ 142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_tube_2_png__ = __webpack_require__(/*! images/tube-2.png */ 145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_tube_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_tube_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_tube_bright_gif__ = __webpack_require__(/*! images/tube-bright.gif */ 143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_tube_bright_gif__ = __webpack_require__(/*! images/tube-bright.gif */ 146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_tube_bright_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_tube_bright_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_faces_fast_gif__ = __webpack_require__(/*! images/faces-fast.gif */ 144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_faces_fast_gif__ = __webpack_require__(/*! images/faces-fast.gif */ 147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_faces_fast_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_images_faces_fast_gif__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_skrollr__ = __webpack_require__(/*! react-skrollr */ 71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_skrollr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_skrollr__);
@@ -43903,7 +43808,7 @@ var About = function About(_ref) {
 /* harmony default export */ __webpack_exports__["a"] = (About);
 
 /***/ }),
-/* 141 */
+/* 144 */
 /*!**************************************!*\
   !*** ./app/assets/images/tube-1.png ***!
   \**************************************/
@@ -43914,7 +43819,7 @@ var About = function About(_ref) {
 module.exports = __webpack_require__.p + "_/assets/images/tube-1-c88961342943f5fe783513adbd3748ff.png";
 
 /***/ }),
-/* 142 */
+/* 145 */
 /*!**************************************!*\
   !*** ./app/assets/images/tube-2.png ***!
   \**************************************/
@@ -43925,7 +43830,7 @@ module.exports = __webpack_require__.p + "_/assets/images/tube-1-c88961342943f5f
 module.exports = __webpack_require__.p + "_/assets/images/tube-2-cd1b5628fc636c28f0050a7533c4310c.png";
 
 /***/ }),
-/* 143 */
+/* 146 */
 /*!*******************************************!*\
   !*** ./app/assets/images/tube-bright.gif ***!
   \*******************************************/
@@ -43936,7 +43841,7 @@ module.exports = __webpack_require__.p + "_/assets/images/tube-2-cd1b5628fc636c2
 module.exports = __webpack_require__.p + "_/assets/images/tube-bright-a47187f865b13259d81dae10b88c114e.gif";
 
 /***/ }),
-/* 144 */
+/* 147 */
 /*!******************************************!*\
   !*** ./app/assets/images/faces-fast.gif ***!
   \******************************************/
@@ -43947,7 +43852,7 @@ module.exports = __webpack_require__.p + "_/assets/images/tube-bright-a47187f865
 module.exports = __webpack_require__.p + "_/assets/images/faces-fast-4e9058ae8b929fe6d6b3bc0c78c4c688.gif";
 
 /***/ }),
-/* 145 */
+/* 148 */
 /*!************************************************************!*\
   !*** ./node_modules/react-skrollr/lib/ParallaxProvider.js ***!
   \************************************************************/
@@ -43968,11 +43873,11 @@ var _react = __webpack_require__(/*! react */ 0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(/*! prop-types */ 11);
+var _propTypes = __webpack_require__(/*! prop-types */ 20);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _skrollr = __webpack_require__(/*! skrollr */ 146);
+var _skrollr = __webpack_require__(/*! skrollr */ 149);
 
 var _skrollr2 = _interopRequireDefault(_skrollr);
 
@@ -44074,7 +43979,7 @@ ParallaxProvider.childContextTypes = {
 exports.default = ParallaxProvider;
 
 /***/ }),
-/* 146 */
+/* 149 */
 /*!**************************************************!*\
   !*** ./node_modules/skrollr/dist/skrollr.min.js ***!
   \**************************************************/
@@ -44087,7 +43992,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! skrollr 0.6.26 (2014-06-08) | Alexander Pr
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"undefined"!=typeof module&&module.exports?module.exports=i:e.skrollr=i})(window,document);
 
 /***/ }),
-/* 147 */
+/* 150 */
 /*!****************************************************!*\
   !*** ./node_modules/react-skrollr/lib/Parallax.js ***!
   \****************************************************/
@@ -44108,7 +44013,7 @@ var _react = __webpack_require__(/*! react */ 0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(/*! prop-types */ 11);
+var _propTypes = __webpack_require__(/*! prop-types */ 20);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -44161,7 +44066,7 @@ Parallax.contextTypes = { refresh: _propTypes2.default.func };
 exports.default = Parallax;
 
 /***/ }),
-/* 148 */
+/* 151 */
 /*!*************************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/FeaturedLessons.jsx ***!
   \*************************************************************************/
@@ -44170,7 +44075,7 @@ exports.default = Parallax;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(/*! prop-types */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(/*! prop-types */ 20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -44261,7 +44166,7 @@ var FeaturedLessons = function FeaturedLessons() {
 /* harmony default export */ __webpack_exports__["a"] = (FeaturedLessons);
 
 /***/ }),
-/* 149 */
+/* 152 */
 /*!**********************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/Testimonials.jsx ***!
   \**********************************************************************/
@@ -44339,7 +44244,7 @@ var Testimonials = function Testimonials() {
 /* harmony default export */ __webpack_exports__["a"] = (Testimonials);
 
 /***/ }),
-/* 150 */
+/* 153 */
 /*!*********************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/MailingList.jsx ***!
   \*********************************************************************/
@@ -44350,7 +44255,7 @@ var Testimonials = function Testimonials() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(/*! jquery */ 14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(/*! jquery */ 8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -44522,7 +44427,7 @@ var MailingList = function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (MailingList);
 
 /***/ }),
-/* 151 */
+/* 154 */
 /*!**************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/Team.jsx ***!
   \**************************************************************/
@@ -44533,8 +44438,8 @@ var MailingList = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__teamInfo_js__ = __webpack_require__(/*! ./teamInfo.js */ 152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teamImgs__ = __webpack_require__(/*! ./teamImgs */ 153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__teamInfo_js__ = __webpack_require__(/*! ./teamInfo.js */ 155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teamImgs__ = __webpack_require__(/*! ./teamImgs */ 156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_skrollr__ = __webpack_require__(/*! react-skrollr */ 71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_skrollr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_skrollr__);
 function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
@@ -44612,7 +44517,7 @@ var Team = function Team(_ref) {
 /* harmony default export */ __webpack_exports__["a"] = (Team);
 
 /***/ }),
-/* 152 */
+/* 155 */
 /*!*****************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/teamInfo.js ***!
   \*****************************************************************/
@@ -44693,7 +44598,7 @@ var teamInfo = [{
 /* harmony default export */ __webpack_exports__["a"] = (teamInfo);
 
 /***/ }),
-/* 153 */
+/* 156 */
 /*!*****************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/teamImgs.js ***!
   \*****************************************************************/
@@ -44702,39 +44607,39 @@ var teamInfo = [{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_images_aakanksha_png__ = __webpack_require__(/*! images/aakanksha.png */ 154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_images_aakanksha_png__ = __webpack_require__(/*! images/aakanksha.png */ 157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_images_aakanksha_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_images_aakanksha_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_ananyasingh_png__ = __webpack_require__(/*! images/ananyasingh.png */ 155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_ananyasingh_png__ = __webpack_require__(/*! images/ananyasingh.png */ 158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_ananyasingh_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_images_ananyasingh_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_anne_e_png__ = __webpack_require__(/*! images/anne-e.png */ 156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_anne_e_png__ = __webpack_require__(/*! images/anne-e.png */ 159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_anne_e_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_anne_e_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_denise_png__ = __webpack_require__(/*! images/denise.png */ 157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_denise_png__ = __webpack_require__(/*! images/denise.png */ 160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_denise_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_denise_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_jerome_png__ = __webpack_require__(/*! images/jerome.png */ 158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_jerome_png__ = __webpack_require__(/*! images/jerome.png */ 161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_jerome_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_images_jerome_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_jess_png__ = __webpack_require__(/*! images/jess.png */ 159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_jess_png__ = __webpack_require__(/*! images/jess.png */ 162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_jess_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_images_jess_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_katrina_png__ = __webpack_require__(/*! images/katrina.png */ 160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_katrina_png__ = __webpack_require__(/*! images/katrina.png */ 163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_katrina_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_images_katrina_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_kyle_png__ = __webpack_require__(/*! images/kyle.png */ 161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_kyle_png__ = __webpack_require__(/*! images/kyle.png */ 164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_kyle_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_images_kyle_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_images_lauren_png__ = __webpack_require__(/*! images/lauren.png */ 162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_images_lauren_png__ = __webpack_require__(/*! images/lauren.png */ 165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_images_lauren_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_images_lauren_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_images_marie_png__ = __webpack_require__(/*! images/marie.png */ 163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_images_marie_png__ = __webpack_require__(/*! images/marie.png */ 166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_images_marie_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_images_marie_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_images_mili_png__ = __webpack_require__(/*! images/mili.png */ 164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_images_mili_png__ = __webpack_require__(/*! images/mili.png */ 167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_images_mili_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_images_mili_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_images_monika_png__ = __webpack_require__(/*! images/monika.png */ 165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_images_monika_png__ = __webpack_require__(/*! images/monika.png */ 168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_images_monika_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_images_monika_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_images_neer_png__ = __webpack_require__(/*! images/neer.png */ 166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_images_neer_png__ = __webpack_require__(/*! images/neer.png */ 169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_images_neer_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_images_neer_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_images_paarmita_png__ = __webpack_require__(/*! images/paarmita.png */ 167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_images_paarmita_png__ = __webpack_require__(/*! images/paarmita.png */ 170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_images_paarmita_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_images_paarmita_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_images_sakshi_png__ = __webpack_require__(/*! images/sakshi.png */ 168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_images_sakshi_png__ = __webpack_require__(/*! images/sakshi.png */ 171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_images_sakshi_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_images_sakshi_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_images_utsha_png__ = __webpack_require__(/*! images/utsha.png */ 169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_images_utsha_png__ = __webpack_require__(/*! images/utsha.png */ 172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_images_utsha_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_images_utsha_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_images_vanessa_png__ = __webpack_require__(/*! images/vanessa.png */ 170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_images_vanessa_png__ = __webpack_require__(/*! images/vanessa.png */ 173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_images_vanessa_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_images_vanessa_png__);
 
 
@@ -44757,7 +44662,7 @@ var teamInfo = [{
 /* harmony default export */ __webpack_exports__["a"] = ([__WEBPACK_IMPORTED_MODULE_0_images_aakanksha_png___default.a, __WEBPACK_IMPORTED_MODULE_1_images_ananyasingh_png___default.a, __WEBPACK_IMPORTED_MODULE_2_images_anne_e_png___default.a, __WEBPACK_IMPORTED_MODULE_3_images_denise_png___default.a, __WEBPACK_IMPORTED_MODULE_4_images_jerome_png___default.a, __WEBPACK_IMPORTED_MODULE_5_images_jess_png___default.a, __WEBPACK_IMPORTED_MODULE_6_images_katrina_png___default.a, __WEBPACK_IMPORTED_MODULE_7_images_kyle_png___default.a, __WEBPACK_IMPORTED_MODULE_8_images_lauren_png___default.a, __WEBPACK_IMPORTED_MODULE_9_images_marie_png___default.a, __WEBPACK_IMPORTED_MODULE_10_images_mili_png___default.a, __WEBPACK_IMPORTED_MODULE_11_images_monika_png___default.a, __WEBPACK_IMPORTED_MODULE_12_images_neer_png___default.a, __WEBPACK_IMPORTED_MODULE_13_images_paarmita_png___default.a, __WEBPACK_IMPORTED_MODULE_14_images_sakshi_png___default.a, __WEBPACK_IMPORTED_MODULE_15_images_utsha_png___default.a, __WEBPACK_IMPORTED_MODULE_16_images_vanessa_png___default.a]);
 
 /***/ }),
-/* 154 */
+/* 157 */
 /*!*****************************************!*\
   !*** ./app/assets/images/aakanksha.png ***!
   \*****************************************/
@@ -44768,7 +44673,7 @@ var teamInfo = [{
 module.exports = __webpack_require__.p + "_/assets/images/aakanksha-a2773b0fbc09074ed040d4fdc5ae8b9b.png";
 
 /***/ }),
-/* 155 */
+/* 158 */
 /*!*******************************************!*\
   !*** ./app/assets/images/ananyasingh.png ***!
   \*******************************************/
@@ -44779,7 +44684,7 @@ module.exports = __webpack_require__.p + "_/assets/images/aakanksha-a2773b0fbc09
 module.exports = __webpack_require__.p + "_/assets/images/ananyasingh-2f8a0a7e19e611b18f7c581f3da78e9b.png";
 
 /***/ }),
-/* 156 */
+/* 159 */
 /*!**************************************!*\
   !*** ./app/assets/images/anne-e.png ***!
   \**************************************/
@@ -44790,7 +44695,7 @@ module.exports = __webpack_require__.p + "_/assets/images/ananyasingh-2f8a0a7e19
 module.exports = __webpack_require__.p + "_/assets/images/anne-e-730d45d179ec1c23b628eaa3f92a782a.png";
 
 /***/ }),
-/* 157 */
+/* 160 */
 /*!**************************************!*\
   !*** ./app/assets/images/denise.png ***!
   \**************************************/
@@ -44801,7 +44706,7 @@ module.exports = __webpack_require__.p + "_/assets/images/anne-e-730d45d179ec1c2
 module.exports = __webpack_require__.p + "_/assets/images/denise-b4a27feaf47cf84ea17b57c3d42dc5b2.png";
 
 /***/ }),
-/* 158 */
+/* 161 */
 /*!**************************************!*\
   !*** ./app/assets/images/jerome.png ***!
   \**************************************/
@@ -44812,7 +44717,7 @@ module.exports = __webpack_require__.p + "_/assets/images/denise-b4a27feaf47cf84
 module.exports = __webpack_require__.p + "_/assets/images/jerome-b41e2386740cade4aa6348c9b4a739f2.png";
 
 /***/ }),
-/* 159 */
+/* 162 */
 /*!************************************!*\
   !*** ./app/assets/images/jess.png ***!
   \************************************/
@@ -44823,7 +44728,7 @@ module.exports = __webpack_require__.p + "_/assets/images/jerome-b41e2386740cade
 module.exports = __webpack_require__.p + "_/assets/images/jess-b4a9a35ff4a2f61001493d38c904bbf9.png";
 
 /***/ }),
-/* 160 */
+/* 163 */
 /*!***************************************!*\
   !*** ./app/assets/images/katrina.png ***!
   \***************************************/
@@ -44834,7 +44739,7 @@ module.exports = __webpack_require__.p + "_/assets/images/jess-b4a9a35ff4a2f6100
 module.exports = __webpack_require__.p + "_/assets/images/katrina-71f953ac196e385ad9ef9f76d06a6893.png";
 
 /***/ }),
-/* 161 */
+/* 164 */
 /*!************************************!*\
   !*** ./app/assets/images/kyle.png ***!
   \************************************/
@@ -44845,7 +44750,7 @@ module.exports = __webpack_require__.p + "_/assets/images/katrina-71f953ac196e38
 module.exports = __webpack_require__.p + "_/assets/images/kyle-c10e3f9d8f181aa0ed132d7d73aac2be.png";
 
 /***/ }),
-/* 162 */
+/* 165 */
 /*!**************************************!*\
   !*** ./app/assets/images/lauren.png ***!
   \**************************************/
@@ -44856,7 +44761,7 @@ module.exports = __webpack_require__.p + "_/assets/images/kyle-c10e3f9d8f181aa0e
 module.exports = __webpack_require__.p + "_/assets/images/lauren-c959b29d9290e6e94dc72943b101240c.png";
 
 /***/ }),
-/* 163 */
+/* 166 */
 /*!*************************************!*\
   !*** ./app/assets/images/marie.png ***!
   \*************************************/
@@ -44867,7 +44772,7 @@ module.exports = __webpack_require__.p + "_/assets/images/lauren-c959b29d9290e6e
 module.exports = __webpack_require__.p + "_/assets/images/marie-1aa0dbbe76871bc0f500757ff1e26b3b.png";
 
 /***/ }),
-/* 164 */
+/* 167 */
 /*!************************************!*\
   !*** ./app/assets/images/mili.png ***!
   \************************************/
@@ -44878,7 +44783,7 @@ module.exports = __webpack_require__.p + "_/assets/images/marie-1aa0dbbe76871bc0
 module.exports = __webpack_require__.p + "_/assets/images/mili-0fbbc2e44b152a10df314ffe2fdfd616.png";
 
 /***/ }),
-/* 165 */
+/* 168 */
 /*!**************************************!*\
   !*** ./app/assets/images/monika.png ***!
   \**************************************/
@@ -44889,7 +44794,7 @@ module.exports = __webpack_require__.p + "_/assets/images/mili-0fbbc2e44b152a10d
 module.exports = __webpack_require__.p + "_/assets/images/monika-fab5b7cc22aa007c8f4443ddfafabbd9.png";
 
 /***/ }),
-/* 166 */
+/* 169 */
 /*!************************************!*\
   !*** ./app/assets/images/neer.png ***!
   \************************************/
@@ -44900,7 +44805,7 @@ module.exports = __webpack_require__.p + "_/assets/images/monika-fab5b7cc22aa007
 module.exports = __webpack_require__.p + "_/assets/images/neer-a59861dd10e7dafc1ff0b63e9a790759.png";
 
 /***/ }),
-/* 167 */
+/* 170 */
 /*!****************************************!*\
   !*** ./app/assets/images/paarmita.png ***!
   \****************************************/
@@ -44911,7 +44816,7 @@ module.exports = __webpack_require__.p + "_/assets/images/neer-a59861dd10e7dafc1
 module.exports = __webpack_require__.p + "_/assets/images/paarmita-b1a9278c50f76b80289b669ca4b7ef78.png";
 
 /***/ }),
-/* 168 */
+/* 171 */
 /*!**************************************!*\
   !*** ./app/assets/images/sakshi.png ***!
   \**************************************/
@@ -44922,7 +44827,7 @@ module.exports = __webpack_require__.p + "_/assets/images/paarmita-b1a9278c50f76
 module.exports = __webpack_require__.p + "_/assets/images/sakshi-619519690fc286d85c6ea85560b8236d.png";
 
 /***/ }),
-/* 169 */
+/* 172 */
 /*!*************************************!*\
   !*** ./app/assets/images/utsha.png ***!
   \*************************************/
@@ -44933,7 +44838,7 @@ module.exports = __webpack_require__.p + "_/assets/images/sakshi-619519690fc286d
 module.exports = __webpack_require__.p + "_/assets/images/utsha-b53e64fa204d018cae744d00162bf1ad.png";
 
 /***/ }),
-/* 170 */
+/* 173 */
 /*!***************************************!*\
   !*** ./app/assets/images/vanessa.png ***!
   \***************************************/
@@ -44944,7 +44849,7 @@ module.exports = __webpack_require__.p + "_/assets/images/utsha-b53e64fa204d018c
 module.exports = __webpack_require__.p + "_/assets/images/vanessa-54389afbc4c3b4171478bf90e204fe82.png";
 
 /***/ }),
-/* 171 */
+/* 174 */
 /*!********************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/Indicators.jsx ***!
   \********************************************************************/
@@ -44955,96 +44860,100 @@ module.exports = __webpack_require__.p + "_/assets/images/vanessa-54389afbc4c3b4
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_IndicatorsText__ = __webpack_require__(/*! ./text/IndicatorsText */ 172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_IndicatorsText__ = __webpack_require__(/*! ./text/IndicatorsText */ 175);
 
 
 
 var Indicators = function Indicators() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "section",
-    { id: "visual" },
+    __WEBPACK_IMPORTED_MODULE_0_react__["Fragment"],
+    null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      { className: "table" },
+      "section",
+      { id: "visual" },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
-        { className: "row" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
+        { className: "table" },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { className: "col-sm-3" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            null,
-            "Acidic Solution"
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            { className: "animated infinite pulse" },
-            "[H+] &#62 [OH-]"
-          ),
+          { className: "row" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: "redlitmus animated bounceIn" },
-            "Red litmus - stays red"
+            { className: "col-sm-3" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              null,
+              "Acidic Solution"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { className: "animated infinite pulse" },
+              "[H+] &#62 [OH-]"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "redlitmus animated bounceIn" },
+              "Red litmus - stays red"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "bluelitmus red animated bounceIn" },
+              "Blue litmus - turns red"
+            )
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: "bluelitmus red animated bounceIn" },
-            "Blue litmus - turns red"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "col-sm-3" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            null,
-            "Neutral Solution"
+            { className: "col-sm-3" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              null,
+              "Neutral Solution"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { className: "animated infinite pulse" },
+              "[H+]=[OH-]"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "redlitmus animated bounceIn" },
+              "Red litmus - stays red"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "bluelitmus animated bounceIn" },
+              "Blue litmus - stays blue"
+            )
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            { className: "animated infinite pulse" },
-            "[H+]=[OH-]"
-          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: "redlitmus animated bounceIn" },
-            "Red litmus - stays red"
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "bluelitmus animated bounceIn" },
-            "Blue litmus - stays blue"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "div",
-          { className: "col-sm-3" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            null,
-            "Basic Solution"
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "p",
-            { className: "animated infinite pulse" },
-            "[H+] < [OH-] "
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "redlitmus blu animated bounceIn" },
-            "Red litmus - turns blue"
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "bluelitmus animated bounceIn" },
-            "Blue litmus - stays blue"
+            { className: "col-sm-3" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              null,
+              "Basic Solution"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { className: "animated infinite pulse" },
+              "[H+] < [OH-] "
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "redlitmus blu animated bounceIn" },
+              "Red litmus - turns blue"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "div",
+              { className: "bluelitmus animated bounceIn" },
+              "Blue litmus - stays blue"
+            )
           )
         )
       )
@@ -45056,7 +44965,7 @@ var Indicators = function Indicators() {
 /* harmony default export */ __webpack_exports__["a"] = (Indicators);
 
 /***/ }),
-/* 172 */
+/* 175 */
 /*!*****************************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/text/IndicatorsText.jsx ***!
   \*****************************************************************************/
@@ -45065,98 +44974,95 @@ var Indicators = function Indicators() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(/*! prop-types */ 11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(/*! react */ 0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
 
 
 
-
 var IndicatorsText = function IndicatorsText(_ref) {
-    _objectDestructuringEmpty(_ref);
+  _objectDestructuringEmpty(_ref);
 
-    return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "section",
+    { className: "text" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { className: "table" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "section",
         { className: "text" },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            "div",
-            { className: "table" },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                "section",
-                { id: "text" },
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "h1",
-                    null,
-                    "Indicators"
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    "When an acid is dissolved in water we get an",
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "span",
-                        { id: "text-1" },
-                        "acidic"
-                    ),
-                    " solution. When a base dissolves in water it is an alkali and makes an",
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "span",
-                        { id: "text-2" },
-                        "alkaline"
-                    ),
-                    " solution. If a solution is neither acidic nor alkaline it is",
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "span",
-                        { id: "text-3" },
-                        "neutral"
-                    ),
-                    ". Pure water is neutral, and so is paraffin."
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    "Indicators are substances that change colour when they are added to acidic or alkaline solutions. Litmus, phenolphthalein, and methyl orange are all indicators that are commonly used in the laboratory."
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "span",
-                        { id: "text-1" },
-                        "Litmus"
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    "Litmus indicator solution turns red in acidic solutions and blue in alkaline solutions - and it turns purple in neutral solutions."
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                        "span",
-                        { id: "text-2" },
-                        "Litmus paper"
-                    ),
-                    " is usually more reliable, and comes as red litmus paper and blue litmus paper. The table shows the colour changes it can make."
-                ),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    "p",
-                    null,
-                    "The table above shows the colour changes it can make."
-                )
-            )
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "h1",
+          null,
+          "Indicators"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "When an acid is dissolved in water we get an",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "acidic"
+          ),
+          " solution. When a base dissolves in water it is an alkali and makes an",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "alkaline"
+          ),
+          " solution. If a solution is neither acidic nor alkaline it is",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "neutral"
+          ),
+          ". Pure water is neutral, and so is paraffin."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Indicators are substances that change colour when they are added to acidic or alkaline solutions. Litmus, phenolphthalein, and methyl orange are all indicators that are commonly used in the laboratory."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Litmus"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Litmus indicator solution turns red in acidic solutions and blue in alkaline solutions - and it turns purple in neutral solutions."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "Litmus paper"
+          ),
+          " is usually more reliable, and comes as red litmus paper and blue litmus paper. The table shows the colour changes it can make."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The table above shows the colour changes it can make."
         )
-    );
+      )
+    )
+  );
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (IndicatorsText);
 
 /***/ }),
-/* 173 */
+/* 176 */
 /*!*************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/DNA.jsx ***!
   \*************************************************************/
@@ -45167,14 +45073,16 @@ var IndicatorsText = function IndicatorsText(_ref) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_adenine_png__ = __webpack_require__(/*! images/adenine.png */ 174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_adenine_png__ = __webpack_require__(/*! images/adenine.png */ 177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_adenine_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_images_adenine_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_cytosine_png__ = __webpack_require__(/*! images/cytosine.png */ 175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_cytosine_png__ = __webpack_require__(/*! images/cytosine.png */ 178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_cytosine_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_cytosine_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_guanine_png__ = __webpack_require__(/*! images/guanine.png */ 176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_guanine_png__ = __webpack_require__(/*! images/guanine.png */ 179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_guanine_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_guanine_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_thymine_png__ = __webpack_require__(/*! images/thymine.png */ 177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_thymine_png__ = __webpack_require__(/*! images/thymine.png */ 180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_thymine_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_images_thymine_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__text_DNAText__ = __webpack_require__(/*! ./text/DNAText */ 181);
+
 
 
 
@@ -45183,32 +45091,37 @@ var IndicatorsText = function IndicatorsText(_ref) {
 
 var DNA = function DNA() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "section",
-    { id: "visual" },
+    __WEBPACK_IMPORTED_MODULE_0_react__["Fragment"],
+    null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      { className: "table" },
+      "section",
+      { id: "visual" },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
-        { className: "row" },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
+        { className: "table" },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { className: "col-sm-3" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2_images_cytosine_png___default.a, className: "dna-img c" }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_4_images_thymine_png___default.a, className: "dna-img t" }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_1_images_adenine_png___default.a, className: "dna-img a" }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_3_images_guanine_png___default.a, className: "dna-img g" })
+          { className: "row" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "col-sm-1" }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "col-sm-3" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2_images_cytosine_png___default.a, className: "dna-img c" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_4_images_thymine_png___default.a, className: "dna-img t" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_1_images_adenine_png___default.a, className: "dna-img a" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_3_images_guanine_png___default.a, className: "dna-img g" })
+          )
         )
       )
-    )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__text_DNAText__["a" /* default */], null)
   );
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (DNA);
 
 /***/ }),
-/* 174 */
+/* 177 */
 /*!***************************************!*\
   !*** ./app/assets/images/adenine.png ***!
   \***************************************/
@@ -45219,7 +45132,7 @@ var DNA = function DNA() {
 module.exports = __webpack_require__.p + "_/assets/images/adenine-a910cec2d5811a60564ab984afb9f8c0.png";
 
 /***/ }),
-/* 175 */
+/* 178 */
 /*!****************************************!*\
   !*** ./app/assets/images/cytosine.png ***!
   \****************************************/
@@ -45230,7 +45143,7 @@ module.exports = __webpack_require__.p + "_/assets/images/adenine-a910cec2d5811a
 module.exports = __webpack_require__.p + "_/assets/images/cytosine-17e261677328d4848721380e2f9e35af.png";
 
 /***/ }),
-/* 176 */
+/* 179 */
 /*!***************************************!*\
   !*** ./app/assets/images/guanine.png ***!
   \***************************************/
@@ -45241,7 +45154,7 @@ module.exports = __webpack_require__.p + "_/assets/images/cytosine-17e261677328d
 module.exports = __webpack_require__.p + "_/assets/images/guanine-9bbc1d46d9fd991a08f13297f3019a15.png";
 
 /***/ }),
-/* 177 */
+/* 180 */
 /*!***************************************!*\
   !*** ./app/assets/images/thymine.png ***!
   \***************************************/
@@ -45252,7 +45165,653 @@ module.exports = __webpack_require__.p + "_/assets/images/guanine-9bbc1d46d9fd99
 module.exports = __webpack_require__.p + "_/assets/images/thymine-09c8f57fdd36dc287f09b26ca702e9c1.png";
 
 /***/ }),
-/* 178 */
+/* 181 */
+/*!**********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/text/DNAText.jsx ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+
+
+var DNAText = function DNAText(_ref) {
+  _objectDestructuringEmpty(_ref);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "section",
+    { className: "text" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { className: "table" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "section",
+        { className: "text" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "h1",
+          null,
+          "Structure of DNA"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Each gene in a molecule of DNA contains:"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "_A different sequence of",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "bases"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "_Codes for a particular protein"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "In DNA, two strands coil together to form a double helix. There are chemical cross-links between the two strands, formed by",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "pairs of bases"
+          )
+        ),
+        ".",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Each strand of DNA is made of chemicals called bases. Do not confuse these with the bases you meet when you study acids and alkalis in chemistry. There are four different types of bases, shown as",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "A, T, C and G"
+          ),
+          "."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Proteins are made in the cytoplasm of a cell, not in the nucleus. Genes cannot leave the nucleus, so a copy of the gene is needed. This copy is able to leave the nucleus to go into the cytoplasm so that proteins can be made by the cell."
+        )
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (DNAText);
+
+/***/ }),
+/* 182 */
+/*!*************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/Eye.jsx ***!
+  \*************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_EyeText__ = __webpack_require__(/*! ./text/EyeText */ 183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_pupil_png__ = __webpack_require__(/*! images/pupil.png */ 184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_pupil_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_pupil_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_cornea_png__ = __webpack_require__(/*! images/cornea.png */ 185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_cornea_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_cornea_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_fovea_png__ = __webpack_require__(/*! images/fovea.png */ 186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_images_fovea_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_images_fovea_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_cillarymuscle_png__ = __webpack_require__(/*! images/cillarymuscle.png */ 187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_images_cillarymuscle_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_images_cillarymuscle_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_lens_png__ = __webpack_require__(/*! images/lens.png */ 188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_images_lens_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_images_lens_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_conjunctiva_png__ = __webpack_require__(/*! images/conjunctiva.png */ 189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_images_conjunctiva_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_images_conjunctiva_png__);
+
+
+
+
+
+
+
+
+
+var Eye = function Eye() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react__["Fragment"],
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "section",
+      { id: "top" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "" }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "pupil" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2_images_pupil_png___default.a })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "cornea" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_3_images_cornea_png___default.a })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "fovea" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_4_images_fovea_png___default.a })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "cillary_muscle" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_5_images_cillarymuscle_png___default.a })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "lens" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_6_images_lens_png___default.a })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { id: "conjunctiva" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_7_images_conjunctiva_png___default.a })
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_EyeText__["a" /* default */], null)
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Eye);
+
+/***/ }),
+/* 183 */
+/*!**********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/text/EyeText.jsx ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+
+
+var DNAText = function DNAText(_ref) {
+  _objectDestructuringEmpty(_ref);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "section",
+    { className: "text" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { className: "table" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "h1",
+          null,
+          "The eye is a sense organ that responds to light"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Cornea"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          " Refracts light - bends it as it enters the eye "
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "Pupil"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The dark circular opening in the centre of the iris of the eye, which varies in size to regulate the amount of light reaching the retina."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "Conjunctiva"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The mucous membrane that covers the front of the eye and lines the inside of the eyelids."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Cillary muscle"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Muscles connected to the lens by suspensory ligaments. The adjust the shape of the lens to make it more or less curved, so as to increase or decrease the refraction of light."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "Lens"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          " Focuses light onto the retina "
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "Retina"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The lining of the back of eye containing two types of photoreceptor cells - rods - sensitive to dim light and black and white - and cones - sensitive to colour. A small area called the fovea in the middle of the retina has many more cones than rods."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Optic nerve"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "A bundle of sensory neurones at back of eye. It carries impulses from the eye to the brain.",
+          " "
+        )
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (DNAText);
+
+/***/ }),
+/* 184 */
+/*!*************************************!*\
+  !*** ./app/assets/images/pupil.png ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/pupil-6dc961edaaf62de69b460e4160721b59.png";
+
+/***/ }),
+/* 185 */
+/*!**************************************!*\
+  !*** ./app/assets/images/cornea.png ***!
+  \**************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/cornea-598c6dceb188e38e41fe67a81f3e93ad.png";
+
+/***/ }),
+/* 186 */
+/*!*************************************!*\
+  !*** ./app/assets/images/fovea.png ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/fovea-e34def54bc0714c9ccdbfbeeb340d87d.png";
+
+/***/ }),
+/* 187 */
+/*!*********************************************!*\
+  !*** ./app/assets/images/cillarymuscle.png ***!
+  \*********************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/cillarymuscle-ce293dc9e38d35fe79b5e6ed8c50d247.png";
+
+/***/ }),
+/* 188 */
+/*!************************************!*\
+  !*** ./app/assets/images/lens.png ***!
+  \************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/lens-f0216046b76e23ce9518b411fbf6cc14.png";
+
+/***/ }),
+/* 189 */
+/*!*******************************************!*\
+  !*** ./app/assets/images/conjunctiva.png ***!
+  \*******************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/conjunctiva-cdabb5aa51281bbc9c93faf8b34d3487.png";
+
+/***/ }),
+/* 190 */
+/*!***************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/Atoms.jsx ***!
+  \***************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_AtomText__ = __webpack_require__(/*! ./text/AtomText */ 191);
+
+
+// import Atomsjs from "Atoms.js";
+
+var Atoms = function Atoms() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react__["Fragment"],
+    null,
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "section",
+      { id: "top" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "box" }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "box2" }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { className: "gurprit" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "div",
+          { className: "face facepiece" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "svg",
+            { viewBox: "0 0 744.1 1052.4" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ellipse", {
+              transform: "scale(1,-1)",
+              ry: "270",
+              rx: "270",
+              cy: "-493.8",
+              cx: "371.4",
+              style: {
+                fill: "#00ff00",
+                strokeLinecap: "square",
+                strokeWidth: "10",
+                stroke: "#000"
+              }
+            })
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("svg", { viewBox: "0 0 744.1 1052.4" })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "svg",
+        {
+          xmlns: "http://www.w3.org/2000/svg",
+          version: "1.1",
+          style: "display:none"
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "defs",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "filter",
+            { id: "squiggly-0" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+              id: "turbulence",
+              baseFrequency: "0.02",
+              numOctaves: "3",
+              result: "noise",
+              seed: "0"
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", {
+              id: "displacement",
+              "in": "SourceGraphic",
+              in2: "noise",
+              scale: "2"
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "filter",
+            { id: "squiggly-1" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+              id: "turbulence",
+              baseFrequency: "0.02",
+              numOctaves: "3",
+              result: "noise",
+              seed: "1"
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "filter",
+            { id: "squiggly-2" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+              id: "turbulence",
+              baseFrequency: "0.02",
+              numOctaves: "3",
+              result: "noise",
+              seed: "2"
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "2" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "filter",
+            { id: "squiggly-3" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+              id: "turbulence",
+              baseFrequency: "0.02",
+              numOctaves: "3",
+              result: "noise",
+              seed: "3"
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "filter",
+            { id: "squiggly-4" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+              id: "turbulence",
+              baseFrequency: "0.02",
+              numOctaves: "3",
+              result: "noise",
+              seed: "4"
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "1" })
+          )
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_AtomText__["a" /* default */], null)
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Atoms);
+
+/***/ }),
+/* 191 */
+/*!***********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/text/AtomText.jsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+
+
+var DNAText = function DNAText(_ref) {
+  _objectDestructuringEmpty(_ref);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "section",
+    { className: "text" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { className: "table" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "h1",
+          null,
+          "The eye is a sense organ that responds to light"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Cornea"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          " Refracts light - bends it as it enters the eye "
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "Pupil"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The dark circular opening in the centre of the iris of the eye, which varies in size to regulate the amount of light reaching the retina."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "Conjunctiva"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The mucous membrane that covers the front of the eye and lines the inside of the eyelids."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Cillary muscle"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Muscles connected to the lens by suspensory ligaments. The adjust the shape of the lens to make it more or less curved, so as to increase or decrease the refraction of light."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-2" },
+            "Lens"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          " Focuses light onto the retina "
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-3" },
+            "Retina"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "The lining of the back of eye containing two types of photoreceptor cells - rods - sensitive to dim light and black and white - and cones - sensitive to colour. A small area called the fovea in the middle of the retina has many more cones than rods."
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "span",
+            { id: "text-1" },
+            "Optic nerve"
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "A bundle of sensory neurones at back of eye. It carries impulses from the eye to the brain.",
+          " "
+        )
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (DNAText);
+
+/***/ }),
+/* 192 */
 /*!****************************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/CellsTissuesOrgans.jsx ***!
   \****************************************************************************/
@@ -45263,7 +45822,7 @@ module.exports = __webpack_require__.p + "_/assets/images/thymine-09c8f57fdd36dc
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_TextCellsTissuesOrgans__ = __webpack_require__(/*! ./text/TextCellsTissuesOrgans */ 72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_CellsTissuesOrgansText__ = __webpack_require__(/*! ./text/CellsTissuesOrgansText */ 193);
 
 
 
@@ -45456,12 +46015,111 @@ var CellsTissuesOrgans = function CellsTissuesOrgans() {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "organ" }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "organ-system" })
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_TextCellsTissuesOrgans__["a" /* default */], null)
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_CellsTissuesOrgansText__["a" /* default */], null)
   );
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (CellsTissuesOrgans);
 
+/***/ }),
+/* 193 */
+/*!*************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/text/CellsTissuesOrgansText.jsx ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+
+
+var CellsTissuesOrgansText = function CellsTissuesOrgansText(_ref) {
+  _objectDestructuringEmpty(_ref);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    { className: "container" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      { className: "row" },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { className: "col-xs-12", id: "link-text" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "section",
+          { className: "text" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h1",
+            { className: "content" },
+            "Levels of Organization"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Cells, Tissues and Organs"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h2",
+            { style: { color: "#0ff004" } },
+            "Organelles"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Cell structure that is specialised to carry out a particular function or job"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h2",
+            { style: { color: "#6ad2ff" } },
+            "Cells"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Basic structural and functional unit of a living organism"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h2",
+            { style: { color: "#ff6796" } },
+            "Tissues"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Group of cells with similar structures, working together to perform a shared function"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h2",
+            { style: { color: "#ffff00" } },
+            "Organ"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Structure made up of a group of tissues, working together to perform specific functions"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "h2",
+            { style: { color: "#ED462F" } },
+            "Organ System"
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "p",
+            null,
+            "Group of organs with related functions, working together to perform body functions"
+          )
+        )
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (CellsTissuesOrgansText);
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=container-bundle-d25737cce31f5350916d.js.map
+//# sourceMappingURL=container-bundle-e4c33fc9d087c813b103.js.map
