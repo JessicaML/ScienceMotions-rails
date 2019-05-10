@@ -145,19 +145,29 @@ b {
   margin-top: 4%;
 }
 
-#footer {
+.footer {
   background-color: #39454a;
   padding: 2%;
   margin-bottom: 5%;
 }
 
-#footer p,
+.footer p,
 .subscription {
   color: white;
   margin: 2%;
 }
 
+.footer label {
+  color: rgb(255, 255, 0); /* fallback for old browsers */
+}
+
 .container {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.mailchimp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
