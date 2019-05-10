@@ -26,3 +26,5 @@ admin = User.create(
     :password_confirmation => "password123"
 )
 admin.toggle!(:admin)
+
+AdminUser.create!(email: 'admin@scimo.com', password: 'scimoad', password_confirmation: 'scimoad') if Rails.env.production?

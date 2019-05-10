@@ -1,5 +1,5 @@
 import React from "react";
-import TextCellsTissuesOrgans from "./text/TextCellsTissuesOrgans";
+import CellsTissuesOrgansText from "./text/CellsTissuesOrgansText";
 
 const CellsTissuesOrgans = () => (
   <div className="lesson_template">
@@ -161,7 +161,7 @@ const CellsTissuesOrgans = () => (
       <div className="organ-system" />
     </section>
 
-    <TextCellsTissuesOrgans />
+    <CellsTissuesOrgansText />
   </div>
 );
 
