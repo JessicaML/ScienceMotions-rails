@@ -50,71 +50,76 @@ class MailingList extends React.Component {
 
   render() {
     return (
-      <form
-        action="https://github.us16.list-manage.com/subscribe/post-json"
-        method="POST"
-        noValidate
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        className="validate"
-        target="_blank"
-      >
-        <div id="mc_embed_signup_scroll">
-          <div>
-            <span style={{ color: "#fff" }}>
-              <i>
-                <p>
-                  Science is about how shapes move in space, so we think
-                  animation is the best way to explain it... and we want to
-                  explain it in a way that's as fun to look at as MTV.
-                </p>
-              </i>
-            </span>
-          </div>
-        </div>
-        <label for="mce-EMAIL">Subscribe to our mailing list!</label>
-
-        <input type="hidden" name="u" value="70d8e0ea2d8800a5f4e06792c" />
-        <input type="hidden" name="id" value="b5095bc718" />
-        <label htmlFor="MERGE0">
-          Email
-          <input
-            type="email"
-            name="EMAIL"
-            id="MERGE0"
-            value={this.state.emailValue}
-            onChange={e => {
-              this.setState({ emailValue: e.target.value });
-            }}
-            autoCapitalize="off"
-            autoCorrect="off"
-          />
-        </label>
-        <input
-          type="submit"
-          onClick={this.onSubmit}
-          value="Subscribe"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          className="button"
-        />
-        <div
-          style={{ position: "absolute", left: "-5000px" }}
-          aria-hidden="true"
-          aria-label="Please leave the following three fields empty"
+      <footer className="footer">
+        <form
+          action="https://github.us16.list-manage.com/subscribe/post-json"
+          method="POST"
+          noValidate
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          className="validate"
+          target="_blank"
         >
-          <label htmlFor="b_email">Email: </label>
-          <input
-            type="email"
-            name="b_email"
-            tabIndex="-1"
-            value=""
-            placeholder="youremail@gmail.com"
-            id="b_email"
-          />
-        </div>
-        <div className="notification_container" />
-      </form>
+          <div id="mc_embed_signup_scroll">
+            <div>
+              <span style={{ color: "#fff" }}>
+                <i>
+                  <p>
+                    Science is about how shapes move in space, so we think
+                    animation is the best way to explain it... and we want to
+                    explain it in a way that's as fun to look at as MTV.
+                  </p>
+                </i>
+              </span>
+            </div>
+          </div>
+          <div className="mailchimp">
+            <label for="mce-EMAIL">Subscribe to our mailing list!</label>
+
+            <div>
+              <input type="hidden" name="u" value="70d8e0ea2d8800a5f4e06792c" />
+              <input type="hidden" name="id" value="b5095bc718" />
+              <label htmlFor="MERGE0">
+                <input
+                  type="email"
+                  name="EMAIL"
+                  id="MERGE0"
+                  value={this.state.emailValue}
+                  onChange={e => {
+                    this.setState({ emailValue: e.target.value });
+                  }}
+                  autoCapitalize="off"
+                  autoCorrect="off"
+                />
+              </label>
+              <input
+                type="submit"
+                onClick={this.onSubmit}
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                className="button"
+              />
+              <div
+                style={{ position: "absolute", left: "-5000px" }}
+                aria-hidden="true"
+                aria-label="Please leave the following three fields empty"
+              >
+                <label htmlFor="b_email">Email: </label>
+                <input
+                  type="email"
+                  name="b_email"
+                  tabIndex="-1"
+                  value=""
+                  placeholder="youremail@gmail.com"
+                  id="b_email"
+                />
+              </div>
+              <div className="notification_container" />
+            </div>
+          </div>
+        </form>
+      </footer>
     );
   }
 }
