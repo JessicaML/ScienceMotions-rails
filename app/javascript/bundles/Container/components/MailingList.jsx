@@ -1,62 +1,106 @@
 import React from "react";
-import Mailchimp from "react-mailchimp-form";
 
-{
-  /* <form
-            action="//jhn.us16.list-manage.com/subscribe/post-json?u=70d8e0ea2d8800a5f4e06792c&amp;id=b5095bc718&c=?"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            className="validate"
-            target="_blank"
-            noValidate
-          > */
-}
-const MailingList = () => (
-  <div className="footer" className="container">
-    <div className="row">
-      <div className="col-md-12 portfolio-item">
-        <div id="mc_embed_signup">
-          <div id="mc_embed_signup_scroll">
-            <div>
-              <span>
-                {" "}
-                <i>
-                  <p>
-                    Science is about how shapes move in space, so we think
-                    animation is the best way to explain it... and we want to
-                    explain it in a way that's as fun to look at as MTV.
-                  </p>
-                </i>
-              </span>
-            </div>
-            <label className="subscription" htmlFor="mce-EMAIL">
-              Subscribe to our mailing list!
-            </label>
-            <Mailchimp
-              action="//jhn.us16.list-manage.com/subscribe/post-json?u=70d8e0ea2d8800a5f4e06792c&amp;id=b5095bc718&c=?"
-              fields={[
-                {
-                  name: "EMAIL",
-                  placeholder: "Email",
-                  type: "email",
-                  required: true
-                }
-              ]}
-              messages={{
-                sending: "Sending...",
-                success: "Thank you for subscribing!",
-                error: "An unexpected internal error has occurred.",
-                empty: "You must write an e-mail.",
-                duplicate: "Too many subscribe attempts for this email address",
-                button: "Subscribe!"
-              }}
-            />
-            <div id="notification_container" />
-          </div>
+class MailingList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      emailValue: "",
+      fNameValue: "",
+      lNameValue: ""
+    };
+  }
+
+  render() {
+    return (
+      <form
+        action="https://github.us16.list-manage.com/subscribe/post"
+        method="POST"
+        noValidate
+      >
+        <input type="hidden" name="u" value="70d8e0ea2d8800a5f4e06792c" />
+        <input type="hidden" name="id" value="b5095bc718" />
+        <label htmlFor="MERGE0">
+          Email
+          <input
+            type="email"
+            name="EMAIL"
+            id="MERGE0"
+            value={this.state.emailValue}
+            onChange={e => {
+              this.setState({ emailValue: e.target.value });
+            }}
+            autoCapitalize="off"
+            autoCorrect="off"
+          />
+        </label>
+        <label htmlFor="MERGE1">
+          First name
+          <input
+            type="text"
+            name="FNAME"
+            id="MERGE1"
+            value={this.state.fNameValue}
+            onChange={e => {
+              this.setState({ fNameValue: e.target.value });
+            }}
+          />
+        </label>
+        <label htmlFor="MERGE2">
+          Last name
+          <input
+            type="text"
+            name="LNAME"
+            id="MERGE2"
+            value={this.state.lNameValue}
+            onChange={e => {
+              this.setState({ lNameValue: e.target.value });
+            }}
+          />
+        </label>
+        <input
+          type="submit"
+          value="Subscribe"
+          name="subscribe"
+          id="mc-embedded-subscribe"
+          className="button"
+        />
+
+        <div
+          style={{ position: "absolute", left: "-5000px" }}
+          aria-hidden="true"
+          aria-label="Please leave the following three fields empty"
+        >
+          <label htmlFor="b_name">Name: </label>
+          <input
+            type="text"
+            name="b_name"
+            tabIndex="-1"
+            value=""
+            placeholder="Freddie"
+            id="b_name"
+          />
+
+          <label htmlFor="b_email">Email: </label>
+          <input
+            type="email"
+            name="b_email"
+            tabIndex="-1"
+            value=""
+            placeholder="youremail@gmail.com"
+            id="b_email"
+          />
+
+          <label htmlFor="b_comment">Comment: </label>
+          <textarea
+            name="b_comment"
+            tabIndex="-1"
+            placeholder="Please comment"
+            id="b_comment"
+          />
         </div>
-      </div>
-    </div>
-  </div>
-);
+      </form>
+    );
+  }
+}
+
 export default MailingList;
