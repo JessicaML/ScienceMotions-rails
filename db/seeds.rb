@@ -18,3 +18,11 @@ lesson1 = Lesson.create(name: "van", description: "van", slug: "van")
 
 lesson2 = Completed_lesson.create(user_id: "1", lesson_id: "1", completed: "true")
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+admin = User.create(
+    :name => "jess scimo",
+    :email => "jess@scimo.com",
+    :password => "password123",
+    :password_confirmation => "password123"
+)
+admin.toggle!(:admin)
