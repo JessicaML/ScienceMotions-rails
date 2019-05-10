@@ -4,6 +4,8 @@ import Container from "../bundles/Container/components/Container";
 import Team from "../bundles/Container/components/Team";
 import Indicators from "../bundles/Container/components/Indicators";
 import DNA from "../bundles/Container/components/DNA";
+import Eye from "../bundles/Container/components/Eye";
+
 import CellsTissuesOrgans from "../bundles/Container/components/CellsTissuesOrgans";
 import CellsTissuesOrgansText from "../bundles/Container/components/text/CellsTissuesOrgansText";
 
@@ -14,5 +16,6 @@ ReactOnRails.register({
   Team,
   DNA,
   CellsTissuesOrgans,
-  CellsTissuesOrgansText
+  CellsTissuesOrgansText,
+  Eye
 });
