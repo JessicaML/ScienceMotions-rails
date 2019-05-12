@@ -29,3 +29,8 @@ if you are having problems creating the db, try
 
 Live site: https://scimo.herokuapp.com
 
+
+## Support us on Patreon!
+
+We love you!! <3
+https://www.patreon.com/ScienceMotions
