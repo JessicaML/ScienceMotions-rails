@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/packs/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 194);
+/******/ 	return __webpack_require__(__webpack_require__.s = 196);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,7 +143,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 194:
+/***/ 196:
 /*!**********************************************!*\
   !*** ./app/javascript/packs/hello_react.jsx ***!
   \**********************************************/
@@ -25750,4 +25750,4 @@ module.exports = checkPropTypes;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hello_react-20be1e26348e8c4b0d40.js.map
+//# sourceMappingURL=hello_react-624660b2d163e02ebb08.js.map

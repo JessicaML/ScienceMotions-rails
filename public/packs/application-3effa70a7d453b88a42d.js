@@ -10974,7 +10974,7 @@ $(document).ready(function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function ($) {
-  var box = $(".box");
+  var box = $(".eye1");
   var boxCenter = [box.offset().left + box.width() / 2, box.offset().top + box.height() / 2];
 
   $(document).mousemove(function (e) {
@@ -10985,7 +10985,7 @@ $(document).ready(function () {
     box.css({ transform: "rotate(" + angle + "deg)" });
   });
 
-  var box2 = $(".box2");
+  var box2 = $(".eye2");
   var boxCenter2 = [box2.offset().left + box2.width() / 2, box.offset().top + box2.height() / 2];
 
   $(document).mousemove(function (e) {
@@ -11033,4 +11033,4 @@ $(document).ready(function () {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-a466800ba98e53514620.js.map
+//# sourceMappingURL=application-3effa70a7d453b88a42d.js.map

@@ -275,8 +275,6 @@ section#top #pupil {
   bottom: -10px;
   left: -32px;
   width: 100%;
-  /* background: transparent url(images/cornea.png) no-repeat center center; */
-
   height: 100%;
 }
 
@@ -285,7 +283,6 @@ section#top #cornea {
   top: 0;
   left: -75px;
   width: 100%;
-  /* background: transparent url(images/cornea.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -294,7 +291,6 @@ section#top #fovea {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/fovea.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -303,7 +299,6 @@ section#top #cillary_muscle {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/cillarymuscle.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -312,7 +307,6 @@ section#top #lens {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/lens.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -321,7 +315,6 @@ section#top #conjunctiva {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/conjunctiva.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -378,21 +371,31 @@ section#top #conjunctiva_label {
   height: 100%;
   opacity: 0.1;
 }
-.box {
+#atoms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eye1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(../eye2.png) no-repeat center center; */
   height: 100%;
 }
 
-.box2 {
+.eye2 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(../eye2S.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -401,15 +404,15 @@ section#top #conjunctiva_label {
 }
 
 .gurprit {
-  width: 20%;
+  position: absolute;
   pointer-events: none;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  top: 120px;
+  backface-visibility: hidden;
+  top: 130px;
 }
 
 .gurprit svg {
@@ -417,7 +420,6 @@ section#top #conjunctiva_label {
 }
 
 .facepiece {
-  webkit-animation: squiggly-anim 0.3s infinite;
   -webkit-animation: squiggly-anim 0.3s infinite;
           animation: squiggly-anim 0.3s infinite;
 }
@@ -1435,5 +1437,14 @@ a:hover {
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
+section.text span#text-1 {
+  color: #e376c4;
+}
+section.text span#text-2 {
+  color: #6ef5de;
+}
+section.text span#text-3 {
+  color: #fdf734;
+}
 
-/*# sourceMappingURL=application-b3181f6b70394563fa5430c905586062.css.map*/
+/*# sourceMappingURL=application-4dc2ce59d29bbe36e4ea2a6a7bb81187.css.map*/

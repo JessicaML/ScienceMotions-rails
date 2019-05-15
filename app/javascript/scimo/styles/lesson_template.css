@@ -324,3 +324,14 @@ a:hover {
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
+
+section.text span#text-1 {
+  color: #e376c4;
+}
+section.text span#text-2 {
+  color: #6ef5de;
+}
+
+section.text span#text-3 {
+  color: #fdf734;
+}

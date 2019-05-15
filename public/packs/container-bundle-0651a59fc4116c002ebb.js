@@ -37757,7 +37757,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__ = __webpack_require__(/*! ../bundles/Container/components/DNA */ 176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__ = __webpack_require__(/*! ../bundles/Container/components/Eye */ 182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/Atoms */ 190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 194);
 
 
 
@@ -45209,7 +45209,7 @@ var DNAText = function DNAText(_ref) {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "span",
             { id: "text-1" },
-            "bases"
+            " bases"
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -45224,7 +45224,7 @@ var DNAText = function DNAText(_ref) {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "span",
             { id: "text-2" },
-            "pairs of bases"
+            " pairs of bases"
           )
         ),
         ".",
@@ -45235,7 +45235,7 @@ var DNAText = function DNAText(_ref) {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "span",
             { id: "text-3" },
-            "A, T, C and G"
+            " A, T, C and G"
           ),
           "."
         ),
@@ -45547,10 +45547,15 @@ module.exports = __webpack_require__.p + "_/assets/images/conjunctiva-cdabb5aa51
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_AtomText__ = __webpack_require__(/*! ./text/AtomText */ 191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_AtomsText__ = __webpack_require__(/*! ./text/AtomsText */ 191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_eye1_png__ = __webpack_require__(/*! images/eye1.png */ 192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_eye1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_eye1_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_eye2_png__ = __webpack_require__(/*! images/eye2.png */ 193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_images_eye2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_images_eye2_png__);
 
 
-// import Atomsjs from "Atoms.js";
+
+
 
 var Atoms = function Atoms() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -45559,113 +45564,125 @@ var Atoms = function Atoms() {
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "section",
       { id: "top" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "box" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "box2" }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
-        { className: "gurprit" },
+        { id: "atoms" },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { className: "face facepiece" },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "svg",
-            { viewBox: "0 0 744.1 1052.4" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ellipse", {
-              transform: "scale(1,-1)",
-              ry: "270",
-              rx: "270",
-              cy: "-493.8",
-              cx: "371.4",
-              style: {
-                fill: "#00ff00",
-                strokeLinecap: "square",
-                strokeWidth: "10",
-                stroke: "#000"
-              }
-            })
-          )
+          { className: "eye1" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_2_images_eye1_png___default.a })
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("svg", { viewBox: "0 0 744.1 1052.4" })
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "svg",
-        {
-          xmlns: "http://www.w3.org/2000/svg",
-          version: "1.1",
-          style: "display:none"
-        },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "defs",
-          null,
+          "div",
+          { className: "eye2" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_3_images_eye2_png___default.a })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "div",
+          { className: "gurprit" },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "filter",
-            { id: "squiggly-0" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
-              id: "turbulence",
-              baseFrequency: "0.02",
-              numOctaves: "3",
-              result: "noise",
-              seed: "0"
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", {
-              id: "displacement",
-              "in": "SourceGraphic",
-              in2: "noise",
-              scale: "2"
-            })
+            "div",
+            { className: "face facepiece" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "svg",
+              { viewBox: "0 0 744.1 1052.4" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ellipse", {
+                transform: "scale(1,-1)",
+                ry: "270",
+                rx: "270",
+                cy: "-493.8",
+                cx: "371.4",
+                style: {
+                  fill: "#00ff00",
+                  strokeLinecap: "square",
+                  strokeWidth: "10",
+                  stroke: "#000"
+                }
+              })
+            )
           ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("svg", { viewBox: "0 0 744.1 1052.4" })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "svg",
+          {
+            xmlns: "http://www.w3.org/2000/svg",
+            version: "1.1",
+            style: { display: "none" }
+          },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "filter",
-            { id: "squiggly-1" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
-              id: "turbulence",
-              baseFrequency: "0.02",
-              numOctaves: "3",
-              result: "noise",
-              seed: "1"
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "filter",
-            { id: "squiggly-2" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
-              id: "turbulence",
-              baseFrequency: "0.02",
-              numOctaves: "3",
-              result: "noise",
-              seed: "2"
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "2" })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "filter",
-            { id: "squiggly-3" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
-              id: "turbulence",
-              baseFrequency: "0.02",
-              numOctaves: "3",
-              result: "noise",
-              seed: "3"
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "filter",
-            { id: "squiggly-4" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
-              id: "turbulence",
-              baseFrequency: "0.02",
-              numOctaves: "3",
-              result: "noise",
-              seed: "4"
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "1" })
+            "defs",
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "filter",
+              { id: "squiggly-0" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+                id: "turbulence",
+                baseFrequency: "0.02",
+                numOctaves: "3",
+                result: "noise",
+                seed: "0"
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", {
+                id: "displacement",
+                "in": "SourceGraphic",
+                in2: "noise",
+                scale: "2"
+              })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "filter",
+              { id: "squiggly-1" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+                id: "turbulence",
+                baseFrequency: "0.02",
+                numOctaves: "3",
+                result: "noise",
+                seed: "1"
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "filter",
+              { id: "squiggly-2" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+                id: "turbulence",
+                baseFrequency: "0.02",
+                numOctaves: "3",
+                result: "noise",
+                seed: "2"
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "2" })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "filter",
+              { id: "squiggly-3" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+                id: "turbulence",
+                baseFrequency: "0.02",
+                numOctaves: "3",
+                result: "noise",
+                seed: "3"
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "3" })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "filter",
+              { id: "squiggly-4" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feTurbulence", {
+                id: "turbulence",
+                baseFrequency: "0.02",
+                numOctaves: "3",
+                result: "noise",
+                seed: "4"
+              }),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("feDisplacementMap", { "in": "SourceGraphic", in2: "noise", scale: "1" })
+            )
           )
         )
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_AtomText__["a" /* default */], null)
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__text_AtomsText__["a" /* default */], null)
   );
 };
 
@@ -45673,9 +45690,9 @@ var Atoms = function Atoms() {
 
 /***/ }),
 /* 191 */
-/*!***********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/AtomText.jsx ***!
-  \***********************************************************************/
+/*!************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/text/AtomsText.jsx ***!
+  \************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45687,7 +45704,7 @@ function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("
 
 
 
-var DNAText = function DNAText(_ref) {
+var AtomsText = function AtomsText(_ref) {
   _objectDestructuringEmpty(_ref);
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -45695,123 +45712,65 @@ var DNAText = function DNAText(_ref) {
     { className: "text" },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
-      { className: "table" },
+      null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
+        "h1",
         null,
+        "Atomic structure"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "p",
+        null,
+        "All substances are made from tiny particles called",
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h1",
-          null,
-          "The eye is a sense organ that responds to light"
+          "span",
+          { id: "text-1" },
+          " atoms"
         ),
+        ". An atom has a small central nucleus made up of smaller sub-atomic particles called",
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Cornea"
-          )
+          "span",
+          { id: "text-2" },
+          " protons and neutrons"
         ),
+        ". The nucleus is surrounded by even smaller sub-atomic particles called",
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          " Refracts light - bends it as it enters the eye "
+          "span",
+          { id: "text-3" },
+          " electrons"
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-2" },
-            "Pupil"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The dark circular opening in the centre of the iris of the eye, which varies in size to regulate the amount of light reaching the retina."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-3" },
-            "Conjunctiva"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The mucous membrane that covers the front of the eye and lines the inside of the eyelids."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Cillary muscle"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "Muscles connected to the lens by suspensory ligaments. The adjust the shape of the lens to make it more or less curved, so as to increase or decrease the refraction of light."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-2" },
-            "Lens"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          " Focuses light onto the retina "
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-3" },
-            "Retina"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The lining of the back of eye containing two types of photoreceptor cells - rods - sensitive to dim light and black and white - and cones - sensitive to colour. A small area called the fovea in the middle of the retina has many more cones than rods."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Optic nerve"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "A bundle of sensory neurones at back of eye. It carries impulses from the eye to the brain.",
-          " "
-        )
+        "."
       )
     )
   );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (DNAText);
+/* harmony default export */ __webpack_exports__["a"] = (AtomsText);
 
 /***/ }),
 /* 192 */
+/*!************************************!*\
+  !*** ./app/assets/images/eye1.png ***!
+  \************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/eye1-794d021f28e225d06cfe9751415a57d3.png";
+
+/***/ }),
+/* 193 */
+/*!************************************!*\
+  !*** ./app/assets/images/eye2.png ***!
+  \************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/eye2-54f3d439f133519d34eec30fa0035d28.png";
+
+/***/ }),
+/* 194 */
 /*!****************************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/CellsTissuesOrgans.jsx ***!
   \****************************************************************************/
@@ -45822,7 +45781,7 @@ var DNAText = function DNAText(_ref) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_CellsTissuesOrgansText__ = __webpack_require__(/*! ./text/CellsTissuesOrgansText */ 193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_CellsTissuesOrgansText__ = __webpack_require__(/*! ./text/CellsTissuesOrgansText */ 195);
 
 
 
@@ -46022,7 +45981,7 @@ var CellsTissuesOrgans = function CellsTissuesOrgans() {
 /* harmony default export */ __webpack_exports__["a"] = (CellsTissuesOrgans);
 
 /***/ }),
-/* 193 */
+/* 195 */
 /*!*************************************************************************************!*\
   !*** ./app/javascript/bundles/Container/components/text/CellsTissuesOrgansText.jsx ***!
   \*************************************************************************************/
@@ -46122,4 +46081,4 @@ var CellsTissuesOrgansText = function CellsTissuesOrgansText(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=container-bundle-e4c33fc9d087c813b103.js.map
+//# sourceMappingURL=container-bundle-0651a59fc4116c002ebb.js.map
