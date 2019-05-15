@@ -3,8 +3,6 @@ section#top #pupil {
   bottom: -10px;
   left: -32px;
   width: 100%;
-  /* background: transparent url(images/cornea.png) no-repeat center center; */
-
   height: 100%;
 }
 
@@ -13,7 +11,6 @@ section#top #cornea {
   top: 0;
   left: -75px;
   width: 100%;
-  /* background: transparent url(images/cornea.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -22,7 +19,6 @@ section#top #fovea {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/fovea.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -31,7 +27,6 @@ section#top #cillary_muscle {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/cillarymuscle.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -40,7 +35,6 @@ section#top #lens {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/lens.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -49,7 +43,6 @@ section#top #conjunctiva {
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(images/conjunctiva.png) no-repeat center center; */
   height: 100%;
 }
 

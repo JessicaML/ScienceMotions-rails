@@ -1,18 +1,22 @@
-.box {
+#atoms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(../eye2.png) no-repeat center center; */
   height: 100%;
 }
 
-.box2 {
+.eye2 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: transparent url(../eye2S.png) no-repeat center center; */
   height: 100%;
 }
 
@@ -21,12 +25,15 @@
 }
 
 .gurprit {
-  width: 20%;
+  position: absolute;
   pointer-events: none;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  top: 120px;
+  top: 130px;
 }
 
 .gurprit svg {
@@ -34,7 +41,6 @@
 }
 
 .facepiece {
-  webkit-animation: squiggly-anim 0.3s infinite;
   animation: squiggly-anim 0.3s infinite;
 }
 
