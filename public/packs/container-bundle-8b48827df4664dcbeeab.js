@@ -37753,11 +37753,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_on_rails__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__ = __webpack_require__(/*! ../bundles/Container/components/Container */ 142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__ = __webpack_require__(/*! ../bundles/Container/components/Team */ 154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/Indicators */ 174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__ = __webpack_require__(/*! ../bundles/Container/components/DNA */ 176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__ = __webpack_require__(/*! ../bundles/Container/components/Eye */ 182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/Atoms */ 190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_lessons_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Indicators */ 174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_lessons_DNA__ = __webpack_require__(/*! ../bundles/Container/components/lessons/DNA */ 176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_lessons_Eye__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Eye */ 182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_lessons_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Atoms */ 190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_lessons_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/lessons/CellsTissuesOrgans */ 194);
 
 
 
@@ -37772,11 +37772,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default.a.register({
   Container: __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__["a" /* default */],
   Team: __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__["a" /* default */],
-  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__["a" /* default */],
-  DNA: __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__["a" /* default */],
-  Eye: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__["a" /* default */],
-  Atoms: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__["a" /* default */],
-  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__["a" /* default */]
+  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_lessons_Indicators__["a" /* default */],
+  DNA: __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_lessons_DNA__["a" /* default */],
+  Eye: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_lessons_Eye__["a" /* default */],
+  Atoms: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_lessons_Atoms__["a" /* default */],
+  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_lessons_CellsTissuesOrgans__["a" /* default */]
 });
 
 /***/ }),
@@ -44850,9 +44850,9 @@ module.exports = __webpack_require__.p + "_/assets/images/vanessa-54389afbc4c3b4
 
 /***/ }),
 /* 174 */
-/*!********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Indicators.jsx ***!
-  \********************************************************************/
+/*!****************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Indicators.jsx ***!
+  \****************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -44966,9 +44966,9 @@ var Indicators = function Indicators() {
 
 /***/ }),
 /* 175 */
-/*!*****************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/IndicatorsText.jsx ***!
-  \*****************************************************************************/
+/*!*************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/IndicatorsText.jsx ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45063,9 +45063,9 @@ var IndicatorsText = function IndicatorsText(_ref) {
 
 /***/ }),
 /* 176 */
-/*!*************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/DNA.jsx ***!
-  \*************************************************************/
+/*!*********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/DNA.jsx ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45166,9 +45166,9 @@ module.exports = __webpack_require__.p + "_/assets/images/thymine-09c8f57fdd36dc
 
 /***/ }),
 /* 181 */
-/*!**********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/DNAText.jsx ***!
-  \**********************************************************************/
+/*!******************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/DNAText.jsx ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45253,9 +45253,9 @@ var DNAText = function DNAText(_ref) {
 
 /***/ }),
 /* 182 */
-/*!*************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Eye.jsx ***!
-  \*************************************************************/
+/*!*********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Eye.jsx ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45332,9 +45332,9 @@ var Eye = function Eye() {
 
 /***/ }),
 /* 183 */
-/*!**********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/EyeText.jsx ***!
-  \**********************************************************************/
+/*!******************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/EyeText.jsx ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45537,9 +45537,9 @@ module.exports = __webpack_require__.p + "_/assets/images/conjunctiva-cdabb5aa51
 
 /***/ }),
 /* 190 */
-/*!***************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Atoms.jsx ***!
-  \***************************************************************/
+/*!***********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Atoms.jsx ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45690,9 +45690,9 @@ var Atoms = function Atoms() {
 
 /***/ }),
 /* 191 */
-/*!************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/AtomsText.jsx ***!
-  \************************************************************************/
+/*!********************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/AtomsText.jsx ***!
+  \********************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45771,9 +45771,9 @@ module.exports = __webpack_require__.p + "_/assets/images/eye2-54f3d439f133519d3
 
 /***/ }),
 /* 194 */
-/*!****************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/CellsTissuesOrgans.jsx ***!
-  \****************************************************************************/
+/*!************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/CellsTissuesOrgans.jsx ***!
+  \************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45982,9 +45982,9 @@ var CellsTissuesOrgans = function CellsTissuesOrgans() {
 
 /***/ }),
 /* 195 */
-/*!*************************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/CellsTissuesOrgansText.jsx ***!
-  \*************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/CellsTissuesOrgansText.jsx ***!
+  \*********************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -46081,4 +46081,4 @@ var CellsTissuesOrgansText = function CellsTissuesOrgansText(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=container-bundle-0651a59fc4116c002ebb.js.map
+//# sourceMappingURL=container-bundle-8b48827df4664dcbeeab.js.map
