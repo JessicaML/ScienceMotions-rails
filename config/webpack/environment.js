@@ -12,17 +12,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|mp3|ogg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {}
           }
         ]
-      }     
-    ]   
+      }
+    ]
   }
-}
+};
 
 module.exports = environment;
-

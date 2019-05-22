@@ -271,7 +271,7 @@ a:hover {
   font-style: oblique;
   font-weight: 900;
   background-color: #00ff00;
-  margin-top: 4%;
+  margin: 25px 0 0 20px;
 }
 
 .subscription {

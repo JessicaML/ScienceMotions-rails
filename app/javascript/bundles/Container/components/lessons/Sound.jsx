@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import SoundPng from "images/sound.png";
 import SoundGif from "images/sound.gif";
 import SoundText from "./text/SoundText";
+// import soundMp3 from "wouldnt_say.mp3";
+// import soundOgg from "wouldnt_say.ogg";
 
 class Sound extends React.Component {
   constructor(props) {
@@ -26,18 +28,13 @@ class Sound extends React.Component {
         <section id="visual">
           <div id="nav-one" className="nav">
             <audio id="beep-one">
-              <source
-                src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.mp3"
-                controls
-              />
-              <source
-                src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.ogg"
-                controls
-              />
+              {/* <source src={soundMp3} controls />
+              <source src={soundOgg} controls /> */}
               Your browser isn't invited for super fun time.
             </audio>
             <a href="#" id="sound">
               <img
+                style={{ height: "175px", width: "800px" }}
                 src={imgSrc}
                 onMouseOver={this.soundGif}
                 onMouseOut={this.soundPng}
