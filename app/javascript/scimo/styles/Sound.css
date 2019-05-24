@@ -1,0 +1,7 @@
+section#visual.sound {
+  height: 300px;
+  margin: 40px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

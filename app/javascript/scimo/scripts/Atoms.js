@@ -1,9 +1,12 @@
 $(document).ready(function($) {
   var box = $(".eye1");
-  var boxCenter = [
-    box.offset().left + box.width() / 2,
-    box.offset().top + box.height() / 2
-  ];
+
+  if (box) {
+    var boxCenter = [
+      box.offset().left + box.width() / 2,
+      box.offset().top + box.height() / 2
+    ];
+  }
 
   $(document).mousemove(function(e) {
     var angle =
@@ -16,11 +19,12 @@ $(document).ready(function($) {
   });
 
   var box2 = $(".eye2");
-  var boxCenter2 = [
-    box2.offset().left + box2.width() / 2,
-    box.offset().top + box2.height() / 2
-  ];
-
+  if (box2) {
+    var boxCenter2 = [
+      box2.offset().left + box2.width() / 2,
+      box.offset().top + box2.height() / 2
+    ];
+  }
   $(document).mousemove(function(e) {
     var angle =
       Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) *
