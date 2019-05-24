@@ -37753,11 +37753,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_on_rails__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__ = __webpack_require__(/*! ../bundles/Container/components/Container */ 142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__ = __webpack_require__(/*! ../bundles/Container/components/Team */ 154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/Indicators */ 174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__ = __webpack_require__(/*! ../bundles/Container/components/DNA */ 176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__ = __webpack_require__(/*! ../bundles/Container/components/Eye */ 182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/Atoms */ 190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/CellsTissuesOrgans */ 194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_lessons_Indicators__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Indicators */ 174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_lessons_DNA__ = __webpack_require__(/*! ../bundles/Container/components/lessons/DNA */ 176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_lessons_Eye__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Eye */ 182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_lessons_Atoms__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Atoms */ 190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_lessons_CellsTissuesOrgans__ = __webpack_require__(/*! ../bundles/Container/components/lessons/CellsTissuesOrgans */ 194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bundles_Container_components_lessons_Sound__ = __webpack_require__(/*! ../bundles/Container/components/lessons/Sound */ 196);
+
 
 
 
@@ -37772,11 +37774,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_react_on_rails___default.a.register({
   Container: __WEBPACK_IMPORTED_MODULE_1__bundles_Container_components_Container__["a" /* default */],
   Team: __WEBPACK_IMPORTED_MODULE_2__bundles_Container_components_Team__["a" /* default */],
-  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_Indicators__["a" /* default */],
-  DNA: __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_DNA__["a" /* default */],
-  Eye: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_Eye__["a" /* default */],
-  Atoms: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_Atoms__["a" /* default */],
-  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_CellsTissuesOrgans__["a" /* default */]
+  Indicators: __WEBPACK_IMPORTED_MODULE_3__bundles_Container_components_lessons_Indicators__["a" /* default */],
+  DNA: __WEBPACK_IMPORTED_MODULE_4__bundles_Container_components_lessons_DNA__["a" /* default */],
+  Eye: __WEBPACK_IMPORTED_MODULE_5__bundles_Container_components_lessons_Eye__["a" /* default */],
+  Atoms: __WEBPACK_IMPORTED_MODULE_6__bundles_Container_components_lessons_Atoms__["a" /* default */],
+  CellsTissuesOrgans: __WEBPACK_IMPORTED_MODULE_7__bundles_Container_components_lessons_CellsTissuesOrgans__["a" /* default */],
+  Sound: __WEBPACK_IMPORTED_MODULE_8__bundles_Container_components_lessons_Sound__["a" /* default */]
 });
 
 /***/ }),
@@ -44850,9 +44853,9 @@ module.exports = __webpack_require__.p + "_/assets/images/vanessa-54389afbc4c3b4
 
 /***/ }),
 /* 174 */
-/*!********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Indicators.jsx ***!
-  \********************************************************************/
+/*!****************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Indicators.jsx ***!
+  \****************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -44966,9 +44969,9 @@ var Indicators = function Indicators() {
 
 /***/ }),
 /* 175 */
-/*!*****************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/IndicatorsText.jsx ***!
-  \*****************************************************************************/
+/*!*************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/IndicatorsText.jsx ***!
+  \*************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45063,9 +45066,9 @@ var IndicatorsText = function IndicatorsText(_ref) {
 
 /***/ }),
 /* 176 */
-/*!*************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/DNA.jsx ***!
-  \*************************************************************/
+/*!*********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/DNA.jsx ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45166,9 +45169,9 @@ module.exports = __webpack_require__.p + "_/assets/images/thymine-09c8f57fdd36dc
 
 /***/ }),
 /* 181 */
-/*!**********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/DNAText.jsx ***!
-  \**********************************************************************/
+/*!******************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/DNAText.jsx ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45253,9 +45256,9 @@ var DNAText = function DNAText(_ref) {
 
 /***/ }),
 /* 182 */
-/*!*************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Eye.jsx ***!
-  \*************************************************************/
+/*!*********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Eye.jsx ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45332,9 +45335,9 @@ var Eye = function Eye() {
 
 /***/ }),
 /* 183 */
-/*!**********************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/EyeText.jsx ***!
-  \**********************************************************************/
+/*!******************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/EyeText.jsx ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45537,9 +45540,9 @@ module.exports = __webpack_require__.p + "_/assets/images/conjunctiva-cdabb5aa51
 
 /***/ }),
 /* 190 */
-/*!***************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/Atoms.jsx ***!
-  \***************************************************************/
+/*!***********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Atoms.jsx ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45690,9 +45693,9 @@ var Atoms = function Atoms() {
 
 /***/ }),
 /* 191 */
-/*!************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/AtomsText.jsx ***!
-  \************************************************************************/
+/*!********************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/AtomsText.jsx ***!
+  \********************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45771,9 +45774,9 @@ module.exports = __webpack_require__.p + "_/assets/images/eye2-54f3d439f133519d3
 
 /***/ }),
 /* 194 */
-/*!****************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/CellsTissuesOrgans.jsx ***!
-  \****************************************************************************/
+/*!************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/CellsTissuesOrgans.jsx ***!
+  \************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -45982,9 +45985,9 @@ var CellsTissuesOrgans = function CellsTissuesOrgans() {
 
 /***/ }),
 /* 195 */
-/*!*************************************************************************************!*\
-  !*** ./app/javascript/bundles/Container/components/text/CellsTissuesOrgansText.jsx ***!
-  \*************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/CellsTissuesOrgansText.jsx ***!
+  \*********************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -46079,6 +46082,212 @@ var CellsTissuesOrgansText = function CellsTissuesOrgansText(_ref) {
 
 /* harmony default export */ __webpack_exports__["a"] = (CellsTissuesOrgansText);
 
+/***/ }),
+/* 196 */
+/*!***********************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/Sound.jsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_sound_png__ = __webpack_require__(/*! images/sound.png */ 197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_images_sound_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_images_sound_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_sound_gif__ = __webpack_require__(/*! images/sound.gif */ 198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_images_sound_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_images_sound_gif__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text_SoundText__ = __webpack_require__(/*! ./text/SoundText */ 199);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+// import soundMp3 from "wouldnt_say.mp3";
+// import soundOgg from "wouldnt_say.ogg";
+
+var Sound = function (_React$Component) {
+  _inherits(Sound, _React$Component);
+
+  function Sound(props) {
+    _classCallCheck(this, Sound);
+
+    var _this = _possibleConstructorReturn(this, (Sound.__proto__ || Object.getPrototypeOf(Sound)).call(this, props));
+
+    _this.state = { imgSrc: __WEBPACK_IMPORTED_MODULE_1_images_sound_png___default.a };
+    _this.soundGif = _this.soundGif.bind(_this);
+    _this.soundPng = _this.soundPng.bind(_this);
+    return _this;
+  }
+
+  _createClass(Sound, [{
+    key: "soundGif",
+    value: function soundGif() {
+      this.setState({ imgSrc: __WEBPACK_IMPORTED_MODULE_2_images_sound_gif___default.a });
+    }
+  }, {
+    key: "soundPng",
+    value: function soundPng() {
+      this.setState({ imgSrc: __WEBPACK_IMPORTED_MODULE_1_images_sound_png___default.a });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var imgSrc = this.state.imgSrc;
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react__["Fragment"],
+        null,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "section",
+          { id: "visual", className: "sound" },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { id: "nav-one", className: "nav" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "audio",
+              { id: "beep-one" },
+              "Your browser isn't invited for super fun time."
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "a",
+              { href: "#", id: "sound" },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+                style: { height: "175px", width: "800px" },
+                src: imgSrc,
+                onMouseOver: this.soundGif,
+                onMouseOut: this.soundPng
+              })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__text_SoundText__["a" /* default */], null)
+      );
+    }
+  }]);
+
+  return Sound;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (Sound);
+
+/***/ }),
+/* 197 */
+/*!*************************************!*\
+  !*** ./app/assets/images/sound.png ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/sound-d758eab66038a9538adaa07efad68deb.png";
+
+/***/ }),
+/* 198 */
+/*!*************************************!*\
+  !*** ./app/assets/images/sound.gif ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "_/assets/images/sound-845c936e50562484cf3f1bd775b27d84.gif";
+
+/***/ }),
+/* 199 */
+/*!********************************************************************************!*\
+  !*** ./app/javascript/bundles/Container/components/lessons/text/SoundText.jsx ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(/*! react */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+
+
+var SoundText = function SoundText(_ref) {
+  _objectDestructuringEmpty(_ref);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "section",
+    { className: "text" },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "div",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "h1",
+        null,
+        "Properties of sound waves"
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "p",
+        null,
+        "Sound waves are",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-1" },
+          " longitudinal"
+        ),
+        " waves which means they vibrate in the same direction as the direction of travel. They are produced by vibrating sources, such as speakers. Sound waves can only travel through a solid, liquid or gas medium. They travel fastest in solids, then liquids and slowest in gases. A good model for sound waves is a spring."
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "p",
+        null,
+        "The sections of the sound waves where the particles are pushed together are areas of",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-2" },
+          " compression"
+        ),
+        ". The sections of the sound waves where the particles are further apart are areas of",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-3" },
+          " rarefaction"
+        ),
+        "."
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "p",
+        null,
+        "Sound waves can be",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-1" },
+          " reflected"
+        ),
+        " to form an echo,",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-2" },
+          " refracted"
+        ),
+        " and",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "span",
+          { id: "text-3" },
+          " diffracted"
+        ),
+        "."
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SoundText);
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=container-bundle-0651a59fc4116c002ebb.js.map
+//# sourceMappingURL=container-bundle-4a65f09e56503a2f54be.js.map

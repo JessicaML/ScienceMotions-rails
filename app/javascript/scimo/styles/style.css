@@ -18,10 +18,8 @@ html {
 }
 
 body {
-  background-color: red;
   color: blue;
   height: 100%;
-  background: rgb(255, 255, 0); /* fallback for old browsers */
 }
 /*
 		body.is-loading *,
@@ -142,7 +140,6 @@ b {
   background-color: hsl(318, 68%, 68%);
   color: white;
   padding: 2%;
-  margin-top: 4%;
 }
 
 .footer {

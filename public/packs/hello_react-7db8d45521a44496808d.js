@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/packs/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 196);
+/******/ 	return __webpack_require__(__webpack_require__.s = 201);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,7 +143,38 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 196:
+/***/ 20:
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ 21);
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 46)(ReactIs.isElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
+}
+
+
+/***/ }),
+
+/***/ 201:
 /*!**********************************************!*\
   !*** ./app/javascript/packs/hello_react.jsx ***!
   \**********************************************/
@@ -188,37 +219,6 @@ Hello.propTypes = {
 document.addEventListener("DOMContentLoaded", function () {
   __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Hello, { name: "React" }), document.body.appendChild(document.createElement("div")));
 });
-
-/***/ }),
-
-/***/ 20:
-/*!******************************************!*\
-  !*** ./node_modules/prop-types/index.js ***!
-  \******************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ 21);
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ 46)(ReactIs.isElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = require('./factoryWithThrowingShims')();
-}
-
 
 /***/ }),
 
@@ -25750,4 +25750,4 @@ module.exports = checkPropTypes;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hello_react-624660b2d163e02ebb08.js.map
+//# sourceMappingURL=hello_react-7db8d45521a44496808d.js.map

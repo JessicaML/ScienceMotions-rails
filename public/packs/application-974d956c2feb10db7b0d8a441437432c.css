@@ -42,10 +42,8 @@ html {
   height: 100%;
 }
 body {
-  background-color: red;
   color: blue;
   height: 100%;
-  background: rgb(255, 255, 0); /* fallback for old browsers */
 }
 /*
 		body.is-loading *,
@@ -152,7 +150,6 @@ b {
   background-color: hsl(318, 68%, 68%);
   color: white;
   padding: 2%;
-  margin-top: 4%;
 }
 .footer {
   background-color: #39454a;
@@ -1447,4 +1444,4 @@ section.text span#text-3 {
   color: #fdf734;
 }
 
-/*# sourceMappingURL=application-4dc2ce59d29bbe36e4ea2a6a7bb81187.css.map*/
+/*# sourceMappingURL=application-974d956c2feb10db7b0d8a441437432c.css.map*/
