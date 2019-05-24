@@ -4,6 +4,7 @@ import "./styles/Indicators.css";
 import "./styles/DNA.css";
 import "./styles/Eye.css";
 import "./styles/Sound.css";
+import "./styles/Classification.css";
 
 import "./styles/Atoms.css";
 

@@ -8,6 +8,7 @@ import Eye from "../bundles/Container/components/lessons/Eye";
 import Atoms from "../bundles/Container/components/lessons/Atoms";
 import CellsTissuesOrgans from "../bundles/Container/components/lessons/CellsTissuesOrgans";
 import Sound from "../bundles/Container/components/lessons/Sound";
+import Classification from "../bundles/Container/components/lessons/Classification";
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
@@ -18,5 +19,6 @@ ReactOnRails.register({
   Eye,
   Atoms,
   CellsTissuesOrgans,
-  Sound
+  Sound,
+  Classification
 });

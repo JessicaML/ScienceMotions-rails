@@ -1,0 +1,36 @@
+section#visual.classification {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+section#visual.classification h1 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+div.phrase {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.75em;
+  width: 85%;
+}
+
+.zero,
+.two,
+.six {
+  color: #6ace10;
+}
+
+.one,
+.four {
+  color: #ed462f;
+}
+
+.three,
+.five {
+  color: #7f44ce;
+}
