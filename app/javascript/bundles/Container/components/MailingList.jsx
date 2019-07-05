@@ -17,7 +17,6 @@ class MailingList extends React.Component {
   }
 
   onSubmit() {
-    console.log("-----onSubmit!");
     preventDefault();
 
     $.ajax({

@@ -20,6 +20,7 @@
 /node_modules
 /yarn-error.log
 /vendor
+package-lock.json
 
 .byebug_history
 .env
