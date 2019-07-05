@@ -58,8 +58,10 @@ class CompletedLessonsController < ApplicationController
   end
 
   def toggle
-
     @completed_lesson = current_user.completed_lessons.find(params[:id])
+    @lessons = Lesson.all
+    lessonId = @completed_lesson.lesson.id
+    @lesson = Lesson.find_by(id: lessonId)
     if @completed_lesson.completed?
       @completed_lesson.completed  = 'false'
     else
@@ -67,9 +69,9 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to lessons_url
+       redirect_to @lesson
     else
-      redirect_to lessons_url, notice: 'Error: please try again later.'
+      redirect_to @lesson, notice: 'Error: please try again later.'
     end
   end
 
