@@ -69,7 +69,7 @@ class CompletedLessonsController < ApplicationController
     # @lesson = Lesson.find(params[:id])
     # puts "sdfsdfdsfsdfsdfsdfdsfsd"
     # puts @lesson
-    # @completed_lesson = current_user.completed_lessons.find(params[:id])
+    @completed_lesson = current_user.completed_lessons.find(params[:id])
     # completed_lessons = @completed_lessons
 
     # @completed_lesson = @lesson.completed_lessons.build
@@ -82,7 +82,7 @@ class CompletedLessonsController < ApplicationController
     # @worldrecipes = Lesson.where(:id => params[75])
     # puts @worldrecipes
 
-    @completed_lesson = CompletedLesson.first
+    # @completed_lesson = CompletedLesson.first
     puts "3"
     puts @completed_lesson.lesson
     puts "4"
