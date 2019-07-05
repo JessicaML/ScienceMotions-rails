@@ -60,33 +60,25 @@ class CompletedLessonsController < ApplicationController
   def toggle
 
 
-    # @lessons = Lesson.all
-    # puts "sdfsdfdsfsdfsdfsdfdsfsd"
-    # puts @lessons
-    # puts "sdfsdfdsfsdfsdfsdfdsfsd"
-    # puts @lesson
-    # puts "sdfsdfdsfsdfsdfsdfdsfsd"
-    # @lesson = Lesson.find(params[:id])
-    # puts "sdfsdfdsfsdfsdfsdfdsfsd"
-    # puts @lesson
-    @completed_lesson = current_user.completed_lessons.find(params[:id])
-    # completed_lessons = @completed_lessons
 
-    # @completed_lesson = @lesson.completed_lessons.build
+    @completed_lesson = current_user.completed_lessons.find(params[:id])
     puts "1"
     puts @completed_lesson
-    # @completed = current_user.@completed_lessons.find_by(lesson: @lesson)
     puts "2"
-    puts @completed_lesson
-
-    # @worldrecipes = Lesson.where(:id => params[75])
-    # puts @worldrecipes
-
-    # @completed_lesson = CompletedLesson.first
-    puts "3"
-    puts @completed_lesson.lesson
-    puts "4"
     puts @completed_lesson.lesson.id
+    puts "3"
+    @lessons = Lesson.all
+    puts "4"
+    puts @lessons
+
+    lessonId = @completed_lesson.lesson.id
+    puts "5"
+    puts lessonId
+
+    @lesson = Lesson.find_by(id: lessonId)
+
+    puts "6"
+    puts @lesson
 
     if @completed_lesson.completed?
       @completed_lesson.completed  = 'false'
@@ -95,7 +87,7 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to @completed_lesson
+       redirect_to @lesson
     else
       redirect_to lessons_url, notice: 'Error: please try again later.'
     end
