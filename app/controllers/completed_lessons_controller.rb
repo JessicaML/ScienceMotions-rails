@@ -26,21 +26,19 @@ class CompletedLessonsController < ApplicationController
   # POST /completed_lessons
   # POST /completed_lessons.json
   def create
-
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
+    @lessons = Lesson.all
+    lessonId = @completed_lesson.lesson.id
+    @lesson = Lesson.find_by(id: lessonId)
+
     @completed_lesson.user = current_user
     @completed_lesson.completed = true
 
-    # respond_to do |format|
-      if @completed_lesson.save
-        redirect_to lessons_url
-        # format.html { redirect_to lesson_url, notice: 'Completed lesson was successfully created.' }
-        # format.json { render :show, status: :created, location: @lesson }
-      else
-        # format.html { render :new }
-        # format.json { render json: @lesson.errors, status: :unprocessable_entity }
-      end
-    # end
+    if @completed_lesson.save
+      redirect_to @lesson, notice: 'Update successful.'
+   else
+     redirect_to @lesson, notice: 'Error: please try again later.'
+   end
   end
 
   # PATCH/PUT /completed_lessons/1
@@ -66,10 +64,10 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to @completed_lessons
-    else
-      redirect_to @completed_lessons, notice: 'Error: please try again later.'
-    end
+      redirect_to completed_lessons_url, notice: 'Update successful.'
+   else
+     redirect_to completed_lessons_url, notice: 'Error: please try again later.'
+   end
   end
 
   def togglelesson
@@ -84,7 +82,7 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to @lesson
+       redirect_to @lesson, notice: 'Update successful.'
     else
       redirect_to @lesson, notice: 'Error: please try again later.'
     end
