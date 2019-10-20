@@ -13,7 +13,7 @@
     "react-mailchimp-subscribe": "^2.1.0",
     "react-on-rails": "11.0.4",
     "react-skrollr": "^1.0.4"
-  },
+    },
   "devDependencies": {
     "autoprefixer": "^9.6.5",
     "cssnano": "^4.1.10",

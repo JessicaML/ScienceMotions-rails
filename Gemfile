@@ -82,3 +82,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_racer', platforms: :ruby
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem "rubyzip", ">= 1.3.0"
