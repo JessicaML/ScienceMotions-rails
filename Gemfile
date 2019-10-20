@@ -21,7 +21,8 @@ gem 'pg', '0.21.0'
 #   gem 'pg'
 # end
 
-gem 'devise'
+gem "devise", ">= 4.7.1"
+gem "nokogiri", ">= 1.10.4"
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
