@@ -2,7 +2,7 @@ import React from "react";
 import CellsTissuesOrgansText from "./text/CellsTissuesOrgansText";
 
 const CellsTissuesOrgans = () => (
-  <div className="lesson_template">
+  <div className="lesson_template" className="lesson-container">
     <section className="animation">
       <div className="cell">
         <div className="organelle-container">

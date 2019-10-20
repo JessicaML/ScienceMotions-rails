@@ -4,7 +4,7 @@ import teamImgs from "./teamImgs";
 import { ParallaxProvider, Parallax } from "react-skrollr";
 
 const Team = ({}) => (
-  <ParallaxProvider>
+  <ParallaxProvider className="nav-container">
     <Parallax
       data={{
         "data-0":
