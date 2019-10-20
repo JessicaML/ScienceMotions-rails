@@ -5,3 +5,7 @@ section#visual.sound {
   justify-content: center;
   align-items: center;
 }
+
+.sound__waveImage {
+  cursor: pointer;
+}
