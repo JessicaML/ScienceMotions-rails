@@ -6,12 +6,9 @@ const IndicatorsText = ({}) => (
       <section className="text">
         <h1>Indicators</h1>
         <p>
-          When an acid is dissolved in water we get an
-          <span id="text-1">acidic</span> solution. When a base dissolves in
-          water it is an alkali and makes an
-          <span id="text-2">alkaline</span> solution. If a solution is neither
-          acidic nor alkaline it is
-          <span id="text-3">neutral</span>. Pure water is neutral, and so is
+          When an acid is dissolved in water we get an <span id="text-1">acidic</span> solution. When a base dissolves in
+          water it is an alkali and makes an <span id="text-2">alkaline</span> solution. If a solution is neither
+          acidic nor alkaline it is <span id="text-3">neutral</span>. Pure water is neutral, and so is
           paraffin.
         </p>
         <p>

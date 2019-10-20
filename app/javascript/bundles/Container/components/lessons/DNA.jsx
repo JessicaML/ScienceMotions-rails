@@ -7,7 +7,7 @@ import DNAText from "./text/DNAText";
 
 const DNA = () => (
   <Fragment>
-    <section id="visual">
+    <section id="visual" className="lesson-container">
       <div className="table">
         <div className="row">
           <div className="col-sm-1" />

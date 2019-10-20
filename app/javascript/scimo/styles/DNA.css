@@ -24,10 +24,10 @@
   right: 0;
 }
 
-section#top {
+section#visual {
   position: relative;
-  width: 100%;
   height: 750px;
+  width: 100%;
   overflow: hidden;
   text-align: center;
 }

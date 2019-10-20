@@ -23,7 +23,7 @@ class Sound extends React.Component {
     const { imgSrc } = this.state;
     return (
       <Fragment>
-        <section id="visual" className="sound">
+        <section id="visual" className="sound" className="lesson-container">
           <div id="nav-one" className="nav">
             <audio id="beep-one">
               Your browser isn't invited for super fun time.
