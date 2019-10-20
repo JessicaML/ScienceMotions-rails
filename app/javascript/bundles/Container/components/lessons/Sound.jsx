@@ -44,7 +44,7 @@ class Sound extends React.Component {
             <audio id="beep-one">
               Your browser isn't invited for super fun time.
             </audio>
-            <a id="sound" onClick={this.toggleMic}>
+            <a id="sound" className="sound__waveImage" onClick={this.toggleMic}>
               {record ? <ReactMic
                 record={this.state.record}
                 className="sound-wave"
