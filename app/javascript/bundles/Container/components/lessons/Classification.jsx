@@ -33,7 +33,7 @@ class Classification extends React.Component {
     const classNames = classnames("phrase", styles[value]);
     return (
       <Fragment>
-        <section id="visual" className="classification">
+        <section id="visual" className="classification" className="lesson-container">
           <div id="header">
             <h1>Characteristics of living organisms </h1>
             <input

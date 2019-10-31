@@ -21,7 +21,8 @@ gem 'pg', '0.21.0'
 #   gem 'pg'
 # end
 
-gem 'devise'
+gem "devise", ">= 4.7.1"
+gem "nokogiri", ">= 1.10.4"
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
@@ -81,3 +82,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_racer', platforms: :ruby
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem "rubyzip", ">= 1.3.0"

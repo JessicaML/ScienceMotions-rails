@@ -5,7 +5,7 @@ import Testimonials from "./Testimonials";
 import MailingList from "./MailingList";
 
 const Container = () => (
-  <div>
+  <div className="nav-container">
     <About />
     <FeaturedLessons />
     <Testimonials />

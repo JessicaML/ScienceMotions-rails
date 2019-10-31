@@ -9,22 +9,3 @@
 # Completed_lesson.delete_all
 # Lesson.delete_all
 # User.delete_all
-
-#Users
-vanessa = User.create(email: "van@gmail.com", password: "van")
-
-#Lessons
-lesson1 = Lesson.create(name: "van", description: "van", slug: "van")
-
-lesson2 = Completed_lesson.create(user_id: "1", lesson_id: "1", completed: "true")
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
-
-admin = User.create(
-    :name => "jess scimo",
-    :email => "jess@scimo.com",
-    :password => "password123",
-    :password_confirmation => "password123"
-)
-admin.toggle!(:admin)
-
-AdminUser.create!(email: 'admin@scimo.com', password: 'scimoad', password_confirmation: 'scimoad') if Rails.env.production?

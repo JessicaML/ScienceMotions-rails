@@ -3,13 +3,13 @@ import IndicatorsText from "./text/IndicatorsText";
 
 const Indicators = () => (
   <Fragment>
-    <section id="visual">
+    <section id="visual" className="lesson-container">
       <div className="table">
         <div className="row">
           <div className="col-sm-1" />
           <div className="col-sm-3">
             <p>Acidic Solution</p>
-            <p className="animated infinite pulse">[H+] &#62 [OH-]</p>
+            <p className="animated infinite pulse">[H+] &#62; [OH-]</p>
             <div className="redlitmus animated bounceIn">
               Red litmus - stays red
             </div>

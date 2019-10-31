@@ -16,6 +16,11 @@
 
 body {
   padding-top: 100px;
+  background-color: hsl(318, 60%, 68%);
+}
+
+.nav-container {
+  background-color: hsl(318, 60%, 68%);
 }
 
 table,
