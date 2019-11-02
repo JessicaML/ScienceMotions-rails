@@ -1,31 +1,34 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Lessons</h1>
+<div class="nav-container">
+  <p id="notice"><%= notice %></p>
+  <h1>Lessons</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Slug</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div class="lesson-table">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th></th>
+          <th></th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-  <tbody>
-   <% @lessons.each do |lesson| %>
-     <tr>
-        <td><%= lesson&.id %></td>
-        <td><%= lesson&.name %></td>
-        <td><%= lesson&.description %></td>
-        <td><%= lesson&.slug %></td>
-        <td><%= link_to 'Show', lesson %></td>
-     </tr>
-   <% end %>
-  </tbody>
-</table>
 
-<br>
+      <tbody>
+      <% @lessons.each do |lesson| %>
+        <tr>
+            <td><%= lesson&.id %></td>
+            <td><%= lesson&.name %></td>
+            <td><%= link_to 'Show', lesson %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <div>
+
+  <br>
+</div>
 
 

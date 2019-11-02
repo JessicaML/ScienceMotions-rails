@@ -2,28 +2,20 @@
 
 <h1>My Completed Lessons</h1>
 
-<table class="table table-bordered">
-
-
-  <tbody>
-    <% @completed_lessons.each do |completed_lesson| %>
-      <% if completed_lesson.completed == true &&  current_user.id == completed_lesson.user_id%>
-        <tr>
-        <%#  <td><%= current_user.id %></td>
-        <%#  <td><%= completed_lesson.user_id %></td>
-        <%#  <td><%= completed_lesson.lesson_id %></td>
-        <%#  <td><%= completed_lesson.completed %></td>
-        <td><%= completed_lesson.lesson&.name %></td>
-        <%#  <td><%= completed_lesson.user&.email %></td>
-        <%#  <td><%= link_to 'Show', completed_lesson %></td>
-        <td><%= link_to 'mark incomplete', toggleindex_path(completed_lesson), :method => :put %></td>
-        <%#  <td><%= link_to 'Edit', edit_completed_lesson_path(completed_lesson) %></td>
-        <%#  <td><%= link_to 'Reset', completed_lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
+  <div class="lesson-table">
+    <table class="table table-bordered">
+      <tbody>
+        <% @completed_lessons.each do |completed_lesson| %>
+          <% if completed_lesson.completed == true &&  current_user.id == completed_lesson.user_id%>
+            <tr>
+            <td><%= completed_lesson.lesson&.name %></td>
+            <td><%= link_to 'mark incomplete', toggleindex_path(completed_lesson), :method => :put %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
 <br>
 

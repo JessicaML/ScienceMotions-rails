@@ -9,7 +9,7 @@ import Conjunctiva from "images/conjunctiva.png";
 
 const Eye = () => (
   <Fragment>
-    <section id="top" className="lesson-container">
+    <section id="visual" className="lesson-container">
       <div id="" />
       <div id="pupil">
         <img src={Pupil} />

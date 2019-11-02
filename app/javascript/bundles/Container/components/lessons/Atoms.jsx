@@ -5,7 +5,7 @@ import eye2 from "images/eye2.png";
 
 const Atoms = () => (
   <Fragment>
-    <section id="top" className="lesson-container">
+    <section id="visual" className="lesson-container">
       <div id="atoms">
         <div className="eye1">
           <img src={eye1} />
