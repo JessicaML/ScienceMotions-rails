@@ -45,14 +45,6 @@ th {
 }
 
 @charset 'UTF-8';
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
 html {
   height: 100%;
 }
@@ -60,21 +52,6 @@ body {
   color: blue;
   height: 100%;
 }
-/*
-		body.is-loading *,
-		body.is-resizing *
-		{
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-o-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-o-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-		}*/
 body,
 input,
 textarea,
@@ -179,10 +156,6 @@ b {
 .footer label {
   color: rgb(255, 255, 0); /* fallback for old browsers */
 }
-.container {
-  padding-right: 0px;
-  padding-left: 0px;
-}
 .mailchimp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,107 +255,44 @@ section#visual {
   overflow: hidden;
   text-align: center;
 }
-section#visual #pupil {
-  position: absolute;
-  bottom: -10px;
-  left: -32px;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #cornea {
-  position: absolute;
-  top: 0;
-  left: -75px;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #fovea {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #cillary_muscle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #lens {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #conjunctiva {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section#visual #cornea_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#visual #pupil_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#visual #fovea_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#visual #cillary_muscle_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#visual #lens_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#visual #conjunctiva_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
+.eye {
+  padding-top: 60px; }
+  .eye #pupil {
+    position: absolute;
+    bottom: -10px;
+    left: -32px;
+    width: 100%;
+    height: 100%; }
+  .eye #cornea {
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 100%;
+    height: 100%; }
+  .eye #fovea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .eye #cillary_muscle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .eye #lens {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .eye #conjunctiva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 section#visual.sound {
   height: 300px;
   margin: 40px 0 60px 0;
@@ -1039,12 +949,6 @@ div.phrase {
   bottom: 0;
 }
 
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
 @charset 'UTF-8';
 body {
   margin: 0;
@@ -1067,9 +971,6 @@ section,
 summary {
   display: block;
 }
-/**
-  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
-  */
 audio,
 canvas,
 video {
@@ -1090,6 +991,7 @@ section#visual {
   padding: 75px;
 }
 section#visual button {
+  outline: none;
   overflow: hidden;
   margin-left: 15px;
 }
@@ -1115,9 +1017,6 @@ section#text {
   position: relative;
   background-color: #39454a;
   color: #fff;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 3%;
 }
 section#text h1 {
   font-size: 1em;
@@ -1140,7 +1039,7 @@ section#text h2 {
   letter-spacing: 0.5vw;
   padding: 3%;
 }
-sectiontext p {
+section#text p {
   font-size: 1em;
   font-family: "Space mono", sans-serif;
   text-align: left;
@@ -1213,8 +1112,6 @@ a:hover {
   font-family: "Courier New";
   font-style: oblique;
   font-weight: 900;
-  /*width:196px;
-      height:210px;*/
   position: relative;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1);
@@ -1243,6 +1140,7 @@ a:hover {
   transform: scale(1.2);
 }
 .button-flip {
+  outline: none;
   color: #fff;
   font-family: "Courier New";
   font-style: oblique;
@@ -1337,4 +1235,4 @@ section#text span#text-3 {
   color: #fdf734;
 }
 
-/*# sourceMappingURL=application-f93884c1141a5695f1406377bf7f8bdc.css.map*/
+/*# sourceMappingURL=application-b3d53df954ef7d86ac11668b04ddd2be.css.map*/

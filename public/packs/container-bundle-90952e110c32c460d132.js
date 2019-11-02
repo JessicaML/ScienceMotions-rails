@@ -53140,8 +53140,7 @@ var Eye = function Eye() {
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "section",
-      { id: "visual", className: "lesson-container" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "" }),
+      { id: "visual", className: "lesson-container eye" },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
         { id: "pupil" },
@@ -53202,116 +53201,108 @@ var DNAText = function DNAText(_ref) {
     "section",
     { id: "text" },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      "div",
-      { className: "table" },
+      "h1",
+      null,
+      "The eye is a sense organ that responds to light"
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "div",
-        null,
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h1",
-          null,
-          "The eye is a sense organ that responds to light"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Cornea"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          " Refracts light - bends it as it enters the eye "
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-2" },
-            "Pupil"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The dark circular opening in the centre of the iris of the eye, which varies in size to regulate the amount of light reaching the retina."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-3" },
-            "Conjunctiva"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The mucous membrane that covers the front of the eye and lines the inside of the eyelids."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Cillary muscle"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "Muscles connected to the lens by suspensory ligaments. The adjust the shape of the lens to make it more or less curved, so as to increase or decrease the refraction of light."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-2" },
-            "Lens"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          " Focuses light onto the retina "
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-3" },
-            "Retina"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "The lining of the back of eye containing two types of photoreceptor cells - rods - sensitive to dim light and black and white - and cones - sensitive to colour. A small area called the fovea in the middle of the retina has many more cones than rods."
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "span",
-            { id: "text-1" },
-            "Optic nerve"
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "p",
-          null,
-          "A bundle of sensory neurones at back of eye. It carries impulses from the eye to the brain.",
-          " "
-        )
+        "span",
+        { id: "text-1" },
+        "Cornea"
       )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      " Refracts light - bends it as it enters the eye "
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-2" },
+        "Pupil"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      "The dark circular opening in the centre of the iris of the eye, which varies in size to regulate the amount of light reaching the retina."
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-3" },
+        "Conjunctiva"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      "The mucous membrane that covers the front of the eye and lines the inside of the eyelids."
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-1" },
+        "Cillary muscle"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      "Muscles connected to the lens by suspensory ligaments. The adjust the shape of the lens to make it more or less curved, so as to increase or decrease the refraction of light."
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-2" },
+        "Lens"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      " Focuses light onto the retina "
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-3" },
+        "Retina"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      "The lining of the back of eye containing two types of photoreceptor cells - rods - sensitive to dim light and black and white - and cones - sensitive to colour. A small area called the fovea in the middle of the retina has many more cones than rods."
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "span",
+        { id: "text-1" },
+        "Optic nerve"
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      "p",
+      null,
+      "A bundle of sensory neurones at back of eye. It carries impulses from the eye to the brain.",
+      " "
     )
   );
 };
@@ -53861,7 +53852,7 @@ var CellsTissuesOrgansText = function CellsTissuesOrgansText(_ref) {
         { className: "col-xs-12", id: "link-text" },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "section",
-          { className: "text" },
+          { id: "text" },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "h1",
             { className: "content" },
@@ -54940,4 +54931,4 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=container-bundle-0aab648c1a96e73d4fa0.js.map
+//# sourceMappingURL=container-bundle-90952e110c32c460d132.js.map

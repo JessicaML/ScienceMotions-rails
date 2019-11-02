@@ -3,15 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One");
 @import url("https://fonts.googleapis.com/css?family=Bitter");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono");
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
 
 html {
   height: 100%;
@@ -21,21 +12,6 @@ body {
   color: blue;
   height: 100%;
 }
-/*
-		body.is-loading *,
-		body.is-resizing *
-		{
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-o-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-o-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-		}*/
 
 body,
 input,
@@ -156,11 +132,6 @@ b {
 
 .footer label {
   color: rgb(255, 255, 0); /* fallback for old browsers */
-}
-
-.container {
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 .mailchimp {

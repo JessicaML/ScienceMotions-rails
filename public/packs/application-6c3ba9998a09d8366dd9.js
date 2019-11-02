@@ -10716,8 +10716,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__styles_Indicators_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__ = __webpack_require__(/*! ./styles/DNA.css */ 78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_DNA_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_DNA_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_css__ = __webpack_require__(/*! ./styles/Eye.css */ 79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_Eye_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_scss__ = __webpack_require__(/*! ./styles/Eye.scss */ 79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_Eye_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_Eye_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_Sound_css__ = __webpack_require__(/*! ./styles/Sound.css */ 80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_Sound_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_Sound_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__styles_Classification_css__ = __webpack_require__(/*! ./styles/Classification.css */ 81);
@@ -10805,9 +10805,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ }),
 
 /***/ 79:
-/*!*********************************************!*\
-  !*** ./app/javascript/scimo/styles/Eye.css ***!
-  \*********************************************/
+/*!**********************************************!*\
+  !*** ./app/javascript/scimo/styles/Eye.scss ***!
+  \**********************************************/
 /*! dynamic exports provided */
 /***/ (function(module, exports) {
 
@@ -10973,24 +10973,24 @@ $(document).ready(function () {
   if (currentoffset < 601) {
     thisoffset = currentoffset - 50 * (currentoffset / 600);
     scaleclouds = currentoffset / 700 + 1;
-    $("#cillary_muscle").css({
+    $(" #cillary_muscle").css({
       visual: thisoffset,
       transform: "scale(" + scaleclouds + ")"
     });
 
     thisoffset = currentoffset - 100 * (currentoffset / 300);
     thisrotation = -200 * (currentoffset / 1000);
-    $("#lens").css({
+    $(" #lens").css({
       visual: thisoffset,
       transform: "rotate(" + thisrotation + "deg)"
     });
 
     thisoffset = currentoffset - 1000 * (currentoffset / 500);
-    $("#cornea").css({ visual: thisoffset });
+    $(" #cornea").css({ visual: thisoffset });
 
     thisoffset = currentoffset - 100 * (currentoffset / 300);
     thisrotation = 250 * (currentoffset / 1000);
-    $("#fovea").css({
+    $(" #fovea").css({
       visual: thisoffset,
       transform: "rotate(" + thisrotation + "deg)"
     });
@@ -10998,18 +10998,18 @@ $(document).ready(function () {
     thisoffset = currentoffset - 100 * (currentoffset / 700);
     scalebit3 = currentoffset / 300 + 1;
 
-    $("#conjunctiva").css({
+    $(" #conjunctiva").css({
       visual: thisoffset,
       transform: "scale(" + scalebit3 + ")"
     });
   }
-  $("#visual").hover(function () {
-    $("#conjunctiva_label").fadeTo("fast", 0.99);
-    $("#cornea_label").fadeTo("slow", 0.99);
-    $("#lens_label").fadeTo("slow", 0.99);
-    $("#fovea_label").fadeTo("fast", 0.99);
-    $("#cillary_muscle_label").fadeTo("slow", 0.99);
-    $("#pupil_label").fadeTo("fast", 0.99);
+  $(" #visual").hover(function () {
+    $(" #conjunctiva_label").fadeTo("fast", 0.99);
+    $(" #cornea_label").fadeTo("slow", 0.99);
+    $(" #lens_label").fadeTo("slow", 0.99);
+    $(" #fovea_label").fadeTo("fast", 0.99);
+    $(" #cillary_muscle_label").fadeTo("slow", 0.99);
+    $(" #pupil_label").fadeTo("fast", 0.99);
   });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 3)))
@@ -11026,29 +11026,34 @@ $(document).ready(function () {
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function ($) {
   var box = $(".eye1");
 
-  if (box) {
+  if (box && box.offset()) {
     var boxCenter = [box.offset().left + box.width() / 2, box.offset().top + box.height() / 2];
   }
 
-  $(document).mousemove(function (e) {
-    var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
+  if (boxCenter) {
+    $(document).mousemove(function (e) {
+      var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
 
-    box.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
-    box.css({ "-moz-transform": "rotate(" + angle + "deg)" });
-    box.css({ transform: "rotate(" + angle + "deg)" });
-  });
+      box.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+      box.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+      box.css({ transform: "rotate(" + angle + "deg)" });
+    });
+  }
 
   var box2 = $(".eye2");
-  if (box2) {
-    var boxCenter2 = [box2.offset().left + box2.width() / 2, box.offset().top + box2.height() / 2];
+  if (box2 && box && box.offset() && box2.offset()) {
+    var boxCenter = [box2.offset().left + box2.width() / 2, box.offset().top + box2.height() / 2];
   }
-  $(document).mousemove(function (e) {
-    var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
 
-    box2.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
-    box2.css({ "-moz-transform": "rotate(" + angle + "deg)" });
-    box2.css({ transform: "rotate(" + angle + "deg)" });
-  });
+  if (boxCenter) {
+    $(document).mousemove(function (e) {
+      var angle = Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) * (180 / Math.PI);
+
+      box2.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+      box2.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+      box2.css({ transform: "rotate(" + angle + "deg)" });
+    });
+  }
 
   var card = $(".gurprit");
 
@@ -11087,4 +11092,4 @@ $(document).ready(function () {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=application-1f761a3974f02a08fd60.js.map
+//# sourceMappingURL=application-6c3ba9998a09d8366dd9.js.map

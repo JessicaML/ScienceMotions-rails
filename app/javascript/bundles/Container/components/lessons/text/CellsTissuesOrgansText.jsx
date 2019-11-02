@@ -4,7 +4,7 @@ const CellsTissuesOrgansText = ({}) => (
   <div className="container">
     <div className="row">
       <div className="col-xs-12" id="link-text">
-        <section className="text">
+        <section id="text">
           <h1 className="content">Levels of Organization</h1>
           <p>Cells, Tissues and Organs</p>
           <h2 style={{ color: "#0ff004" }}>Organelles</h2>
