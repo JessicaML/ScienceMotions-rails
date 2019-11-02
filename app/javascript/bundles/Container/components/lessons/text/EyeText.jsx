@@ -1,7 +1,7 @@
 import React from "react";
 
 const DNAText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div className="table">
       <div>
         <h1>The eye is a sense organ that responds to light</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const AtomsText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div>
       <h1>Atomic structure</h1>
       <p>

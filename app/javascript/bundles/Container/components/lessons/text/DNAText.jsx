@@ -1,9 +1,8 @@
 import React from "react";
 
 const DNAText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div className="table">
-      <section className="text">
         <h1>Structure of DNA</h1>
         <p>Each gene in a molecule of DNA contains:</p>
         <p>
@@ -29,7 +28,6 @@ const DNAText = ({}) => (
           copy is able to leave the nucleus to go into the cytoplasm so that
           proteins can be made by the cell.
         </p>
-      </section>
     </div>
   </section>
 );
