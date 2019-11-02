@@ -1,7 +1,7 @@
 import React from "react";
 
 const ClassificationText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div>
       <h1>Classification</h1>
       <p>

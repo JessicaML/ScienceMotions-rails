@@ -1,9 +1,8 @@
 import React from "react";
 
 const IndicatorsText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div className="table">
-      <section className="text">
         <h1>Indicators</h1>
         <p>
           When an acid is dissolved in water we get an <span id="text-1">acidic</span> solution. When a base dissolves in
@@ -31,7 +30,6 @@ const IndicatorsText = ({}) => (
         </p>
 
         <p>The table above shows the colour changes it can make.</p>
-      </section>
     </div>
   </section>
 );

@@ -1,7 +1,7 @@
 import React from "react";
 
 const SoundText = ({}) => (
-  <section className="text">
+  <section id="text">
     <div>
       <h1>Properties of sound waves</h1>
       <p>
