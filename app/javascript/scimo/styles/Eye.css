@@ -1,4 +1,4 @@
-section#top #pupil {
+section#visual #pupil {
   position: absolute;
   bottom: -10px;
   left: -32px;
@@ -6,7 +6,7 @@ section#top #pupil {
   height: 100%;
 }
 
-section#top #cornea {
+section#visual #cornea {
   position: absolute;
   top: 0;
   left: -75px;
@@ -14,7 +14,7 @@ section#top #cornea {
   height: 100%;
 }
 
-section#top #fovea {
+section#visual #fovea {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@ section#top #fovea {
   height: 100%;
 }
 
-section#top #cillary_muscle {
+section#visual #cillary_muscle {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@ section#top #cillary_muscle {
   height: 100%;
 }
 
-section#top #lens {
+section#visual #lens {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@ section#top #lens {
   height: 100%;
 }
 
-section#top #conjunctiva {
+section#visual #conjunctiva {
   position: absolute;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@ section#top #conjunctiva {
   height: 100%;
 }
 
-section#top #cornea_label {
+section#visual #cornea_label {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@ section#top #cornea_label {
   opacity: 0.1;
 }
 
-section#top #pupil_label {
+section#visual #pupil_label {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,16 +63,7 @@ section#top #pupil_label {
   height: 100%;
   opacity: 0.1;
 }
-section#top #fovea_label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-}
-
-section#top #cillary_muscle_label {
+section#visual #fovea_label {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +72,7 @@ section#top #cillary_muscle_label {
   opacity: 0.1;
 }
 
-section#top #lens_label {
+section#visual #cillary_muscle_label {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +81,16 @@ section#top #lens_label {
   opacity: 0.1;
 }
 
-section#top #conjunctiva_label {
+section#visual #lens_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+section#visual #conjunctiva_label {
   position: absolute;
   top: 0;
   left: 0;
