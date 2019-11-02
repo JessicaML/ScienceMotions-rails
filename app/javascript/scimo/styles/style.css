@@ -52,6 +52,10 @@ h1 {
   font-size: 2em;
 }
 
+a {
+  outline: none;
+}
+
 #second h1 {
   font-size: 1.5em;
   color: #3b3b3b;
