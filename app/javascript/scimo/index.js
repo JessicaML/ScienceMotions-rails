@@ -2,7 +2,7 @@ import "./styles/application.css";
 import "./styles/style.css";
 import "./styles/Indicators.css";
 import "./styles/DNA.css";
-import "./styles/Eye.css";
+import "./styles/Eye.scss";
 import "./styles/Sound.css";
 import "./styles/Classification.css";
 import "./styles/Atoms.css";

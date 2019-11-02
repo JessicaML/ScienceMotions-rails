@@ -1,0 +1,50 @@
+.eye {
+  padding-top: 60px;
+   #pupil {
+    position: absolute;
+    bottom: -10px;
+    left: -32px;
+    width: 100%;
+    height: 100%;
+  }
+
+   #cornea {
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 100%;
+    height: 100%;
+  }
+
+   #fovea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+   #cillary_muscle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+   #lens {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+   #conjunctiva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

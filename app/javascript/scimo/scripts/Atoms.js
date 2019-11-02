@@ -1,39 +1,47 @@
 $(document).ready(function($) {
   var box = $(".eye1");
 
-  if (box) {
+  if (box && box.offset()) {
     var boxCenter = [
       box.offset().left + box.width() / 2,
       box.offset().top + box.height() / 2
     ];
   }
 
-  $(document).mousemove(function(e) {
-    var angle =
-      Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) *
-      (180 / Math.PI);
+  if (boxCenter) {
+    $(document).mousemove(function(e) { 
+      var angle =
+        Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) *
+        (180 / Math.PI);
+  
+      box.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+      box.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+      box.css({ transform: "rotate(" + angle + "deg)" });
+    });
+  }
 
-    box.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
-    box.css({ "-moz-transform": "rotate(" + angle + "deg)" });
-    box.css({ transform: "rotate(" + angle + "deg)" });
-  });
+
 
   var box2 = $(".eye2");
-  if (box2) {
-    var boxCenter2 = [
+  if (box2 && box && box.offset() && box2.offset()) {
+    var boxCenter = [
       box2.offset().left + box2.width() / 2,
       box.offset().top + box2.height() / 2
     ];
   }
-  $(document).mousemove(function(e) {
-    var angle =
-      Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) *
-      (180 / Math.PI);
 
-    box2.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
-    box2.css({ "-moz-transform": "rotate(" + angle + "deg)" });
-    box2.css({ transform: "rotate(" + angle + "deg)" });
-  });
+  if (boxCenter) {
+    $(document).mousemove(function(e) {
+      var angle =
+        Math.atan2(e.pageX - boxCenter[0], -(e.pageY - boxCenter[1])) *
+        (180 / Math.PI);
+  
+      box2.css({ "-webkit-transform": "rotate(" + angle + "deg)" });
+      box2.css({ "-moz-transform": "rotate(" + angle + "deg)" });
+      box2.css({ transform: "rotate(" + angle + "deg)" });
+    });
+  }
+
 
   var card = $(".gurprit");
 
