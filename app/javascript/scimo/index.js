@@ -1,6 +1,6 @@
 import "./styles/application.css";
 import "./styles/style.css";
-import "./styles/Indicators.css";
+import "./styles/Indicators.scss";
 import "./styles/DNA.css";
 import "./styles/Eye.scss";
 import "./styles/Sound.css";
