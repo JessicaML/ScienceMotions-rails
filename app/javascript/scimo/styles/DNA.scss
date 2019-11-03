@@ -1,0 +1,46 @@
+
+section#visual {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dna {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+  .dna-img {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .dna-img.t {
+    top: 0;
+    left: 0;
+  }
+  
+  .dna-img.c {
+    top: 0;
+    right: 0;
+  }
+  
+  .dna-img.a {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .dna-img.g {
+    bottom: 0;
+    right: 0;
+  }  
+}
+
+
+
+

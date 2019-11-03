@@ -6,6 +6,7 @@
     "babel-preset-react": "^6.24.1",
     "classnames": "^2.2.6",
     "install": "^0.13.0",
+    "jest": "^24.9.0",
     "jquery": "^3.3.1",
     "npm": "^6.12.1",
     "prop-types": "^15.6.1",
@@ -15,16 +16,38 @@
     "react-mailchimp-subscribe": "^2.1.0",
     "react-mic": "^12.4.1",
     "react-on-rails": "11.0.4",
-    "react-skrollr": "^1.0.4"
+    "react-skrollr": "^1.0.4",
+    "react-test-renderer": "^16.11.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
     "autoprefixer": "^9.6.5",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
     "cssnano": "^4.1.10",
     "file-loader": "^4.2.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "sugarss": "^2.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": ">=3.1.11"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ]
   }
 }
