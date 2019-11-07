@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LeaveCourseForm renders correctly when there are no items 1`] = `
+exports[`DNA renders correctly when there are no items 1`] = `
 Array [
   <div
     id="skrollr-body"

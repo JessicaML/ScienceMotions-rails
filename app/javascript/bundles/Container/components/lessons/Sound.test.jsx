@@ -1,11 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import DNA from './DNA';
-describe('DNA', () => {
-  window.scrollTo = jest.fn(() => ({})); 
+import Sound from './Sound';
+describe('Sound', () => {
   it('renders correctly when there are no items', () => {
-    const rendered = renderer.create(<DNA />).toJSON();
+    const rendered = renderer.create(<Sound />).toJSON();
     expect(rendered).toMatchSnapshot();
   });
 })
