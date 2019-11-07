@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Classification renders correctly when there are no items 1`] = `
+Array [
+  <section
+    className="lesson-container"
+    id="visual"
+  >
+    <div
+      id="header"
+    >
+      <h1>
+        Characteristics of living organisms 
+      </h1>
+      <input
+        defaultValue="0"
+        max="6"
+        min="0"
+        onChange={[Function]}
+        type="range"
+      />
+    </div>
+    <div
+      className="phrase zero"
+    >
+      Movement - they can move and change their position.
+    </div>
+  </section>,
+  <section
+    id="text"
+  >
+    <div>
+      <h1>
+        Classification
+      </h1>
+      <p>
+        The first letter of each of these characteristics makes up the acronym
+        <span
+          id="text-1"
+        >
+           MRS GREN
+        </span>
+        . This is a good way of remembering them.
+      </p>
+      <p>
+        Living organisms can
+        <span
+          id="text-2"
+        >
+           reproduce
+        </span>
+      </p>
+      <p>
+        Living organisms can also control their
+        <span
+          id="text-3"
+        >
+           internal conditions
+        </span>
+        , such as their temperature or water content.
+      </p>
+    </div>
+  </section>,
+]
+`;
