@@ -168,7 +168,7 @@ GEM
     polyamorous (2.3.0)
       activerecord (>= 5.0)
     public_suffix (4.0.1)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
     rack-proxy (0.6.5)
       rack
@@ -323,7 +323,7 @@ DEPENDENCIES
   mini_racer
   nokogiri (>= 1.10.4)
   pg (= 0.21.0)
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.2, >= 5.2.2.1)
   react_on_rails (~> 11.2, >= 11.2.2)
   rest-client (~> 1.8)
