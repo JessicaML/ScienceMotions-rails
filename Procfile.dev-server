@@ -1,5 +1,5 @@
 # You can run these commands in separate shells instead of using foreman
-web: rails s -p 3000
+web: rails s -p 3001
 
 # Next line runs the webpack-dev-server
 # You can edit config/webpacker.yml to set HMR to true to see hot reloading.

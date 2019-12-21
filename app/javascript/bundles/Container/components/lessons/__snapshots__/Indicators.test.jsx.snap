@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Indicators renders correctly when there are no items 1`] = `
+Array [
+  <section
+    className="lesson-container indicators"
+    id="visual"
+  >
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Acidic Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+] &gt; [OH-]
+      </p>
+      <div
+        className="redlitmus animated bounceIn"
+      >
+        Red litmus - stays red
+      </div>
+      <br />
+      <div
+        className="bluelitmus red animated bounceIn"
+      >
+        Blue litmus - turns red
+      </div>
+    </div>
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Neutral Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+]=[OH-]
+      </p>
+      <div
+        className="redlitmus animated bounceIn"
+      >
+        Red litmus - stays red
+      </div>
+      <br />
+      <div
+        className="bluelitmus animated bounceIn"
+      >
+        Blue litmus - stays blue
+      </div>
+    </div>
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Basic Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+] &lt; [OH-] 
+      </p>
+      <div
+        className="redlitmus blu animated bounceIn"
+      >
+        Red litmus - turns blue
+      </div>
+      <br />
+      <div
+        className="bluelitmus animated bounceIn"
+      >
+        Blue litmus - stays blue
+      </div>
+    </div>
+  </section>,
+  <section
+    id="text"
+  >
+    <h1>
+      Indicators
+    </h1>
+    <p>
+      When an acid is dissolved in water we get an 
+      <span
+        id="text-1"
+      >
+        acidic
+      </span>
+       solution. When a base dissolves in water it is an alkali and makes an 
+      <span
+        id="text-2"
+      >
+        alkaline
+      </span>
+       solution. If a solution is neither acidic nor alkaline it is 
+      <span
+        id="text-3"
+      >
+        neutral
+      </span>
+      . Pure water is neutral, and so is paraffin.
+    </p>
+    <p>
+      Indicators are substances that change colour when they are added to acidic or alkaline solutions. Litmus, phenolphthalein, and methyl orange are all indicators that are commonly used in the laboratory.
+    </p>
+    <p>
+      <span
+        id="text-1"
+      >
+        Litmus
+      </span>
+    </p>
+    <p>
+      Litmus indicator solution turns red in acidic solutions and blue in alkaline solutions - and it turns purple in neutral solutions.
+    </p>
+    <p>
+      <span
+        id="text-2"
+      >
+        Litmus paper
+      </span>
+       is usually more reliable, and comes as red litmus paper and blue litmus paper. The table shows the colour changes it can make.
+    </p>
+    <p>
+      The table above shows the colour changes it can make.
+    </p>
+  </section>,
+]
+`;

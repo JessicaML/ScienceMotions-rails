@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CellsTissuesOrgans renders correctly when there are no items 1`] = `
+<div
+  className="lesson-container"
+>
+  <section
+    className="animation"
+  >
+    <div
+      className="cell"
+    >
+      <div
+        className="organelle-container"
+      >
+        <div
+          className="nucleus"
+        >
+          <div
+            className="nucleulus"
+          />
+        </div>
+        <div
+          className="mitochondria"
+          id="mito1"
+        >
+          <svg
+            version="1.1"
+            viewBox="0 0 60 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30,20 Q55,5 30,20 T30,30 t0,10 5,10 t5,5 5,50"
+              fill="none"
+              stroke="#EE7600"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="mitochondria"
+          id="mito2"
+        >
+          <svg
+            version="1.1"
+            viewBox="0 0 60 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30,20 Q55,5 30,20 T30,30 t0,10 5,10 t5,5 5,50"
+              fill="none"
+              stroke="#EE7600"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="mitochondria"
+          id="mito3"
+        >
+          <svg
+            preserveAspectRatio="xMinYMin"
+            version="1.1"
+            viewBox="0 0 60 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30,20 Q55,5 30,20 T30,30 t0,10 5,10 t5,5 5,50"
+              fill="none"
+              stroke="#EE7600"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="lysosome-box"
+        >
+          <div
+            className="lysosome"
+          />
+        </div>
+        <div
+          className="lysosome-box"
+          id="box1"
+        >
+          <div
+            className="lysosome"
+          />
+        </div>
+        <div
+          className="lysosome-box"
+          id="box2"
+        >
+          <div
+            className="lysosome"
+          />
+        </div>
+        <div
+          className="cytoskeleton-green"
+        >
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              className="cytogreen1"
+              d="M65 180 H 130"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+            <path
+              className="cytogreen1"
+              d="M65 185 H 130"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+            <path
+              className="cytogreen2"
+              d="M200 250 H 280"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+            <path
+              className="cytogreen2"
+              d="M200 255 H 280"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+            <path
+              className="cytogreen3"
+              d="M260 90 V 150"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+            <path
+              className="cytogreen3"
+              d="M265 90 V 150"
+              fill="transparent"
+              stroke="green"
+              strokeWidth="3"
+            />
+          </svg>
+        </div>
+        <div
+          className="cytoskeleton-blue"
+        >
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40 30 Q 52.5 10, 95 50 T 130 80"
+              fill="transparent"
+              stroke="blue"
+              strokeWidth="4"
+            />
+            <path
+              d="M30 50 Q 42.5 30, 85 60 T 120 100"
+              fill="transparent"
+              stroke="blue"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="cytoskeleton-blue2"
+        >
+          <svg
+            viewBox="0 0 500 500"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40 30 Q 52.5 10, 95 50 T 130 80"
+              fill="transparent"
+              stroke="blue"
+              strokeWidth="4"
+            />
+            <path
+              d="M30 50 Q 42.5 30, 85 60 T 120 100"
+              fill="transparent"
+              stroke="blue"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="golgi"
+        />
+      </div>
+    </div>
+    <div
+      className="tissue-container"
+    >
+      <div
+        className="tissue"
+      />
+    </div>
+    <div
+      className="organ"
+    />
+    <div
+      className="organ-system"
+    />
+  </section>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-xs-12"
+        id="link-text"
+      >
+        <section
+          id="text"
+        >
+          <h1
+            className="content"
+          >
+            Levels of Organization
+          </h1>
+          <p>
+            Cells, Tissues and Organs
+          </p>
+          <h2
+            style={
+              Object {
+                "color": "#0ff004",
+              }
+            }
+          >
+            Organelles
+          </h2>
+          <p>
+            Cell structure that is specialised to carry out a particular function or job
+          </p>
+          <h2
+            style={
+              Object {
+                "color": "#6ad2ff",
+              }
+            }
+          >
+            Cells
+          </h2>
+          <p>
+            Basic structural and functional unit of a living organism
+          </p>
+          <h2
+            style={
+              Object {
+                "color": "#ff6796",
+              }
+            }
+          >
+            Tissues
+          </h2>
+          <p>
+            Group of cells with similar structures, working together to perform a shared function
+          </p>
+          <h2
+            style={
+              Object {
+                "color": "#ffff00",
+              }
+            }
+          >
+            Organ
+          </h2>
+          <p>
+            Structure made up of a group of tissues, working together to perform specific functions
+          </p>
+          <h2
+            style={
+              Object {
+                "color": "#ED462F",
+              }
+            }
+          >
+            Organ System
+          </h2>
+          <p>
+            Group of organs with related functions, working together to perform body functions
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
