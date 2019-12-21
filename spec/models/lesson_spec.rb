@@ -2,7 +2,15 @@ require "rails_helper"
 
 RSpec.describe Lesson, type: :model do
   it "has a name" do 
-    lesson = Lesson.create!(name: "Lesson Name 1") 
-    expect(lesson.name).to eq("Lesson Name 1") 
+    lesson = Lesson.create!(name: "First Idea Name") 
+    second_lesson = Lesson.create!(name: "Second Idea Name")
+    expect(second_lesson.name).to eq("Second Idea Name") 
   end
+
+  it "has a slug" do
+    lesson = Lesson.create!(slug: "lesson-url") 
+    second_lesson = Lesson.create!(slug: "second-lesson-url") 
+    expect(second_lesson.slug).to eq("second-lesson-url")
+  end
+
 end
