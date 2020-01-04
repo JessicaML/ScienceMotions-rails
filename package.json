@@ -3,6 +3,10 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "4.2.2",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.7.4",
     "classnames": "^2.2.6",
     "core-js": "3",
     "install": "^0.13.0",
@@ -21,10 +25,6 @@
     "react-test-renderer": "^16.11.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.7.4",
     "autoprefixer": "^9.6.5",
     "babel-jest": "^24.9.0",
     "cssnano": "^4.1.10",
