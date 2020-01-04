@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/activeadmin/activeadmin.git
-  revision: 953e1359ba6d0f648538a0a6724f4722b802721c
+  revision: b70e4a75b9b0499140fc66ab1bc19eb665585b4c
   specs:
     activeadmin (2.6.0)
       arbre (~> 1.2, >= 1.2.1)
@@ -167,7 +167,7 @@ GEM
     pg (0.21.0)
     polyamorous (2.3.0)
       activerecord (>= 5.0)
-    public_suffix (4.0.1)
+    public_suffix (4.0.2)
     puma (3.12.2)
     rack (2.0.8)
     rack-proxy (0.6.5)
@@ -207,7 +207,7 @@ GEM
       i18n
       polyamorous (= 2.3.0)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
+    rb-inotify (0.10.1)
       ffi (~> 1.0)
     react_on_rails (11.3.0)
       addressable
@@ -222,12 +222,12 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rspec-core (3.9.0)
-      rspec-support (~> 3.9.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
     rspec-expectations (3.9.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-mocks (3.9.0)
+    rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-rails (3.9.0)
@@ -238,7 +238,7 @@ GEM
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
       rspec-support (~> 3.9.0)
-    rspec-support (3.9.0)
+    rspec-support (3.9.2)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
     sass (3.7.4)
@@ -260,7 +260,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (3.142.6)
+    selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     spring (2.1.0)
@@ -281,7 +281,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
