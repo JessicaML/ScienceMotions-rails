@@ -8,7 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-ruby '2.6.2'
+ruby '2.6.5'
 
 gem 'rails', '~> 5.2', '>= 5.2.2.1'
 gem 'react_on_rails', '~> 11.2', '>= 11.2.2'
@@ -20,7 +20,7 @@ gem 'pg', '0.21.0'
 # group :production do
 #   gem 'pg'
 # end
-
+gem 'rails_12factor'
 gem "devise", ">= 4.7.1"
 gem "nokogiri", ">= 1.10.4"
 gem 'activeadmin', github: 'activeadmin'
@@ -45,11 +45,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'libv8', '~> 6.3.0'
+gem 'libv8'
 
 gem "figaro"
 
@@ -79,7 +79,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'mini_racer', platforms: :ruby
+gem 'mini_racer', '~> 0.2.9'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
