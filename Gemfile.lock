@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/activeadmin/activeadmin.git
-  revision: b70e4a75b9b0499140fc66ab1bc19eb665585b4c
+  revision: 1d523be3487acc7a284faeaec5ded8655e906ba0
   specs:
     activeadmin (2.6.0)
       arbre (~> 1.2, >= 1.2.1)
@@ -119,7 +119,7 @@ GEM
       activesupport (>= 4.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.7.0)
+    i18n (1.8.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -167,9 +167,9 @@ GEM
     pg (0.21.0)
     polyamorous (2.3.0)
       activerecord (>= 5.0)
-    public_suffix (4.0.2)
+    public_suffix (4.0.3)
     puma (3.12.2)
-    rack (2.0.8)
+    rack (2.1.0)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
