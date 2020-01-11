@@ -40,3 +40,4 @@ ReactOnRails.configure do |config|
   #
   config.server_bundle_js_file = "hello-world-bundle.js"
 end
+
