@@ -25,13 +25,14 @@ package-lock.json
 .byebug_history
 .env
 
+/public/assets
+/public/packs
+
 # Ignore application configuration
 /config/application.yml
 /node_modules
 yarn-debug.log*
 .yarn-integrity
-
-
 
 config/database.yml
 /public/packs
