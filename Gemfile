@@ -20,7 +20,6 @@ gem 'pg', '0.21.0'
 # group :production do
 #   gem 'pg'
 # end
-gem 'rails_12factor'
 gem "devise", ">= 4.7.1"
 gem "nokogiri", ">= 1.10.4"
 gem 'activeadmin', github: 'activeadmin'
