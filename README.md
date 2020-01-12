@@ -11,7 +11,7 @@ https://www.sqlite.org/index.html
 - postgres
 https://www.postgresql.org/
 
-
+create postgres user `createuser --interactive --pwprompt` with password: `password` and username `postgres`
 
 To run the project:
 

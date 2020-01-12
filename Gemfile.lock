@@ -139,7 +139,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    libv8 (6.3.292.48.1)
+    libv8 (7.3.492.27.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -156,8 +156,8 @@ GEM
     mimemagic (0.3.3)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    mini_racer (0.2.4)
-      libv8 (>= 6.3)
+    mini_racer (0.2.9)
+      libv8 (>= 6.9.411)
     minitest (5.13.0)
     netrc (0.11.0)
     nio4r (2.5.2)
@@ -318,9 +318,9 @@ DEPENDENCIES
   figaro
   inherited_resources!
   jbuilder (~> 2.5)
-  libv8 (~> 6.3.0)
+  libv8
   listen (>= 3.0.5, < 3.2)
-  mini_racer
+  mini_racer (~> 0.2.9)
   nokogiri (>= 1.10.4)
   pg (= 0.21.0)
   puma (~> 3.7)
@@ -341,7 +341,7 @@ DEPENDENCIES
   webpacker (~> 4.2.2)
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.5p114
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
