@@ -20,7 +20,8 @@ To run the project:
 3. yarn && bundle install
 4. rake db:create
 5. rake db:migrate
-6. rails server
+6. open bin/webpack-dev-server **in one tab**
+7. and bin/rails s **in another tab**
 
 if you are having problems creating the db, try 
 - rake db:reset
