@@ -17,7 +17,7 @@ To run the project:
 
 1. git clone git@github.com:JessicaML/ScienceMotions-rails.git
 2. cd ScienceMotions-rails
-3. bundle install
+3. yarn && bundle install
 4. rake db:create
 5. rake db:migrate
 6. rails server
