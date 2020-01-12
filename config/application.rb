@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Scimo
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.assets.enabled = false
+    config.assets.enabled = true
 
       config.generators do |g|
         g.assets false
