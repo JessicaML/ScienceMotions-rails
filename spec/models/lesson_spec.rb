@@ -7,10 +7,15 @@ RSpec.describe Lesson, type: :model do
     expect(second_lesson.name).to eq("Second Idea Name") 
   end
 
+  it "has a description" do
+    lesson = Lesson.create!(description: "lesson-description") 
+    second_lesson = Lesson.create!(description: "second-lesson-description") 
+    expect(second_lesson.description).to eq("second-lesson-description")
+  end
+
   it "has a slug" do
     lesson = Lesson.create!(slug: "lesson-url") 
     second_lesson = Lesson.create!(slug: "second-lesson-url") 
     expect(second_lesson.slug).to eq("second-lesson-url")
   end
-
 end
