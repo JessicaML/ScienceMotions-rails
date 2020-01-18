@@ -5,12 +5,13 @@ RSpec.configure do |config|
 end
 
 RSpec.describe LessonsController, type: :controller do
-  describe "routing" do
+  login_user
+  describe 'index' do  
     it "should go to the index page" do
       get 'index'
-      response.should render_template "lessons"
+      response.should render_template "lessons/index"
     end
-  end
+  end 
 
   describe 'create' do
     it 'successfully creates a new lesson' do
