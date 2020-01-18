@@ -24,6 +24,11 @@ gem "devise", ">= 4.7.1"
 gem "nokogiri", ">= 1.10.4"
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'rails-controller-testing'
+gem 'factory_girl_rails'
+gem 'headless'
+gem 'poltergeist'
+gem 'database_cleaner'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
