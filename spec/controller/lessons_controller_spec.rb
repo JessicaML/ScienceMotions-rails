@@ -15,7 +15,7 @@ RSpec.describe LessonsController, type: :controller do
 
   describe 'show' do
     it 'should show field' do
-      lesson = Lesson.create! 
+      lesson = Lesson.create!
       get :show, params: { id: lesson.id }
       expect(response.status).to eq(200)
     end
@@ -25,6 +25,21 @@ RSpec.describe LessonsController, type: :controller do
     it 'successfully creates a new lesson' do
       lesson = Lesson.create(name: "test", description: "asdf", slug: "asdf")
       expect(Lesson.last.name).to eq("test")
+    end
+  end
+
+  describe 'destroy' do
+    it "destroys the requested lesson" do
+      lesson = Lesson.create!
+      expect {
+        delete :destroy, params: { id: lesson.id }
+      }.to change(Lesson, :count).by(-1)
+    end
+
+    it "redirects to the lesson list" do
+      lesson = Lesson.create!
+        delete :destroy, params: { id: lesson.id }
+      expect(response).to redirect_to(lessons_url)
     end
   end
 end
