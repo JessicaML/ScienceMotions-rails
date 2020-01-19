@@ -129,7 +129,6 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
-    headless (2.3.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.8.1)
@@ -340,7 +339,6 @@ DEPENDENCIES
   factory_bot_rails
   factory_girl_rails
   figaro
-  headless
   inherited_resources!
   jbuilder (~> 2.5)
   libv8

@@ -9,9 +9,17 @@ RSpec.describe LessonsController, type: :controller do
   describe 'index' do  
     it "should go to the index page" do
       get 'index'
-      response.should render_template "lessons/index"
+      expect(response).to render_template "lessons/index"
     end
   end 
+
+  describe 'show' do
+    it 'should show field' do
+      lesson = Lesson.create! 
+      get :show, params: { id: lesson.id }
+      expect(response.status).to eq(200)
+    end
+  end
 
   describe 'create' do
     it 'successfully creates a new lesson' do
