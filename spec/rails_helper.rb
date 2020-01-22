@@ -9,7 +9,6 @@ require 'rspec/rails'
 require 'devise'
 require_relative 'support/controller_macros'
 
-
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

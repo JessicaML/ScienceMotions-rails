@@ -1,9 +1,5 @@
 require "rails_helper"
 
-RSpec.configure do |config|
-  config.include Devise::Test::ControllerHelpers, type: :controller
-end
-
 RSpec.describe LessonsController, type: :controller do
   login_user
   describe 'index' do  
@@ -23,8 +19,21 @@ RSpec.describe LessonsController, type: :controller do
 
   describe 'create' do
     it 'successfully creates a new lesson' do
-      lesson = Lesson.create(name: "test", description: "asdf", slug: "asdf")
+      lesson = Lesson.create(id: 1, name: "test", description: "asdf", slug: "asdf")
       expect(Lesson.last.name).to eq("test")
+    end
+  end
+
+  describe 'update' do
+    it "updates the requested lesson" do
+      @lesson = Lesson.create(id: 1, name: "test", description: "asdf", slug: "asdf")
+      patch :update, params: {
+        id: @lesson.id, lesson: { name: 'name2' }
+      }
+      @lesson.reload
+      expect(@lesson.name).to eq("name2")
+      expect(response).to redirect_to(lesson_url)
+
     end
   end
 
