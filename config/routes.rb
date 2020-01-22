@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :completed_lessons do
     # put :toggle
   end
-  resources :lessons, only: [:show, :index, :update]
+  resources :lessons, only: [:show, :index]
 
   devise_for :users do
     get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
