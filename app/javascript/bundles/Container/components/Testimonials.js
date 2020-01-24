@@ -1,7 +1,7 @@
 import React from "react";
 
 const Testimonials = () => (
-  <section id="test" className="container">
+  <section id="test">
     <div className="col-lg-12">
       <div className="header">
         <br />
