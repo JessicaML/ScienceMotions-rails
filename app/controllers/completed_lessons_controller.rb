@@ -3,28 +3,20 @@ class CompletedLessonsController < ApplicationController
 
   before_action :set_completed_lesson, only: [:show, :edit, :update, :destroy]
 
-  # GET /completed_lessons
-  # GET /completed_lessons.json
   def index
     @completed_lessons = CompletedLesson.all
   end
 
-  # GET /completed_lessons/1
-  # GET /completed_lessons/1.json
   def show
   end
 
-  # GET /completed_lessons/new
   def new
     @completed_lesson = CompletedLesson.new
   end
 
-  # GET /completed_lessons/1/edit
   def edit
   end
 
-  # POST /completed_lessons
-  # POST /completed_lessons.json
   def create
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @lessons = Lesson.all
@@ -41,8 +33,6 @@ class CompletedLessonsController < ApplicationController
    end
   end
 
-  # PATCH/PUT /completed_lessons/1
-  # PATCH/PUT /completed_lessons/1.json
   def update
     respond_to do |format|
       if @completed_lesson.update(completed_lesson_params)
@@ -88,9 +78,6 @@ class CompletedLessonsController < ApplicationController
     end
   end
 
-
-  # DELETE /completed_lessons/1
-  # DELETE /completed_lessons/1.json
   def destroy
     @completed_lesson.destroy
     respond_to do |format|
