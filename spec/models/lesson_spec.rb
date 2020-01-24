@@ -15,7 +15,7 @@ RSpec.describe Lesson, type: :model do
 
   it "has a slug" do
     lesson = Lesson.create!(slug: "lesson-url") 
-    second_lesson = Lesson.create!(slug: "sdfsd-url") 
+    second_lesson = Lesson.create!(slug: "second-lesson-url") 
     expect(second_lesson.slug).to eq("second-lesson-url")
   end
 end
