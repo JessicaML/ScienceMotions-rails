@@ -41,7 +41,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": "12.14.1"
+    "node": "13.7.0"
   },
   "jest": {
     "moduleNameMapper": {
