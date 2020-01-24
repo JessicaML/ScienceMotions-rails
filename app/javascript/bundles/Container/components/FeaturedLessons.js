@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const FeaturedLessons = () => (
-  <section id="second" className="container">
+  <section id="second">
     <div className="center-text">
       <div className="row">
         <div className="col-lg-12">

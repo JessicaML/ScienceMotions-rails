@@ -13,6 +13,8 @@ const Team = ({}) => (
           "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       }}
     >
+      <h1>Team</h1>
+
       <section
         className="container"
         style={{

@@ -14,16 +14,12 @@
  *= require_self
  */
 
-body {
-  padding-top: 100px;
+.nav-container {
+  background-color: hsl(318, 60%, 68%);
 }
 
-.nav-container h1 {
-  margin: 15px;
-}
 
 .lesson-table {
-  background-color: hsl(318, 60%, 68%);
   display: flex;
   justify-content: center;
   height: 1000px;
