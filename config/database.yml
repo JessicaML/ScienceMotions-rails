@@ -4,8 +4,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: postgres
   password: password
-  host: localhost
-  timeout: 5000
+  # host: localhost
+  # timeout: 5000
 
 development:
   <<: *default
@@ -15,5 +15,4 @@ test:
   <<: *default
   database: my_database_test
 
-production:
   url: <%= ENV['DATABASE_URL'] %>
