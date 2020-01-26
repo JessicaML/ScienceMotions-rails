@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders correctly when there are no items 1`] = `
+<div
+  className="nav-container"
+>
+  <div
+    id="skrollr-body"
+  >
+    <div
+      data-0="background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
+      data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
+    >
+      <section
+        className="container center-text"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-xs-6 col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="hidden-xs hidden-sm col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="col-xs-6 col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="hidden-xs hidden-sm col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-12"
+          >
+            <div
+              className="header"
+            >
+              <h1>
+                ScienceMotions
+              </h1>
+              <p>
+                Biology, chemistry and physics lessons from the future.
+              </p>
+              <p>
+                <a
+                  href="#"
+                >
+                  see more
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-xs-6 col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="hidden-xs hidden-sm col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="hidden-xs hidden-sm col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+          <div
+            className="col-xs-6 col-md-3 portfolio-item"
+          >
+            <img
+              alt=""
+              className="img-responsive"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section
+    id="second"
+  >
+    <div
+      className="center-text"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-12"
+        >
+          <div
+            className="header"
+          >
+            <br />
+            <p>
+              <a
+                href="navigation.html"
+              >
+                See all lessons here
+              </a>
+            </p>
+            <h1>
+              Featured Lessons
+            </h1>
+            <br />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-4 portfolio-item sound"
+          >
+            <a
+              href="lessons/1"
+            >
+              <h1>
+                Indicators
+              </h1>
+            </a>
+          </div>
+          <div
+            className="col-md-4 portfolio-item diffusion"
+          >
+            <a
+              href="lessons/3"
+            >
+              <h1>
+                Cells, Tissues, Organs
+              </h1>
+            </a>
+          </div>
+          <div
+            className="col-md-4 portfolio-item dna"
+          >
+            <a
+              href="lessons/2"
+            >
+              <h1>
+                DNA
+              </h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="test"
+  >
+    <div
+      className="col-lg-12"
+    >
+      <div
+        className="header"
+      >
+        <br />
+        <h1>
+          Testimonials
+        </h1>
+        <br />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-6 portfolio-item className"
+      >
+        <p>
+          <i>
+            “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”
+          </i>
+        </p>
+        <p>
+           Blessing, GCSE Student, Brixton 
+        </p>
+      </div>
+      <div
+        className="col-md-6 portfolio-item dna"
+      >
+        <p>
+          <i>
+             
+            “This looks like it would be very helpful. Right now I use Gojimo, but it just uses lots of questions”
+          </i>
+        </p>
+        <p>
+          Joseph, A-Level Biology Student, Camberwell
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer
+    className="footer"
+  >
+    <form
+      action="https://github.us16.list-manage.com/subscribe/post-json"
+      className="validate"
+      id="mc-embedded-subscribe-form"
+      method="POST"
+      name="mc-embedded-subscribe-form"
+      noValidate={true}
+      target="_blank"
+    >
+      <div
+        id="mc_embed_signup_scroll"
+      >
+        <div>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+              }
+            }
+          >
+            <i>
+              <p>
+                Science is about how shapes move in space, so we think animation is the best way to explain it... and we want to explain it in a way that's as fun to look at as MTV.
+              </p>
+            </i>
+          </span>
+        </div>
+      </div>
+      <div
+        className="mailchimp"
+      >
+        <label
+          for="mce-EMAIL"
+        >
+          Subscribe to our mailing list!
+        </label>
+        <div>
+          <input
+            name="u"
+            type="hidden"
+            value="70d8e0ea2d8800a5f4e06792c"
+          />
+          <input
+            name="id"
+            type="hidden"
+            value="b5095bc718"
+          />
+          <label
+            htmlFor="MERGE0"
+          >
+            <input
+              autoCapitalize="off"
+              autoCorrect="off"
+              id="MERGE0"
+              name="EMAIL"
+              onChange={[Function]}
+              type="email"
+              value=""
+            />
+          </label>
+          <input
+            className="button"
+            id="mc-embedded-subscribe"
+            name="subscribe"
+            onClick={[Function]}
+            type="submit"
+            value="Subscribe"
+          />
+          <div
+            aria-hidden="true"
+            aria-label="Please leave the following three fields empty"
+            style={
+              Object {
+                "left": "-5000px",
+                "position": "absolute",
+              }
+            }
+          >
+            <label
+              htmlFor="b_email"
+            >
+              Email: 
+            </label>
+            <input
+              id="b_email"
+              name="b_email"
+              placeholder="youremail@gmail.com"
+              tabIndex="-1"
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            className="notification_container"
+          />
+        </div>
+      </div>
+    </form>
+  </footer>
+</div>
+`;
