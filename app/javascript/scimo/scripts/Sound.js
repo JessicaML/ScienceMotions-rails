@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $("#nav-one a")
   .each(function(i) {
     if (i != 0) {

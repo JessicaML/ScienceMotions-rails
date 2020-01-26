@@ -6,6 +6,7 @@ import Fovea from "../../../../../assets/images/fovea.png";
 import Cillary_muscle from "../../../../../assets/images/cillarymuscle.png";
 import Lens from "../../../../../assets/images/lens.png";
 import Conjunctiva from "../../../../../assets/images/conjunctiva.png";
+import $ from 'jquery';
 
 const Eye = () => (
   <Fragment>

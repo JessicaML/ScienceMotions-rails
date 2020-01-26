@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function makeCell() {
     var posx = (Math.random() * ($(".tissue-container").width())).toFixed();
     var posy = (Math.random() * ($(".tissue-container").height())).toFixed();
