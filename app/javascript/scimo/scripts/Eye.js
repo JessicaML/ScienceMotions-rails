@@ -1,16 +1,20 @@
+import $ from 'jquery';
+
 $(document).scroll(function() {
-  currentoffset = $(this).scrollTop();
+  // currentoffset = $(this).scrollTop();
+  var currentoffset = $(this).scrollTop();
+
   if (currentoffset < 601) {
     thisoffset = currentoffset - 50 * (currentoffset / 600);
-    scaleclouds = currentoffset / 700 + 1;
-    $(" #cillary_muscle").css({
+    var scaleclouds = currentoffset / 700 + 1;
+    $("#cillary_muscle").css({
       visual: thisoffset,
       transform: "scale(" + scaleclouds + ")"
     });
 
-    thisoffset = currentoffset - 100 * (currentoffset / 300);
-    thisrotation = -200 * (currentoffset / 1000);
-    $(" #lens").css({
+    var thisoffset = currentoffset - 100 * (currentoffset / 300);
+    var thisrotation = -200 * (currentoffset / 1000);
+    $("#lens").css({
       visual: thisoffset,
       transform: "rotate(" + thisrotation + "deg)"
     });
@@ -26,19 +30,11 @@ $(document).scroll(function() {
     });
 
     thisoffset = currentoffset - 100 * (currentoffset / 700);
-    scalebit3 = currentoffset / 300 + 1;
+    var scalebit3 = currentoffset / 300 + 1;
 
     $(" #conjunctiva").css({
       visual: thisoffset,
       transform: "scale(" + scalebit3 + ")"
     });
   }
-  $(" #visual").hover(function() {
-    $(" #conjunctiva_label").fadeTo("fast", 0.99);
-    $(" #cornea_label").fadeTo("slow", 0.99);
-    $(" #lens_label").fadeTo("slow", 0.99);
-    $(" #fovea_label").fadeTo("fast", 0.99);
-    $(" #cillary_muscle_label").fadeTo("slow", 0.99);
-    $(" #pupil_label").fadeTo("fast", 0.99);
-  });
 });

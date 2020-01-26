@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).on("mousemove", function(event) {
   $("img.t").css("width", event.pageX + 20);
   $("img.t").css("height", event.pageY);
