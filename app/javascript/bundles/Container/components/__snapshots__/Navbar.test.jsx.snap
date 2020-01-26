@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly when there are no items 1`] = `
+<nav
+  className="navbar navbar-inverse navbar-fixed-top"
+  role="navigation"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="navbar-header"
+    >
+      <button
+        className="navbar-toggle"
+        data-target="#bs-example-navbar-collapse-1"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="sr-only"
+        >
+          Toggle navigation
+        </span>
+        <span
+          className="icon-bar"
+        />
+        <span
+          className="icon-bar"
+        />
+        <span
+          className="icon-bar"
+        />
+      </button>
+      <a
+        className="navbar-brand"
+        href="#"
+      />
+    </div>
+    <div
+      className="collapse navbar-collapse"
+      id="bs-example-navbar-collapse-1"
+    >
+      <ul
+        className="nav navbar-nav"
+      >
+        <li>
+          <a
+            href="#"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            All lessons
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Featured lessons
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Team
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;

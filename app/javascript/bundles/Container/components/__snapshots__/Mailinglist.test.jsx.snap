@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mailinglist renders correctly when there are no items 1`] = `
+<footer
+  className="footer"
+>
+  <form
+    action="https://github.us16.list-manage.com/subscribe/post-json"
+    className="validate"
+    id="mc-embedded-subscribe-form"
+    method="POST"
+    name="mc-embedded-subscribe-form"
+    noValidate={true}
+    target="_blank"
+  >
+    <div
+      id="mc_embed_signup_scroll"
+    >
+      <div>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+            }
+          }
+        >
+          <i>
+            <p>
+              Science is about how shapes move in space, so we think animation is the best way to explain it... and we want to explain it in a way that's as fun to look at as MTV.
+            </p>
+          </i>
+        </span>
+      </div>
+    </div>
+    <div
+      className="mailchimp"
+    >
+      <label
+        for="mce-EMAIL"
+      >
+        Subscribe to our mailing list!
+      </label>
+      <div>
+        <input
+          name="u"
+          type="hidden"
+          value="70d8e0ea2d8800a5f4e06792c"
+        />
+        <input
+          name="id"
+          type="hidden"
+          value="b5095bc718"
+        />
+        <label
+          htmlFor="MERGE0"
+        >
+          <input
+            autoCapitalize="off"
+            autoCorrect="off"
+            id="MERGE0"
+            name="EMAIL"
+            onChange={[Function]}
+            type="email"
+            value=""
+          />
+        </label>
+        <input
+          className="button"
+          id="mc-embedded-subscribe"
+          name="subscribe"
+          onClick={[Function]}
+          type="submit"
+          value="Subscribe"
+        />
+        <div
+          aria-hidden="true"
+          aria-label="Please leave the following three fields empty"
+          style={
+            Object {
+              "left": "-5000px",
+              "position": "absolute",
+            }
+          }
+        >
+          <label
+            htmlFor="b_email"
+          >
+            Email: 
+          </label>
+          <input
+            id="b_email"
+            name="b_email"
+            placeholder="youremail@gmail.com"
+            tabIndex="-1"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          className="notification_container"
+        />
+      </div>
+    </div>
+  </form>
+</footer>
+`;
