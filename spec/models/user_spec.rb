@@ -7,9 +7,9 @@ RSpec.describe User, type: :model do
     expect(user.validate!).to eq(true)
   end
 
-  it { should have_many(:completed_lessons) }
+  it { is_expected.to have_many(:completed_lessons) }
 
-  it { should have_many(:lessons).through(:completed_lessons) }
+  it { is_expected.to have_many(:lessons).through(:completed_lessons) }
 
   it { is_expected.to validate_presence_of(:email) }
 
