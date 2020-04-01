@@ -1,5 +1,5 @@
 FactoryBot.define do
-  
+
     factory :lesson do
       id {1}
       name {"test"}
