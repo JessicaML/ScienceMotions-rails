@@ -68,6 +68,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
 
 end
 
