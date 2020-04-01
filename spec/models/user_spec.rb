@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
     user.email = 'a'
     expect(user.valid?).to eq(false)
   end
-  
+
   it 'validates email format' do
     user.email = 'user@email'
     expect(user.valid?).to eq(false)
