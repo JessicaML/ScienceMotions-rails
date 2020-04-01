@@ -13,12 +13,12 @@ RSpec.describe User, type: :model do
 
   it { is_expected.to validate_presence_of(:email) }
 
-  it 'validates email format' do
-    user.email = 'a'
+  it 'invalidates email format with no @' do
+    user.email = 'email.com'
     expect(user.valid?).to eq(false)
   end
 
-  it 'validates email format' do
+  it 'invalidates email format with no .' do
     user.email = 'user@email'
     expect(user.valid?).to eq(false)
   end
@@ -33,3 +33,4 @@ RSpec.describe User, type: :model do
   it { is_expected.to validate_length_of(:password).is_at_least(6).is_at_most(128) }
 
 end
+
