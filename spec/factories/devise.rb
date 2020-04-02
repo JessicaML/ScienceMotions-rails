@@ -1,7 +1,6 @@
 FactoryBot.define do
     
     factory :lesson do
-      id {1}
       name {"test"}
       description {"qwerty"}
       slug {"slug"}
