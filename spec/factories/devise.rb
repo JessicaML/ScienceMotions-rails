@@ -1,10 +1,5 @@
 FactoryBot.define do
-    factory :user do
-      id {1}
-      email {"test@user.com"}
-      password {"qwerty"}
-    end
-
+    
     factory :lesson do
       id {1}
       name {"test"}
@@ -19,5 +14,7 @@ FactoryBot.define do
     #   password {"qwerty"}
     #   admin {true}
     # end
-  end
+end
+
+  
   
