@@ -10,7 +10,7 @@ RSpec.describe CompletedLesson, type: :model do
     it("should have a default value of completed as true") do
       # GIVEN 
       # A new instance of a Completed Lesson without specifying the boolean value
-      completed_lesson = FactoryBot.create(:completed_lesson)
+      completed_lesson = FactoryBot.build(:completed_lesson, completed: nil)
       
       # WHEN 
       # Validations are triggered. 
