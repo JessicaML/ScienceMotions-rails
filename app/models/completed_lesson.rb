@@ -7,6 +7,6 @@ class CompletedLesson < ApplicationRecord
 	private
 
 	def set_default_to_completed
-		self.completed ||= true
+		self.completed = true if self.completed.nil?
 	end
 end

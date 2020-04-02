@@ -20,5 +20,19 @@ RSpec.describe CompletedLesson, type: :model do
       # We expect the boolean value of "completed" to be "true"
       expect(completed_lesson.completed?).to(eq(true)) 
     end
+
+    it("should remain false if incompleted") do
+      # GIVEN 
+      # An instance of a Completed Lesson switched to incomplete
+      completed_lesson = FactoryBot.build(:completed_lesson, completed: false)
+      
+      # WHEN 
+      # Validations are triggered. 
+      completed_lesson.valid?
+
+      # THEN
+      # We expect the boolean value of "completed" to be "true"
+      expect(completed_lesson.completed?).to(eq(false))
+    end
   end
 end
