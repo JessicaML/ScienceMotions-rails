@@ -41,7 +41,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": "13.7.0"
+    "node": "13.8.0"
   },
   "jest": {
     "modulePathIgnorePatterns": ["config"],
