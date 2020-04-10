@@ -6,7 +6,8 @@
   </div>
 </div>
 
-  <%= react_component(@lesson.name, prerender: false) %>
+<%= react_component(@lesson.name, props: { description: @lesson.description } , prerender: false) %>
+
 
 <div class="footer-info">
   <% if @completed && (@completed.user_id == current_user.id) && @completed.completed == true%>

@@ -3,8 +3,9 @@ import AtomsText from "./text/AtomsText";
 import eye1 from "../../../../../assets/images/eye1.png";
 import eye2 from "../../../../../assets/images/eye2.png";
 
-const Atoms = () => (
+const Atoms = (props) => (
   <Fragment>
+  {console.log('props', props)}
     <section id="visual" className="lesson-container">
       <div id="atoms">
         <div className="eye1">
