@@ -18,4 +18,10 @@ RSpec.describe Lesson, type: :model do
     second_lesson = Lesson.create!(slug: "second-lesson-url") 
     expect(second_lesson.slug).to eq("second-lesson-url")
   end
+
+  it "has a subject" do
+    lesson = Lesson.create!(subject: "lesson-subject") 
+    second_lesson = Lesson.create!(subject: "second-lesson-subject") 
+    expect(second_lesson.subject).to eq("second-lesson-subject")
+  end
 end

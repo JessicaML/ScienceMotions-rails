@@ -11,7 +11,6 @@ RSpec.describe CompletedLessonsController, type: :controller do
   end 
 
   describe 'create' do
-
     it 'successfully creates a new completed_lesson in db' do
       lesson = FactoryBot.create(:lesson)
       count_before = CompletedLesson.count
@@ -30,7 +29,7 @@ RSpec.describe CompletedLessonsController, type: :controller do
       lesson = FactoryBot.create(:lesson)
       completed_lesson = FactoryBot.create(:completed_lesson)
       patch :togglelesson, params: {
-        id: completed_lesson.id, completed_lesson: { completed: false }
+        completed_lesson: completed_lesson, completed: false
       }
       completed_lesson.reload
       expect(completed_lesson.completed).to eq(false)
