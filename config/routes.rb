@@ -19,7 +19,6 @@ Rails.application.routes.draw do
 
   get "completed_lessons/:id/toggleindex" => "completed_lessons#toggleindex", :as => "toggleindex", :via => [:get]
   get "completed_lessons/:id/togglelesson" => "completed_lessons#togglelesson", :as => "togglelesson", :via => [:get]
-  # patch "completed_lessons/:id/togglelesson" => "completed_lessons#togglelesson", :as => "togglelesson", :via => [:patch]
 
   root to: redirect('/container')
   resources :lessons
