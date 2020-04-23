@@ -1,5 +1,6 @@
 FactoryBot.define do
     module ControllerMacros
+        
         def login_user
         # Before each test, create and login the user
         before(:each) do
@@ -9,7 +10,7 @@ FactoryBot.define do
             sign_in user
         end
         end
-    
+
     # Not used in this tutorial, but left to show an example of different user types
     # def login_admin
     #   before(:each) do
