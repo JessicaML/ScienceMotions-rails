@@ -6,6 +6,7 @@ import "./styles/Eye.scss";
 import "./styles/Sound.css";
 import "./styles/Classification.css";
 import "./styles/Atoms.css";
+import "./styles/StateOfMatter.css";
 import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 
