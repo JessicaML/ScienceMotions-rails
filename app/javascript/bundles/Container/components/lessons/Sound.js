@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { ReactMic } from 'react-mic';
 import SoundPng from "../../../../../assets/images/sound.png";
 import SoundGif from "../../../../../assets/images/sound.gif";
-import SoundText from "./text/SoundText";
+import Text from "./text/Text";
 
 class Sound extends React.Component {
   constructor(props) {
@@ -63,7 +63,7 @@ class Sound extends React.Component {
             </a>
           </div>
         </section>
-        <SoundText />
+        <Text props={this.props} />
       </Fragment>
     );
   }
