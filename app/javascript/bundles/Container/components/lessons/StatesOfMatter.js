@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
-import eye1 from "../../../../../assets/images/eye1.png";
-import eye2 from "../../../../../assets/images/eye2.png";
 
-const Atoms = (props) => (
+
+const StatesOfMatter = (props) => (
   <Fragment>
   {console.log('props', props)}
     <section id="visual" className="lesson-container">
@@ -20,4 +19,4 @@ const Atoms = (props) => (
   </Fragment>
 );
 
-export default Atoms;
+export default StatesOfMatter;
