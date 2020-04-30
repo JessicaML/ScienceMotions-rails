@@ -5,7 +5,6 @@ import eye2 from "../../../../../assets/images/eye2.png";
 
 const Atoms = (props) => (
   <Fragment>
-  {/* {console.log('props', props)} */}
     <section id="visual" className="lesson-container">
       <div id="atoms">
         <div className="eye1">

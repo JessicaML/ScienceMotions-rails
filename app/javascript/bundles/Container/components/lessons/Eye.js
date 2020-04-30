@@ -10,7 +10,6 @@ import $ from 'jquery';
 
 const Eye = (props) => (
   <Fragment>
-     {/* {console.log('props', props)} */}
     <section id="visual" className="lesson-container eye">
       <div id="pupil">
         <img src={Pupil} />
