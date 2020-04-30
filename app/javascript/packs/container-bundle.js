@@ -7,6 +7,8 @@ import DNA from "../bundles/Container/components/lessons/DNA";
 import Eye from "../bundles/Container/components/lessons/Eye";
 import Atoms from "../bundles/Container/components/lessons/Atoms";
 import CellsTissuesOrgans from "../bundles/Container/components/lessons/CellsTissuesOrgans";
+import CellsTissuesOrgansScript from "../bundles/Container/components/lessons/CellsTissuesOrgansScript";
+
 import Sound from "../bundles/Container/components/lessons/Sound";
 import Classification from "../bundles/Container/components/lessons/Classification";
 import StatesOfMatter from "../bundles/Container/components/lessons/StatesOfMatter";
@@ -20,6 +22,7 @@ ReactOnRails.register({
   Eye,
   Atoms,
   CellsTissuesOrgans,
+  CellsTissuesOrgansScript,
   Sound,
   Classification,
   StatesOfMatter
