@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Indicators renders correctly when there are no items 1`] = `
+Array [
+  <section
+    className="lesson-container indicators"
+    id="visual"
+  >
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Acidic Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+] &gt; [OH-]
+      </p>
+      <div
+        className="redlitmus animated bounceIn"
+      >
+        Red litmus - stays red
+      </div>
+      <br />
+      <div
+        className="bluelitmus red animated bounceIn"
+      >
+        Blue litmus - turns red
+      </div>
+    </div>
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Neutral Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+]=[OH-]
+      </p>
+      <div
+        className="redlitmus animated bounceIn"
+      >
+        Red litmus - stays red
+      </div>
+      <br />
+      <div
+        className="bluelitmus animated bounceIn"
+      >
+        Blue litmus - stays blue
+      </div>
+    </div>
+    <div
+      className="col-sm-1"
+    />
+    <div
+      className="col-sm-3"
+    >
+      <p>
+        Basic Solution
+      </p>
+      <p
+        className="animated infinite pulse"
+      >
+        [H+] &lt; [OH-] 
+      </p>
+      <div
+        className="redlitmus blu animated bounceIn"
+      >
+        Red litmus - turns blue
+      </div>
+      <br />
+      <div
+        className="bluelitmus animated bounceIn"
+      >
+        Blue litmus - stays blue
+      </div>
+    </div>
+  </section>,
+  <section
+    id="text"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </section>,
+]
+`;

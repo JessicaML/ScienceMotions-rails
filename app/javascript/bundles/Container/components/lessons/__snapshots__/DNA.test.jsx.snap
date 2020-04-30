@@ -34,13 +34,13 @@ Array [
   <section
     id="text"
   >
-   <div
-     dangerouslySetInnerHTML={
-       Object {
-         "__html": undefined,
-       }
-     }
-   />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
   </section>,
 ]
 `;

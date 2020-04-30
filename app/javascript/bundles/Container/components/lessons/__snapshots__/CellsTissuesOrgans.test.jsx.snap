@@ -207,29 +207,16 @@ exports[`CellsTissuesOrgans renders correctly when there are no items 1`] = `
       className="organ-system"
     />
   </section>
-  <div
-    className="container"
+  <section
+    id="text"
   >
     <div
-      className="row"
-    >
-      <div
-        className="col-xs-12"
-        id="link-text"
-      >
-        <section
-          id="text"
-        >
-          <div
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": undefined,
-              }
-            }
-          />
-        </section>
-      </div>
-    </div>
-  </div>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </section>
 </div>
 `;
