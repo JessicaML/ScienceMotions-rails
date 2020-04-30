@@ -26,7 +26,7 @@ const DNA = (props) => (
     </Parallax>
   </ParallaxProvider>
 
-    <Text props={props} />
+    <Text props={props.description} />
 
   </Fragment>
 );

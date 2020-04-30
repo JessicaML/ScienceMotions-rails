@@ -161,7 +161,7 @@ const CellsTissuesOrgans = (props) => (
       <div className="organ-system" />
     </section>
 
-    <Text props={props} />
+    <Text props={props.description} />
   </div>
 );
 

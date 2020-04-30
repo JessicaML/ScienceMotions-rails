@@ -99,7 +99,7 @@ const Atoms = (props) => (
         </svg>
       </div>
     </section>
-    <Text props={props} />
+    <Text props={props.description} />
   </Fragment>
 );
 

@@ -46,7 +46,7 @@ class Classification extends React.Component {
           </div>
           <div className={classNames}>{phrase}</div>
         </section>
-        <Text props={this.props} />
+        <Text props={this.props.description} />
       </Fragment>
     );
   }

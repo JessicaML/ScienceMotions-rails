@@ -41,7 +41,7 @@ const Indicators = (props) => (
         </div>
       </div>
     </section>
-    <Text props={props} />
+    <Text props={props.description} />
   </Fragment>
 );
 

@@ -63,7 +63,7 @@ class Sound extends React.Component {
             </a>
           </div>
         </section>
-        <Text props={this.props} />
+        <Text props={this.props.description} />
       </Fragment>
     );
   }

@@ -31,7 +31,7 @@ const Eye = (props) => (
         <img src={Conjunctiva} />
       </div>
     </section>
-    <Text props={props} />
+    <Text props={props.description} />
   </Fragment>
 );
 
