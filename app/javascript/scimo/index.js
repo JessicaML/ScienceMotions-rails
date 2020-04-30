@@ -13,7 +13,6 @@ import "./styles/lesson_template.css";
 
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";
-import "./scripts/CellsTissuesOrgans.js";
 import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
 import "./scripts/smoothscroll.js";
