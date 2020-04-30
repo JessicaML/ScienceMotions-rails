@@ -1,7 +1,7 @@
 import React from "react";
-import CellsTissuesOrgansText from "./text/CellsTissuesOrgansText";
+import Text from "./text/Text";
 
-const CellsTissuesOrgans = () => (
+const CellsTissuesOrgans = (props) => (
   <div className="lesson_template" className="lesson-container">
     <section className="animation">
       <div className="cell">
@@ -161,7 +161,7 @@ const CellsTissuesOrgans = () => (
       <div className="organ-system" />
     </section>
 
-    <CellsTissuesOrgansText />
+    <Text props={props.description} />
   </div>
 );
 

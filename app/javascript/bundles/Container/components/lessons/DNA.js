@@ -3,10 +3,10 @@ import Adenine from "../../../../../assets/images/adenine.png";
 import Cytosine from "../../../../../assets/images/cytosine.png";
 import Guanine from "../../../../../assets/images/guanine.png";
 import Thymine from "../../../../../assets/images/thymine.png";
-import DNAText from "./text/DNAText";
+import Text from "./text/Text";
 import { ParallaxProvider, Parallax } from "react-skrollr";
 
-const DNA = () => (
+const DNA = (props) => (
   <Fragment>
     <ParallaxProvider>
     <Parallax
@@ -26,7 +26,7 @@ const DNA = () => (
     </Parallax>
   </ParallaxProvider>
 
-    <DNAText />
+    <Text props={props.description} />
 
   </Fragment>
 );
