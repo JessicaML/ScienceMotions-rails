@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import ClassificationText from "./text/ClassificationText";
+import Text from "./text/Text";
 import classnames from "classnames";
 
 const phrases = [
@@ -46,7 +46,7 @@ class Classification extends React.Component {
           </div>
           <div className={classNames}>{phrase}</div>
         </section>
-        <ClassificationText />
+        <Text props={this.props.description} />
       </Fragment>
     );
   }

@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import AtomsText from "./text/AtomsText";
+import Text from "./text/Text";
 import eye1 from "../../../../../assets/images/eye1.png";
 import eye2 from "../../../../../assets/images/eye2.png";
 
-const Atoms = () => (
+const Atoms = (props) => (
   <Fragment>
     <section id="visual" className="lesson-container">
       <div id="atoms">
@@ -98,7 +98,7 @@ const Atoms = () => (
         </svg>
       </div>
     </section>
-    <AtomsText />
+    <Text props={props.description} />
   </Fragment>
 );
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import IndicatorsText from "./text/IndicatorsText";
+import Text from "./text/Text";
 
-const Indicators = () => (
+const Indicators = (props) => (
   <Fragment>
     <section id="visual" className="lesson-container indicators">
       <div className="col-sm-1" />
@@ -41,7 +41,7 @@ const Indicators = () => (
         </div>
       </div>
     </section>
-    <IndicatorsText />
+    <Text props={props.description} />
   </Fragment>
 );
 
