@@ -3,6 +3,7 @@
 exports[`CellsTissuesOrgans renders correctly when there are no items 1`] = `
 <div
   className="lesson-container"
+  onMouseEnter={[Function]}
 >
   <section
     className="animation"
