@@ -1,8 +1,10 @@
 import React from "react";
 import Text from "./text/Text";
+import startAnimation from "./CellsTissuesOrgansScript";
+
 
 const CellsTissuesOrgans = (props) => (
-  <div className="lesson_template" className="lesson-container">
+  <div className="lesson_template" className="lesson-container" onMouseEnter={startAnimation}>
     <section className="animation">
       <div className="cell">
         <div className="organelle-container">
