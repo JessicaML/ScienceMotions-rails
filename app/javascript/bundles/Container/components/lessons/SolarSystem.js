@@ -15,7 +15,7 @@ class SolarSystem extends React.Component {
            
             <div  className="clearfix">
             <ul className="solarsystem">
-                <li className="sun" className="tooltip">
+                <li className="sun" >
                     <a href="#sun">
                         <span>Sun</span>
                     </a>
@@ -57,7 +57,7 @@ class SolarSystem extends React.Component {
                         </span>
                     </a>
                 </li>
-                <li className="uranus" className="tooltip">
+                <li className="uranus">
                     <a href="#uranus">
                         <span>Uranus</span>
                     </a>
