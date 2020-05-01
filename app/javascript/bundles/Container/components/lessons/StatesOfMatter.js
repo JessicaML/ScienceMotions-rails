@@ -26,5 +26,4 @@ const StatesOfMatter = props => {
   );
 };
 
-// export default StatesOfMatter;
 export default props => <StatesOfMatter {...props} />;

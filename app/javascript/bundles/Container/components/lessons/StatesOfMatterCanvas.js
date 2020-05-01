@@ -87,5 +87,4 @@ const StatesOfMatterCanvas = props => {
   );
 };
 
-// export default StatesOfMatter;
 export default props => <StatesOfMatterCanvas {...props} />;
