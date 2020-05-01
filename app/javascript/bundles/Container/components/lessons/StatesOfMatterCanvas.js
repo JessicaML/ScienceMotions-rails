@@ -6,12 +6,11 @@ const StatesOfMatterCanvas = props => {
   const canvasRef = useRef(null);
 
   const drawCanvas = () => {
-    var color = "#6EF5DE";
-    var circles = [];
-    var canvas = canvasRef.current;
-    var ctx = canvas.getContext("2d");
-    var col = ["#E376C4", "#6EF5DE", "green", "#E7932E", "magenta"],
-      bounce = -1;
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    const bounce = -1;
+    let color = "#6EF5DE";
+    let circles = [];
 
     function Circle(x, y, sx, sy) {
       this.x = x;
@@ -47,29 +46,29 @@ const StatesOfMatterCanvas = props => {
       };
     }
 
-    for (var i = 0; i < noOfCircles; i++) {
-      var _x = Math.floor(Math.random() * (canvas.width - 15)) + 15,
-        _y = Math.floor(Math.random() * (canvas.height - 15)) + 15,
-        xspd = Math.floor(Math.random() * (5 - 0.5)) + 0.5,
-        yspd = Math.floor(Math.random() * (5 - 0.5)) + 0.5,
-        c = new Circle(_x, _y, xspd, yspd);
+    for (let i = 0; i < noOfCircles; i++) {
+      let _x = Math.floor(Math.random() * (canvas.width - 15)) + 15;
+      let _y = Math.floor(Math.random() * (canvas.height - 15)) + 15;
+      let xspd = Math.floor(Math.random() * (5 - 0.5)) + 0.5;
+      let yspd = Math.floor(Math.random() * (5 - 0.5)) + 0.5;
+      let c = new Circle(_x, _y, xspd, yspd);
       circles.push(c);
     }
 
-    function update() {
+    function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       if (circles.length == 50) color = "#E7932E";
       if (circles.length == 200) color = "#6EF5DE";
       if (circles.length == 500) color = "#E376C4";
 
-      for (var i = 0; i < circles.length; i++) {
+      for (let i = 0; i < circles.length; i++) {
         circles[i].drawCircle(color);
         circles[i].moveCircle();
       }
-      requestAnimationFrame(update);
+      requestAnimationFrame(draw);
     }
 
-    update();
+    draw();
   };
 
   useEffect(() => {
