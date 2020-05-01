@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
-import Meteorids from "../../../../../assets/images/meteorids.png";
-import SolarSystemImage from "../../../../../assets/images/solar-system.png";
 
 class SolarSystem extends React.Component {
   constructor(props) {
@@ -13,14 +11,9 @@ class SolarSystem extends React.Component {
   render() {
     return (
       <Fragment>
-        <section id="visual" className="lesson-container solarsystem">
-            <div>   
-                <img src={Meteorids} className="solarsystem" />
-            </div>
-            <div>  
-                <img src={SolarSystemImage} className="solarsystem" />
-            </div>
-            <div className="clearfix" className="tooltip">
+        <section id="visual">
+           
+            <div  className="clearfix">
             <ul className="solarsystem">
                 <li className="sun" className="tooltip">
                     <a href="#sun">

@@ -130,7 +130,7 @@ ul.solarsystem li.asteroids_meteorids {
     top: 155px;
     left: 315px;
     z-index: 1;
-    background: url("meteorids.png") no-repeat 0 0;
+    background: url("../../../assets/images/meteorids.png") no-repeat 0 0;
     width: 330px;
     height: 330px;
     -webkit-border-radius: 165px;
