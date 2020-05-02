@@ -1,9 +1,7 @@
 import React from "react";
 
-// let div = document.createElement("div");
-
 const DiffusionScript = () => {
-  let width = 960,
+  let width = 1920,
       height = 500;
 
   const nodes = [];
@@ -13,6 +11,12 @@ const DiffusionScript = () => {
     .append("svg")
     .attr("width", width)
     .attr("height", height);
+
+    svg.append("rect")
+      .attr("width", "100%")
+      .attr("height", "100%")
+      .attr("fill", "white");
+
 
   const force = d3.layout
     .force()
