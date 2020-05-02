@@ -11,8 +11,8 @@ class SolarSystem extends React.Component {
   render() {
     return (
       <Fragment>
-        <section id="visual">
-           
+        <section id="visual" className="lesson-container solarsystem">
+
             <div  className="clearfix">
             <ul className="solarsystem">
                 <li className="sun" >
