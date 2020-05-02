@@ -36,7 +36,7 @@ class Classification extends React.Component {
         <section id="visual" className="classification" className="lesson-container">
           <div id="header">
             <h1>Characteristics of living organisms </h1>
-            <input
+            <input id="classification-input" 
               type="range"
               defaultValue="0"
               min="0"

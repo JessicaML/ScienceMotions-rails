@@ -1,7 +1,6 @@
 section#visual.classification {
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   height: 100%;
   margin-bottom: 40px;
 }
@@ -11,12 +10,23 @@ section#visual.classification h1 {
   text-align: left;
 }
 
+section#visual #header {
+  display: flex;
+  flex-direction: column;
+}
+
+#classification-input {
+  width: 70%;
+  text-align: left;
+}
+
 div.phrase {
   font-family: "Space Mono", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.75em;
   width: 85%;
+  text-align: justify;
 }
 
 .zero,
