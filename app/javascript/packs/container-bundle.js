@@ -11,6 +11,8 @@ import CellsTissuesOrgansScript from "../bundles/Container/components/lessons/Ce
 
 import Sound from "../bundles/Container/components/lessons/Sound";
 import Classification from "../bundles/Container/components/lessons/Classification";
+import StatesOfMatter from "../bundles/Container/components/lessons/StatesOfMatter";
+import SolarSystem from "../bundles/Container/components/lessons/SolarSystem";
 import Diffusion from "../bundles/Container/components/lessons/Diffusion";
 
 // This is how react_on_rails can see the HelloWorld in the browser.
@@ -24,6 +26,9 @@ ReactOnRails.register({
   CellsTissuesOrgans,
   CellsTissuesOrgansScript,
   Sound,
+  Classification,
+  StatesOfMatter,
+  SolarSystem
   Classification,
   Diffusion
 });
