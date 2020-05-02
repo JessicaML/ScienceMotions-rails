@@ -23,7 +23,6 @@
     "postcss-loader": "^3.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
-    "react-d3-library": "^1.1.8",
     "react-dom": "^16.4.0",
     "react-mailchimp-form": "^1.0.1",
     "react-mailchimp-subscribe": "^2.1.0",
@@ -45,9 +44,7 @@
     "node": "13.8.0"
   },
   "jest": {
-    "modulePathIgnorePatterns": [
-      "config"
-    ],
+    "modulePathIgnorePatterns": ["config"],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/app/javascript/spec/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/app/javascript/spec/__mocks__/styleMock.js"
