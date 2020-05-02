@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
-const DiffusionScript = props => {
+const DiffusionScript = () => {
 var width = 960,
 height = 500;
 
@@ -40,9 +40,10 @@ if (nodes.push(d) > 300) clearInterval(interval);
 force.start();
 }, 30);
 
-return (
-    <script></script>
-  );
+ return (
+   <div id="diffusion"></div>
+   );
 };
+
 
 export default props => <DiffusionScript {...props} />;
