@@ -9,7 +9,7 @@ height = 500;
 
 var nodes = [];
 
-var svg = d3.select("div").append("svg")
+var svg = d3.select(".button-flip").append("svg")
 .attr("width", width)
 .attr("height", height);
 
