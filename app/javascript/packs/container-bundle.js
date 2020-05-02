@@ -28,7 +28,7 @@ ReactOnRails.register({
   Sound,
   Classification,
   StatesOfMatter,
-  SolarSystem
+  SolarSystem,
   Classification,
   Diffusion
 });

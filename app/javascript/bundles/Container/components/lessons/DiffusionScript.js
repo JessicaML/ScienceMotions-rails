@@ -1,6 +1,6 @@
 import React from "react";
 
-let div = document.createElement("div");
+// let div = document.createElement("div");
 
 const DiffusionScript = () => {
   let width = 960,
