@@ -14,6 +14,7 @@ Array [
       </h1>
       <input
         defaultValue="0"
+        id="classification-input"
         max="6"
         min="0"
         onChange={[Function]}
