@@ -1,4 +1,7 @@
 import React from "react";
+import rd3 from 'react-d3-library'
+
+var div = document.createElement('div')
 
 const DiffusionScript = () => {
 var width = 960,
@@ -6,7 +9,7 @@ height = 500;
 
 var nodes = [];
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("div").append("svg")
 .attr("width", width)
 .attr("height", height);
 
