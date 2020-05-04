@@ -10,10 +10,12 @@ import "./styles/StatesOfMatter.css";
 import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
+import "./styles/GroupsPeriods.css"
 
 
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";
 import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
+import "./scripts/GroupsPeriods.js"
 import "./scripts/smoothscroll.js";
