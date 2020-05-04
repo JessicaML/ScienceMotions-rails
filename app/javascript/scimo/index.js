@@ -10,8 +10,8 @@ import "./styles/StatesOfMatter.css";
 import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
-import "./styles/Group1_AlkaliMetals.css";
-import "./styles/Group1_AlkaliMetals2.css";
+import "./styles/AlkaliMetals.css";
+import "./styles/AlkaliMetals2.css";
 import "./styles/_base.css";
 
 
@@ -20,9 +20,5 @@ import "./scripts/Sound.js";
 import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
 import "./scripts/smoothscroll.js";
-import "./scripts/Group1_AlkaliMetals_tween.min.js";
-import "./scripts/Group1_AlkaliMetals_three.js";
-import "./scripts/Group1_AlkaliMetals_renderer.js";
-import "./scripts/Group1_AlkaliMetals_index.js";
-import "./scripts/Group1_AlkaliMetals_controls.js";
+import "./scripts/AlkaliMetals.js";
 

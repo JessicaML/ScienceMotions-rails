@@ -13,7 +13,7 @@ import Sound from "../bundles/Container/components/lessons/Sound";
 import Classification from "../bundles/Container/components/lessons/Classification";
 import StatesOfMatter from "../bundles/Container/components/lessons/StatesOfMatter";
 import SolarSystem from "../bundles/Container/components/lessons/SolarSystem";
-import Group1_AlkaliMetals from "../bundles/Container/components/lessons/Group1_AlkaliMetals";
+import AlkaliMetals from "../bundles/Container/components/lessons/AlkaliMetals";
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
@@ -29,5 +29,5 @@ ReactOnRails.register({
   Classification,
   StatesOfMatter,
   SolarSystem,
-  Group1_AlkaliMetals
+  AlkaliMetals
 });
