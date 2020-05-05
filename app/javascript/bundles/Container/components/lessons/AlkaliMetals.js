@@ -1,6 +1,6 @@
 import React from "react";
 import Text from "./text/Text";
-import AlkaliMetalsThree from "./AlkaliMetalsThree";
+import Scene from "./AlkaliMetalsThree";
 
 const AlkaliMetals = props => {
   
@@ -8,7 +8,7 @@ const AlkaliMetals = props => {
     <div>
       <section id="container" className="lesson-container">
         
-        <AlkaliMetalsThree />
+        <Scene />
       </section>
       <Text props={props.description} />
     </div>
