@@ -505,7 +505,7 @@ const GroupsPeriods = props => {
           <div className="legend">
             <ul className="list-1">
               <li className="cat-0">
-                <span>C</span>Solid
+                <span className="state">C</span>Solid
               </li>
               <li className="cat-1">
                 <span>Hg</span>Liquid
