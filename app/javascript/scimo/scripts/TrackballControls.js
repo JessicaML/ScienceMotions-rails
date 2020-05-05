@@ -1,3 +1,5 @@
+var THREE = require('three');
+
 THREE.TrackballControls = function ( object, domElement ) {
 
 	var _this = this;

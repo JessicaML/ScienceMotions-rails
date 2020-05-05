@@ -20,5 +20,9 @@ import "./scripts/Sound.js";
 import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
 import "./scripts/smoothscroll.js";
-import "./scripts/AlkaliMetals.js";
+import "./scripts/three.js";
+import "./scripts/TrackballControls.js";
+import "./scripts/stats.min.js";
+
+
 
