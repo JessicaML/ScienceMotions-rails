@@ -31,6 +31,7 @@
     "react-skrollr": "^1.0.4",
     "react-test-renderer": "^16.11.0",
     "sugarss": "^2.0.0",
+    "three": "^0.116.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
@@ -44,7 +45,9 @@
     "node": "13.8.0"
   },
   "jest": {
-    "modulePathIgnorePatterns": ["config"],
+    "modulePathIgnorePatterns": [
+      "config"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/app/javascript/spec/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/app/javascript/spec/__mocks__/styleMock.js"
