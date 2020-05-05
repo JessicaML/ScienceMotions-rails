@@ -2,7 +2,6 @@ import React from "react";
 import Text from "./text/Text";
 import  "../../../../scimo/styles/GroupsPeriods.scss"
 
-
 const GroupsPeriods = props => {
 
   return (
@@ -505,7 +504,7 @@ const GroupsPeriods = props => {
           <div className="legend">
             <ul className="list-1">
               <li className="cat-0">
-                <span className="state">C</span>Solid
+                <span>C</span>Solid
               </li>
               <li className="cat-1">
                 <span>Hg</span>Liquid
