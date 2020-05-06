@@ -52,5 +52,21 @@
         font-size: 12px;
         color: rgba(0, 0, 0, 1);
     }
+
+    button#table {
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 25px 0px 0 30px;
+    }
+
+    button#helix.btn {
+        padding: 6px 12px;
+        margin: 2px 20px 0 0px;
+        border-width: 2px;
+    }
+
+    #container {
+        background-color:#CCCCCC; 
+    }
     
 }
