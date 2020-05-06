@@ -50,6 +50,7 @@ h1 {
   text-align: center;
   color: #3b3b3b;
   font-size: 2em;
+  margin: unset;
 }
 
 a {
