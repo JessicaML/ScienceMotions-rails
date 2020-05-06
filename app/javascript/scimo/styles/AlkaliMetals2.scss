@@ -18,53 +18,39 @@
     .element {
         width: 120px;
         height: 160px;
-        box-shadow: 0px 0px 12px rgba(57, 69, 74,0.85);
+        box-shadow: 0px 0px 12px rgba(57, 69, 74, 0.85);
         border: 3px solid rgba(	57, 69, 74, 0.9);
         text-align: center;
         cursor: default;
     }
     .element:hover {
-        box-shadow: 0px 0px 12px rgba(57, 69, 74,0.5);
+        box-shadow: 0px 0px 12px rgba(57, 69, 74, 0.5);
         border: 6px solid rgba(	57, 69, 74, 0.8);
     }
-        .element .number {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 12px;
-            color: rgba(0, 0, 0, 1);
-        }
-        .element .symbol {
-            position: absolute;
-            top: 40px;
-            left: 0px;
-            right: 0px;
-            font-size: 60px;
-            font-weight: bold;
-            color: rgba(0,0,0, 1);
-            text-shadow: 0 0 10px rgba(57, 69, 74,0.95);
-        }
-        .element .details {
-            position: absolute;
-            bottom: 15px;
-            left: 0px;
-            right: 0px;
-            font-size: 12px;
-            color: rgba(0, 0, 0, 1);
-        }
-    button {
-        color: rgba(127,255,255,0.75);
-        background: transparent;
-        outline: 1px solid rgba(110,245,222,0.75);
-        border: 0px;
-        padding: 5px 10px;
-        cursor: pointer;
+    .element .number {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 1);
     }
-    button:hover {
-        background-color: rgba(110,245,222,0.5);
+    .element .symbol {
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        right: 0px;
+        font-size: 60px;
+        font-weight: bold;
+        color: rgba(0,0,0, 1);
+        text-shadow: 0 0 10px rgba(57, 69, 74,0.95);
     }
-    button:active {
-        color: #000000;
-        background-color: rgba(0,255,255,0.75);
-    } 
+    .element .details {
+        position: absolute;
+        bottom: 15px;
+        left: 0px;
+        right: 0px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 1);
+    }
+    
 }

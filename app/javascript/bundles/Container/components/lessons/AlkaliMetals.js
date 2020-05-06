@@ -283,7 +283,7 @@ const AlkaliMetals = props => {
         <div id="alkalin">
            <section id="top" className="lesson-container">
                 <div className="main">
-                    <div id="container">
+                    <div id="container"></div>
                         <div id="menu">
                             <a className="button-flip">
                                 <button id="helix" className="btn" style={{color: "#fff"}}>VIEW ALKALI METALS</button>
@@ -292,7 +292,6 @@ const AlkaliMetals = props => {
                                 <button id="table">TABLE VIEW</button>
                             </a>
                         </div>
-                    </div>
                 </div>    
             </section>
             <Text props={props.description} />
