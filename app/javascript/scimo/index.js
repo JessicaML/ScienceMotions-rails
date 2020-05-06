@@ -10,7 +10,7 @@ import "./styles/StatesOfMatter.css";
 import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
-import "./styles/AlkaliMetals.css";
+import "./styles/AlkaliMetals.scss";
 import "./styles/AlkaliMetals2.css";
 import "./styles/_base.css";
 
