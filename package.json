@@ -35,6 +35,7 @@
     "sugarss": "^2.0.0",
     "three": "^0.116.1",
     "three-trackballcontrols": "^0.0.8",
+    "tween": "^0.9.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
