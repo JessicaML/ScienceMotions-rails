@@ -30,7 +30,6 @@
     "react-on-rails": "11.0.4",
     "react-skrollr": "^1.0.4",
     "react-test-renderer": "^16.11.0",
-    "react-three-fiber": "^4.1.4",
     "sugarss": "^2.0.0",
     "three": "^0.116.1",
     "three-trackballcontrols": "^0.0.8",
