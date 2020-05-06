@@ -10,7 +10,7 @@ import "./styles/StatesOfMatter.css";
 import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
-import "./styles/Diffusion.css";
+import "./styles/Diffusion.scss";
 
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";

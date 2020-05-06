@@ -1,7 +1,7 @@
 import React from "react";
 
 const DiffusionScript = () => {
-  let width = 1920,
+  let width = 1400,
       height = 500;
 
   const nodes = [];
