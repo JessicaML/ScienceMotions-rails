@@ -1,4 +1,67 @@
-#alkalin {  
+#alkalin { 
+  html, body {
+    height: 100%;
+  }
+  
+  #menu {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+  }
+  .element {
+      width: 120px;
+      height: 160px;
+      box-shadow: 0px 0px 12px rgba(57, 69, 74, 0.85);
+      border: 3px solid rgba(	57, 69, 74, 0.9);
+      text-align: center;
+      cursor: default;
+  }
+  .element:hover {
+      box-shadow: 0px 0px 12px rgba(57, 69, 74, 0.5);
+      border: 6px solid rgba(	57, 69, 74, 0.8);
+  }
+  .element .number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 1);
+  }
+  .element .symbol {
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      right: 0px;
+      font-size: 60px;
+      font-weight: bold;
+      color: rgba(0,0,0, 1);
+      text-shadow: 0 0 10px rgba(57, 69, 74,0.95);
+  }
+  .element .details {
+      position: absolute;
+      bottom: 15px;
+      left: 0px;
+      right: 0px;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 1);
+  }
+
+  button#table {
+      padding: 5px 10px;
+      font-size: 14px;
+      margin: 25px 0px 0 30px;
+  }
+
+  button#helix.btn {
+      padding: 6px 12px;
+      margin: 2px 20px 0 0px;
+      border-width: 2px;
+  }
+
+  #container {
+      background-color:#CCCCCC; 
+  } 
   section#top {
       width: 100%;
       text-align: center;

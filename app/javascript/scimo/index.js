@@ -11,7 +11,6 @@ import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
 import "./styles/AlkaliMetals.scss";
-import "./styles/AlkaliMetals2.scss";
 
 
 import "./scripts/DNA.js";
@@ -20,7 +19,4 @@ import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
 import "./scripts/smoothscroll.js";
 import "./scripts/three.js";
-import "./scripts/stats.min.js";
-
-
 
