@@ -163,7 +163,7 @@ const AlkaliMetals = props => {
        
     return (
         <div id="alkalin">
-           <section id="top" className="lesson-container">
+           <section className="lesson-container">
                 <div className="main">
                     <div id="container"></div>
                         <div id="menu">
