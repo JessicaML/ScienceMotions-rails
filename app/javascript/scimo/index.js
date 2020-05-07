@@ -12,9 +12,11 @@ import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
 import "./styles/Diffusion.scss";
 
+
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";
 import "./scripts/Eye.js";
 import "./scripts/Atoms.js";
+import "./scripts/GroupsPeriods.js"
 import "./scripts/smoothscroll.js";
 import "./scripts/Diffusion.js";

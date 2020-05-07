@@ -14,6 +14,7 @@ import Classification from "../bundles/Container/components/lessons/Classificati
 import StatesOfMatter from "../bundles/Container/components/lessons/StatesOfMatter";
 import SolarSystem from "../bundles/Container/components/lessons/SolarSystem";
 import Diffusion from "../bundles/Container/components/lessons/Diffusion";
+import GroupsPeriods from "../bundles/Container/components/lessons/GroupsPeriods";
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
@@ -30,5 +31,6 @@ ReactOnRails.register({
   StatesOfMatter,
   SolarSystem,
   Classification,
-  Diffusion
+  Diffusion,
+  GroupsPeriods
 });
