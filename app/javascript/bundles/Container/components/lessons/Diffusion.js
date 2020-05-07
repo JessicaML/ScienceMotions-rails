@@ -4,7 +4,6 @@ import Text from "./text/Text";
 
 const Diffusion = props => {
   return (
-    <div id="diffu">
       <section>
         <div id="diffusion">
           <DiffusionScript />
@@ -13,7 +12,6 @@ const Diffusion = props => {
           <Text props={props.description} />
         </div>
       </section>
-    </div>
   );
 };
 export default props => <Diffusion {...props} />;
