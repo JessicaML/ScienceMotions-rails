@@ -11,7 +11,7 @@ import "./styles/CellsTissuesOrgans.css";
 import "./styles/lesson_template.css";
 import "./styles/SolarSystem.css";
 import "./styles/AlkaliMetals.scss";
-import "./styles/GroupsPeriods.css";
+import "./styles/GroupsPeriods.scss";
 
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";
