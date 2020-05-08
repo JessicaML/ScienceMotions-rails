@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Diffusion renders correctly when there are no items 1`] = `
+<section>
+  <div
+    className="diff"
+  >
+    <div
+      id="diffusion"
+    />
+  </div>
+  <div>
+    <section
+      id="text"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": undefined,
+          }
+        }
+      />
+    </section>
+  </div>
+</section>
+`;
