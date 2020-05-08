@@ -17,7 +17,6 @@
       <tbody>
       <% @lessons.each do |lesson| %>
         <tr>
-            <td><%= lesson&.id %></td>
             <td><%= lesson&.name %></td>
             <td><%= link_to 'Show', lesson %></td>
         </tr>
