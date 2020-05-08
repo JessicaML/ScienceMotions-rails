@@ -1,11 +1,10 @@
 import React from "react";
 import Text from "./text/Text";
-import  "../../../../scimo/styles/GroupsPeriods.scss"
 
 const GroupsPeriods = props => {
 
   return (
-    <div id="groups-periods">
+    <div className="groups-periods">
       <section id="top">
         <div className="fond" style={{marginTop: "40px", id:"smoothscroll"}}>
           <div id="forb" style={{float: "left", className:"style_prevu_kit"}}>

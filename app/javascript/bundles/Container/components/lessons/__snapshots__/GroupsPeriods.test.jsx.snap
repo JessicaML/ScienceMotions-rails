@@ -1,0 +1,1556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupsPeriods renders correctly when there are no items 1`] = `
+<div
+  className="groups-periods"
+>
+  <section
+    id="top"
+  >
+    <div
+      className="fond"
+      style={
+        Object {
+          "id": "smoothscroll",
+          "marginTop": "40px",
+        }
+      }
+    >
+      <div
+        id="forb"
+        style={
+          Object {
+            "className": "style_prevu_kit",
+            "float": "left",
+          }
+        }
+      />
+      <div
+        id="button"
+        style={
+          Object {
+            "className": "button-flip",
+            "float": "left",
+          }
+        }
+      >
+        <a
+          className="active"
+          href="#text"
+          id="button"
+        >
+          <button
+            style={
+              Object {
+                "className": "btn",
+                "color": "#fff",
+                "href": "#text",
+                "marginTop": "50px",
+                "type": "button",
+              }
+            }
+          >
+            More info
+          </button>
+        </a>
+      </div>
+      <div
+        id="forb"
+        style={
+          Object {
+            "className": "style_prevu_kit",
+            "float": "right",
+          }
+        }
+      />
+    </div>
+    <div
+      id="header"
+    />
+    <div
+      className="wrapper"
+      style={
+        Object {
+          "fontFamily": "courier new",
+        }
+      }
+    >
+      <ul
+        className="main"
+      >
+        <li
+          className="type-1 cat-2"
+          data-nb="1.0079"
+          data-pos="1"
+        >
+          H
+          <span>
+            Hydrogen
+          </span>
+        </li>
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="type-2 cat-2"
+          data-nb="4.0026"
+          data-pos="2"
+        >
+          He
+          <span>
+            Helium
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="6.941"
+          data-pos="3"
+        >
+          Li
+          <span>
+            Lithium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="9.0122"
+          data-pos="4"
+        >
+          Be
+          <span>
+            Beryllium
+          </span>
+        </li>
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="type-5 cat-0"
+          data-nb="10.811"
+          data-pos="5"
+        >
+          B
+          <span>
+            Boron
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="12.011"
+          data-pos="6"
+        >
+          C
+          <span>
+            Carbon
+          </span>
+        </li>
+        <li
+          className="type-5 cat-2"
+          data-nb="14.007"
+          data-pos="7"
+        >
+          N
+          <span>
+            Nitrogen
+          </span>
+        </li>
+        <li
+          className="type-5 cat-2"
+          data-nb="15.999"
+          data-pos="8"
+        >
+          O
+          <span>
+            Oxygen
+          </span>
+        </li>
+        <li
+          className="type-5 cat-2"
+          data-nb="18.998"
+          data-pos="9"
+        >
+          F
+          <span>
+            Fluorine
+          </span>
+        </li>
+        <li
+          className="type-2 cat-2"
+          data-nb="20.180"
+          data-pos="10"
+        >
+          Ne
+          <span>
+            Neon
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="22.990"
+          data-pos="11"
+        >
+          Na
+          <span>
+            Sodium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="24.305"
+          data-pos="12"
+        >
+          Mg
+          <span>
+            Magnesium
+          </span>
+        </li>
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="type-7 cat-0"
+          data-nb="26.982"
+          data-pos="13"
+        >
+          Al
+          <span>
+            Aluminium
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="28.086"
+          data-pos="14"
+        >
+          Si
+          <span>
+            Silicon
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="30.974"
+          data-pos="15"
+        >
+          P
+          <span>
+            Phosphorus
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="32.065"
+          data-pos="16"
+        >
+          S
+          <span>
+            Sulfur
+          </span>
+        </li>
+        <li
+          className="type-5 cat-2"
+          data-nb="35.453"
+          data-pos="17"
+        >
+          Cl
+          <span>
+            Chlorine
+          </span>
+        </li>
+        <li
+          className="type-2 cat-2"
+          data-nb="39.948"
+          data-pos="18"
+        >
+          Ar
+          <span>
+            Argon
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="39.098"
+          data-pos="19"
+        >
+          K
+          <span>
+            Potassium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="40.078"
+          data-pos="20"
+        >
+          Ca
+          <span>
+            Calcium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="44.956"
+          data-pos="21"
+        >
+          Sc
+          <span>
+            Scandium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="47.867"
+          data-pos="22"
+        >
+          Ti
+          <span>
+            Titanium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="50.942"
+          data-pos="23"
+        >
+          V
+          <span>
+            Vanadium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="51.996"
+          data-pos="24"
+        >
+          Cr
+          <span>
+            Chromium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="54.938"
+          data-pos="25"
+        >
+          Mn
+          <span>
+            Manganese
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="55.845"
+          data-pos="26"
+        >
+          Fe
+          <span>
+            Iron
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="58.933"
+          data-pos="27"
+        >
+          Co
+          <span>
+            Cobalt
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="58.693"
+          data-pos="28"
+        >
+          Ni
+          <span>
+            Nickel
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="63.546"
+          data-pos="29"
+        >
+          Cu
+          <span>
+            Copper
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="65.39"
+          data-pos="30"
+        >
+          Zn
+          <span>
+            Zinc
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="69.723"
+          data-pos="31"
+        >
+          Ga
+          <span>
+            Gallium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="72.64"
+          data-pos="32"
+        >
+          Ge
+          <span>
+            Germanium
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="74.922"
+          data-pos="33"
+        >
+          As
+          <span>
+            Arsenic
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="78.96"
+          data-pos="34"
+        >
+          Se
+          <span>
+            Selenium
+          </span>
+        </li>
+        <li
+          className="type-5 cat-1"
+          data-nb="79.904"
+          data-pos="35"
+        >
+          Br
+          <span>
+            Bromine
+          </span>
+        </li>
+        <li
+          className="type-2 cat-2"
+          data-nb="83.80"
+          data-pos="36"
+        >
+          Kr
+          <span>
+            Krypton
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="85.468"
+          data-pos="37"
+        >
+          Rb
+          <span>
+            Rubidium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="87.62"
+          data-pos="38"
+        >
+          Sr
+          <span>
+            Strontium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="88.906"
+          data-pos="39"
+        >
+          Y
+          <span>
+            Yttrium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="91.224"
+          data-pos="40"
+        >
+          Zr
+          <span>
+            Zirconium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="92.906"
+          data-pos="41"
+        >
+          Nb
+          <span>
+            Niobium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="95.94"
+          data-pos="42"
+        >
+          Mo
+          <span>
+            Molybdenum
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="(96)"
+          data-pos="43"
+        >
+          Tc
+          <span>
+            Technetium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="101.07"
+          data-pos="44"
+        >
+          Ru
+          <span>
+            Ruthenium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="102.91"
+          data-pos="45"
+        >
+          Rh
+          <span>
+            Rhodium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="106.42"
+          data-pos="46"
+        >
+          Pd
+          <span>
+            Palladium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="107.87"
+          data-pos="47"
+        >
+          Ag
+          <span>
+            Silver
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="112.41"
+          data-pos="48"
+        >
+          Cd
+          <span>
+            Cadmium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="114.82"
+          data-pos="49"
+        >
+          In
+          <span>
+            Indium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="118.71"
+          data-pos="50"
+        >
+          Sn
+          <span>
+            Tin
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="121.76"
+          data-pos="51"
+        >
+          Sb
+          <span>
+            Antimony
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="127.60"
+          data-pos="52"
+        >
+          Te
+          <span>
+            Tellurium
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="126.90"
+          data-pos="53"
+        >
+          I
+          <span>
+            Iodine
+          </span>
+        </li>
+        <li
+          className="type-2 cat-2"
+          data-nb="131.29"
+          data-pos="54"
+        >
+          Xe
+          <span>
+            Xenon
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="132.91"
+          data-pos="55"
+        >
+          Cs
+          <span>
+            Caesium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="137.33"
+          data-pos="56"
+        >
+          Ba
+          <span>
+            Barium
+          </span>
+        </li>
+        <li
+          className="type-8"
+          data-pos="57-71"
+        >
+          La-Lu
+          <span>
+            Lanthanide
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="178.49"
+          data-pos="72"
+        >
+          Hf
+          <span>
+            Hafnium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="180.95"
+          data-pos="73"
+        >
+          Ta
+          <span>
+            Tantalum
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="183.64"
+          data-pos="74"
+        >
+          W
+          <span>
+            Tungsten
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="186.21"
+          data-pos="75"
+        >
+          Re
+          <span>
+            Rhenium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="190.23"
+          data-pos="76"
+        >
+          Os
+          <span>
+            Osmium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="192.22"
+          data-pos="77"
+        >
+          Ir
+          <span>
+            Iridium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="195.08"
+          data-pos="78"
+        >
+          Pt
+          <span>
+            Platinum
+          </span>
+        </li>
+        <li
+          className="type-6 cat-0"
+          data-nb="196.97"
+          data-pos="79"
+        >
+          Au
+          <span>
+            Gold
+          </span>
+        </li>
+        <li
+          className="type-7 cat-1"
+          data-nb="200.59"
+          data-pos="80"
+        >
+          Hg
+          <span>
+            Mercury
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="204.38"
+          data-pos="81"
+        >
+          Tl
+          <span>
+            Thallium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="207.2"
+          data-pos="82"
+        >
+          Pb
+          <span>
+            Lead
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="208.96"
+          data-pos="83"
+        >
+          Bi
+          <span>
+            Bismuth
+          </span>
+        </li>
+        <li
+          className="type-7 cat-0"
+          data-nb="209"
+          data-pos="84"
+        >
+          Po
+          <span>
+            Polonium
+          </span>
+        </li>
+        <li
+          className="type-5 cat-0"
+          data-nb="210"
+          data-pos="85"
+        >
+          At
+          <span>
+            Astatine
+          </span>
+        </li>
+        <li
+          className="type-2 cat-2"
+          data-nb="222"
+          data-pos="86"
+        >
+          Rn
+          <span>
+            Radon
+          </span>
+        </li>
+        <li
+          className="type-3 cat-0"
+          data-nb="223"
+          data-pos="87"
+        >
+          Fr
+          <span>
+            Francium
+          </span>
+        </li>
+        <li
+          className="type-4 cat-0"
+          data-nb="226"
+          data-pos="88"
+        >
+          Ra
+          <span>
+            Radium
+          </span>
+        </li>
+        <li
+          className="type-9"
+          data-pos="89-103"
+        >
+          Ac-Lr
+          <span>
+            Actinide
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="261"
+          data-pos="104"
+        >
+          Rf
+          <span>
+            Rutherfodum
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="262"
+          data-pos="105"
+        >
+          Db
+          <span>
+            Dubnium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="266"
+          data-pos="106"
+        >
+          Sg
+          <span>
+            Seaborgium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="264"
+          data-pos="107"
+        >
+          Bh
+          <span>
+            Bohrium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="277"
+          data-pos="108"
+        >
+          Hs
+          <span>
+            Hassium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="268"
+          data-pos="109"
+        >
+          Mt
+          <span>
+            Meitnerium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="281"
+          data-pos="110"
+        >
+          Ds
+          <span>
+            Damstadium
+          </span>
+        </li>
+        <li
+          className="type-6 cat-3"
+          data-nb="272"
+          data-pos="111"
+        >
+          Rg
+          <span>
+            Roentgenium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-3"
+          data-nb="285"
+          data-pos="112"
+        >
+          Uub
+          <span>
+            Ununbium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-3"
+          data-nb="285"
+          data-pos="113"
+        >
+          Uut
+          <span>
+            Ununtrium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-3"
+          data-nb="289"
+          data-pos="114"
+        >
+          Uuq
+          <span>
+            Ununquadium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-3"
+          data-nb="289"
+          data-pos="115"
+        >
+          Uup
+          <span>
+            Ununpentium
+          </span>
+        </li>
+        <li
+          className="type-7 cat-3"
+          data-nb="289"
+          data-pos="115"
+        >
+          Uuh
+          <span>
+            Ununhexium
+          </span>
+        </li>
+        <li
+          className="type-0 cat-3"
+          data-nb="289"
+          data-pos="115"
+        >
+          Uus
+          <span>
+            Ununseptum
+          </span>
+        </li>
+        <li
+          className="type-2 cat-3"
+          data-nb="289"
+          data-pos="115"
+        >
+          Uuo
+          <span>
+            Ununoctium
+          </span>
+        </li>
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="type-8 cat-0"
+          data-nb="138.905"
+          data-pos="57"
+        >
+          La
+          <span>
+            Lanthanum
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="140.116"
+          data-pos="58"
+        >
+          Ce
+          <span>
+            Cerium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="140.908"
+          data-pos="59"
+        >
+          Pr
+          <span>
+            Praseodymium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="144.242"
+          data-pos="60"
+        >
+          Nd
+          <span>
+            Neodymium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="144.913"
+          data-pos="61"
+        >
+          Pm
+          <span>
+            Promethium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="150.360"
+          data-pos="62"
+        >
+          Sm
+          <span>
+            Samarium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="151.964"
+          data-pos="63"
+        >
+          Eu
+          <span>
+            Europium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="157.250"
+          data-pos="64"
+        >
+          Gd
+          <span>
+            Gadolinium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="158.925"
+          data-pos="65"
+        >
+          Tb
+          <span>
+            Terbium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="162.500"
+          data-pos="66"
+        >
+          Dy
+          <span>
+            Dysprosium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="164.930"
+          data-pos="67"
+        >
+          Ho
+          <span>
+            Holmium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="167.259"
+          data-pos="68"
+        >
+          Er
+          <span>
+            Erbium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="168.934"
+          data-pos="69"
+        >
+          Tm
+          <span>
+            Thulium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="173.055"
+          data-pos="70"
+        >
+          Yb
+          <span>
+            Ytterbium
+          </span>
+        </li>
+        <li
+          className="type-8 cat-0"
+          data-nb="174.967"
+          data-pos="71"
+        >
+          Lu
+          <span>
+            Lutetium
+          </span>
+        </li>
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="empty"
+        />
+        <li
+          className="type-9 cat-0"
+          data-nb="227.028"
+          data-pos="89"
+        >
+          Ac
+          <span>
+            Actinium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="232.038"
+          data-pos="90"
+        >
+          Th
+          <span>
+            Thorium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="231.036"
+          data-pos="91"
+        >
+          Pa
+          <span>
+            Protactinium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="238.029"
+          data-pos="92"
+        >
+          U
+          <span>
+            Uranium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="237.048"
+          data-pos="93"
+        >
+          Np
+          <span>
+            Neptunium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="244.064"
+          data-pos="94"
+        >
+          Pu
+          <span>
+            Plutonium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="243.061"
+          data-pos="95"
+        >
+          Am
+          <span>
+            Americium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="247.070"
+          data-pos="96"
+        >
+          Cm
+          <span>
+            Curium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="247.070"
+          data-pos="97"
+        >
+          Bk
+          <span>
+            Berkelium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="251.080"
+          data-pos="98"
+        >
+          Cf
+          <span>
+            Californium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="254.000"
+          data-pos="99"
+        >
+          Es
+          <span>
+            Einsteinium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="257.095"
+          data-pos="100"
+        >
+          Fm
+          <span>
+            Fermium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="258.100"
+          data-pos="101"
+        >
+          Md
+          <span>
+            Mendelevium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="259.101"
+          data-pos="102"
+        >
+          No
+          <span>
+            Nobelium
+          </span>
+        </li>
+        <li
+          className="type-9 cat-0"
+          data-nb="262.000"
+          data-pos="103"
+        >
+          Lr
+          <span>
+            Lawrencium
+          </span>
+        </li>
+      </ul>
+      <div
+        className="legend"
+      >
+        <ul
+          className="list-1"
+        >
+          <li
+            className="cat-0"
+          >
+            <span>
+              C
+            </span>
+            Solid
+          </li>
+          <li
+            className="cat-1"
+          >
+            <span>
+              Hg
+            </span>
+            Liquid
+          </li>
+          <li
+            className="cat-2"
+          >
+            <span>
+              H
+            </span>
+            Gas
+          </li>
+          <li
+            className="cat-3"
+          >
+            <span>
+              Rf
+            </span>
+            Unknown
+          </li>
+        </ul>
+        <ul
+          className="list-2"
+        >
+          <li
+            className="type-3"
+          >
+            Alkadi metals
+          </li>
+          <li
+            className="type-8"
+          >
+            Lanthanoids
+          </li>
+          <li
+            className="type-9"
+          >
+            Actinoids
+          </li>
+          <li
+            className="type-7"
+          >
+            Poor metals
+          </li>
+        </ul>
+        <ul
+          className="list-2"
+        >
+          <li
+            className="type-2"
+          >
+            Noble gases
+          </li>
+          <li
+            className="type-6"
+          >
+            Transition metals
+          </li>
+          <li
+            className="type-5"
+          >
+            Other non-metals
+          </li>
+          <li
+            className="type-4"
+          >
+            Alkadine earth metals
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section
+    id="text"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </section>
+</div>
+`;

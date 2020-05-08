@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatesOfMatter renders correctly when there are no items 1`] = `
+Array [
+  <section
+    className="lesson-container"
+    id="visual"
+  >
+    <div
+      className="nav"
+      id="nav-one"
+    >
+      <audio
+        id="beep-one"
+      >
+        Your browser isn't invited for super fun time.
+      </audio>
+      <a
+        className="sound__waveImage"
+        id="sound"
+        onClick={[Function]}
+      >
+        <img
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          src="test-file-stub"
+          style={
+            Object {
+              "height": "175px",
+              "width": "800px",
+            }
+          }
+        />
+      </a>
+    </div>
+  </section>,
+  <section
+    id="text"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </section>,
+]
+`;
