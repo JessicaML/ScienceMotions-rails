@@ -100,6 +100,12 @@ const teamInfo = [
     image: "katrina",
     description:
       " helps teachers use technology and learners understand the forces of the natural world. She's learning to code to understand what's 'under the hood' of the tools we use everyday."
+  },
+  {
+    name: "Aline Ribeiro",
+    image: "aline",
+    description:
+      " is a web developer based in Canada. She loves dogs, foreign languages and exploring the world."
   }
 ];
 export default teamInfo;
