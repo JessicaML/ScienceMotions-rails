@@ -1,12 +1,11 @@
 import React from "react";
-import styles from './Testimonials.module.scss';
 
 const Testimonials = () => (
-  <section id="third" className={styles.wrapper}>
-    <div className={styles.header}>
+  <section id="third" className="testimonialsWrapper">
+    <div className="header">
       <h1>Testimonials</h1>
     </div>
-    <div className={styles.testimonials}>
+    <div className="testimonials">
       <div>
         <i>
           “It looks really cool! I use GCSE Bitesize but it doesn’t always

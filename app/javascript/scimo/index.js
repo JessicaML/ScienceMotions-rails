@@ -1,5 +1,9 @@
 import "./styles/application.css";
 import "./styles/style.scss";
+
+import "./styles/LessonTemplate.scss";
+import "./styles/LessonsTable.scss";
+
 import "./styles/Indicators.scss";
 import "./styles/DNA.scss";
 import "./styles/Eye.scss";
@@ -8,11 +12,14 @@ import "./styles/Classification.scss";
 import "./styles/Atoms.scss";
 import "./styles/StatesOfMatter.scss";
 import "./styles/CellsTissuesOrgans.scss";
-import "./styles/LessonTemplate.scss";
-import "./styles/LessonsTable.scss";
 import "./styles/SolarSystem.scss";
 import "./styles/AlkaliMetals.scss";
 import "./styles/GroupsPeriods.scss";
+
+import "./styles/About.scss";
+import "./styles/FeaturedLessons.scss";
+import "./styles/Testimonials.scss";
+import "./styles/Team.scss";
 
 import "./scripts/DNA.js";
 import "./scripts/Sound.js";

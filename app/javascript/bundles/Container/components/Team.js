@@ -2,7 +2,6 @@ import React from "react";
 import teamInfo from "./teamInfo.js";
 import teamImgs from "./teamImgs";
 import { ParallaxProvider, Parallax } from "react-skrollr";
-import styles from './Team.module.scss';
 
 const Team = ({}) => (
   <ParallaxProvider className="nav-container">
@@ -15,28 +14,23 @@ const Team = ({}) => (
       }}
     >
 
-      <section className="container">
-        <div className={styles.header}>
+      <section className="container teamWrapper">
+        <div className="header">
           <h1>Team</h1>
         </div>
-        <div className={styles.wrapper}>
+        <div className="wrapper">
           {teamInfo.map(function(item, key) {
             const imgSrc = teamImgs.find(img => {
               if (img.includes(item.image)) return img;
             });
             return (
-              <div className={styles.teamItem} key={key}>
+              <div className="teamItem" key={key}>
                 <img
-                  className={styles.img}
+                  className="img"
                   src={imgSrc}
                   alt={item.image}
                 />
-                <p
-                  style={{
-                    fontSize: "12px"
-                  }}
-                >
-                  {" "}
+                <p>
                   <span>{item.name}</span> {item.description}
                 </p>
               </div>
