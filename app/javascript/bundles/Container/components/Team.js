@@ -2,6 +2,7 @@ import React from "react";
 import teamInfo from "./teamInfo.js";
 import teamImgs from "./teamImgs";
 import { ParallaxProvider, Parallax } from "react-skrollr";
+import styles from './Team.module.scss';
 
 const Team = ({}) => (
   <ParallaxProvider className="nav-container">
@@ -13,44 +14,35 @@ const Team = ({}) => (
           "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       }}
     >
-      <h1>Team</h1>
 
-      <section
-        className="container"
-        style={{
-          paddingTop: "30px"
-        }}
-      >
-        {teamInfo.map(function(item, key) {
-          const imgSrc = teamImgs.find(img => {
-            if (img.includes(item.image)) return img;
-          });
-          return (
-            <div className="col-md-4 portfolio-item" key={key}>
-              <img
-                className="img-responsive"
-                style={{
-                  display: "block",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  width: "245px",
-                  height: "245px",
-                  marginBottom: "35px"
-                }}
-                src={imgSrc}
-                alt={item.image}
-              />
-              <p
-                style={{
-                  fontSize: "12px"
-                }}
-              >
-                {" "}
-                <span>{item.name}</span> {item.description}
-              </p>
-            </div>
-          );
-        })}
+      <section className="container">
+        <div className={styles.header}>
+          <h1>Team</h1>
+        </div>
+        <div className={styles.wrapper}>
+          {teamInfo.map(function(item, key) {
+            const imgSrc = teamImgs.find(img => {
+              if (img.includes(item.image)) return img;
+            });
+            return (
+              <div className={styles.teamItem} key={key}>
+                <img
+                  className={styles.img}
+                  src={imgSrc}
+                  alt={item.image}
+                />
+                <p
+                  style={{
+                    fontSize: "12px"
+                  }}
+                >
+                  {" "}
+                  <span>{item.name}</span> {item.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </Parallax>
   </ParallaxProvider>

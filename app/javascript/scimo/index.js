@@ -1,15 +1,16 @@
 import "./styles/application.css";
-import "./styles/style.css";
+import "./styles/style.scss";
 import "./styles/Indicators.scss";
-import "./styles/DNA.css";
+import "./styles/DNA.scss";
 import "./styles/Eye.scss";
-import "./styles/Sound.css";
-import "./styles/Classification.css";
-import "./styles/Atoms.css";
-import "./styles/StatesOfMatter.css";
-import "./styles/CellsTissuesOrgans.css";
-import "./styles/lesson_template.css";
-import "./styles/SolarSystem.css";
+import "./styles/Sound.scss";
+import "./styles/Classification.scss";
+import "./styles/Atoms.scss";
+import "./styles/StatesOfMatter.scss";
+import "./styles/CellsTissuesOrgans.scss";
+import "./styles/LessonTemplate.scss";
+import "./styles/LessonsTable.scss";
+import "./styles/SolarSystem.scss";
 import "./styles/AlkaliMetals.scss";
 import "./styles/GroupsPeriods.scss";
 

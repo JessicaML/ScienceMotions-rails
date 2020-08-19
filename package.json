@@ -15,7 +15,6 @@
     "d3": "3",
     "file-loader": "^4.2.0",
     "install": "^0.13.0",
-    "jest": "^24.9.0",
     "jquery": "^3.5.0",
     "mini-css-extract-plugin": "^0.9.0",
     "npm": "^6.12.1",
@@ -39,7 +38,9 @@
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.10.1"
+    "jest": "^24.9.0",
+    "webpack-dev-server": "^3.10.1",
+    "identity-obj-proxy": "^3.0.0"
   },
   "scripts": {
     "test": "jest"
@@ -53,7 +54,8 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/app/javascript/spec/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/app/javascript/spec/__mocks__/styleMock.js"
+      "\\.(css|less)$": "<rootDir>/app/javascript/spec/__mocks__/styleMock.js",
+      "\\.module.(css|scss|sass)$": "identity-obj-proxy"
     }
   }
 }

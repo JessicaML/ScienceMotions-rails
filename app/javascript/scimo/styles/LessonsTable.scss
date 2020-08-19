@@ -1,0 +1,18 @@
+ .nav-container {
+  background-color: hsl(318, 60%, 68%);
+}
+
+.lesson-table {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+table,
+td,
+th {
+  vertical-align: middle;
+  border: none;
+}
+th {
+  border-bottom: 1px solid #ddd;
+}
