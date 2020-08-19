@@ -11,226 +11,141 @@ exports[`Container renders correctly when there are no items 1`] = `
       data-0="background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
     >
-      <section
-        className="container center-text"
-      >
-        <div
-          className="row"
-        >
-          <div
-            className="col-xs-6 col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="hidden-xs hidden-sm col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="col-xs-6 col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="hidden-xs hidden-sm col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-        </div>
-        <div
-          className="row"
-        >
-          <div
-            className="col-lg-12"
-          >
-            <div
-              className="header"
-            >
-              <h1>
-                ScienceMotions
-              </h1>
-              <p>
-                Biology, chemistry and physics lessons from the future.
-              </p>
-              <p>
-                <a
-                  href="#"
-                >
-                  see more
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="row"
-        >
-          <div
-            className="col-xs-6 col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="hidden-xs hidden-sm col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="hidden-xs hidden-sm col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            className="col-xs-6 col-md-3 portfolio-item"
-          >
-            <img
-              alt=""
-              className="img-responsive"
-              src="test-file-stub"
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <section
-    id="second"
-  >
-    <div
-      className="center-text"
-    >
       <div
-        className="row"
+        className="imgItems"
       >
-        <div
-          className="col-lg-12"
-        >
-          <div
-            className="header"
-          >
-            <br />
-            <p>
-              <a
-                href="navigation.html"
-              >
-                See all lessons here
-              </a>
-            </p>
-            <h1>
-              Featured Lessons
-            </h1>
-            <br />
-          </div>
-        </div>
-        <div
-          className="row"
-        >
-          <div
-            className="col-md-4 portfolio-item sound"
-          >
-            <a
-              href="lessons/1"
-            >
-              <h1>
-                Indicators
-              </h1>
-            </a>
-          </div>
-          <div
-            className="col-md-4 portfolio-item diffusion"
-          >
-            <a
-              href="lessons/3"
-            >
-              <h1>
-                Cells, Tissues, Organs
-              </h1>
-            </a>
-          </div>
-          <div
-            className="col-md-4 portfolio-item dna"
-          >
-            <a
-              href="lessons/2"
-            >
-              <h1>
-                DNA
-              </h1>
-            </a>
-          </div>
-        </div>
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="face"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
       </div>
-    </div>
-  </section>
-  <section
-    id="test"
-  >
-    <div
-      className="col-lg-12"
-    >
       <div
         className="header"
       >
-        <br />
         <h1>
-          Testimonials
+          ScienceMotions
         </h1>
-        <br />
+        <p>
+          Biology, chemistry and physics lessons from the future.
+        </p>
+        <p>
+          <a
+            href="#"
+          >
+            see more
+          </a>
+        </p>
+      </div>
+      <div
+        className="imgItems"
+      >
+        <img
+          alt="face"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
+        <img
+          alt="test tube"
+          className="img"
+          src="test-file-stub"
+        />
       </div>
     </div>
+  </div>
+  <section
+    className="wrapper"
+    id="second"
+  >
     <div
-      className="row"
+      className="header"
     >
-      <div
-        className="col-md-6 portfolio-item className"
+      <a
+        href="navigation.html"
       >
-        <p>
-          <i>
-            “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”
-          </i>
-        </p>
+        See all lessons here
+      </a>
+      <h1>
+        Featured Lessons
+      </h1>
+    </div>
+    <div
+      className="links"
+    >
+      <a
+        href="lessons/1"
+      >
+        <h1>
+          Indicators
+        </h1>
+      </a>
+      <a
+        href="lessons/3"
+      >
+        <h1>
+          Cells, Tissues, Organs
+        </h1>
+      </a>
+      <a
+        href="lessons/2"
+      >
+        <h1>
+          DNA
+        </h1>
+      </a>
+    </div>
+  </section>
+  <section
+    className="wrapper"
+    id="third"
+  >
+    <div
+      className="header"
+    >
+      <h1>
+        Testimonials
+      </h1>
+    </div>
+    <div
+      className="testimonials"
+    >
+      <div>
+        <i>
+          “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”
+        </i>
         <p>
            Blessing, GCSE Student, Brixton 
         </p>
       </div>
-      <div
-        className="col-md-6 portfolio-item dna"
-      >
-        <p>
-          <i>
-             
-            “This looks like it would be very helpful. Right now I use Gojimo, but it just uses lots of questions”
-          </i>
-        </p>
+      <div>
+        <i>
+          “This looks like it would be very helpful. Right now I use Gojimo, but it just uses lots of questions”
+        </i>
         <p>
           Joseph, A-Level Biology Student, Camberwell
         </p>
