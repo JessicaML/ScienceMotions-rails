@@ -8,9 +8,7 @@ exports[`About renders correctly when there are no items 1`] = `
     data-0="background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
     data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
   >
-    <div
-      className="imgItems"
-    >
+    <div>
       <img
         alt="test tube"
         className="img"
@@ -32,9 +30,7 @@ exports[`About renders correctly when there are no items 1`] = `
         src="test-file-stub"
       />
     </div>
-    <div
-      className="header"
-    >
+    <div>
       <h1>
         ScienceMotions
       </h1>
@@ -49,9 +45,7 @@ exports[`About renders correctly when there are no items 1`] = `
         </a>
       </p>
     </div>
-    <div
-      className="imgItems"
-    >
+    <div>
       <img
         alt="face"
         className="img"

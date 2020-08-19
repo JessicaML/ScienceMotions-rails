@@ -2,19 +2,14 @@
 
 exports[`Testimonials renders correctly when there are no items 1`] = `
 <section
-  className="wrapper"
   id="third"
 >
-  <div
-    className="header"
-  >
+  <div>
     <h1>
       Testimonials
     </h1>
   </div>
-  <div
-    className="testimonials"
-  >
+  <div>
     <div>
       <i>
         “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”

@@ -2,12 +2,9 @@
 
 exports[`FeaturedLessons renders correctly when there are no items 1`] = `
 <section
-  className="wrapper"
   id="second"
 >
-  <div
-    className="header"
-  >
+  <div>
     <a
       href="navigation.html"
     >
@@ -17,9 +14,7 @@ exports[`FeaturedLessons renders correctly when there are no items 1`] = `
       Featured Lessons
     </h1>
   </div>
-  <div
-    className="links"
-  >
+  <div>
     <a
       href="lessons/1"
     >

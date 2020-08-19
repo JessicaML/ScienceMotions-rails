@@ -11,9 +11,7 @@ exports[`Container renders correctly when there are no items 1`] = `
       data-0="background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
     >
-      <div
-        className="imgItems"
-      >
+      <div>
         <img
           alt="test tube"
           className="img"
@@ -35,9 +33,7 @@ exports[`Container renders correctly when there are no items 1`] = `
           src="test-file-stub"
         />
       </div>
-      <div
-        className="header"
-      >
+      <div>
         <h1>
           ScienceMotions
         </h1>
@@ -52,9 +48,7 @@ exports[`Container renders correctly when there are no items 1`] = `
           </a>
         </p>
       </div>
-      <div
-        className="imgItems"
-      >
+      <div>
         <img
           alt="face"
           className="img"
@@ -79,12 +73,9 @@ exports[`Container renders correctly when there are no items 1`] = `
     </div>
   </div>
   <section
-    className="wrapper"
     id="second"
   >
-    <div
-      className="header"
-    >
+    <div>
       <a
         href="navigation.html"
       >
@@ -94,9 +85,7 @@ exports[`Container renders correctly when there are no items 1`] = `
         Featured Lessons
       </h1>
     </div>
-    <div
-      className="links"
-    >
+    <div>
       <a
         href="lessons/1"
       >
@@ -121,19 +110,14 @@ exports[`Container renders correctly when there are no items 1`] = `
     </div>
   </section>
   <section
-    className="wrapper"
     id="third"
   >
-    <div
-      className="header"
-    >
+    <div>
       <h1>
         Testimonials
       </h1>
     </div>
-    <div
-      className="testimonials"
-    >
+    <div>
       <div>
         <i>
           “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”
