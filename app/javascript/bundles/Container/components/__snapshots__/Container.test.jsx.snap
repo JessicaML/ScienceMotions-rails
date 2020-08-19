@@ -11,71 +11,76 @@ exports[`Container renders correctly when there are no items 1`] = `
       data-0="background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
     >
-      <div>
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="face"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
-      </div>
-      <div>
-        <h1>
-          ScienceMotions
-        </h1>
-        <p>
-          Biology, chemistry and physics lessons from the future.
-        </p>
-        <p>
-          <a
-            href="#"
-          >
-            see more
-          </a>
-        </p>
-      </div>
-      <div>
-        <img
-          alt="face"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
-        <img
-          alt="test tube"
-          className="img"
-          src="test-file-stub"
-        />
+      <div
+        className="aboutWrapper"
+      >
+        <div
+          className="imgItems"
+        >
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+          <img
+            alt="face"
+            src="test-file-stub"
+          />
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="header"
+        >
+          <h1>
+            ScienceMotions
+          </h1>
+          <p>
+            Biology, chemistry and physics lessons from the future.
+          </p>
+          <p>
+            <a
+              href="#"
+            >
+              see more
+            </a>
+          </p>
+        </div>
+        <div
+          className="imgItems"
+        >
+          <img
+            alt="face"
+            src="test-file-stub"
+          />
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+          <img
+            alt="test tube"
+            src="test-file-stub"
+          />
+        </div>
       </div>
     </div>
   </div>
   <section
+    className="featuredLessonsWrapper"
     id="second"
   >
-    <div>
+    <div
+      className="header"
+    >
       <a
         href="navigation.html"
       >
@@ -85,7 +90,9 @@ exports[`Container renders correctly when there are no items 1`] = `
         Featured Lessons
       </h1>
     </div>
-    <div>
+    <div
+      className="links"
+    >
       <a
         href="lessons/1"
       >
@@ -110,14 +117,19 @@ exports[`Container renders correctly when there are no items 1`] = `
     </div>
   </section>
   <section
+    className="testimonialsWrapper"
     id="third"
   >
-    <div>
+    <div
+      className="header"
+    >
       <h1>
         Testimonials
       </h1>
     </div>
-    <div>
+    <div
+      className="testimonials"
+    >
       <div>
         <i>
           “It looks really cool! I use GCSE Bitesize but it doesn’t always explain things that well.”
@@ -171,7 +183,7 @@ exports[`Container renders correctly when there are no items 1`] = `
         className="mailchimp"
       >
         <label
-          for="mce-EMAIL"
+          htmlFor="mce-EMAIL"
         >
           Subscribe to our mailing list!
         </label>
@@ -201,11 +213,11 @@ exports[`Container renders correctly when there are no items 1`] = `
           </label>
           <input
             className="button"
+            defaultValue="Subscribe"
             id="mc-embedded-subscribe"
             name="subscribe"
             onClick={[Function]}
             type="submit"
-            value="Subscribe"
           />
           <div
             aria-hidden="true"
@@ -223,12 +235,12 @@ exports[`Container renders correctly when there are no items 1`] = `
               Email: 
             </label>
             <input
+              defaultValue=""
               id="b_email"
               name="b_email"
               placeholder="youremail@gmail.com"
               tabIndex="-1"
               type="email"
-              value=""
             />
           </div>
           <div
