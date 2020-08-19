@@ -36,7 +36,7 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
       className="mailchimp"
     >
       <label
-        for="mce-EMAIL"
+        htmlFor="mce-EMAIL"
       >
         Subscribe to our mailing list!
       </label>
@@ -66,11 +66,11 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
         </label>
         <input
           className="button"
+          defaultValue="Subscribe"
           id="mc-embedded-subscribe"
           name="subscribe"
           onClick={[Function]}
           type="submit"
-          value="Subscribe"
         />
         <div
           aria-hidden="true"
@@ -88,12 +88,12 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
             Email: 
           </label>
           <input
+            defaultValue=""
             id="b_email"
             name="b_email"
             placeholder="youremail@gmail.com"
             tabIndex="-1"
             type="email"
-            value=""
           />
         </div>
         <div

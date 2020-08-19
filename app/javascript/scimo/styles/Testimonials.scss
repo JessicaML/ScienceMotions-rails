@@ -1,0 +1,19 @@
+.testimonialsWrapper {
+    padding: 50px 0;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 15px;
+    }
+    
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+

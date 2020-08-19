@@ -73,7 +73,7 @@ class MailingList extends React.Component {
             </div>
           </div>
           <div className="mailchimp">
-            <label for="mce-EMAIL">Subscribe to our mailing list!</label>
+            <label htmlFor="mce-EMAIL">Subscribe to our mailing list!</label>
 
             <div>
               <input type="hidden" name="u" value="70d8e0ea2d8800a5f4e06792c" />
@@ -94,7 +94,7 @@ class MailingList extends React.Component {
               <input
                 type="submit"
                 onClick={this.onSubmit}
-                value="Subscribe"
+                defaultValue="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
                 className="button"
@@ -109,7 +109,7 @@ class MailingList extends React.Component {
                   type="email"
                   name="b_email"
                   tabIndex="-1"
-                  value=""
+                  defaultValue=""
                   placeholder="youremail@gmail.com"
                   id="b_email"
                 />
