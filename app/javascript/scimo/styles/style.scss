@@ -1,16 +1,8 @@
 @charset 'UTF-8';
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One");
 @import url("https://fonts.googleapis.com/css?family=Bitter");
-@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import  url("https://fonts.googleapis.com/css?family=Space+Mono");
 
-html {
-  height: 100%;
-}
-
-body {
-  color: blue;
-  height: 100%;
-}
 
 body,
 input,
@@ -115,8 +107,8 @@ b {
   margin: 1vh auto;
 }
 
-#test,
-#test h1 {
+#third,
+#third h1 {
   background-color: hsl(318, 68%, 68%);
   color: white;
   padding: 2%;
