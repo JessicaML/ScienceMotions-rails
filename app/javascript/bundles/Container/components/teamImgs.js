@@ -13,6 +13,7 @@ import monika from "../../../../assets/images/monika.png";
 import neer from "../../../../assets/images/neer.png";
 import paarmita from "../../../../assets/images/paarmita.png";
 import sakshi from "../../../../assets/images/sakshi.png";
+import steph from "../../../../assets/images/steph.png";
 import utsha from "../../../../assets/images/utsha.png";
 import vanessa from "../../../../assets/images/vanessa.png";
 
@@ -32,6 +33,7 @@ export default [
   neer,
   paarmita,
   sakshi,
+  steph,
   utsha,
   vanessa
 ];

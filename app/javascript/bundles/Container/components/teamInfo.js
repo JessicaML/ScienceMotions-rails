@@ -100,6 +100,12 @@ const teamInfo = [
     image: "katrina",
     description:
       " helps teachers use technology and learners understand the forces of the natural world. She's learning to code to understand what's 'under the hood' of the tools we use everyday."
+  },
+  {
+    name: "Stephanie Warmenhoven",
+    image: "steph",
+    description:
+      " is a Canadian web developer who loves travelling, coding and eating.   Born in South Africa, her favourite place to be is in the African bushveld."
   }
 ];
 export default teamInfo;
