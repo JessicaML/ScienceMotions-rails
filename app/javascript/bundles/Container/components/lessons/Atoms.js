@@ -6,7 +6,7 @@ import ButtonLinkToText from "./ButtonLinkToText";
 
 const Atoms = (props) => (
   <Fragment>
-    <section id="visual" className="lesson-container">
+    <section id="visual" className="lesson-container atoms">
       <ButtonLinkToText />
       <div id="atoms">
         <div className="eye1">

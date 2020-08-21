@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
+
+  margin: 0 30px 30px 30px;
 }
 
 .eye1 {
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -14,6 +19,8 @@
 
 .eye2 {
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
