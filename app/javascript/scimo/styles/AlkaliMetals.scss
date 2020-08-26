@@ -1,6 +1,10 @@
 #alkalin { 
   html, body {
     height: 100%;
+
+    .buttonWrapper {
+      margin: 15px;
+    }
   }
   
   #menu {
@@ -83,6 +87,47 @@
     line-height: 1.75em;
     color: #e376c4;
   }
-    
+  .button-flip {
+    outline: none;
+    color: #fff;
+    font-family: "Courier New";
+    font-style: oblique;
+    font-weight: 900;
+  }
+  
+  @-webkit-keyframes bounce {
+    0% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+    30% {
+      transform: scale(1, 0.8) translate(0px, 3px);
+    }
+    75% {
+      transform: scale(1, 1.1) translate(0px, -7px);
+    }
+    100% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+  }
+  
+  .button-flip:hover a {
+    z-index: 55;
+    color: #fff;
+    font-family: "Courier New", serif;
+    font-style: oblique;
+    font-weight: 900;
+    background-color: #e55d87;
+    -webkit-animation: bounce 0.75s infinite;
+    animation: bounce 0.75s infinite;
+  }
+  
+  .button-flip a {
+    color: #fff;
+    font-family: "Courier New", serif;
+    font-style: oblique;
+    font-weight: 900;
+    background-color: #00ff00;
+    margin: 0 0 25px 0;
+  }
 }
     
