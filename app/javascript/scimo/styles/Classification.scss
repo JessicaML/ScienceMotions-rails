@@ -1,46 +1,50 @@
-section#visual.classification {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin-bottom: 40px;
-}
+.classificationWrapper {
 
-section#visual.classification h1 {
-  text-transform: uppercase;
-  text-align: left;
-}
+  section#visual {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 
-section#visual #header {
-  display: flex;
-  flex-direction: column;
-}
+  h1 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 35px 0;
+  }
 
-#classification-input {
-  width: 70%;
-  text-align: left;
-}
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
 
-div.phrase {
-  font-family: "Space Mono", sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.75em;
-  width: 85%;
-  text-align: justify;
-}
+  #classification-input {
+    width: 70%;
+    text-align: left;
+    margin-bottom: 35px;
+  }
 
-.zero,
-.two,
-.six {
-  color: #6ace10;
-}
+  div.phrase {
+    font-family: "Space Mono", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.75em;
+    width: 85%;
+    text-align: justify;
+  }
 
-.one,
-.four {
-  color: #ed462f;
-}
+  .zero,
+  .two,
+  .six {
+    color: #6ace10;
+  }
 
-.three,
-.five {
-  color: #7f44ce;
+  .one,
+  .four {
+    color: #ed462f;
+  }
+
+  .three,
+  .five {
+    color: #7f44ce;
+  }
 }
