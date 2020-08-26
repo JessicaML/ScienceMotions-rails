@@ -7,24 +7,40 @@ Array [
     id="visual"
   >
     <div
-      id="header"
+      className="button-flip active"
+      id="smoothscroll"
     >
-      <h1>
-        Characteristics of living organisms 
-      </h1>
-      <input
-        defaultValue="0"
-        id="classification-input"
-        max="6"
-        min="0"
-        onChange={[Function]}
-        type="range"
-      />
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
     </div>
     <div
-      className="phrase zero"
+      className="classificationWrapper"
     >
-      Movement - they can move and change their position.
+      <div
+        id="header"
+      >
+        <h1>
+          Characteristics of living organisms 
+        </h1>
+        <input
+          defaultValue="0"
+          id="classification-input"
+          max="6"
+          min="0"
+          onChange={[Function]}
+          type="range"
+        />
+      </div>
+      <div
+        className="phrase zero"
+      >
+        Movement - they can move and change their position.
+      </div>
     </div>
   </section>,
   <section

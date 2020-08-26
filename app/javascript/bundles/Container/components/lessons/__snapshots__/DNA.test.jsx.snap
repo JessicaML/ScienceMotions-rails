@@ -10,8 +10,21 @@ Array [
       data-450="background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
     >
       <section
+        className="dnaWrapper"
         id="visual"
       >
+        <div
+          className="button-flip active"
+          id="smoothscroll"
+        >
+          <a
+            className="btn"
+            href="#text"
+            type="button"
+          >
+            More info
+          </a>
+        </div>
         <img
           className="dna-img t"
           src="test-file-stub"

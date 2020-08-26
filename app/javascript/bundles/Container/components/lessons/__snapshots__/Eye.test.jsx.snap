@@ -3,50 +3,66 @@
 exports[`Eye renders correctly when there are no items 1`] = `
 Array [
   <section
-    className="lesson-container eye"
+    className="lesson-container "
     id="visual"
   >
     <div
-      id="pupil"
+      className="button-flip active"
+      id="smoothscroll"
     >
-      <img
-        src="test-file-stub"
-      />
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
     </div>
     <div
-      id="cornea"
+      className="eyeWrapper"
     >
-      <img
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      id="fovea"
-    >
-      <img
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      id="cillary_muscle"
-    >
-      <img
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      id="lens"
-    >
-      <img
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      id="conjunctiva"
-    >
-      <img
-        src="test-file-stub"
-      />
+      <div
+        id="pupil"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        id="cornea"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        id="fovea"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        id="cillary_muscle"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        id="lens"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        id="conjunctiva"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
     </div>
   </section>,
   <section

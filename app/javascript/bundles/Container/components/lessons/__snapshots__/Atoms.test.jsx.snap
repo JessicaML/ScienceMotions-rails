@@ -7,6 +7,18 @@ Array [
     id="visual"
   >
     <div
+      className="button-flip active"
+      id="smoothscroll"
+    >
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
+    </div>
+    <div
       id="atoms"
     >
       <div
