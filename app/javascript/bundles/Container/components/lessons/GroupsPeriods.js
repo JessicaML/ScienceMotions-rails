@@ -5,17 +5,14 @@ import ButtonLinkToText from "./ButtonLinkToText";
 const GroupsPeriods = props => {
 
   return (
-    <div className="groups-periods">
-      <section id="top">
-        <ButtonLinkToText />
+    <>
+    <div className="groupsPeriodsWrapper">
+
+        <div className="buttonWrapper">
+          <ButtonLinkToText />
+        </div>
         <div className="fond" style={{marginTop: "40px", id:"smoothscroll"}}>
           <div id="forb" style={{float: "left", className:"style_prevu_kit"}}>
-          </div>
-          <div id="button" style={{float:"left", className:"button-flip"}}>
-            <a id="button" className="active" href="#text">
-              <button style={{color: "#fff", marginTop: "50px", type:"button", className:"btn", href:"#text"}}>More info
-              </button>
-            </a>
           </div>
           <div id="forb" style={{float: "right", className:"style_prevu_kit"}}>
           </div>
@@ -26,7 +23,7 @@ const GroupsPeriods = props => {
         <div className="wrapper" style={{fontFamily: "courier new"}}>
           <ul className="main">
 
-             {/*ROW 1 */}
+            {/*ROW 1 */}
 
             <li data-pos="1" data-nb="1.0079" className="type-1 cat-2">H
               <span>Hydrogen</span>
@@ -94,7 +91,7 @@ const GroupsPeriods = props => {
               <span>Neon</span>
             </li>
 
-           {/*ROW 3 */}
+          {/*ROW 3 */}
 
             <li data-pos="11" data-nb="22.990" className="type-3 cat-0">Na
               <span>Sodium</span>
@@ -254,7 +251,7 @@ const GroupsPeriods = props => {
               <span>Xenon</span>
             </li>
 
-             {/*ROW 6*/}
+            {/*ROW 6*/}
 
             <li data-pos="55" data-nb="132.91" className="type-3 cat-0">Cs
               <span>Caesium</span>
@@ -314,7 +311,7 @@ const GroupsPeriods = props => {
               <span>Radon</span>
             </li>
 
-             {/*ROW 7*/}
+            {/*ROW 7*/}
 
             <li data-pos="87" data-nb="223" className="type-3 cat-0">Fr
               <span>Francium</span>
@@ -533,9 +530,9 @@ const GroupsPeriods = props => {
             </ul>
           </div>
         </div>
-      </section>
-      <Text props={props.description} />
     </div>
+    <Text props={props.description} />
+  </>
   );
 };
 
