@@ -18,7 +18,7 @@ const DNA = (props) => (
           "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       }}
     >
-    <section id="visual">
+    <section id="visual" className="dnaWrapper">
       <ButtonLinkToText />
       <img src={Thymine} className="dna-img t" />
       <img src={Cytosine} className="dna-img c" />
