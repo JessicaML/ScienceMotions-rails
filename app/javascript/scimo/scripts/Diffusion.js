@@ -18,7 +18,6 @@ const DiffusionScript = () => {
       .attr("height", "100%")
       .attr("fill", "white");
 
-
   const force = d3.layout
     .force()
     .charge(-20)

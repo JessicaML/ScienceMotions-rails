@@ -5,16 +5,13 @@ import ButtonLinkToText from "./ButtonLinkToText";
 
 const Diffusion = props => {
   return (
-      <section>
+    <section className="diffusionWrapper">
+      <div className="buttonWrapper">
         <ButtonLinkToText />
-
-        <div className="diff">
-          <DiffusionScript />
-        </div>
-        <div>
-          <Text props={props.description} />
-        </div>
-      </section>
+      </div>
+      <DiffusionScript />
+      <Text props={props.description} />
+    </section>
   );
 };
 export default props => <Diffusion {...props} />;
