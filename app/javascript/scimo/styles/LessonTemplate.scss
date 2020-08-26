@@ -49,10 +49,9 @@ section#visual {
   padding: 75px;
 }
 
-section#visual button {
+section#visual a {
   outline: none;
   overflow: hidden;
-  margin-left: 15px;
 }
 
 section#visual p {
@@ -240,7 +239,7 @@ a:hover {
   }
 }
 
-.button-flip:hover button {
+.button-flip:hover a {
   z-index: 55;
   color: #fff;
   font-family: "Courier New", serif;
@@ -251,13 +250,13 @@ a:hover {
   animation: bounce 0.75s infinite;
 }
 
-.button-flip button {
+.button-flip a {
   color: #fff;
   font-family: "Courier New", serif;
   font-style: oblique;
   font-weight: 900;
   background-color: #00ff00;
-  margin: 25px 0 0 20px;
+  margin: 0 0 25px 0;
 }
 
 .subscription {

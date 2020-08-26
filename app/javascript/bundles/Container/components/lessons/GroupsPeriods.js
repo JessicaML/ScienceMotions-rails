@@ -1,11 +1,13 @@
 import React from "react";
 import Text from "./text/Text";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const GroupsPeriods = props => {
 
   return (
     <div className="groups-periods">
       <section id="top">
+        <ButtonLinkToText />
         <div className="fond" style={{marginTop: "40px", id:"smoothscroll"}}>
           <div id="forb" style={{float: "left", className:"style_prevu_kit"}}>
           </div>

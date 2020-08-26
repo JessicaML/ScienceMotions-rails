@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
 import classnames from "classnames";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const phrases = [
   "Movement - they can move and change their position.",
@@ -34,6 +35,8 @@ class Classification extends React.Component {
     return (
       <Fragment>
         <section id="visual" className="classification" className="lesson-container">
+          <ButtonLinkToText />
+
           <div id="header">
             <h1>Characteristics of living organisms </h1>
             <input id="classification-input" 

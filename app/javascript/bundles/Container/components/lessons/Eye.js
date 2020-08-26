@@ -6,11 +6,12 @@ import Fovea from "../../../../../assets/images/fovea.png";
 import Cillary_muscle from "../../../../../assets/images/cillarymuscle.png";
 import Lens from "../../../../../assets/images/lens.png";
 import Conjunctiva from "../../../../../assets/images/conjunctiva.png";
-import $ from 'jquery';
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const Eye = (props) => (
   <Fragment>
     <section id="visual" className="lesson-container eye">
+      <ButtonLinkToText />
       <div id="pupil">
         <img src={Pupil} />
       </div>

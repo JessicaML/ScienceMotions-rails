@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 import Text from "./text/Text";
 import eye1 from "../../../../../assets/images/eye1.png";
 import eye2 from "../../../../../assets/images/eye2.png";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const Atoms = (props) => (
   <Fragment>
     <section id="visual" className="lesson-container">
+      <ButtonLinkToText />
       <div id="atoms">
         <div className="eye1">
           <img src={eye1} />

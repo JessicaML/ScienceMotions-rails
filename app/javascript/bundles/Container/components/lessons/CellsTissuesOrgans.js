@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "./text/Text";
 import startAnimation from "./CellsTissuesOrgansScript";
-
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const CellsTissuesOrgans = (props) => (
   <div className="lesson_template" className="lesson-container" onMouseEnter={startAnimation}>
