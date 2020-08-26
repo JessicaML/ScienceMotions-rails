@@ -3,7 +3,7 @@
 exports[`Atoms renders correctly when there are no items 1`] = `
 Array [
   <section
-    className="lesson-container"
+    className="lesson-container atoms"
     id="visual"
   >
     <div
