@@ -1,19 +1,17 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 class SolarSystem extends React.Component {
   constructor(props) {
     super(props);
     };
   
-
-
   render() {
     return (
       <Fragment>
-        <section id="visual" className="lesson-container solarsystem">
-
-            <div  className="clearfix">
+        <section id="visual" className="lesson-container solarsystemWrapper">
+            <ButtonLinkToText />
             <ul className="solarsystem">
                 <li className="sun" >
                     <a href="#sun">
@@ -73,8 +71,6 @@ class SolarSystem extends React.Component {
                     </a>
                 </li>
             </ul>
-        </div>
-            
         </section>
         <Text props={this.props.description} />
       </Fragment>

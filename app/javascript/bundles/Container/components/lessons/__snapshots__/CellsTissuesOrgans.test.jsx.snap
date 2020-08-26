@@ -2,9 +2,25 @@
 
 exports[`CellsTissuesOrgans renders correctly when there are no items 1`] = `
 <div
-  className="lesson-container"
+  className="lesson_template"
   onMouseEnter={[Function]}
 >
+  <div
+    className="buttonWrapper"
+  >
+    <div
+      className="button-flip active"
+      id="smoothscroll"
+    >
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
+    </div>
+  </div>
   <section
     className="animation"
   >

@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const Indicators = (props) => (
   <Fragment>
     <section id="visual" className="lesson-container indicators">
+      <ButtonLinkToText />
       <div className="col-sm-1" />
       <div className="col-sm-3">
         <p>Acidic Solution</p>

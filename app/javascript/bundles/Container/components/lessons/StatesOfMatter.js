@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Text from "./text/Text";
 import StatesOfMatterCanvas from "./StatesOfMatterCanvas";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const StatesOfMatter = props => {
   const [circles, setCircles] = useState(100);
@@ -8,6 +9,7 @@ const StatesOfMatter = props => {
   return (
     <div>
       <section id="visual" className="lesson-container">
+        <ButtonLinkToText />
         <div className="buttons">
           <button id="solid" onClick={() => setCircles(500)}>
             SOLID

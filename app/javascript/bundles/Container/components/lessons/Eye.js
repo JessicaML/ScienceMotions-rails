@@ -6,28 +6,31 @@ import Fovea from "../../../../../assets/images/fovea.png";
 import Cillary_muscle from "../../../../../assets/images/cillarymuscle.png";
 import Lens from "../../../../../assets/images/lens.png";
 import Conjunctiva from "../../../../../assets/images/conjunctiva.png";
-import $ from 'jquery';
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const Eye = (props) => (
   <Fragment>
-    <section id="visual" className="lesson-container eye">
-      <div id="pupil">
-        <img src={Pupil} />
-      </div>
-      <div id="cornea">
-        <img src={Cornea} />
-      </div>
-      <div id="fovea">
-        <img src={Fovea} />
-      </div>
-      <div id="cillary_muscle">
-        <img src={Cillary_muscle} />
-      </div>
-      <div id="lens">
-        <img src={Lens} />
-      </div>
-      <div id="conjunctiva">
-        <img src={Conjunctiva} />
+    <section id="visual" className="lesson-container ">
+      <ButtonLinkToText />
+      <div className="eyeWrapper">
+        <div id="pupil">
+          <img src={Pupil} />
+        </div>
+        <div id="cornea">
+          <img src={Cornea} />
+        </div>
+        <div id="fovea">
+          <img src={Fovea} />
+        </div>
+        <div id="cillary_muscle">
+          <img src={Cillary_muscle} />
+        </div>
+        <div id="lens">
+          <img src={Lens} />
+        </div>
+        <div id="conjunctiva">
+          <img src={Conjunctiva} />
+        </div>
       </div>
     </section>
     <Text props={props.description} />

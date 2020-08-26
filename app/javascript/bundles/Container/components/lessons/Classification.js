@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Text from "./text/Text";
 import classnames from "classnames";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const phrases = [
   "Movement - they can move and change their position.",
@@ -33,20 +34,23 @@ class Classification extends React.Component {
     const classNames = classnames("phrase", styles[value]);
     return (
       <Fragment>
-        <section id="visual" className="classification" className="lesson-container">
-          <div id="header">
-            <h1>Characteristics of living organisms </h1>
-            <input id="classification-input" 
-              type="range"
-              defaultValue="0"
-              min="0"
-              max="6"
-              onChange={this.changeInput}
-            />
+        <section id="visual" className="lesson-container">
+          <ButtonLinkToText />
+          <div className="classificationWrapper">
+            <div id="header">
+              <h1>Characteristics of living organisms </h1>
+              <input id="classification-input" 
+                type="range"
+                defaultValue="0"
+                min="0"
+                max="6"
+                onChange={this.changeInput}
+              />
+            </div>
+            <div className={classNames}>{phrase}</div>
           </div>
-          <div className={classNames}>{phrase}</div>
         </section>
-        <Text props={this.props.description} />
+        <Text props={this.props.description} id="text" />
       </Fragment>
     );
   }

@@ -5,8 +5,8 @@ $(document).ready(function($) {
 
   if (box && box.offset()) {
     var boxCenter = [
-      box.offset().left + box.width() / 2,
-      box.offset().top + box.height() / 2
+      box.offset().left + box.width() / 3,
+      box.offset().top + box.height() / 3
     ];
   }
 

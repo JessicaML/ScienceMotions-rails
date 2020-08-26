@@ -1,12 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GroupsPeriods renders correctly when there are no items 1`] = `
-<div
-  className="groups-periods"
->
-  <section
-    id="top"
+Array [
+  <div
+    className="groupsPeriodsWrapper"
   >
+    <div
+      className="buttonWrapper"
+    >
+      <div
+        className="button-flip active"
+        id="smoothscroll"
+      >
+        <a
+          className="btn"
+          href="#text"
+          type="button"
+        >
+          More info
+        </a>
+      </div>
+    </div>
     <div
       className="fond"
       style={
@@ -25,35 +39,6 @@ exports[`GroupsPeriods renders correctly when there are no items 1`] = `
           }
         }
       />
-      <div
-        id="button"
-        style={
-          Object {
-            "className": "button-flip",
-            "float": "left",
-          }
-        }
-      >
-        <a
-          className="active"
-          href="#text"
-          id="button"
-        >
-          <button
-            style={
-              Object {
-                "className": "btn",
-                "color": "#fff",
-                "href": "#text",
-                "marginTop": "50px",
-                "type": "button",
-              }
-            }
-          >
-            More info
-          </button>
-        </a>
-      </div>
       <div
         id="forb"
         style={
@@ -1540,7 +1525,7 @@ exports[`GroupsPeriods renders correctly when there are no items 1`] = `
         </ul>
       </div>
     </div>
-  </section>
+  </div>,
   <section
     id="text"
   >
@@ -1551,6 +1536,6 @@ exports[`GroupsPeriods renders correctly when there are no items 1`] = `
         }
       }
     />
-  </section>
-</div>
+  </section>,
+]
 `;

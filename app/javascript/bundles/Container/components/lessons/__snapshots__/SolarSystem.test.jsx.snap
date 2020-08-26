@@ -3,144 +3,152 @@
 exports[`SolarSystem renders correctly when there are no items 1`] = `
 Array [
   <section
-    className="lesson-container solarsystem"
+    className="lesson-container solarsystemWrapper"
     id="visual"
   >
     <div
-      className="clearfix"
+      className="button-flip active"
+      id="smoothscroll"
     >
-      <ul
-        className="solarsystem"
+      <a
+        className="btn"
+        href="#text"
+        type="button"
       >
-        <li
-          className="sun"
-        >
-          <a
-            href="#sun"
-          >
-            <span>
-              Sun
-            </span>
-          </a>
-        </li>
-        <li
-          className="mercury"
-        >
-          <a
-            href="#mercury"
-          >
-            <span>
-              Mercury
-            </span>
-          </a>
-        </li>
-        <li
-          className="venus"
-        >
-          <a
-            href="#venus"
-          >
-            <span>
-              Venus
-            </span>
-          </a>
-        </li>
-        <li
-          className="earth"
-        >
-          <a
-            href="#earth"
-          >
-            <span>
-              Earth
-              <span
-                className="moon"
-              >
-                 & Moon
-              </span>
-            </span>
-          </a>
-        </li>
-        <li
-          className="mars"
-        >
-          <a
-            href="#mars"
-          >
-            <span>
-              Mars
-            </span>
-          </a>
-        </li>
-        <li
-          className="asteroids_meteorids"
+        More info
+      </a>
+    </div>
+    <ul
+      className="solarsystem"
+    >
+      <li
+        className="sun"
+      >
+        <a
+          href="#sun"
         >
           <span>
-            Asteroids & Meteorids
+            Sun
           </span>
-        </li>
-        <li
-          className="jupiter"
+        </a>
+      </li>
+      <li
+        className="mercury"
+      >
+        <a
+          href="#mercury"
         >
-          <a
-            href="#jupiter"
-          >
-            <span>
-              Jupiter
-            </span>
-          </a>
-        </li>
-        <li
-          className="saturn"
+          <span>
+            Mercury
+          </span>
+        </a>
+      </li>
+      <li
+        className="venus"
+      >
+        <a
+          href="#venus"
         >
-          <a
-            href="#saturn"
-          >
-            <span>
-              Saturn &
-              <span
-                className="ring"
-              >
-                Ring
-              </span>
-            </span>
-          </a>
-        </li>
-        <li
-          className="uranus"
+          <span>
+            Venus
+          </span>
+        </a>
+      </li>
+      <li
+        className="earth"
+      >
+        <a
+          href="#earth"
         >
-          <a
-            href="#uranus"
-          >
-            <span>
-              Uranus
+          <span>
+            Earth
+            <span
+              className="moon"
+            >
+               & Moon
             </span>
-          </a>
-        </li>
-        <li
-          className="neptune"
+          </span>
+        </a>
+      </li>
+      <li
+        className="mars"
+      >
+        <a
+          href="#mars"
         >
-          <a
-            href="#neptune"
-          >
-            <span>
-              Neptune
-            </span>
-          </a>
-        </li>
-        <li
-          className="pluto"
+          <span>
+            Mars
+          </span>
+        </a>
+      </li>
+      <li
+        className="asteroids_meteorids"
+      >
+        <span>
+          Asteroids & Meteorids
+        </span>
+      </li>
+      <li
+        className="jupiter"
+      >
+        <a
+          href="#jupiter"
         >
-          <a
-            href="#pluto"
-          >
-            <span>
-              Pluto
+          <span>
+            Jupiter
+          </span>
+        </a>
+      </li>
+      <li
+        className="saturn"
+      >
+        <a
+          href="#saturn"
+        >
+          <span>
+            Saturn &
+            <span
+              className="ring"
+            >
+              Ring
             </span>
-          </a>
-        </li>
-      </ul>
-    </div>
+          </span>
+        </a>
+      </li>
+      <li
+        className="uranus"
+      >
+        <a
+          href="#uranus"
+        >
+          <span>
+            Uranus
+          </span>
+        </a>
+      </li>
+      <li
+        className="neptune"
+      >
+        <a
+          href="#neptune"
+        >
+          <span>
+            Neptune
+          </span>
+        </a>
+      </li>
+      <li
+        className="pluto"
+      >
+        <a
+          href="#pluto"
+        >
+          <span>
+            Pluto
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>,
   <section
     id="text"

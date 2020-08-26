@@ -1,5 +1,9 @@
 
-.groups-periods{
+.groupsPeriodsWrapper {
+    height: 1000px;
+    .buttonWrapper {
+        margin: 15px;
+    }
     ol, ul {
         list-style: none;
     }
@@ -33,12 +37,6 @@
         text-rendering: optimizeLegibility;
     }
 
-    section#top {
-        width: 100%;
-        text-align: center;
-        height: 1000px;
-    }
-
     div#header {
         font-family: "Fugaz One";
         font-weight: 300;
@@ -53,23 +51,6 @@
         font-size: 1.2em;
         line-height: 1.75em;
         color: #e376c4;
-    }
-
-    section#info {
-        background: grey;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        font-size: 18px;
-    }
-
-    section#info div {
-        background: grey;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        padding-top: 20px;
-        font-size: 18px;
     }
 
     section#info h1 {
@@ -260,5 +241,7 @@
         width:100%;
         cursor:pointer;
     }
+
+
 }
 

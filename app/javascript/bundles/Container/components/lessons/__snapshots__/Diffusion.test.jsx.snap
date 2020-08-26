@@ -1,26 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Diffusion renders correctly when there are no items 1`] = `
-<section>
+<section
+  className="diffusionWrapper"
+>
   <div
-    className="diff"
+    className="buttonWrapper"
   >
     <div
-      id="diffusion"
-    />
-  </div>
-  <div>
-    <section
-      id="text"
+      className="button-flip active"
+      id="smoothscroll"
     >
-      <div
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": undefined,
-          }
-        }
-      />
-    </section>
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
+    </div>
   </div>
+  <div
+    id="diffusion"
+  />
+  <section
+    id="text"
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </section>
 </section>
 `;

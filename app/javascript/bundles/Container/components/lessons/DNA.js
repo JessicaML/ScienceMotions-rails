@@ -5,6 +5,7 @@ import Guanine from "../../../../../assets/images/guanine.png";
 import Thymine from "../../../../../assets/images/thymine.png";
 import Text from "./text/Text";
 import { ParallaxProvider, Parallax } from "react-skrollr";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const DNA = (props) => (
   <Fragment>
@@ -17,7 +18,8 @@ const DNA = (props) => (
           "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
       }}
     >
-    <section id="visual">
+    <section id="visual" className="dnaWrapper">
+      <ButtonLinkToText />
       <img src={Thymine} className="dna-img t" />
       <img src={Cytosine} className="dna-img c" />
       <img src={Adenine} className="dna-img a" />

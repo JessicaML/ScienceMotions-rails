@@ -1,10 +1,9 @@
-.solarsystem {
+.solarsystemWrapper {
     background: #080e24 repeat;
     color: #626668;
-}
-/* Solar System Styles */
+
+    /* Solar System Styles */
 ul.solarsystem {
-    position: relative;
     height: 620px;
     -webkit-transition: all 0.09s ease-in;
     transition: all 0.09s ease-in;
@@ -247,3 +246,5 @@ ul.solarsystem li.pluto {-webkit-animation-duration:120s;}
 @-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
 
 ul.solarsystem:hover li {-webkit-animation-play-state: paused;} 
+
+}

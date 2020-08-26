@@ -1,10 +1,14 @@
 import React from "react";
 import Text from "./text/Text";
 import startAnimation from "./CellsTissuesOrgansScript";
-
+import ButtonLinkToText from "./ButtonLinkToText";
 
 const CellsTissuesOrgans = (props) => (
-  <div className="lesson_template" className="lesson-container" onMouseEnter={startAnimation}>
+  <div className="lesson_template" onMouseEnter={startAnimation}>
+    <div className="buttonWrapper">
+      <ButtonLinkToText />
+    </div>    
+    
     <section className="animation">
       <div className="cell">
         <div className="organelle-container">

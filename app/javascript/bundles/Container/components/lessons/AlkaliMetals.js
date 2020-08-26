@@ -6,6 +6,7 @@ import { CSS3DObject } from '../../../../scimo/scripts/CSS3DRenderer';
 import TrackballControls from 'three-trackballcontrols'
 import * as TWEEN from 'tween';
 import  table  from '../../../../scimo/scripts/table';
+import ButtonLinkToText from "./ButtonLinkToText";
 
 
 const AlkaliMetals = props => {
@@ -164,15 +165,19 @@ const AlkaliMetals = props => {
     return (
         <div id="alkalin">
            <section className="lesson-container">
+           <div className="buttonWrapper">
+                <ButtonLinkToText />
+           </div>
+
                 <div className="main">
                     <div id="container"></div>
                         <div id="menu">
-                            <a className="button-flip">
-                                <button id="helix" className="btn" style={{color: "#fff"}}>VIEW ALKALI METALS</button>
-                            </a>
-                            <a className="button-flip">
-                                <button id="table">TABLE VIEW</button>
-                            </a>
+                            <div className="button-flip">
+                                <a id="helix" className="btn">VIEW ALKALI METALS</a>
+                            </div>
+                            <div className="button-flip">
+                                <a id="table" className="btn">TABLE VIEW</a>
+                            </div>
                         </div>
                 </div>    
             </section>

@@ -1,18 +1,23 @@
-.eye {
-  padding-top: 60px;
-   #pupil {
+.eyeWrapper {
+  display: flex;
+  height: 500px;
+
+  div {
+    margin: 175px 0 0 0;
+  }   
+
+#pupil {
     position: absolute;
     bottom: -10px;
-    left: -32px;
+    left: 260px;
     width: 100%;
     height: 100%;
   }
 
    #cornea {
-    padding: 15px;
     position: absolute;
     top: 0;
-    left: -75px;
+    left: 150px;
     width: 100%;
     height: 100%;
   }
@@ -20,7 +25,7 @@
    #fovea {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 260px;
     width: 100%;
     height: 100%;
   }
@@ -28,7 +33,7 @@
    #cillary_muscle {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 260px;
     width: 100%;
     height: 100%;
   }
@@ -36,7 +41,7 @@
    #lens {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 260px;
     width: 100%;
     height: 100%;
   }
@@ -45,7 +50,7 @@
     padding: 15px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 260px;
     width: 100%;
     height: 100%;
   }

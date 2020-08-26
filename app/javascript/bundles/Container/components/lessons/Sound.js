@@ -3,6 +3,7 @@ import { ReactMic } from 'react-mic';
 import SoundPng from "../../../../../assets/images/sound.png";
 import SoundGif from "../../../../../assets/images/sound.gif";
 import Text from "./text/Text";
+import ButtonLinkToText from "./ButtonLinkToText";
 
 class Sound extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class Sound extends React.Component {
     return (
       <Fragment>
         <section id="visual" className="sound" className="lesson-container">
+          <ButtonLinkToText />
           <div id="nav-one" className="nav">
             <audio id="beep-one">
               Your browser isn't invited for super fun time.

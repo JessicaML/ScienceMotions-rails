@@ -3,9 +3,21 @@
 exports[`Atoms renders correctly when there are no items 1`] = `
 Array [
   <section
-    className="lesson-container"
+    className="lesson-container atoms"
     id="visual"
   >
+    <div
+      className="button-flip active"
+      id="smoothscroll"
+    >
+      <a
+        className="btn"
+        href="#text"
+        type="button"
+      >
+        More info
+      </a>
+    </div>
     <div
       id="atoms"
     >

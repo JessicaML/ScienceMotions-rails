@@ -6,6 +6,7 @@ import "./styles/LessonsTable.scss";
 
 import "./styles/Indicators.scss";
 import "./styles/DNA.scss";
+import "./styles/Diffusion.scss";
 import "./styles/Eye.scss";
 import "./styles/Sound.scss";
 import "./styles/Classification.scss";
