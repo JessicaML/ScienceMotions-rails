@@ -10,25 +10,27 @@ import ButtonLinkToText from "./ButtonLinkToText";
 
 const Eye = (props) => (
   <Fragment>
-    <section id="visual" className="lesson-container eye">
+    <section id="visual" className="lesson-container ">
       <ButtonLinkToText />
-      <div id="pupil">
-        <img src={Pupil} />
-      </div>
-      <div id="cornea">
-        <img src={Cornea} />
-      </div>
-      <div id="fovea">
-        <img src={Fovea} />
-      </div>
-      <div id="cillary_muscle">
-        <img src={Cillary_muscle} />
-      </div>
-      <div id="lens">
-        <img src={Lens} />
-      </div>
-      <div id="conjunctiva">
-        <img src={Conjunctiva} />
+      <div className="eyeWrapper">
+        <div id="pupil">
+          <img src={Pupil} />
+        </div>
+        <div id="cornea">
+          <img src={Cornea} />
+        </div>
+        <div id="fovea">
+          <img src={Fovea} />
+        </div>
+        <div id="cillary_muscle">
+          <img src={Cillary_muscle} />
+        </div>
+        <div id="lens">
+          <img src={Lens} />
+        </div>
+        <div id="conjunctiva">
+          <img src={Conjunctiva} />
+        </div>
       </div>
     </section>
     <Text props={props.description} />
