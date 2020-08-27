@@ -10,11 +10,15 @@ ul.solarsystem {
     overflow: hidden;
 }
 ul.solarsystem li {
+    margin-top: 100px;
     text-indent: -9999px;
     display: block;
     position: absolute;
     border: 2px solid #394057;
     opacity: 0.7;
+    @media only screen and (max-width: 767px) {
+        margin-top: 150px;
+    }
 }
 ul.solarsystem li span {
     display: block;
