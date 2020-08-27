@@ -106,6 +106,12 @@ const teamInfo = [
     image: "steph",
     description:
       " is a Canadian web developer who loves travelling, coding and eating.   Born in South Africa, her favourite place to be is in the African bushveld."
-  }
+  },
+  {
+    name: "Aline Ribeiro",
+    image: "aline",
+    description:
+      " is a web developer based in Canada. She loves dogs, foreign languages and exploring the world."
+	  }
 ];
 export default teamInfo;
