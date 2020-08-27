@@ -16,6 +16,7 @@ import sakshi from "../../../../assets/images/sakshi.png";
 import steph from "../../../../assets/images/steph.png";
 import utsha from "../../../../assets/images/utsha.png";
 import vanessa from "../../../../assets/images/vanessa.png";
+import aline from "../../../../assets/images/aline.png";
 
 export default [
   aakanksha,
@@ -35,5 +36,6 @@ export default [
   sakshi,
   steph,
   utsha,
-  vanessa
+  vanessa,
+  aline
 ];
