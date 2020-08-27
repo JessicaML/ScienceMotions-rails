@@ -291,6 +291,21 @@ exports[`Team renders correctly when there are no items 1`] = `
              is a Canadian web developer who loves travelling, coding and eating.   Born in South Africa, her favourite place to be is in the African bushveld.
           </p>
         </div>
+        <div
+          className="teamItem"
+        >
+          <img
+            alt="aline"
+            className="img"
+          />
+          <p>
+            <span>
+              Aline Ribeiro
+            </span>
+             
+             is a web developer based in Canada. She loves dogs, foreign languages and exploring the world.
+          </p>
+        </div>
       </div>
     </section>
   </div>
