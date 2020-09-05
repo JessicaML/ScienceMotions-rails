@@ -1,4 +1,5 @@
 import React from "react";
+import { hot } from 'react-hot-loader/root'
 import About from "./About";
 import FeaturedLessons from "./FeaturedLessons";
 import Testimonials from "./Testimonials";
@@ -13,4 +14,4 @@ const Container = () => (
   </div>
 );
 
-export default Container;
+export default hot(Container);
