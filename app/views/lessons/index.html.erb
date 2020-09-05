@@ -3,22 +3,10 @@
   <h1>Lessons</h1>
   <div class="lesson-table">
     <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Name</th>
-          <th></th>
-          <th></th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-
       <tbody>
       <% @lessons.each do |lesson| %>
         <tr>
-            <td><%= lesson&.name %></td>
-            <td><%= link_to 'Show', lesson %></td>
+            <td><%= link_to lesson&.name, lesson %></td>
         </tr>
       <% end %>
       </tbody>
