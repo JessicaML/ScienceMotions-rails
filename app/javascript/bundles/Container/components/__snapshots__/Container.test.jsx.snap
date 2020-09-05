@@ -81,11 +81,6 @@ exports[`Container renders correctly when there are no items 1`] = `
     <div
       className="header"
     >
-      <a
-        href="navigation.html"
-      >
-        See all lessons here
-      </a>
       <h1>
         Featured Lessons
       </h1>

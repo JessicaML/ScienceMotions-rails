@@ -6,7 +6,7 @@
 <%= react_component(@lesson.name, props: { description: @lesson.description } , prerender: false) %>
 
 
-<div class="footer-info">
+<div class="footer-info" id="mark-complete">
   <% if @completed && (@completed.user_id == current_user.id) && @completed.completed == true%>
   <p><span class='lesson-complete'>Lesson Complete <%= l(@completed.created_at, format: :short) %> </span></p>
     <%= link_to 'mark incomplete', togglelesson_path(@completed), :method => :put %>

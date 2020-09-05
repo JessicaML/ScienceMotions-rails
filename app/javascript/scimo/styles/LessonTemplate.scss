@@ -135,28 +135,6 @@ section#text a:hover {
   cursor: pointer;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-  float: left;
-  font-family: "Courier New";
-  font-size: 14pt;
-  font-style: oblique;
-  font-weight: 900;
-}
-
-nav li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -171,7 +149,6 @@ a:hover {
 }
 
 .fond {
-  /*padding-top: 45px;*/
   top: 0;
   left: 0;
   right: 0;
@@ -199,7 +176,6 @@ a:hover {
 }
 
 .style_prevu_kit:hover {
-  /*box-shadow: 0px 0px 150px #000000;*/
   color: #5fc3e4;
   text-decoration: none;
   font-family: "Courier New";
@@ -279,11 +255,6 @@ a:hover {
   color: white;
   font-family: "Courier New", serif;
 }
-
-/* {
-  color:white;
-  font-family: 'Courier New', serif;
-} */
 
 .mark-complete {
   color: #428bca;
