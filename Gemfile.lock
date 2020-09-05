@@ -93,7 +93,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     connection_pool (2.2.2)
     crass (1.0.6)
     database_cleaner (1.7.0)
@@ -126,7 +126,7 @@ GEM
       activesupport (>= 4.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.8.2)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -165,7 +165,7 @@ GEM
     mini_portile2 (2.4.0)
     mini_racer (0.2.9)
       libv8 (>= 6.9.411)
-    minitest (5.14.1)
+    minitest (5.14.2)
     netrc (0.11.0)
     nio4r (2.5.2)
     nokogiri (1.10.8)
