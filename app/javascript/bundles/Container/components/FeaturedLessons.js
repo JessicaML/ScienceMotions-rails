@@ -3,7 +3,6 @@ import React from "react";
 const FeaturedLessons = () => (
   <section id="second" className="featuredLessonsWrapper">
     <div className="header">
-      <a href="navigation.html">See all lessons here</a>
       <h1>Featured Lessons</h1>
     </div>
     <div className="links">
