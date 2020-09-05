@@ -72,7 +72,7 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-       redirect_to @lesson, notice: 'Update successful.'
+      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
     else
       redirect_to @lesson, notice: 'Error: please try again later.'
     end

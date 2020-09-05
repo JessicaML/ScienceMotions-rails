@@ -36,8 +36,7 @@ RSpec.describe CompletedLessonsController, type: :controller do
       }
       completed_lesson.reload
       expect(completed_lesson.completed).to eq(false)
-      expect(response).to redirect_to(lesson_url(id: completed_lesson.lesson_id))
-
+      expect(response).to redirect_to(lesson_url(id: completed_lesson.lesson_id, anchor: 'mark-complete'))
     end
   end
 end
