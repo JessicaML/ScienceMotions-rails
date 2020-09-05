@@ -40,6 +40,7 @@
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "react-hot-loader": "^4.12.21",
     "webpack-dev-server": "^3.10.1"
   },
   "scripts": {
