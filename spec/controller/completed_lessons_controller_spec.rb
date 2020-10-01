@@ -21,7 +21,7 @@ RSpec.describe CompletedLessonsController, type: :controller do
       count_after = CompletedLesson.count
       expect(count_after).to eq(count_before + 1)
       expect(CompletedLesson.last.completed).to eq(true)
-      expect(response).to redirect_to(lesson_path(lesson))
+      expect(response).to redirect_to("#{lesson_path(lesson)}#mark-complete")
       expect(response.status).to eq(302)
     end
   end

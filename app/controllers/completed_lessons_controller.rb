@@ -27,7 +27,7 @@ class CompletedLessonsController < ApplicationController
     @completed_lesson.completed = true
 
     if @completed_lesson.save
-      redirect_to @lesson, notice: 'Update successful.'
+      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
    else
      redirect_to @lesson, notice: 'Error: please try again later.'
    end
@@ -47,6 +47,7 @@ class CompletedLessonsController < ApplicationController
 
   def toggleindex
     @completed_lesson = current_user.completed_lessons.find(params[:id])
+    lessonId = @completed_lesson.lesson.id
     if @completed_lesson.completed?
       @completed_lesson.completed  = 'false'
     else
@@ -54,7 +55,7 @@ class CompletedLessonsController < ApplicationController
     end
     @completed_lesson.save
     if @completed_lesson.save
-      redirect_to completed_lessons_url, notice: 'Update successful.'
+      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
    else
      redirect_to completed_lessons_url, notice: 'Error: please try again later.'
    end
