@@ -88,3 +88,5 @@ gem 'mini_racer', '~> 0.2.9'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 gem "rubyzip", ">= 1.3.0"
+
+gem "pry", "~> 0.12.2"
