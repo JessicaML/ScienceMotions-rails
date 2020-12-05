@@ -9,7 +9,7 @@
           <% if completed_lesson.completed == true &&  current_user.id == completed_lesson.user_id%>
             <tr>
             <td><%= completed_lesson.lesson&.name %></td>
-            <td><%= link_to 'mark incomplete', toggleindex_path(completed_lesson), :method => :put %></td>
+            <td><%= link_to 'mark incomplete', togglelesson_path(completed_lesson), :method => :put %></td>
             </tr>
           <% end %>
         <% end %>
