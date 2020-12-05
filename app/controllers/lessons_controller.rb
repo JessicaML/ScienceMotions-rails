@@ -53,10 +53,12 @@ class LessonsController < ApplicationController
   end
 
   private
-    def set_lesson
-      @lesson = Lesson.find(params[:id])
-    end
-    def lesson_params
-      params.require(:lesson).permit(:name, :description, :slug)
-    end
+
+  def set_lesson  
+    @lesson = Lesson.find_by(slug: params[:slug])
+  end
+
+  def lesson_params
+    params.require(:lesson).permit(:name, :description, :slug)
+  end
 end

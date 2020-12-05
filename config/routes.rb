@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   resources :completed_lessons do
     put "togglelesson"
   end
-  resources :lessons, only: [:show, :index]
+  
+  resources :lessons, param: :slug
 
   devise_for :users do
     get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
@@ -21,7 +22,6 @@ Rails.application.routes.draw do
   get "completed_lessons/:id/togglelesson" => "completed_lessons#togglelesson", :as => "togglelesson", :via => [:get]
 
   root to: redirect('/container')
-  resources :lessons
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "/static/:index" => "static#show"
   get "/static/:navigation" => "static#show"
