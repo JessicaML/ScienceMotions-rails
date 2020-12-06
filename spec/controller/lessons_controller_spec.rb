@@ -12,7 +12,7 @@ RSpec.describe LessonsController, type: :controller do
   describe 'show' do
     it 'should show field' do
       lesson = FactoryBot.create(:lesson)
-      get :show, params: { id: lesson.id }
+      get :show, params: { slug: lesson.slug }
       expect(response.status).to eq(200)
     end
   end
@@ -28,7 +28,7 @@ RSpec.describe LessonsController, type: :controller do
     it "updates the requested lesson" do
       lesson = FactoryBot.create(:lesson)
       patch :update, params: {
-        id: lesson.id, lesson: { name: 'name2' }
+        slug: lesson.slug, lesson: { name: 'name2' }
       }
       lesson.reload
       expect(lesson.name).to eq("name2")
@@ -41,13 +41,13 @@ RSpec.describe LessonsController, type: :controller do
     it "destroys the requested lesson" do
       lesson = FactoryBot.create(:lesson)
       expect {
-        delete :destroy, params: { id: lesson.id }
+        delete :destroy, params: { slug: lesson.slug }
       }.to change(Lesson, :count).by(-1)
     end
 
     it "redirects to the lesson list" do
       lesson = FactoryBot.create(:lesson)
-        delete :destroy, params: { id: lesson.id }
+        delete :destroy, params: { slug: lesson.slug }
       expect(response).to redirect_to(lessons_url)
     end
   end

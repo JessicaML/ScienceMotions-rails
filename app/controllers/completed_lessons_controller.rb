@@ -20,14 +20,14 @@ class CompletedLessonsController < ApplicationController
   def create
     @completed_lesson = CompletedLesson.new(completed_lesson_params)
     @lessons = Lesson.all
-    lessonId = @completed_lesson.lesson.id
-    @lesson = Lesson.find_by(id: lessonId)
+    lessonSlug = @completed_lesson.lesson.slug
+    @lesson = Lesson.find_by(slug: lessonSlug)
 
     @completed_lesson.user = current_user
     @completed_lesson.completed = true
 
     if @completed_lesson.save
-      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
+      redirect_to lesson_path(slug: lessonSlug, anchor: 'mark-complete')
    else
      redirect_to @lesson, notice: 'Error: please try again later.'
    end
@@ -45,35 +45,22 @@ class CompletedLessonsController < ApplicationController
     end
   end
 
-  def toggleindex
-    @completed_lesson = current_user.completed_lessons.find(params[:id])
-    lessonId = @completed_lesson.lesson.id
-    if @completed_lesson.completed?
-      @completed_lesson.completed  = 'false'
-    else
-      @completed_lesson.completed  = 'true'
-    end
-    @completed_lesson.save
-    if @completed_lesson.save
-      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
-   else
-     redirect_to completed_lessons_url, notice: 'Error: please try again later.'
-   end
-  end
-
   def togglelesson
     @completed_lesson = current_user.completed_lessons.find(params[:id])
     @lessons = Lesson.all
-    lessonId = @completed_lesson.lesson.id
-    @lesson = Lesson.find_by(id: lessonId)
+    lessonSlug = @completed_lesson.lesson.slug
+    @lesson = Lesson.find_by(slug: lessonSlug)
+
     if @completed_lesson.completed?
       @completed_lesson.completed  = 'false'
     else
       @completed_lesson.completed  = 'true'
     end
+
     @completed_lesson.save
+    
     if @completed_lesson.save
-      redirect_to lesson_path(id: lessonId, anchor: 'mark-complete')
+      redirect_to lesson_path(slug: lessonSlug, anchor: 'mark-complete')
     else
       redirect_to @lesson, notice: 'Error: please try again later.'
     end
