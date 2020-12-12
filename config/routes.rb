@@ -7,6 +7,11 @@ Rails.application.routes.draw do
   end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
+
+  namespace :admin do
+    resources :lessons, param: :slug
+  end
+
   ActiveAdmin.routes(self)
 
   resources :users do
