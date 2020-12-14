@@ -2,6 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Marking lessons as complete', type: :feature do
   # subject(:user) { FactoryBot.build(:user)}
+  # lesson = Lesson.create!(name: 'Indicators', description: 'Indicators', slug: 'Indicators') 
+  subject(:lesson) { FactoryBot.build(:lesson)}
+  subject(:completed_lesson) { FactoryBot.build(:completed_lesson)}
+
 
   scenario 'viewing a lesson' do
     when_i_go_to_the_home_page
@@ -58,23 +62,26 @@ RSpec.describe 'Marking lessons as complete', type: :feature do
     fill_in 'Email', with: 'user.email'
     fill_in 'Password', with: 'user.password'
     click_on 'Login'
-    login_as(FactoryBot.create(:user))
-    visit container_path
-    save_and_open_page
   end
 
-  def and_i_click_the_lessons_tab
+  def and_i_click_the_lessons_tab_again
+    login_as(FactoryBot.create(:user))
+
     visit container_path
     click_on 'lessons'
   end
 
   def and_i_click_on_a_lesson
-    visit lessons_path
+    login_as(FactoryBot.create(:user))
+
+    visit lesson_path(lesson)
     binding.pry
     click_on 'Indicators'
   end
 
   def then_i_should_see_the_lesson
+    login_as(FactoryBot.create(:user))
+
     expect(page).to have_content("Indicators")
   end
 end
