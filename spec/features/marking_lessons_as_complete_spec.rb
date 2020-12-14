@@ -2,10 +2,17 @@ require 'rails_helper'
 
 RSpec.describe 'Marking lessons as complete', type: :feature do
   # subject(:user) { FactoryBot.build(:user)}
-  # lesson = Lesson.create!(name: 'Indicators', description: 'Indicators', slug: 'Indicators') 
-  subject(:lesson) { FactoryBot.build(:lesson)}
-  subject(:completed_lesson) { FactoryBot.build(:completed_lesson)}
 
+  # lesson = Lesson.create!(name: 'Indicators', description: 'Indicators', slug: 'Indicators') 
+  # subject(:lesson) { FactoryBot.build(:lesson)}
+  # subject(:completed_lesson) { FactoryBot.build(:completed_lesson, lesson: lesson)}
+
+  before do
+    @john = User.create!(email: "john@example.com", password: "password")
+    @lesson = Lesson.create!(name: "Indicators", slug: "Indicators", description: "Indicators")
+    @completed_lesson = CompletedLesson.create!(user: @john, lesson: @lesson)
+    # @article = Article.create(title: "First article", body: "Body of first article", user: @john)
+  end
 
   scenario 'viewing a lesson' do
     when_i_go_to_the_home_page
@@ -13,7 +20,7 @@ RSpec.describe 'Marking lessons as complete', type: :feature do
     then_i_get_redirected_to_the_login_page
     and_i_click_the_lessons_tab
     and_i_click_on_a_lesson
-    then_i_should_see_the_lesson
+    # then_i_should_see_the_lesson
   end
 
   # scenario 'marking a lesson as complete' do
@@ -65,22 +72,32 @@ RSpec.describe 'Marking lessons as complete', type: :feature do
   end
 
   def and_i_click_the_lessons_tab_again
-    login_as(FactoryBot.create(:user))
 
     visit container_path
     click_on 'lessons'
   end
 
   def and_i_click_on_a_lesson
-    login_as(FactoryBot.create(:user))
+    # login_as(FactoryBot.create(:user))   
 
-    visit lesson_path(lesson)
-    binding.pry
+    # binding.pry
+    # visit(lesson_path(@lesson))
+    
+    login_as(FactoryBot.create(:user))
+    visit container_path
+    click_on 'lessons'
     click_on 'Indicators'
+    save_and_open_page
+
+    expect(page).to have_content("Indicators")
+
+        # click_on 'Indicators'
+    # click_on 'Indicators'
+
+    # click_on 'Indicators'
   end
 
   def then_i_should_see_the_lesson
-    login_as(FactoryBot.create(:user))
 
     expect(page).to have_content("Indicators")
   end
