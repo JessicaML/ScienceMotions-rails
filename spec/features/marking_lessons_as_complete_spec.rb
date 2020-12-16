@@ -1,54 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe 'Marking lessons as complete', type: :feature do
-  # subject(:user) { FactoryBot.build(:user)}
-
-  # lesson = Lesson.create!(name: 'Indicators', description: 'Indicators', slug: 'Indicators') 
-  # subject(:lesson) { FactoryBot.build(:lesson)}
-  # subject(:completed_lesson) { FactoryBot.build(:completed_lesson, lesson: lesson)}
-
   before do
     @john = User.create!(email: "john@example.com", password: "password")
     @lesson = Lesson.create!(name: "Indicators", slug: "Indicators", description: "Indicators")
     @completed_lesson = CompletedLesson.create!(user: @john, lesson: @lesson)
-    # @article = Article.create(title: "First article", body: "Body of first article", user: @john)
   end
 
-  scenario 'viewing a lesson' do
+  scenario 'viewing the lessons' do
     when_i_go_to_the_home_page
     and_i_click_the_lessons_tab
     then_i_get_redirected_to_the_login_page
-    and_i_click_the_lessons_tab
-    and_i_click_on_a_lesson
-    # then_i_should_see_the_lesson
+    and_i_click_the_lesson
+    then_i_go_to_the_lesson_page
   end
 
   # scenario 'marking a lesson as complete' do
-  #   when_i_go_to_the_home_page
-  #   and_i_click_the_lessons_tab
-  #   then_i_get_redirected_to_the_login_page
-  #   and_i_click_the_lessons_tab
-  #   and_i_click_on_a_lesson
-  #   then_i_should_see_the_lesson
-    # and_i_mark_it_as_complete
-    # and_i_go_to_my_completed_lessons
-    # then_i_see_my_completed_lessons
-    # and_i_click_mark_as_incomplete
-    # then_i_should_go_to_that_lesson_again
   # end
 
   # scenario 'when_i_go_the_login_page' do
-  #   # when_i_go_the_login_page
-  #   # then_i-get_redirected_to_the_login_page
-  #   # and_i_log_in
-  #   # and_i_go_to_x_page
-  #   # and_i_click_the_lessons_tab
-  #   # and_i_click_on_a_lesson
-  #   # and_i_mark_it_as_complete
-  #   # and_i_go_to_my_completed_lessons
-  #   # then_i_see_my_completed_lessons
-  #   # and_i_click_mark_as_incomplete
-  #   # then_i_should_go_to_that_lesson_again
   # end
 
   def when_i_go_to_the_home_page
@@ -59,46 +29,21 @@ RSpec.describe 'Marking lessons as complete', type: :feature do
     click_on 'lessons'
   end
 
-  def when_i_go_to_the_home_page
-    visit container_path
-    
-    click_on 'lessons'
-  end
-
   def then_i_get_redirected_to_the_login_page
     fill_in 'Email', with: 'user.email'
     fill_in 'Password', with: 'user.password'
     click_on 'Login'
   end
 
-  def and_i_click_the_lessons_tab_again
-
-    visit container_path
-    click_on 'lessons'
-  end
-
-  def and_i_click_on_a_lesson
-    # login_as(FactoryBot.create(:user))   
-
-    # binding.pry
-    # visit(lesson_path(@lesson))
-    
+  def and_i_click_the_lesson
     login_as(FactoryBot.create(:user))
     visit container_path
     click_on 'lessons'
-    click_on 'Indicators'
-    save_and_open_page
-
-    expect(page).to have_content("Indicators")
-
-        # click_on 'Indicators'
-    # click_on 'Indicators'
-
-    # click_on 'Indicators'
+    expect(page).to have_content(@lesson.name)
+    click_on @lesson.name
   end
 
-  def then_i_should_see_the_lesson
-
-    expect(page).to have_content("Indicators")
+  def then_i_go_to_the_lesson_page
+    expect(page).to have_selector("input", :class =>"mark-complete")
   end
 end
