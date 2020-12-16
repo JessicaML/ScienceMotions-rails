@@ -16,21 +16,21 @@ exports[`FeaturedLessons renders correctly when there are no items 1`] = `
     className="links"
   >
     <a
-      href="lessons/1"
+      href="lessons/Indicators"
     >
       <h1>
         Indicators
       </h1>
     </a>
     <a
-      href="lessons/3"
+      href="lessons/CellsTissuesOrgans"
     >
       <h1>
         Cells, Tissues, Organs
       </h1>
     </a>
     <a
-      href="lessons/2"
+      href="lessons/DNA"
     >
       <h1>
         DNA

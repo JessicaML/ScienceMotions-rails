@@ -35,7 +35,6 @@ RSpec.describe CompletedLessonsController, type: :controller do
       put :togglelesson, params: {
         id: completed_lesson, completed: false
       }
-      binding.pry
       completed_lesson.reload
       expect(completed_lesson.completed).to eq(false)
       expect(response).to redirect_to(lesson_url(slug: completed_lesson.lesson.slug, anchor: 'mark-complete'))

@@ -6,13 +6,13 @@ const FeaturedLessons = () => (
       <h1>Featured Lessons</h1>
     </div>
     <div className="links">
-      <a href="lessons/1">
+      <a href="lessons/Indicators">
         <h1>Indicators</h1>
       </a>
-      <a href="lessons/3">
+      <a href="lessons/CellsTissuesOrgans">
         <h1>Cells, Tissues, Organs</h1>
       </a>
-      <a href="lessons/2">
+      <a href="lessons/DNA">
         <h1>DNA</h1>
       </a>
     </div>

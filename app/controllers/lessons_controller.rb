@@ -54,7 +54,7 @@ class LessonsController < ApplicationController
 
   private
 
-  def set_lesson  
+  def set_lesson
     @lesson = Lesson.find_by(slug: params[:slug])
   end
 
