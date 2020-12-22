@@ -1,7 +1,7 @@
 import React from "react";
 
 const FeaturedLessons = () => (
-  <section id="second" className="featuredLessonsWrapper">
+  <section id="featuredLessons" className="featuredLessonsWrapper">
     <div className="header">
       <h1>Featured Lessons</h1>
     </div>

@@ -13,11 +13,10 @@ const About = ({}) => (
         "data-0":
           "background-image: linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)",
         "data-450":
-          "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)"
+          "background-image: linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%)",
       }}
-      >
+    >
       <div className="aboutWrapper">
-
         <div className="imgItems">
           <img src={TubeOne} alt="test tube" />
           <img src={TubeTwo} alt="test tube" />
@@ -28,7 +27,7 @@ const About = ({}) => (
           <h1>ScienceMotions</h1>
           <p>Biology, chemistry and physics lessons from the future.</p>
           <p>
-            <a href="#">see more</a>
+            <a href="#featuredLessons">see more</a>
           </p>
         </div>
         <div className="imgItems">
@@ -37,7 +36,7 @@ const About = ({}) => (
           <img src={TubeOne} alt="test tube" />
           <img src={FacesThree} alt="test tube" />
         </div>
-      </div> 
+      </div>
     </Parallax>
   </ParallaxProvider>
 );

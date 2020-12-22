@@ -42,7 +42,7 @@ exports[`About renders correctly when there are no items 1`] = `
         </p>
         <p>
           <a
-            href="#"
+            href="#featuredLessons"
           >
             see more
           </a>

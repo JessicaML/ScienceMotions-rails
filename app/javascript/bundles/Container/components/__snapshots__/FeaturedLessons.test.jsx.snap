@@ -3,7 +3,7 @@
 exports[`FeaturedLessons renders correctly when there are no items 1`] = `
 <section
   className="featuredLessonsWrapper"
-  id="second"
+  id="featuredLessons"
 >
   <div
     className="header"

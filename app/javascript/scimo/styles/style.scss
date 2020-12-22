@@ -1,8 +1,7 @@
 @charset 'UTF-8';
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One");
 @import url("https://fonts.googleapis.com/css?family=Bitter");
-@import  url("https://fonts.googleapis.com/css?family=Space+Mono");
-
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
 
 body,
 input,
@@ -46,7 +45,6 @@ h6 a {
   }
 }
 
-
 h1 {
   text-align: center;
   color: #3b3b3b;
@@ -58,7 +56,7 @@ a {
   outline: none;
 }
 
-#second h1 {
+#featuredLessons h1 {
   font-size: 1.5em;
   color: #3b3b3b;
 }
@@ -67,7 +65,7 @@ a {
   h1 {
     font-size: 4em;
   }
-  #second h1 {
+  #featuredLessons h1 {
     font-size: 3em;
     line-height: 1.75em;
   }
@@ -76,7 +74,7 @@ a {
   }
 }
 
-#second {
+#featuredLessons {
   background: yellow;
 }
 
