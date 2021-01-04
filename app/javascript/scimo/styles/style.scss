@@ -139,7 +139,11 @@ b {
 .mailchimp {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  div {
+    margin-left: 10px;
+  }
 }
 
 .logIn {
