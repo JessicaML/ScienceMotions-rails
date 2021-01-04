@@ -5,12 +5,9 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
   className="footer"
 >
   <form
-    action="https://github.us16.list-manage.com/subscribe/post-json"
-    className="validate"
-    id="mc-embedded-subscribe-form"
-    method="POST"
+    action="https://github.us16.list-manage.com/subscribe/post?u=70d8e0ea2d8800a5f4e06792c&id=b5095bc718"
+    method="post"
     name="mc-embedded-subscribe-form"
-    noValidate={true}
     target="_blank"
   >
     <div
@@ -41,16 +38,6 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
         Subscribe to our mailing list!
       </label>
       <div>
-        <input
-          name="u"
-          type="hidden"
-          value="70d8e0ea2d8800a5f4e06792c"
-        />
-        <input
-          name="id"
-          type="hidden"
-          value="b5095bc718"
-        />
         <label
           htmlFor="MERGE0"
         >
@@ -66,38 +53,8 @@ exports[`Mailinglist renders correctly when there are no items 1`] = `
         </label>
         <input
           className="button"
-          defaultValue="Subscribe"
-          id="mc-embedded-subscribe"
           name="subscribe"
-          onClick={[Function]}
           type="submit"
-        />
-        <div
-          aria-hidden="true"
-          aria-label="Please leave the following three fields empty"
-          style={
-            Object {
-              "left": "-5000px",
-              "position": "absolute",
-            }
-          }
-        >
-          <label
-            htmlFor="b_email"
-          >
-            Email: 
-          </label>
-          <input
-            defaultValue=""
-            id="b_email"
-            name="b_email"
-            placeholder="youremail@gmail.com"
-            tabIndex="-1"
-            type="email"
-          />
-        </div>
-        <div
-          className="notification_container"
         />
       </div>
     </div>
