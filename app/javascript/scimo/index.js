@@ -17,6 +17,7 @@ import "./styles/SolarSystem.scss";
 import "./styles/AlkaliMetals.scss";
 import "./styles/GroupsPeriods.scss";
 
+import "./styles/Container.scss";
 import "./styles/About.scss";
 import "./styles/FeaturedLessons.scss";
 import "./styles/Testimonials.scss";
