@@ -3,12 +3,8 @@
   <head>
     <title>Scimo</title>
     <%= csrf_meta_tags %>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-    <%= csrf_meta_tags %>
-    <%= javascript_pack_tag 'container-bundle' %>
     <%= favicon_link_tag asset_path('favicon.png') %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
@@ -81,5 +77,9 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <%= stylesheet_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'container-bundle' %>
   </body>
 </html>
