@@ -28,7 +28,7 @@ if you are having problems creating the db, try
 - rake db:create
 - rake db:migrate
 
-Live site: https://scimo.herokuapp.com
+Live site: https://wwww.sciencemotions.com
 
 
 ## Support us on Patreon!
