@@ -28,7 +28,7 @@ if you are having problems creating the db, try
 - rake db:create
 - rake db:migrate
 
-Live site: https://www.sciencemotions.com
+Live site: https://sciencemotions.com
 
 
 ## Support us on Patreon!
