@@ -31,7 +31,7 @@
     "react-skrollr": "^1.0.4",
     "react-test-renderer": "^16.11.0",
     "sugarss": "^2.0.0",
-    "three": "^0.125.0",
+    "three": "^0.137.0",
     "three-trackballcontrols": "^0.0.8",
     "tween": "^0.9.0",
     "webpack": "^4.41.2",
