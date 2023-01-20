@@ -10,9 +10,9 @@ end
 
 ruby '2.7.0'
 
-gem 'rails', '~> 5.2', '>= 5.2.2.1'
+gem 'rails', '~> 7.0'
 gem 'react_on_rails', '~> 11.2', '>= 11.2.2'
-gem "webpacker", "~> 4.2.2"
+gem "webpacker", "~> 5.4.3"
 
 gem 'pg', '0.21.0'
 
@@ -28,14 +28,14 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2.0'
 
@@ -54,7 +54,7 @@ gem "figaro"
 
 gem 'rest-client', '~> 1.8'
 
-gem 'activerecord', '~> 5.0', '>= 5.0.0.1'
+gem 'activerecord', '~> 7.0'
 
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
@@ -66,7 +66,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'launchy'
   gem 'selenium-webdriver'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 6.0'
   gem 'rails-controller-testing'
   gem 'poltergeist'
   gem 'database_cleaner'
